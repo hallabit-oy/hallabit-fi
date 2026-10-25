@@ -1,0 +1,16 @@
+/* Kiinteä iPhone. Yläpalkki ja tilarivi ovat paikallaan, vain sisältö vaihtuu.
+   Kaikki mitat skaalautuvat puhelimen korkeuden (--h) mukaan, joten kulmat, reunat ja tilarivi pysyvät oikeassa suhteessa kaikilla koilla.
+   Samankeskiset kulmat: kuori 54 - reuna 11 = ruutu 43 (390 px leveällä mallilla). */
+.iphone { --h: clamp(360px, calc(100svh - 175px), 690px); position: relative; height: var(--h); aspect-ratio: 390 / 830; max-width: min(100%, 330px); margin-inline: auto; background: #0a0d10; border-radius: calc(var(--h) * .0651); padding: calc(var(--h) * .0133); box-shadow: 0 0 0 1.5px rgba(255,255,255,.1) inset, 0 40px 80px -40px rgba(0,0,0,.55); }
+.iphone .screen { position: relative; width: 100%; height: 100%; border-radius: calc(var(--h) * .0518); overflow: hidden; background: #1a2e49; isolation: isolate; display: flex; flex-direction: column; }
+.iphone .screen::before { content: ''; flex: none; height: calc(var(--h) * .0434); background: #1a2e49; }
+.iphone .screen::after { content: ''; position: absolute; z-index: 5; left: 50%; bottom: calc(var(--h) * .0096); width: 34%; height: calc(var(--h) * .006); margin-left: -17%; border-radius: 999px; background: #0a0d10; }
+.iphone .island { position: absolute; z-index: 4; top: calc(var(--h) * .0133); left: 50%; width: 31%; height: calc(var(--h) * .03); margin-left: -15.5%; background: #000; border-radius: 999px; }
+.iphone .appbar { position: relative; z-index: 3; flex: none; width: 100%; height: auto; display: block; }
+.iphone .body { position: relative; z-index: 1; flex: 1; min-height: 0; overflow: hidden; background: #f8f7f3; }
+.iphone .body img { position: absolute; left: 0; top: 0; width: 100%; height: auto; opacity: 0; transition: opacity 340ms cubic-bezier(.23,1,.32,1); }
+.iphone .body img.on { opacity: 1; z-index: 2; }
+.iphone .body img.prev { opacity: 1; z-index: 1; transition: none; }
+@media (prefers-reduced-motion: reduce) { .iphone .body img { transition: none; } }
+@media (max-width: 860px) { .iphone { --h: min(44svh, 420px); } }
+@media (max-height: 480px) { .iphone { --h: calc(100svh - 110px); } }

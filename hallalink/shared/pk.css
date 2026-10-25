@@ -1,0 +1,147 @@
+/* Päiväkulku v3j: yksi muuntuva laite (SVG-kehys), neljä vaihetta ja kolme +90 asteen kiertoa samaan suuntaan (yhteensä 270), ei kallistusta */
+.pk{padding:clamp(56px,7vw,104px) 0 0;position:relative}
+.pk-head{display:block}
+.pk-anim{display:none}
+html.pk-on .pk-anim{display:block}
+html.pk-on .pk-static{display:none}
+/* v3m: vieritysnopeus yhden muuttujan takana. --pk-vaihevali = matka laiteasennon levon alusta seuraavan levon alkuun.
+   Lepoalueet ovat edistymän osuuksina 0-.14, .28-.43, .57-.72, .86-1, joten pisin väli on .29 vieritysmatkasta: matka = vaiheväli / .29.
+   Työpöytä 290 px = 3 hiiren pykälää (100 px). Mobiili (alle 861 px) 600 px = noin kaksi tai kolme pyyhkäisyä. v3l: 1150svh. */
+/* v3o: vaiheväli tulee html-elementin inline-tyylistä (--pk-vaihevali-tp työpöytä, --pk-vaihevali-mob alle 861 px), jotta kaksi rinnakkaista
+   html-tiedostoa voivat jakaa saman CSS:n. hallalink.html 400 / 830 px (4 pykälää), hallalink-hitaampi.html 500 / 1035 px (5 pykälää).
+   Mobiilin suhde sama kuin v3n:ssä (600 / 290). Oletusarvot alla, jos inline-tyyli puuttuu. */
+.pk{--pk-vaihevali:var(--pk-vaihevali-tp,400px)}
+@media (max-width:860px){.pk{--pk-vaihevali:var(--pk-vaihevali-mob,830px)}}
+.pk-track{position:relative;height:calc(100vh - 64px + var(--pk-vaihevali) / .29);height:calc(100svh - 64px + var(--pk-vaihevali) / .29)}
+.pk-stage{position:sticky;top:64px;height:calc(100vh - 64px);height:calc(100svh - 64px);overflow:hidden;contain:paint}
+/* v3n: kaksoisnapautus ei zoomaa näyttämöä (iOS Safari zoomasi laitteen ruudun yli). Nipistyszoomaus toimii edelleen (saavutettavuus). */
+.pk-stage{touch-action:manipulation}
+/* v3j: yksi rauhallinen liukuväri kaikille neljälle vaiheelle. Vaalea pohja (#F3F6F5) hallitsee, reunoilla hyvin vaalea kylmä sininen,
+   oikeassa alakulmassa hillitty navyn (#0B2A5B) sävy. Ylä- ja alareuna sulautuvat sivun taustaan. Ei kovia reunoja, ei liikettä. */
+.pk-bg{position:absolute;inset:0;background:#F3F6F5}
+.pk-bg::before{content:"";position:absolute;inset:0;
+ background:
+  radial-gradient(34% 46% at 100% 100%,rgba(11,42,91,.11) 0%,rgba(11,42,91,.05) 45%,rgba(11,42,91,0) 100%),
+  radial-gradient(37% 72% at 0% 45%,#E4ECF6 0%,rgba(228,236,246,.55) 50%,rgba(228,236,246,0) 100%),
+  radial-gradient(37% 72% at 100% 40%,#E2EAF5 0%,rgba(226,234,245,.55) 50%,rgba(226,234,245,0) 100%);
+ -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 16%,#000 84%,transparent 100%);
+ mask-image:linear-gradient(180deg,transparent 0%,#000 16%,#000 84%,transparent 100%)}
+.pk-grid{position:relative;z-index:1;height:100%;display:grid;grid-template-columns:minmax(280px,5fr) 7fr;gap:clamp(24px,4vw,64px);align-items:center;padding-bottom:56px}
+.pk-texts{display:grid}
+.pk-texts .pk-step{grid-area:1/1;opacity:0;will-change:opacity,transform}
+.pk-texts .pk-step[data-s="0"]{opacity:1}
+.pk-step small{font:600 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#1B5596}
+.pk-step h3{font-size:clamp(26px,3.2vw,42px);line-height:1.15;margin-top:0;color:#0B2A5B;text-wrap:balance}
+.pk-step p{margin-top:14px;font-size:clamp(17px,1.5vw,20px);color:var(--soft);max-width:26em;text-wrap:pretty}
+.pk-devices{position:relative;height:min(76%,660px);container-type:size;perspective:1600px}
+.pk-morph{position:absolute;inset:0;width:100%;height:100%;overflow:visible;transform-origin:50% 50%;will-change:transform;transition:none!important;animation:none!important}
+.pk-morph image{will-change:opacity}
+.pk-shadow{position:absolute;left:50%;top:50%;width:100px;height:28px;margin:-14px 0 0 -50px;border-radius:50%;background:radial-gradient(closest-side,rgba(11,42,91,.22),rgba(11,42,91,0));will-change:transform}
+.pk-dev{position:absolute;left:50%;top:50%;will-change:transform,opacity;transform-style:preserve-3d}
+/* Puhelin 393 x 852 */
+.pk-phone{--ph:min(94cqh,200cqw);width:calc(var(--ph) * 393 / 852 + var(--ph) * .036);height:calc(var(--ph) + var(--ph) * .036);margin:calc(var(--ph) * -.518) 0 0 calc((var(--ph) * 393 / 852 + var(--ph) * .036) / -2)}
+.pk-phone-frame{position:relative;width:100%;height:100%;padding:calc(var(--ph,600px) * .018);border-radius:calc(var(--ph,600px) * .075);background:#0A1B36;box-shadow:0 0 0 1.5px rgba(255,255,255,.12) inset,0 30px 60px -30px rgba(11,42,91,.45)}
+.pk-phone-frame svg{display:block;width:100%;height:100%;border-radius:calc(var(--ph,600px) * .06);background:#F4F7FB;overflow:hidden}
+.pk-phone-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:calc(var(--ph,600px) * .06);background:#E2E5EA}
+.pk-island{position:absolute;z-index:2;top:calc(var(--ph,600px) * .032);left:50%;width:30%;height:calc(var(--ph,600px) * .034);margin-left:-15%;border-radius:999px;background:#000}
+/* Läppäri 1440 x 900 */
+.pk-laptop{--lw:min(84cqw,135cqh);width:var(--lw);margin:calc(var(--lw) * -.34) 0 0 calc(var(--lw) / -2);opacity:0}
+.pk-lid,.pk-slaptop .pk-lid{position:relative;padding:calc(var(--lw,600px) * .022) calc(var(--lw,600px) * .022) calc(var(--lw,600px) * .03);border-radius:calc(var(--lw,600px) * .022) calc(var(--lw,600px) * .022) 4px 4px;background:#0A1B36;transform-origin:50% 100%;will-change:transform;box-shadow:0 30px 60px -36px rgba(11,42,91,.5)}
+.pk-lid img{display:block;width:100%;height:auto;aspect-ratio:1440/900;object-fit:cover;object-position:top;border-radius:3px;background:#E2E5EA}
+.pk-cam{position:absolute;top:calc(var(--lw,600px) * .009);left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#24365A}
+.pk-base{position:relative;left:-7%;width:114%;height:calc(var(--lw,600px) * .03);border-radius:0 0 calc(var(--lw,600px) * .03) calc(var(--lw,600px) * .03);background:linear-gradient(180deg,#D7DEE6 0%,#B9C3CF 100%);will-change:transform,opacity}
+.pk-base::before{content:"";position:absolute;left:50%;top:0;width:16%;height:40%;margin-left:-8%;border-radius:0 0 8px 8px;background:#A9B4C1}
+/* iPad 820 x 1180 pysty */
+.pk-ipad{--iw:min(78cqw,118cqh);width:var(--iw);margin:calc(var(--iw) * -.36) 0 0 calc(var(--iw) / -2);opacity:0}
+.pk-ipad-frame{padding:calc(var(--iw,600px) * .045);border-radius:calc(var(--iw,600px) * .075);background:#0A1B36;box-shadow:0 0 0 1.5px rgba(255,255,255,.12) inset,0 30px 60px -30px rgba(11,42,91,.45)}
+.pk-ipad-frame img{display:block;width:100%;height:auto;aspect-ratio:820/1180;object-fit:cover;object-position:top;border-radius:calc(var(--iw,600px) * .03);background:#E2E5EA}
+/* Ilmoitukset */
+.pk-toast{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:#fff;color:#0B2A5B;font:600 14px/1.3 var(--body);box-shadow:0 10px 30px -12px rgba(11,42,91,.35);opacity:0;white-space:nowrap;pointer-events:none}
+.pk-toast i{flex:none;width:10px;height:10px;border-radius:50%;background:#7CC0FF;box-shadow:0 0 0 3px rgba(124,192,255,.25)}
+.pk-toast span{display:block}
+.pk-t0{left:calc(50% + 4cqh);top:12%}
+.pk-t1{left:4%;bottom:8%}
+.pk-t2{right:4%;top:6%}
+.pk-toast.on{animation:pk-pop 4.8s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes pk-pop{0%,8%{opacity:0;transform:translateY(10px) scale(.94)}16%,70%{opacity:1;transform:none}80%,100%{opacity:0;transform:translateY(-6px) scale(.98)}}
+/* Vaiheosoitin (v3m) */
+/* v3m: neljä pystysuoraa palluraa oikeassa reunassa (button, 44 x 44 px kosketusalue), safe area huomioitu.
+   Sisältöruudukko jättää oikealle pallurasarakkeen (--pk-dots), joten pallurat eivät osu tekstin eivätkä laitteen päälle. */
+.pk{--pk-dots:calc(60px + env(safe-area-inset-right))}
+.pk .pk-grid{width:auto;margin-left:max(calc(20px + env(safe-area-inset-left)),calc((100% - 1120px) / 2));margin-right:max(var(--pk-dots),calc((100% - 1120px) / 2))}
+/* v3n: pallurat pystysuunnassa näkyvän sticky-alueen keskellä kaikilla leveyksillä ja korkeuksilla. Näyttämö (.pk-stage) alkaa yläpalkin
+   alareunasta (sticky top 64px) ja päättyy näkymän alareunaan (100svh), joten 50 % sen korkeudesta on alueen keskikohta; alareunan safe area
+   vähennetään. translateY(-50%) asettaa ryhmän keskipisteen (1. ja 4. pallon keskikohtien puoliväli) täsmälleen siihen.
+   Kiertyvä laite pysyy pallurasarakkeen vasemmalla puolella (pk.js, fitK). */
+.pk-dots{position:absolute;z-index:4;right:calc(6px + env(safe-area-inset-right));top:calc((100% - env(safe-area-inset-bottom)) / 2);bottom:auto;transform:translateY(-50%)}
+.pk-dots ol{display:flex;flex-direction:column;margin:0;padding:0;list-style:none}
+.pk-dots li{margin:0;padding:0}
+.pk-dot{position:relative;display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;-webkit-tap-highlight-color:transparent;font:inherit;color:inherit}
+.pk-dot-i{display:block;width:12px;height:12px;border-radius:50%;box-sizing:border-box;border:2px solid #0B2A5B;background:transparent;transition:background-color 200ms,transform 200ms}
+.pk-dot.on .pk-dot-i{background:#0B2A5B}
+.pk-dot:focus{outline:none}
+.pk-dot:focus-visible{outline:3px solid #1B5596;outline-offset:-4px}
+.pk-dot-tip{position:absolute;right:46px;top:50%;transform:translate(4px,-50%);padding:6px 10px;border-radius:8px;background:#0B2A5B;color:#fff;font:600 13px/1.2 var(--body);white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 150ms,transform 150ms,visibility 0s 150ms}
+.pk-dot:focus-visible .pk-dot-tip{opacity:1;visibility:visible;transform:translate(0,-50%);transition:opacity 150ms,transform 150ms}
+@media (hover:hover) and (pointer:fine){
+ .pk-dot:hover .pk-dot-i{transform:scale(1.25)}
+ .pk-dot:hover .pk-dot-tip{opacity:1;visibility:visible;transform:translate(0,-50%);transition:opacity 150ms,transform 150ms}
+}
+@media (prefers-reduced-motion:reduce){.pk-dot-i,.pk-dot-tip{transition:none}}
+/* iMac 16:9 vaaka, jalusta alla (staattinen versio) */
+.pk-simac{--mw:min(640px,50vw);width:var(--mw)}
+.pk-imac-frame{position:relative;padding:calc(var(--mw) * .018) calc(var(--mw) * .018) calc(var(--mw) * .075);border-radius:calc(var(--mw) * .03);background:#0A1B36;box-shadow:0 0 0 1.5px rgba(255,255,255,.12) inset,0 30px 60px -30px rgba(11,42,91,.45)}
+.pk-imac-frame svg{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:3px;background:#F4F7FB}
+.pk-imac-cam{position:absolute;top:calc(var(--mw) * .0055);left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#24365A}
+.pk-imac-neck{width:26%;height:calc(var(--mw) * .11);margin:0 auto;background:linear-gradient(90deg,#B3BDC9 0%,#D7DEE6 50%,#B3BDC9 100%)}
+.pk-imac-foot{width:36%;height:calc(var(--mw) * .018);margin:0 auto;border-radius:0 0 6px 6px;background:#B9C3CF}
+/* Vähennetty liike: neljä vaihetta allekkain */
+.pk-static{display:grid;gap:clamp(40px,6vw,88px);padding:36px 0 clamp(56px,7vw,104px)}
+.pk-row{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:center}
+.pk-sdev{justify-self:center;width:100%}
+.pk-sphone{--ph:min(560px,120vw);width:calc(var(--ph) * 393 / 852 + var(--ph) * .036)}
+.pk-slaptop{--lw:min(620px,48vw);width:var(--lw)}
+.pk-sipad{--iw:min(400px,34vw);width:var(--iw)}
+.pk-anim + .pk-static{}
+@media(max-width:860px){
+ .pk-stage{top:64px}
+ .pk-grid{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);align-items:stretch;gap:12px;padding-top:16px;padding-bottom:calc(52px + env(safe-area-inset-bottom))}
+ .pk-devices{height:auto;min-height:0}
+ .pk-step h3{font-size:clamp(22px,6.2vw,30px);margin-top:0}
+ .pk-step p{margin-top:8px;font-size:16px;line-height:1.5}
+ .pk-texts .pk-step small{font-size:12px}
+ .pk-toast{font-size:13px;padding:8px 12px}
+ .pk-t0{left:auto;right:2%;top:6%}
+ .pk-t1{left:2%;bottom:4%}
+ .pk-t2{right:2%;top:2%}
+ .pk-row{grid-template-columns:1fr;gap:20px}
+ .pk-sphone{--ph:min(520px,110vw)}.pk-slaptop{--lw:min(620px,80vw)}.pk-sipad{--iw:min(360px,70vw)}.pk-simac{--mw:min(620px,86vw)}
+}
+@media(max-height:560px){.pk-track{height:auto}html.pk-on .pk-anim{display:none}html.pk-on .pk-static{display:grid}}
+/* v3n: vaakapuhelin (staattinen asettelu). Jokainen laite mahtuu kokonaan näkyvään alueeseen yläpalkin alle:
+   korkeus <= 100svh - 64px (yläpalkki) - 32px (16px väli ylä- ja alapuolelle) - safe area alhaalla. Kertoimet = laitteen korkeus / kokomuuttuja:
+   puhelin 1.035, läppäri 0.68, iPad 1.40, iMac 0.7633 (kehys + jalka + jalusta, leveys = --mw). */
+@media(max-height:560px){
+ .pk-sphone{--ph:min(520px,110vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / 1.035))}
+ .pk-slaptop{--lw:min(620px,80vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / .68))}
+ .pk-sipad{--iw:min(360px,70vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / 1.4))}
+ .pk-sdev.pk-simac{--mw:min(620px,86vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / .7633));width:var(--mw)}
+}
+@media(max-height:560px) and (min-width:861px){
+ .pk-sphone{--ph:min(560px,120vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / 1.035))}
+ .pk-slaptop{--lw:min(620px,48vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / .68))}
+ .pk-sipad{--iw:min(400px,34vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / 1.4))}
+ .pk-sdev.pk-simac{--mw:min(640px,50vw,calc((100svh - 96px - env(safe-area-inset-bottom)) / .7633))}
+}
+@media(prefers-reduced-motion:reduce){html.pk-on .pk-anim{display:none}html.pk-on .pk-static{display:grid}.pk-toast.on{animation:none}}
+
+/* v3b: kiertoon ja sen sisäkkäisiin osiin ei koskaan CSS-siirtymää tai -animaatiota */
+.pk-morph *,.pk-shadow{transition:none!important;animation:none!important}
+
+/* v3j: osion otsikko "HallaLink jokaisen ruudulla" pysyy yhdellä rivillä kapeilla näytöillä (ei yksisanaisia rivejä) */
+@media (max-width:429px){.pk-head .title{font-size:calc((100vw - 40px) / 13)}}
+
+/* v3j: läppärin kuvakaappaus mahtuu ruutuun kokonaan (ei rajausta eikä venytystä), tyhjä tila kuvan taustavärillä */
+.pk-lid img.pk-kuva{object-fit:contain;object-position:center;background:#F1F4F3}
+
+.pk-ipad-frame img.pk-kuva{object-fit:contain;object-position:top;background:#F0F3F2}
