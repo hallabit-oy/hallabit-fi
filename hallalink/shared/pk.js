@@ -63,6 +63,20 @@ window.PK_VERSIO='v3r';
        Muuten (työpöytä, tekstit vasemmalla) raja on näyttämön yläreuna + MG, jolloin työpöydän kierto pysyy kuten v3m:ssä. */
     var tx=sec.querySelector('.pk-texts'), tr=tx&&tx.offsetHeight?tx.getBoundingClientRect():null, yla=(tr&&tr.bottom<=bb.top+1)?bb.top:sb.top+MG;
     D.lim={l:bx-(sL+MG), r:(dl-MG)-bx, t:by-yla, b:(sb.bottom-sB-MG)-by};
+    /* v3y: ilmoitus jokaisen vaiheen oman laitteen keskiakselille, GAP px laitteen yläreunan yläpuolelle.
+       Laitteen yläreuna levossa (laatikon keskipisteestä, px): puhelin -h/2, läppäri -w/2 - pohjaosa/2 (kierto 90, ty = -T/2),
+       iPad -h/2 (kierto 180), iMac -w/2 - jalusta/2 (kierto 270). Mobiilissa (tekstit laitteen yläpuolella) laitetta nostetaan
+       levossa (D.yo) niin, että ilmoitus alkaa TOP px laatikon yläreunasta: tyhjä väli tekstin ja laitteen välillä pienenee.
+       Laitetta ei koskaan lasketa alemmas. Jos tilaa ei ole, ilmoitus menee laitteen yläreunan päälle eikä tekstin päälle. */
+    var GAP=10, TOP=6, top0=[-D.P.h/2, -D.Lp.w/2-D.Lp.T/2, -D.I.h/2, -D.M.w/2-(D.M.N+D.M.F)/2], mob=yla===bb.top, th0=0;
+    for(var a=0;a<toasts.length;a++)th0=Math.max(th0,toasts[a].offsetHeight||0);
+    D.yo=[0,0,0,0];
+    var minY=mob?0:-(bb.top-sb.top-MG);  /* työpöydällä ilmoitus saa nousta laitealueen yläpuolelle näyttämön sisällä */
+    for(var u=0;u<4;u++){var want=-ch/2+TOP+th0+GAP; if(mob&&top0[u]>want)D.yo[u]=want-top0[u];}
+    for(var v=0;v<toasts.length;v++){var el=toasts[v], tw=el.offsetWidth||0, tht=el.offsetHeight||0,
+        y=ch/2+top0[v]+D.yo[v]-GAP-tht, x=cw/2-tw/2;
+      if(y<minY)y=minY; if(x<0)x=0; if(x>cw-tw)x=Math.max(0,cw-tw);
+      el.style.left=x.toFixed(1)+'px'; el.style.top=y.toFixed(1)+'px'; el.style.right='auto'; el.style.bottom='auto';}
   }
   /* v3n: kiertyvän laitteen (kehys, läppärin pohjaosa, iMacin jalusta) todellinen ulkoraja kulmassa th. Kerroin k <= 1
      pienentää laitetta keskipisteensä ympäri juuri niin paljon, että kaikki kulmat pysyvät rajojen sisällä. Levossa k = 1
@@ -113,7 +127,8 @@ window.PK_VERSIO='v3r';
     var ex=sm(seg(q,.26,.30))*(1-sm(seg(q,.40,.43))), em=sm(seg(q,.84,.88));
     var w=s.w, h=s.h, b=s.b, x0=-w/2, y0=-h/2;
     var T=D.Lp.T*ex, sl=h*(1+.14*ex), nL=D.M.N*em, fL=D.M.F*em, E=T+nL+fL;
-    ty=-E/2;
+    var yo=m2<=0?L(D.yo[0],D.yo[1],m1):m3<=0?L(D.yo[1],D.yo[2],m2):L(D.yo[2],D.yo[3],m3);  /* v3y: mobiilin nosto levossa */
+    ty=-E/2+yo;
     fr.setAttribute('d',rr(x0,y0,w,h,s.r));
     var sx=x0+b[3], sy=y0+b[0], sw=w-b[1]-b[3], sh=h-b[0]-b[2], sr=Math.max(2,s.r-Math.max(b[0],b[1]));
     var sp=rr(sx,sy,sw,sh,sr); clip.setAttribute('d',sp); scr.setAttribute('d',sp);
@@ -151,7 +166,7 @@ window.PK_VERSIO='v3r';
     var kf=fitK(RB,th,ty);  /* v3n: oma nimi, koska k on alempana vaiheen indeksi */
     svg.style.transform='translate3d(0,'+(ty*kf).toFixed(2)+'px,0) rotateZ('+th.toFixed(2)+'deg)'+(kf<1?' scale('+kf.toFixed(4)+')':'');
     var ow=Math.abs(w*Math.cos(th*Math.PI/180))+Math.abs(h*Math.sin(th*Math.PI/180)), oh=Math.abs(w*Math.sin(th*Math.PI/180))+Math.abs(h*Math.cos(th*Math.PI/180));
-    shadow.style.transform='translate3d(0,'+f1((oh/2+E/2)*kf)+'px,0) scale('+(ow*kf/100).toFixed(3)+',1)';
+    shadow.style.transform='translate3d(0,'+f1((oh/2+E/2+yo)*kf)+'px,0) scale('+(ow*kf/100).toFixed(3)+',1)';
     /* Tekstit: teksti näkyy vain laitteen ollessa paikallaan. v3j: tausta on yksi kiinteä liukuväri (pk.css), ei vaihtumisia. */
     var wv=[1-seg(q,.115,.14), seg(q,.28,.305)*(1-seg(q,.405,.43)), seg(q,.57,.595)*(1-seg(q,.695,.72)), seg(q,.86,.885)];
     for(var j=0;j<steps.length;j++){steps[j].style.opacity=wv[j].toFixed(3);steps[j].style.transform='translateY('+((1-wv[j])*10).toFixed(1)+'px)';steps[j].style.visibility=wv[j]<.01?'hidden':'visible';}
@@ -175,6 +190,7 @@ window.PK_VERSIO='v3r';
   window.addEventListener('resize',onResize);
   window.addEventListener('orientationchange',function(){setTimeout(reset,250)});
   window.addEventListener('load',function(){geo();req()});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){measure();req();});  /* v3y: ilmoitusten leveys oikealla fontilla */
   if('ResizeObserver' in window){var lastBH=0;new ResizeObserver(function(){var h=document.body.offsetHeight; if(h!==lastBH){lastBH=h;geo();req();}}).observe(document.body);}
   [mq,mh].forEach(function(x){if(x.addEventListener)x.addEventListener('change',reset);});
   /* v3m: pallurat hyppäävät vaiheeseen. Kohta on vaiheen paikallaanolon keskeltä (sama kuin vaihekuvissa),
