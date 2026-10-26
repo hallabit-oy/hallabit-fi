@@ -391,18 +391,12 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 #ekosysteemi .net .n{display:flex;flex-direction:column;justify-content:center;align-items:stretch;text-align:center}
 #ekosysteemi .net .n>b,#ekosysteemi .net .n>span{text-align:center}
 #ekosysteemi .net .n .more{text-align:left}
-</style><style id="hl-karuselli-v4">/* Karuselli v4 26.10.2026: veto hiirellä ja kosketuksella, pysäytyspainike. Ei uusia värejä: vain olemassa olevat muuttujat ja currentColor. */
+</style><style id="hl-karuselli-v4">/* Karuselli v4 26.10.2026: veto hiirellä ja kosketuksella. Ei uusia värejä: vain olemassa olevat muuttujat ja currentColor. */
 .kar.kar-liike .kar-vp{overflow:hidden;touch-action:pan-y;-webkit-user-select:none;user-select:none}
 .kar.kar-liike .kar-klooni{display:flex}
 @media(hover:hover) and (pointer:fine){.kar.kar-liike .kar-vp{cursor:grab}.kar.kar-veto .kar-vp,.kar.kar-veto .kar-vp *{cursor:grabbing}}
 .kar.kar-liike .kar-rata img,.kar.kar-liike .kar-rata a{-webkit-user-drag:none}
 .kar.kar-veto .kar-rata{pointer-events:none}
-.kar-ohj{display:flex;justify-content:flex-end;padding:12px var(--kp) 0}
-.kar-tauko{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;opacity:.8;transition:opacity .2s}
-@media(hover:hover){.kar-tauko:hover{opacity:1}}
-.kar-tauko:focus-visible{outline:none;box-shadow:0 0 0 2px #FFFFFF;opacity:1}
-.kar-tauko .kar-i-jatka{display:none}.kar.kar-pysaytetty .kar-i-tauko{display:none}.kar.kar-pysaytetty .kar-i-jatka{display:block}
-.kar.kar-rm .kar-ohj{display:none}
 </style></head><body>
 <header class="top"><div class="wrap"><a class="wm wm2" href="./" aria-label="HallaLink, etusivu"><img src="brand/hallalink-logo-tummalle_v2c.svg" alt="HallaLink" width="155" height="36"></a><button type="button" class="mnav" id="mnav-btn" aria-expanded="false" aria-controls="mnav-lista" aria-label="Valikko" hidden><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path class="i-auki" d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path class="i-kiinni" d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><nav class="m" id="mnav-lista" aria-label="Päävalikko"><a href="#ekosysteemi">Käyttäjät</a><a href="#paiva">Näkymät</a><a href="#alat">Alat</a><a href="#hinnasto">Hinnasto</a><a href="#kokeile">Esittely</a><a href="../">HallaBit</a></nav><a class="kirjaudu fx-kevyt" href="https://sitepilot.fi/login">Kirjaudu</a></div></header>
 <main>
@@ -489,7 +483,7 @@ n.addEventListener('focusout',function(e){if(n.classList.contains('auki')&&e.rel
  Kehysaskel on rajattu 1/30 sekuntiin, joten hidas tai jumiutunut kehys ei näy nykäyksenä.
  Hiiri päällä: liike pysähtyy kuten v3r:ssä (noin 0,2 s pehmennys) ja jatkuu pehmeästi, kun hiiri poistuu.
  Veto: hiiri, kosketus ja kynä osoitintapahtumilla, 1:1, akselilukitus 6 px (touch-action: pan-y). Irrotuksen jälkeen liuku jatkuu kitkalla (tau 0,45 s), nopeaa heittoa hillitsee pehmeä yläraja (tanh). Tauolla kortti asettuu kevyellä jousella kohdalleen.
- Veto ei laukaise klikkausta. Pysähtyy: hiiri päällä, vedon aikana, näppäimistöfokus, pysäytyspainike, välilehti piilossa, osio ei näkyvissä. Vähennetty liike: ei automaattista liukua, veto ja nuolinäppäimet toimivat. */
+ Veto ei laukaise klikkausta. Pysähtyy: hiiri päällä, vedon aikana, näppäimistöfokus, välilehti piilossa, osio ei näkyvissä. Vähennetty liike: ei automaattista liukua, veto ja nuolinäppäimet toimivat. */
 (function(){'use strict';
 var k=document.querySelector('.kar');if(!k)return;
 var vp=k.querySelector('.kar-vp'),rata=k.querySelector('.kar-rata');if(!vp||!rata)return;
@@ -499,7 +493,7 @@ function klooni(el){var c=el.cloneNode(true);c.setAttribute('aria-hidden','true'
 var rm=window.matchMedia('(prefers-reduced-motion: reduce)');
 var NOP=36,TAU=.45,TAU_HIIRI=.07,TAU_RM=.16,VMAX=2600,LUKITUS=6,W_KAYNTI=1/.45,JW=2*Math.PI/.62,JZ=.86,ASETU_V=220,PUSKURI=400;
 var x=0,v=0,acc=0,jousi=null,asetu=false,S=0,A=300,O=0,ennen=0,jalkeen=0;
-var hiiri=false,veto=null,fokus=false,pysaytetty=false,nakyy=!('IntersectionObserver' in window),raf=0,ed=0,estoAika=-1e9;
+var hiiri=false,veto=null,fokus=false,nakyy=!('IntersectionObserver' in window),raf=0,ed=0,estoAika=-1e9;
 function liike(){return !rm.matches}
 function vasen(el){return el.getBoundingClientRect().left}
 /* Kloonisarjojen määrä: ennen alkuperäisiä vähintään vasen täyte + puskuri, jälkeen vähintään näkymä + puskuri + yksi sarja käärettä varten */
@@ -520,7 +514,7 @@ function mitat(){if(!k.classList.contains('kar-liike'))return;rakenna();
  if(Svanha>0&&S>0&&Math.abs(S-Svanha)>.001){var f=S/Svanha;x*=f;if(jousi)jousi.T*=f;if(veto)veto.xs*=f;}}
 function kaari(p){if(S>0){p=p%S;if(p<0)p+=S;}return p}
 function piirra(){rata.style.transform='translate3d('+(-(kaari(x)+O)).toFixed(3)+'px,0,0)'}
-function tavoite(){return(liike()&&!pysaytetty&&!hiiri&&!veto&&!fokus)?NOP:0}
+function tavoite(){return(liike()&&!hiiri&&!veto&&!fokus)?NOP:0}
 function kaynnissa(){return nakyy&&!document.hidden}
 function lepaa(vt){return !veto&&!jousi&&vt===0&&Math.abs(v)<.5&&Math.abs(acc)<.5}
 function askelJousi(dt){var n=Math.max(1,Math.ceil(dt/.008)),h=dt/n,a=0;for(var i=0;i<n;i++){a=-JW*JW*(x-jousi.T)-2*JZ*JW*v;v+=a*h;x+=v*h;}acc=a;
@@ -569,12 +563,6 @@ k.addEventListener('focusout',function(e){if(!k.contains(e.relatedTarget)){fokus
 vp.addEventListener('keydown',function(e){if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();fokus=true;var n=e.key==='ArrowRight'?1:-1;
  if(!liike()){x=kaari(Math.round(x/A)*A+n*A);v=0;acc=0;jousi=null;piirra();return;}
  var pohja=jousi?jousi.T:(n>0?Math.floor(x/A+.02):Math.ceil(x/A-.02))*A;jousi={T:pohja+n*A,nappain:true};asetu=false;kaynnista();});
-/* Pysäytyspainike (WCAG 2.2.2) */
-var ohj=document.createElement('div');ohj.className='kar-ohj';
-var nappi=document.createElement('button');nappi.type='button';nappi.className='kar-tauko';nappi.setAttribute('aria-pressed','false');nappi.setAttribute('aria-label','Pysäytä karusellin liike');
-nappi.innerHTML='<svg class="kar-i-tauko" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="6.5" y="5" width="3.5" height="14" rx="1.2" fill="currentColor"/><rect x="14" y="5" width="3.5" height="14" rx="1.2" fill="currentColor"/></svg><svg class="kar-i-jatka" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.3 0-1.7l-10-6.4C8.9 4.3 8 4.8 8 5.6z" fill="currentColor"/></svg>';
-nappi.addEventListener('click',function(){pysaytetty=!pysaytetty;nappi.setAttribute('aria-pressed',pysaytetty?'true':'false');k.classList.toggle('kar-pysaytetty',pysaytetty);tila();});
-ohj.appendChild(nappi);k.appendChild(ohj);
 if('IntersectionObserver' in window){new IntersectionObserver(function(es){nakyy=es[0].isIntersecting;tila();},{threshold:0}).observe(k)}
 document.addEventListener('visibilitychange',tila);(rm.addEventListener?rm.addEventListener('change',tila):rm.addListener(tila));
 /* Uudelleenmittaus: koon muutos (ResizeObserver tai resize) ja fonttien latautuminen */
@@ -584,5 +572,5 @@ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){mit
 k.classList.add('kar-liike');mitat();tila();
 window.__kar={pos:function(){return kaari(x)},x:function(){return x},v:function(){return v},S:function(){return S},A:function(){return A},O:function(){return O},sarjat:function(){return[ennen,1,jalkeen]},raf:function(){return !!raf},
  aseta:function(p){x=p;v=0;acc=0;jousi=null;asetu=false;piirra()},
- tila:function(){return{hiiri:hiiri,veto:!!veto,fokus:fokus,pysaytetty:pysaytetty,nakyy:nakyy,liike:liike(),tavoite:tavoite(),jousi:jousi?jousi.T:null}}};})();</script><script id="pk-js" src="shared/pk.js?v=3y"></script><script id="pk-versio">if(window.PK_VERSIO!=='v3r'&&window.console)console.warn('Paivankulku: pk.js ei ole v3r (vanha tiedosto välimuistissa?). Lataa sivu uudelleen: Ctrl+F5.')</script>
+ tila:function(){return{hiiri:hiiri,veto:!!veto,fokus:fokus,nakyy:nakyy,liike:liike(),tavoite:tavoite(),jousi:jousi?jousi.T:null}}};})();</script><script id="pk-js" src="shared/pk.js?v=3y"></script><script id="pk-versio">if(window.PK_VERSIO!=='v3r'&&window.console)console.warn('Paivankulku: pk.js ei ole v3r (vanha tiedosto välimuistissa?). Lataa sivu uudelleen: Ctrl+F5.')</script>
 </body></html>
