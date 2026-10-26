@@ -391,6 +391,18 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 #ekosysteemi .net .n{display:flex;flex-direction:column;justify-content:center;align-items:stretch;text-align:center}
 #ekosysteemi .net .n>b,#ekosysteemi .net .n>span{text-align:center}
 #ekosysteemi .net .n .more{text-align:left}
+</style><style id="hl-karuselli-v4">/* Karuselli v4 26.10.2026: veto hiirellä ja kosketuksella, pysäytyspainike. Ei uusia värejä: vain olemassa olevat muuttujat ja currentColor. */
+.kar.kar-liike .kar-vp{overflow:hidden;touch-action:pan-y;-webkit-user-select:none;user-select:none}
+.kar.kar-liike .kar-klooni{display:flex}
+@media(hover:hover) and (pointer:fine){.kar.kar-liike .kar-vp{cursor:grab}.kar.kar-veto .kar-vp,.kar.kar-veto .kar-vp *{cursor:grabbing}}
+.kar.kar-liike .kar-rata img,.kar.kar-liike .kar-rata a{-webkit-user-drag:none}
+.kar.kar-veto .kar-rata{pointer-events:none}
+.kar-ohj{display:flex;justify-content:flex-end;padding:12px var(--kp) 0}
+.kar-tauko{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;opacity:.8;transition:opacity .2s}
+@media(hover:hover){.kar-tauko:hover{opacity:1}}
+.kar-tauko:focus-visible{outline:none;box-shadow:0 0 0 2px #FFFFFF;opacity:1}
+.kar-tauko .kar-i-jatka{display:none}.kar.kar-pysaytetty .kar-i-tauko{display:none}.kar.kar-pysaytetty .kar-i-jatka{display:block}
+.kar.kar-rm .kar-ohj{display:none}
 </style></head><body>
 <header class="top"><div class="wrap"><a class="wm wm2" href="./" aria-label="HallaLink, etusivu"><img src="brand/hallalink-logo-tummalle_v2c.svg" alt="HallaLink" width="155" height="36"></a><button type="button" class="mnav" id="mnav-btn" aria-expanded="false" aria-controls="mnav-lista" aria-label="Valikko" hidden><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path class="i-auki" d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path class="i-kiinni" d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button><nav class="m" id="mnav-lista" aria-label="Päävalikko"><a href="#ekosysteemi">Käyttäjät</a><a href="#paiva">Näkymät</a><a href="#alat">Alat</a><a href="#hinnasto">Hinnasto</a><a href="#kokeile">Esittely</a><a href="../">HallaBit</a></nav><a class="kirjaudu fx-kevyt" href="https://sitepilot.fi/login">Kirjaudu</a></div></header>
 <main>
@@ -398,7 +410,7 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 <p class="lead">Vähemmän selvittelyä, enemmän sujuvaa arkea. Toiminnanohjausjärjestelmä, joka palvelee koko yritystä ja <span class="nw">sen sidosryhmiä.</span></p>
 <div class="actions"><a class="btn main fx-nousu" href="mailto:info@hallabit.fi?subject=Esittelypyynt%C3%B6%20HallaLink">Pyydä esittely</a></div><p class="hero-price">Alkaen 79 €/kk, alv 0 %.</p></div>
 </div>
-<section class="block alt" aria-labelledby="kar-otsikko"><div class="wrap"><div class="eyebrow">Tuttua?</div><h2 class="title" id="kar-otsikko">Tieto ei kulje perille</h2></div><div class="kar" role="region" aria-roledescription="karuselli" aria-labelledby="kar-otsikko"><div class="kar-vp" tabindex="0" aria-label="Arjen ongelmakohtia, 8 korttia. Vieritä nuolinäppäimillä."><ul class="kar-rata" aria-live="off"><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="1 / 8"><div class="card"><div class="in"><h3>Tunnit lapuilla</h3><p>Kirjaukset kerätään lopulta muistista kuunvaihteessa.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="2 / 8"><div class="card"><div class="in"><h3>Kuitit autossa</h3><p>Kulut löytyvät, kun lasku on jo lähtenyt.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="3 / 8"><div class="card"><div class="in"><h3>Kuvat hukassa</h3><p>Työmaan kuvat jäävät tekijöiden puhelimiin.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="4 / 8"><div class="card"><div class="in"><h3>Kuka teki mitä</h3><p>Päiväkirjaa ei ole, kun asiakas kysyy jälkikäteen.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="5 / 8"><div class="card"><div class="in"><h3>Tilaaja kysyy</h3><p>Työn tilanne selvitetään puhelimessa joka kerta.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="6 / 8"><div class="card"><div class="in"><h3>Koosteet valvojalle</h3><p>Päiväkirjat ja kuvat kootaan valvojalle erikseen.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="7 / 8"><div class="card"><div class="in"><h3>Sama tieto kahdesti</h3><p>Työmaalla paperille, toimistolla koneelle.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="8 / 8"><div class="card"><div class="in"><h3>Tilitoimisto odottaa</h3><p>Kuun aineisto kootaan kirjanpitoon jälkikäteen.</p></div></div></li></ul></div></div></section>
+<section class="block alt" aria-labelledby="kar-otsikko"><div class="wrap"><div class="eyebrow">Tuttua?</div><h2 class="title" id="kar-otsikko">Tieto ei kulje perille</h2></div><div class="kar" role="region" aria-roledescription="karuselli" aria-labelledby="kar-otsikko"><div class="kar-vp" tabindex="0" aria-label="Arjen ongelmakohtia, 8 korttia. Siirrä nuolinäppäimillä tai vetämällä."><ul class="kar-rata" aria-live="off"><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="1 / 8"><div class="card"><div class="in"><h3>Tunnit lapuilla</h3><p>Kirjaukset kerätään lopulta muistista kuunvaihteessa.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="2 / 8"><div class="card"><div class="in"><h3>Kuitit autossa</h3><p>Kulut löytyvät, kun lasku on jo lähtenyt.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="3 / 8"><div class="card"><div class="in"><h3>Kuvat hukassa</h3><p>Työmaan kuvat jäävät tekijöiden puhelimiin.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="4 / 8"><div class="card"><div class="in"><h3>Kuka teki mitä</h3><p>Päiväkirjaa ei ole, kun asiakas kysyy jälkikäteen.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="5 / 8"><div class="card"><div class="in"><h3>Tilaaja kysyy</h3><p>Työn tilanne selvitetään puhelimessa joka kerta.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="6 / 8"><div class="card"><div class="in"><h3>Koosteet valvojalle</h3><p>Päiväkirjat ja kuvat kootaan valvojalle erikseen.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="7 / 8"><div class="card"><div class="in"><h3>Sama tieto kahdesti</h3><p>Työmaalla paperille, toimistolla koneelle.</p></div></div></li><li class="kar-dia" role="group" aria-roledescription="dia" aria-label="8 / 8"><div class="card"><div class="in"><h3>Tilitoimisto odottaa</h3><p>Kuun aineisto kootaan kirjanpitoon jälkikäteen.</p></div></div></li></ul></div></div></section>
 <section class="block" id="ekosysteemi"><div class="wrap"><div class="eyebrow">Käyttäjät</div><h2 class="title">Työnhallinta, johon <span class="sp">koko</span> työmaa kytkeytyy</h2><div class="net" role="img" aria-label="HallaLinkin ympärillä työntekijät, työnjohto, toimisto, kirjanpitäjä, tilaaja, suunnittelija, aliurakoitsijat ja HallaBit"><svg aria-hidden="true"></svg><div class="n core"><b>HallaLink</b><span>Yhteinen tieto työkohteesta</span><div class="more"><div><ul><li>Tunnit, kulut ja kuitit</li><li>Päiväkirjat ja työkohteet</li><li>Tarjoukset ja laskut</li></ul></div></div></div><div class="n"><b>Työntekijät</b><span>Kirjaavat tunnit ja kuitit työmaalla</span><div class="more"><div><ul><li>Tuntikirjaus ja kellotus</li><li>Kuitit ja materiaalit</li><li>Työmaapäiväkirja kuvineen</li></ul></div></div></div><div class="n"><b>Työnjohto</b><span>Näkee työkohteen tilanteen</span><div class="more"><div><ul><li>Työkohteen tunnit, kulut ja kirjaukset</li><li>Tehtävät ja aikataulu</li><li>Muutostyötarjoukset</li><li>Päiväkirjat ja tarkastukset</li></ul></div></div></div><div class="n"><b>Toimisto</b><span>Laskutus ja palkat samasta datasta</span><div class="more"><div><ul><li>Tuntien tarkistus</li><li>Myynti- ja ostolaskut</li><li>Palkka-aineisto tilitoimistolle</li><li>Tarjoukset ja raportit</li></ul></div></div></div><div class="n"><b>Kirjanpitäjä</b><span>Oma näkymä kirjanpitoon</span><div class="more"><div><ul><li>Oma kirjautuminen tilitoimistolle</li><li>Laskut ja raportit samasta aineistosta</li></ul></div></div></div><div class="n"><b>Tilaaja</b><span>Oma portaali työmaasta</span><div class="more"><div><ul><li>Kirjautuminen tunnuksella ja salasanalla</li><li>Palautteen antaminen</li></ul></div></div></div><div class="n"><b>Suunnittelija</b><span>Oma roolinsa ohjelmassa</span><div class="more"><div><p>Suunnittelija on oma käyttäjäroolinsa ohjelmassa.</p></div></div></div><div class="n"><b>Aliurakoitsijat</b><span>Oma portaali</span><div class="more"><div><ul><li>Kirjautuminen sähköpostin vahvistuskoodilla</li><li>Työn kirjaaminen ei ole vielä mahdollista</li></ul></div></div></div><div class="n kt"><b>HallaBit</b><span>Kehitys ja tuki</span><div class="more"><div><ul><li>Kehittää ja ylläpitää HallaLinkiä</li><li>Auttaa käyttöönotossa</li></ul></div></div></div></div></div></section>
 <section class="pk" id="paiva" data-versio="v3r" aria-labelledby="pk-otsikko"><!-- Paivankulku v3m 25.10.2026 (pohja v3l, vaiheosoitin pystypallurat oikeassa reunassa): kokonaiskierto 270 astetta (puhelin 0, läppäri 90, iPad 180, iMac 270). Tekstit: _tyo/paivankulku/tekstit.json --><div class="wrap pk-head"><h2 class="title" id="pk-otsikko">HallaLink&nbsp;<span class="sp">jokaisen</span>&nbsp;ruudulla</h2><p class="sub pk-ingressi">Sama tieto kulkee työmaalta toimistoon ja kaikille, joille se&nbsp;kuuluu.</p></div>
 <div class="pk-anim"><div class="pk-track"><div class="pk-stage">
@@ -449,7 +461,7 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 -->
 <section class="block" id="hinnasto"><div class="wrap"><div class="eyebrow">Hinnasto</div><h2 class="title">Hinnasto</h2><p class="sub">Urakoitsijat sekä kiinteistönomistajat ja tilaajat.<br>Pidätämme oikeuden hinnanmuutoksiin.</p><h3 class="pgroup">Urakoitsijalle</h3><div class="prices team tgrid ptgrid" role="group" aria-label="Urakoitsijalle"><div class="tc" tabindex="0" role="button" aria-expanded="false"><div class="card sz" aria-hidden="true"><div class="in"><h3>Start</h3><div class="amt">79 € <small>/ kk</small></div></div></div><div class="card live"><div class="in"><h3>Start</h3><div class="amt">79 € <small>/ kk</small></div><div class="more"><div><ul><li>Käyttäjät: 1 hallinto + 2 työntekijää</li><li>Käyttöönotto: 99 €</li><li>Kenelle: Yksinyrittäjä tai aloittava yritys</li></ul></div></div></div></div></div><div class="tc" tabindex="0" role="button" aria-expanded="false"><div class="card sz" aria-hidden="true"><div class="in"><h3>Tiimi</h3><div class="amt">249 € <small>/ kk</small></div></div></div><div class="card live"><div class="in"><h3>Tiimi</h3><div class="amt">249 € <small>/ kk</small></div><div class="more"><div><ul><li>Käyttäjät: 2 hallinto + 10 työntekijää</li><li>Käyttöönotto: 290 €</li><li>Kenelle: Tyypillinen urakointiyritys</li></ul></div></div></div></div></div><div class="tc" tabindex="0" role="button" aria-expanded="false"><div class="card sz" aria-hidden="true"><div class="in"><h3>Yritys</h3><div class="amt">549 € <small>/ kk</small></div></div></div><div class="card live"><div class="in"><h3>Yritys</h3><div class="amt">549 € <small>/ kk</small></div><div class="more"><div><ul><li>Käyttäjät: 3 hallinto + 25 työntekijää</li><li>Käyttöönotto: 590 €</li><li>Kenelle: Iso porukka, useampi työnjohtaja</li></ul></div></div></div></div></div><div class="tc" tabindex="0" role="button" aria-expanded="false"><div class="card sz" aria-hidden="true"><div class="in"><h3>Iso yritys</h3><div class="amt">899 € <small>/ kk</small></div></div></div><div class="card live"><div class="in"><h3>Iso yritys</h3><div class="amt">899 € <small>/ kk</small></div><div class="more"><div><ul><li>Käyttäjät: 5 hallinto + 50 työntekijää</li><li>Käyttöönotto: 990 €</li><li>Kenelle: Kun työnjohtoa ja porukkaa on paljon</li></ul></div></div></div></div></div></div><h3 class="pgroup">Kiinteistönomistajalle ja tilaajalle</h3><p class="sub">Paketit kiinteistönomistajille ja tilaajille ovat tulossa.</p><p class="note">Kaikissa paketeissa: kirjanpitäjä, tilaaja, aliurakoitsija ja suunnittelija eivät vie paikkaa.<sup class="fn" aria-hidden="true">*</sup> Lisäpaikka: <abbr title="Hallinto: pääkäyttäjä, hallinto, työnjohtaja tai tarjouslaskija">hallinto</abbr> 39 €/kk, työntekijä 19 €/kk. Sopimus: kuukausitilaus ilman määräaikaa.</p><p class="note">Hinnat alv 0 %. Datansiirto sisältyy hintaan. Koulutus ja konsultointi 80 €/h.</p><p class="note fnote" id="hinnasto-alaviite">* Tarjouslaskentaoikeuden saanut käyttäjä vie hallintopaikan.</p></div></section>
 <section class="block alt" id="kokeile"><div class="wrap"><div class="eyebrow">Esittely</div><h2 class="title">Käydään <span class="sp sp-navy">teidän</span> työnkulkunne yhdessä läpi</h2><p class="sub">Esittelemme HallaLinkin ja näytämme, miten se palvelisi juuri teidän yritystänne.</p><div class="actions"><a class="btn main fx-nousu" href="mailto:info@hallabit.fi?subject=Esittelypyynt%C3%B6%20HallaLink">Pyydä esittely</a></div></div></section>
-</main><footer class="f"><div class="wrap"><div><img class="flogo" src="brand/hallalink-logo-tummalle_v2c.svg" alt="HallaLink" width="138" height="32"><strong>HallaBit Oy</strong><br>Y-tunnus 3659867-3<br>Veteli</div><div><a href="mailto:info@hallabit.fi">info@hallabit.fi</a><br>HallaLink on HallaBit Oy:n tuote.<br><a href="../tietosuoja.html">Tietosuoja</a></div></div></footer><script src="shared/phone.js"></script><script src="shared/net_v8.js"></script><script src="shared/halla-net_v2b.js"></script><script>/* Hinnastokortit: aria-expanded seuraa auki-tilaa; Enter/välilyönti avaa ja sulkee */
+</main><footer class="f"><div class="wrap"><div><img class="flogo" src="brand/hallalink-logo-tummalle_v2c.svg" alt="HallaLink" width="138" height="32"><strong>HallaBit Oy</strong><br>Y-tunnus 3659867-3<br>Veteli</div><div><a href="mailto:info@hallabit.fi">info@hallabit.fi</a><br>HallaLink on HallaBit Oy:n tuote.<br><a href="../tietosuoja.html">Tietosuoja</a><br><button type="button" class="hbs-avaa" data-hbs-avaa>Evästeasetukset</button></div></div></footer><script src="../shared/hb-suostumus_v1.js" data-tietosuoja="../tietosuoja.html"></script><script src="shared/phone.js"></script><script src="shared/net_v8.js"></script><script src="shared/halla-net_v2b.js"></script><script>/* Hinnastokortit: aria-expanded seuraa auki-tilaa; Enter/välilyönti avaa ja sulkee */
 (function(){document.querySelectorAll('.ptgrid .tc').forEach(function(c){
  new MutationObserver(function(){c.setAttribute('aria-expanded',c.classList.contains('open')?'true':'false')}).observe(c,{attributes:true,attributeFilter:['class']});
  c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();var g=c.closest('.tgrid');
@@ -472,31 +484,105 @@ document.addEventListener('keydown',function(e){if((e.key==='Escape'||e.key==='E
 document.addEventListener('click',function(e){if(n.classList.contains('auki')&&!n.contains(e.target)&&!b.contains(e.target))set(false);});
 n.addEventListener('focusout',function(e){if(n.classList.contains('auki')&&e.relatedTarget&&!n.contains(e.relatedTarget)&&e.relatedTarget!==b)set(false);});
 (mq.addEventListener?mq.addEventListener('change',function(){if(!mq.matches)set(false);}):mq.addListener(function(){if(!mq.matches)set(false);}));
-})();</script><script id="hl-karuselli-js">/* v3r 25.10.2026: Saumaton silmukka. Korttisarjasta tehdään kolme kopiota (kloonit aria-hidden ja inert), ja näkyvissä on aina toinen sarja, joten reunoilla on kortteja myös leveällä näytöllä. Rataa liikutetaan tasaisella transformilla. Silmukkakohta on tasan yhden sarjan leveys (väli mukaan lukien), joten hyppyä tai aukkoa ei synny. Pysähtyy, kun hiiri on päällä, kun karusellia kosketetaan, kun karusellissa on fokus, kun välilehti on piilossa ja kun osio ei näy. Vähennetty liike: kortit paikallaan, vaakavieritys. Nuolinäppäimet siirtävät kortin verran. */
-(function(){var k=document.querySelector('.kar');if(!k)return;var vp=k.querySelector('.kar-vp'),rata=k.querySelector('.kar-rata'),d=[].slice.call(rata.querySelectorAll('.kar-dia'));
-for(var kk=0;kk<3;kk++)d.forEach(function(el){var c=el.cloneNode(true);c.setAttribute('aria-hidden','true');c.setAttribute('inert','');c.classList.add('kar-klooni');c.removeAttribute('aria-label');c.removeAttribute('role');c.removeAttribute('aria-roledescription');rata.appendChild(c);});
-var rm=window.matchMedia('(prefers-reduced-motion: reduce)'),NOP=36,hiiri=false,koske=false,fokus=false,nakyy=false,kt=null,pos=0,tw=null,ed=0,raf=0;
+})();</script><script id="hl-karuselli-js">/* Karuselli v5 26.10.2026 (pohjana v4 ja v3r). Oma koodi, ei kirjastoja.
+ Aito loputon silmukka: kloonisarjoja tehdään niin monta, että ne täyttävät aina koko näkymän ja puskurin kummallakin puolella millä tahansa leveydellä. Sijainti kääritään jakojäännöksellä (modulo) tarkalla sarjan leveydellä, joka mitataan sarjojen alkukohtien erotuksena (getBoundingClientRect, alipikselitarkka). Mittaus tehdään uudelleen, kun fontit ovat latautuneet ja kun leveys muuttuu, joten pyöristysvirhe ei kerry.
+ Kehysaskel on rajattu 1/30 sekuntiin, joten hidas tai jumiutunut kehys ei näy nykäyksenä.
+ Hiiri päällä: liike pysähtyy kuten v3r:ssä (noin 0,2 s pehmennys) ja jatkuu pehmeästi, kun hiiri poistuu.
+ Veto: hiiri, kosketus ja kynä osoitintapahtumilla, 1:1, akselilukitus 6 px (touch-action: pan-y). Irrotuksen jälkeen liuku jatkuu kitkalla (tau 0,45 s), nopeaa heittoa hillitsee pehmeä yläraja (tanh). Tauolla kortti asettuu kevyellä jousella kohdalleen.
+ Veto ei laukaise klikkausta. Pysähtyy: hiiri päällä, vedon aikana, näppäimistöfokus, pysäytyspainike, välilehti piilossa, osio ei näkyvissä. Vähennetty liike: ei automaattista liukua, veto ja nuolinäppäimet toimivat. */
+(function(){'use strict';
+var k=document.querySelector('.kar');if(!k)return;
+var vp=k.querySelector('.kar-vp'),rata=k.querySelector('.kar-rata');if(!vp||!rata)return;
+var d=[].slice.call(rata.querySelectorAll('.kar-dia'));if(!d.length)return;
+/* Kloonit ovat aria-hidden ja niiden linkit pois sarkainjärjestyksestä, mutta klikattavia. Alkuperäiset kortit ovat aina näkymän alussa. */
+function klooni(el){var c=el.cloneNode(true);c.setAttribute('aria-hidden','true');c.classList.add('kar-klooni');c.removeAttribute('aria-label');c.removeAttribute('role');c.removeAttribute('aria-roledescription');[].forEach.call(c.querySelectorAll('a,button,input,select,textarea,[tabindex]'),function(f){f.setAttribute('tabindex','-1')});[].forEach.call(c.querySelectorAll('[id]'),function(f){f.removeAttribute('id')});return c}
+var rm=window.matchMedia('(prefers-reduced-motion: reduce)');
+var NOP=36,TAU=.45,TAU_HIIRI=.07,TAU_RM=.16,VMAX=2600,LUKITUS=6,W_KAYNTI=1/.45,JW=2*Math.PI/.62,JZ=.86,ASETU_V=220,PUSKURI=400;
+var x=0,v=0,acc=0,jousi=null,asetu=false,S=0,A=300,O=0,ennen=0,jalkeen=0;
+var hiiri=false,veto=null,fokus=false,pysaytetty=false,nakyy=!('IntersectionObserver' in window),raf=0,ed=0,estoAika=-1e9;
 function liike(){return !rm.matches}
-function sarja(){var c=rata.children[d.length];return c&&c.offsetWidth?c.offsetLeft-d[0].offsetLeft:0}
-function askel(){return d.length>1?d[1].offsetLeft-d[0].offsetLeft:300}
-function kaari(x){var s=sarja();if(s>0){x=x%s;if(x<0)x+=s;}return x}
-function aseta(x){pos=kaari(x);rata.style.transform='translate3d('+(-(pos+sarja())).toFixed(2)+'px,0,0)'}
-function saa(){return liike()&&!hiiri&&!koske&&!fokus&&nakyy&&!document.hidden}
-function kehys(t){raf=0;var dt=ed?Math.min(t-ed,64)/1000:0;ed=t;
- if(tw){var p=Math.min((t-tw.t0)/tw.ms,1),e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;aseta(tw.a+(tw.b-tw.a)*e);if(p>=1)tw=null;}
- else if(saa())aseta(pos+NOP*dt);
- if(tw||saa())raf=requestAnimationFrame(kehys);else ed=0;}
-function kaynnista(){if(!raf&&(tw||saa())){ed=0;raf=requestAnimationFrame(kehys);}}
-function tila(){k.classList.toggle('kar-liike',liike());if(!liike()){tw=null;rata.style.transform='';}else aseta(pos);rata.setAttribute('aria-live','off');kaynnista()}
+function vasen(el){return el.getBoundingClientRect().left}
+/* Kloonisarjojen määrä: ennen alkuperäisiä vähintään vasen täyte + puskuri, jälkeen vähintään näkymä + puskuri + yksi sarja käärettä varten */
+function rakenna(){
+ var n=d.length,last=d[n-1],gap=parseFloat(getComputedStyle(rata).columnGap)||0;
+ var Sarvio=last.getBoundingClientRect().right-vasen(d[0])+gap;if(!(Sarvio>0))return false;
+ var leveys=vp.clientWidth||window.innerWidth,padL=parseFloat(getComputedStyle(vp).paddingLeft)||0;
+ var e=Math.max(1,Math.ceil((padL+PUSKURI)/Sarvio)),j=Math.max(2,Math.ceil((leveys+PUSKURI)/Sarvio)+1);
+ if(e===ennen&&j===jalkeen)return false;
+ [].slice.call(rata.querySelectorAll('.kar-klooni')).forEach(function(c){c.remove()});
+ var frag=document.createDocumentFragment();for(var i=0;i<e;i++)d.forEach(function(el){frag.appendChild(klooni(el))});rata.insertBefore(frag,d[0]);
+ frag=document.createDocumentFragment();for(i=0;i<j;i++)d.forEach(function(el){frag.appendChild(klooni(el))});rata.appendChild(frag);
+ ennen=e;jalkeen=j;return true}
+function mitat(){if(!k.classList.contains('kar-liike'))return;rakenna();
+ var lapset=rata.children,n=d.length;if(!lapset.length||!d[0].offsetWidth)return;
+ var Svanha=S,alku=vasen(lapset[0]),r0=vasen(d[0]),seur=lapset[(ennen+1)*n];
+ S=seur?vasen(seur)-r0:0;O=r0-alku;A=n>1?vasen(d[1])-r0:S;
+ if(Svanha>0&&S>0&&Math.abs(S-Svanha)>.001){var f=S/Svanha;x*=f;if(jousi)jousi.T*=f;if(veto)veto.xs*=f;}}
+function kaari(p){if(S>0){p=p%S;if(p<0)p+=S;}return p}
+function piirra(){rata.style.transform='translate3d('+(-(kaari(x)+O)).toFixed(3)+'px,0,0)'}
+function tavoite(){return(liike()&&!pysaytetty&&!hiiri&&!veto&&!fokus)?NOP:0}
+function kaynnissa(){return nakyy&&!document.hidden}
+function lepaa(vt){return !veto&&!jousi&&vt===0&&Math.abs(v)<.5&&Math.abs(acc)<.5}
+function askelJousi(dt){var n=Math.max(1,Math.ceil(dt/.008)),h=dt/n,a=0;for(var i=0;i<n;i++){a=-JW*JW*(x-jousi.T)-2*JZ*JW*v;v+=a*h;x+=v*h;}acc=a;
+ if(Math.abs(x-jousi.T)<.25&&Math.abs(v)<4){x=jousi.T;v=0;acc=0;jousi=null;asetu=false;}}
+function kehys(t){raf=0;var dt=ed?Math.min(t-ed,1000/30)/1000:0;ed=t;var vt=tavoite();
+ if(!veto&&dt>0){
+  if(jousi&&vt!==0&&!jousi.nappain){jousi=null;asetu=false;}
+  if(jousi)askelJousi(dt);
+  else{var tau=!liike()?TAU_RM:(hiiri&&!asetu?TAU_HIIRI:TAU),ohi=(v>vt&&v>0)||(v<vt&&v<0);
+   if(ohi){var f=Math.exp(-dt/tau),vn=vt+(v-vt)*f;x+=vt*dt+(v-vt)*tau*(1-f);acc=(vn-v)/dt;v=vn;if(vt===0&&Math.abs(v)<.5){v=0;acc=0;}}
+   else{acc+=(W_KAYNTI*W_KAYNTI*(vt-v)-2*W_KAYNTI*acc)*dt;v+=acc*dt;x+=v*dt;if(vt===0&&Math.abs(v)<.5&&Math.abs(acc)<.5){v=0;acc=0;}}
+   if(asetu&&vt===0&&Math.abs(v)<ASETU_V&&A>0){jousi={T:Math.round((x+v*tau)/A)*A};}
+  }
+  /* Kääre: x pidetään välillä [0, S), joten luku ei kasva koskaan eikä tarkkuus heikkene */
+  if(!jousi&&S>0)x=kaari(x);}
+ piirra();
+ if(kaynnissa()&&!lepaa(tavoite()))raf=requestAnimationFrame(kehys);else ed=0;}
+function kaynnista(){if(!raf&&kaynnissa()){ed=0;raf=requestAnimationFrame(kehys);}}
+function tila(){k.classList.add('kar-liike');k.classList.toggle('kar-rm',!liike());if(!S)mitat();if(!liike()&&!veto&&!jousi){v=0;acc=0;}piirra();kaynnista()}
+/* Osoitinveto */
+vp.addEventListener('pointerdown',function(e){if(veto||!e.isPrimary)return;if(e.pointerType==='mouse'&&e.button!==0)return;
+ veto={id:e.pointerId,x0:e.clientX,y0:e.clientY,xs:x,lukko:'',n:[]};v=0;acc=0;jousi=null;asetu=false;});
+vp.addEventListener('pointermove',function(e){if(!veto||e.pointerId!==veto.id)return;
+ if(!veto.lukko){var dx=e.clientX-veto.x0,dy=e.clientY-veto.y0;if(Math.max(Math.abs(dx),Math.abs(dy))<LUKITUS)return;
+  if(Math.abs(dx)>Math.abs(dy)){veto.lukko='x';veto.x0=e.clientX;veto.xs=x;try{vp.setPointerCapture(e.pointerId)}catch(_){}k.classList.add('kar-veto');var s=window.getSelection&&window.getSelection();if(s&&s.removeAllRanges)s.removeAllRanges();}
+  else{vapauta(e);return;}}
+ e.preventDefault();x=veto.xs-(e.clientX-veto.x0);var t=performance.now();veto.n.push([t,e.clientX]);while(veto.n.length>2&&t-veto.n[0][0]>100)veto.n.shift();piirra();});
+function vapauta(e){var vv=veto;veto=null;k.classList.remove('kar-veto');
+ if(vv&&vv.lukko==='x'){estoAika=performance.now();var n=vv.n,nyt=performance.now(),nv=0;
+  if(e&&e.type==='pointerup'&&n.length>1&&nyt-n[n.length-1][0]<80){var a=n[0],b=n[n.length-1],dt=(b[0]-a[0])/1000;if(dt>.004)nv=-(b[1]-a[1])/dt;}
+  v=VMAX*Math.tanh(nv/VMAX);acc=0;asetu=true;}
+ kaynnista();}
+['pointerup','pointercancel','lostpointercapture'].forEach(function(n){vp.addEventListener(n,function(e){if(n==='lostpointercapture'&&e.target!==vp)return;if(veto&&e.pointerId===veto.id)vapauta(e)})});
+/* Selain ei saa vierittää piilotettua ylivuotoa (esim. fokus kortin linkkiin): siirto tehdään transformilla */
+vp.addEventListener('scroll',function(){if(vp.scrollLeft)vp.scrollLeft=0});
+k.addEventListener('click',function(e){if(performance.now()-estoAika<400){e.preventDefault();e.stopPropagation();estoAika=-1e9;}},true);
+k.addEventListener('dragstart',function(e){e.preventDefault()});
+/* Hiiri päällä: pysähtyy (noin 0,2 s pehmennys), jatkuu pehmeästi hiiren poistuttua */
 k.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse'){hiiri=true;tila();}});
 k.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'){hiiri=false;tila();}});
-function kosk(){koske=true;clearTimeout(kt);tila()}function irti(){clearTimeout(kt);kt=setTimeout(function(){koske=false;tila();},1200)}
-k.addEventListener('touchstart',kosk,{passive:true});k.addEventListener('touchend',irti,{passive:true});k.addEventListener('touchcancel',irti,{passive:true});
-k.addEventListener('focusin',function(){fokus=true;tila();});
+/* Näppäimistö: vain näppäimistöfokus pysäyttää, kosketuksen tai hiiren antama fokus ei */
+function nakyvaFokus(el){try{return el.matches(':focus-visible')}catch(_){return true}}
+k.addEventListener('focusin',function(e){fokus=nakyvaFokus(e.target);var dia=e.target.closest&&e.target.closest('.kar-dia');
+ if(dia&&!dia.classList.contains('kar-klooni')){mitat();var i=d.indexOf(dia);if(i>=0&&S>0){var j=i*A+Math.round((x-i*A)/S)*S;if(!liike()){x=j;v=0;piirra();}else{jousi={T:j,nappain:true};asetu=false;}}}tila();});
 k.addEventListener('focusout',function(e){if(!k.contains(e.relatedTarget)){fokus=false;tila();}});
-vp.addEventListener('keydown',function(e){if(!liike())return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var a=askel(),n=e.key==='ArrowRight'?1:-1,b=(n>0?Math.floor(pos/a+.02)+1:Math.ceil(pos/a-.02)-1)*a;if(b<0){pos+=sarja();b+=sarja();}tw={a:pos,b:b,t0:performance.now(),ms:420};kaynnista();}});
-if('IntersectionObserver' in window){new IntersectionObserver(function(es){nakyy=es[0].isIntersecting;tila();},{threshold:0}).observe(k)}else{nakyy=true}
+vp.addEventListener('keydown',function(e){if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();fokus=true;var n=e.key==='ArrowRight'?1:-1;
+ if(!liike()){x=kaari(Math.round(x/A)*A+n*A);v=0;acc=0;jousi=null;piirra();return;}
+ var pohja=jousi?jousi.T:(n>0?Math.floor(x/A+.02):Math.ceil(x/A-.02))*A;jousi={T:pohja+n*A,nappain:true};asetu=false;kaynnista();});
+/* Pysäytyspainike (WCAG 2.2.2) */
+var ohj=document.createElement('div');ohj.className='kar-ohj';
+var nappi=document.createElement('button');nappi.type='button';nappi.className='kar-tauko';nappi.setAttribute('aria-pressed','false');nappi.setAttribute('aria-label','Pysäytä karusellin liike');
+nappi.innerHTML='<svg class="kar-i-tauko" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="6.5" y="5" width="3.5" height="14" rx="1.2" fill="currentColor"/><rect x="14" y="5" width="3.5" height="14" rx="1.2" fill="currentColor"/></svg><svg class="kar-i-jatka" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.3 0-1.7l-10-6.4C8.9 4.3 8 4.8 8 5.6z" fill="currentColor"/></svg>';
+nappi.addEventListener('click',function(){pysaytetty=!pysaytetty;nappi.setAttribute('aria-pressed',pysaytetty?'true':'false');k.classList.toggle('kar-pysaytetty',pysaytetty);tila();});
+ohj.appendChild(nappi);k.appendChild(ohj);
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){nakyy=es[0].isIntersecting;tila();},{threshold:0}).observe(k)}
 document.addEventListener('visibilitychange',tila);(rm.addEventListener?rm.addEventListener('change',tila):rm.addListener(tila));
-window.addEventListener('resize',function(){if(liike())aseta(pos)});tila();
-window.__kar={saa:saa,pos:function(){return pos},aseta:aseta,sarja:sarja,tila:function(){return {hiiri:hiiri,koske:koske,fokus:fokus,nakyy:nakyy,liike:liike()}}};})();</script><script id="pk-js" src="shared/pk.js?v=3y"></script><script id="pk-versio">if(window.PK_VERSIO!=='v3r'&&window.console)console.warn('Paivankulku: pk.js ei ole v3r (vanha tiedosto välimuistissa?). Lataa sivu uudelleen: Ctrl+F5.')</script>
+/* Uudelleenmittaus: koon muutos (ResizeObserver tai resize) ja fonttien latautuminen */
+var mt=0;function uudelleen(){if(mt)return;mt=requestAnimationFrame(function(){mt=0;mitat();piirra();})}
+if('ResizeObserver' in window){new ResizeObserver(uudelleen).observe(vp)}window.addEventListener('resize',uudelleen);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){mitat();piirra()});
+k.classList.add('kar-liike');mitat();tila();
+window.__kar={pos:function(){return kaari(x)},x:function(){return x},v:function(){return v},S:function(){return S},A:function(){return A},O:function(){return O},sarjat:function(){return[ennen,1,jalkeen]},raf:function(){return !!raf},
+ aseta:function(p){x=p;v=0;acc=0;jousi=null;asetu=false;piirra()},
+ tila:function(){return{hiiri:hiiri,veto:!!veto,fokus:fokus,pysaytetty:pysaytetty,nakyy:nakyy,liike:liike(),tavoite:tavoite(),jousi:jousi?jousi.T:null}}};})();</script><script id="pk-js" src="shared/pk.js?v=3y"></script><script id="pk-versio">if(window.PK_VERSIO!=='v3r'&&window.console)console.warn('Paivankulku: pk.js ei ole v3r (vanha tiedosto välimuistissa?). Lataa sivu uudelleen: Ctrl+F5.')</script>
 </body></html>
