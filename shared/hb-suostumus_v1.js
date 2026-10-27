@@ -32,7 +32,7 @@
     en: {
       otsikko: 'Cookies',
       teksti: 'The website works without cookies. If you accept marketing cookies, the page loads the Meta Pixel, which we use to target marketing on Facebook and Instagram to people who have visited the website. ' +
-        'You can change your choice from the Cookie settings link at the bottom of the page. ',
+        'You can change your choice using the Cookie settings link at the bottom of the page. ',
       linkki: 'Read the privacy notice',
       hyvaksy: 'Accept marketing cookies',
       hylkaa: 'Necessary only',
