@@ -73,3 +73,10 @@ html[data-t="elegantti"] .net.free .n b { font-size: 18px; }
   .net.team .n { --w: 150px; --ow: 230px; padding: 10px 12px; }
   .net.team .n > span { display: block; font-size: 13px; }
 }
+
+/* 27.10.2026: puhelimella pisimmät nimet (Subcontractors, Aliurakoitsijat) mahtuvat kortin sisään ilman tavutusta */
+@media (max-width: 640px) {
+  #ekosysteemi .net .n:not(.core) { --w: 140px; }
+  #ekosysteemi .net .n:not(.core):not(.open) { padding-left: 8px; padding-right: 8px; }
+  #ekosysteemi .net .n:not(.core) > b { font-size: 15px; }
+}
