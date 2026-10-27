@@ -3,7 +3,8 @@
    Metan pikseli (fbevents.js) ladataan VAIN, kun kävijä on hyväksynyt markkinointievästeet.
    Ei noscript-kuvapikseliä. Ainoa tapahtuma on PageView kerran sivunäyttöä kohden.
    Valinta tallennetaan localStorageen avaimella hb_consent: {"v":1,"valinta":"hyvaksytty"|"hylatty","pvm":"YYYY-MM-DD"}.
-   Valinta kysytään uudelleen 12 kuukauden kuluttua. */
+   Valinta kysytään uudelleen 12 kuukauden kuluttua.
+   Kieli: tekstit valitaan <html lang> mukaan (fi tai en). Suomenkielinen tuloste on sama kuin ennen. */
 (function () {
   'use strict';
   var PIXEL_ID = '1134712148925126';
@@ -14,6 +15,32 @@
   var pikseliLadattu = false;
   var banneri = null;
   var edellinenFokus = null;
+  var KIELI = String(document.documentElement.getAttribute('lang') || 'fi').slice(0, 2).toLowerCase() === 'en' ? 'en' : 'fi';
+  var KUUKAUDET_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var T = {
+    fi: {
+      otsikko: 'Evästeet',
+      teksti: 'Sivusto toimii ilman evästeitä. Jos hyväksyt markkinointievästeet, sivu lataa Metan pikselin, jolla kohdistamme markkinointia Facebookissa ja Instagramissa sivuilla käyneille. ' +
+        'Voit muuttaa valintaa sivun alareunan Evästeasetukset-linkistä. ',
+      linkki: 'Lue tietosuojasta',
+      hyvaksy: 'Hyväksy markkinointievästeet',
+      hylkaa: 'Vain välttämättömät',
+      nykyinen: 'Nykyinen valinta: ',
+      hyvaksytty: 'markkinointievästeet hyväksytty',
+      hylatty: 'vain välttämättömät'
+    },
+    en: {
+      otsikko: 'Cookies',
+      teksti: 'The website works without cookies. If you accept marketing cookies, the page loads the Meta Pixel, which we use to target marketing on Facebook and Instagram to people who have visited the website. ' +
+        'You can change your choice from the Cookie settings link at the bottom of the page. ',
+      linkki: 'Read the privacy notice',
+      hyvaksy: 'Accept marketing cookies',
+      hylkaa: 'Necessary only',
+      nykyinen: 'Current choice: ',
+      hyvaksytty: 'marketing cookies accepted',
+      hylatty: 'necessary only'
+    }
+  }[KIELI];
 
   function lue() {
     try {
@@ -74,6 +101,7 @@
 
   function muotoilePvm(iso) {
     var p = iso.split('-');
+    if (KIELI === 'en') return parseInt(p[2], 10) + ' ' + KUUKAUDET_EN[parseInt(p[1], 10) - 1] + ' ' + p[0];
     return parseInt(p[2], 10) + '.' + parseInt(p[1], 10) + '.' + p[0];
   }
 
@@ -121,13 +149,12 @@
     banneri.setAttribute('aria-describedby', 'hbs-teksti');
     banneri.hidden = true;
     banneri.innerHTML =
-      '<h2 id="hbs-otsikko" tabindex="-1">Evästeet</h2>' +
-      '<p id="hbs-teksti">Sivusto toimii ilman evästeitä. Jos hyväksyt markkinointievästeet, sivu lataa Metan pikselin, jolla kohdistamme markkinointia Facebookissa ja Instagramissa sivuilla käyneille. ' +
-      'Voit muuttaa valintaa sivun alareunan Evästeasetukset-linkistä. <a href="' + tietosuojaUrl + '">Lue tietosuojasta</a></p>' +
+      '<h2 id="hbs-otsikko" tabindex="-1">' + T.otsikko + '</h2>' +
+      '<p id="hbs-teksti">' + T.teksti + '<a href="' + tietosuojaUrl + '">' + T.linkki + '</a></p>' +
       '<p class="hbs-tila" id="hbs-tila" hidden></p>' +
       '<div class="hbs-napit">' +
-      '<button type="button" data-hbs="hyvaksy">Hyväksy markkinointievästeet</button>' +
-      '<button type="button" data-hbs="hylkaa">Vain välttämättömät</button>' +
+      '<button type="button" data-hbs="hyvaksy">' + T.hyvaksy + '</button>' +
+      '<button type="button" data-hbs="hylkaa">' + T.hylkaa + '</button>' +
       '</div>';
     /* Ensimmäiseksi bodyyn, jotta näppäimistön käyttäjä tavoittaa sen heti. */
     document.body.insertBefore(banneri, document.body.firstChild);
@@ -154,7 +181,7 @@
     var o = lue();
     var tila = banneri.querySelector('#hbs-tila');
     if (o) {
-      tila.textContent = 'Nykyinen valinta: ' + (o.valinta === 'hyvaksytty' ? 'markkinointievästeet hyväksytty' : 'vain välttämättömät') + ' ' + muotoilePvm(o.pvm) + '.';
+      tila.textContent = T.nykyinen + (o.valinta === 'hyvaksytty' ? T.hyvaksytty : T.hylatty) + ' ' + muotoilePvm(o.pvm) + '.';
       tila.hidden = false;
     } else {
       tila.hidden = true;
