@@ -415,6 +415,18 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 <link rel="alternate" hreflang="en" href="https://hallabit.fi/en/">
 <link rel="alternate" hreflang="x-default" href="https://hallabit.fi/">
 <style id="kieli-css">header.top .kieli{display:flex;align-items:center;gap:2px;margin-left:12px;font-size:15px;font-weight:600;line-height:1;flex:none}header.top .kieli a,header.top .kieli .k-nyt{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 6px;border-radius:6px;text-decoration:none;color:#DCE6F2;box-sizing:border-box;letter-spacing:.02em}header.top .kieli .k-nyt{color:#FFFFFF;box-shadow:inset 0 -2px 0 #7CC0FF}@media(hover:hover){header.top .kieli a:hover{color:#FFFFFF;background:rgba(255,255,255,.12)}}header.top .kieli a:focus-visible{outline:3px solid #7CC0FF;outline-offset:2px}@media(max-width:860px){header.top .kieli{margin-left:auto}header.top .kieli .k-nyt{display:none}}@media(min-width:861px){header.top nav.m{margin-left:auto}}@media(max-width:860px){header.top .kieli{order:1}header.top .mnav-btn{order:2}}</style>
+<style id="ultrawide-v1">
+/* Ultrawide v1 28.10.2026: hero-kuva sidotaan keskitettyyn 1440 px:n säiliöön (--uw-max). Taustaväri jatkuu täysleveänä.
+   Alle 1441 px leveydellä mikään ei muutu (sama kaava antaa saman arvon kuin ennen 1440 px:llä). */
+:root{--uw-max:1440px}
+@media(min-width:1441px){
+ /* Kuvan koko ja sijainti lasketaan säiliön leveydestä: kuva on samassa kohdassa tekstiin nähden kuin 1440 px:llä */
+ .herobg{--uw-s:min(100vw,var(--uw-max));--bw:min(2280px,calc(var(--uw-s) * 1.52));--bl:calc((100vw - var(--uw-s)) / 2 + var(--uw-s) - var(--bw) * .96)}
+ .wrap.hero{min-height:clamp(700px,calc(var(--uw-max) * .66),980px)}
+ /* 1440 px:llä kuvan oikeat 4 % jäävät näkymän ulkopuolelle. Ultrawidellä sama kohta häivytetään säiliön reunaan, vasen reuna pehmeästi taustaan. */
+ .herobg>picture>img,.herobg .iso-d{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 calc(96% - 120px),transparent 96%);mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 calc(96% - 120px),transparent 96%)}
+}
+</style>
 </head><body>
 <header class="top"><div class="wrap"><a class="wm wm2" href="./" aria-label="HallaBit, etusivu"><img src="brand/hallabit-logo-tummalle_v2b.svg" alt="HallaBit" width="138" height="36"></a><button class="mnav-btn" type="button" aria-expanded="false" aria-controls="paavalikko" aria-label="Valikko"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="l l1" d="M4 6h16"/><path class="l l2" d="M4 12h16"/><path class="l l3" d="M4 18h16"/></g></svg></button><nav class="m" id="paavalikko" aria-label="Päävalikko"><a href="#mika">Mikä HallaBit on</a><!-- <a href="#tarina">Tarina</a> --><a href="#tiimi">Tiimi</a><a href="#connect">Tuote</a><a href="#yhteys">Yhteys</a></nav><nav class="kieli" aria-label="Kieli"><span class="k-nyt" aria-current="true" lang="fi">FI</span><a href="en/" hreflang="en" lang="en" aria-label="EN, in English">EN</a></nav></div></header>
 <main>
