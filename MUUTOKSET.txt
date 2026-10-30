@@ -1,0 +1,22 @@
+HallaBit.fi muutokset
+Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
+Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
+
+30.10.2026  Hallabit-2026-10-30-Sivut-Alatunniste-v3
+- Alatunnisteen sähköpostilinkki, Tietosuoja/Privacy ja Evästeasetukset/Cookie settings ovat nyt 44 px korkeita kosketusalueita kaikilla kuudella sivulla suomeksi ja englanniksi. Ulkoasu ja rivivälit ennallaan.
+- Otsikot ennallaan suomeksi ja englanniksi, myös Seamless ja korostusten liukuväri (Villen päätös 30.10. klo 15.39).
+- Lisätty tämä MUUTOKSET.txt ja rajattu se pois julkaisusta uudella _config.yml-tiedostolla (Villen päätös 30.10. klo 15.40).
+- README.md on rajattu pois julkaisusta samassa _config.yml-tiedostossa, joten hallabit.fi/README.md ei enää aukea (Villen päätös 30.10. klo 16.17).
+go: Ville 30.10.2026 klo 16.17
+
+HISTORIA (lyhyesti git logista, ennen tätä tiedostoa)
+
+28.10.2026  1670f28  HallaLink-heron kuva v14: LVI-auto kadulle, leikkuri avoimelle paikalle, sähkökeskus näkyviin
+28.10.2026  77c1830  Leveät näytöt: sisältö keskitetty 1440 px:n levyiseksi, karusellin reunat häivytetty
+28.10.2026  4f4b79c  HallaLink: käyttäjäkuplat uusittu suomeksi ja englanniksi
+27.10.2026  9074225  Alatunniste: oikean sarakkeen linkit vasemman sarakkeen riveille
+27.10.2026  0cfdb85 ... 4602f24  Prosessikaavio ja ekosysteemikaavio siistitty, suunnitteilla olevien toimintojen maininnat poistettu
+27.10.2026  bb5f75c, d211e02  Englanninkieliset sivut /en/, kielivalinta FI/EN, evästebanneri kahdella kielellä, kielikorjaukset
+26.10.2026  349a080 ... f2f5053  Alatunniste yhtenäistetty, karuselli uusittu, Metan pikseli vain suostumuksella, tietosuoja päivitetty
+25.10.2026  aa44d3e ... d56a911  HallaBitin ja HallaLinkin sivut julkaistu, oikoluku, toimialat viiteen korttiin, CNAME-asetukset
+25.10.2026  603dcbe  Ensimmäinen commit

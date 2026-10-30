@@ -1,0 +1,16 @@
+# GitHub Pages julkaisee tämän repon haarasta main Jekyll-käännöksellä.
+# MUUTOKSET.txt pysyy repossa, mutta sitä ei julkaista (Villen päätös 30.10.2026 klo 15.40).
+# README.md pysyy repossa, mutta sitä ei julkaista (Villen päätös 30.10.2026 klo 16.17).
+# Älä lisää .nojekyll-tiedostoa: silloin Jekyll ohitetaan, exclude ei toimi ja MUUTOKSET.txt julkaistaan.
+# Oma exclude-lista korvaa Jekyllin ja GitHub Pagesin oletusrajaukset, joten ne on lueteltu tässä uudelleen.
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - MUUTOKSET.txt
+  - README.md
