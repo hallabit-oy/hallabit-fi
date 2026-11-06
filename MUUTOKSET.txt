@@ -2,6 +2,14 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+6.11.2026  Hallabit-2026-11-06-Favicon-v1
+- Julkaistaville sivuille (hallabit.fi ja hallabit.fi/hallalink/) lisätty rel=icon PNG 192x192, suurempi kuin Googlen suositus 48 px. HallaBitissä virallinen v2b B-hiutale, HallaLinkissä virallinen v2c L-hiutale. Neliö 1:1, yksi merkki, ei puristettua sanamerkkiä.
+- HallaBitin juureen lisätty favicon.ico (16, 32 ja 48 px samasta v2b-favicon-SVG:stä), jotta hallabit.fi/favicon.ico ei enää palauta 404.
+- HallaLink säilyttää hostname-osoitteen hallabit.fi, joten Google-haussa näkyy HallaBitin kuvake. HallaLinkille ei tehty omaa konenimeä eikä erillistä hakukuvaketta.
+- Vanhat SVG-, 32 px PNG- ja apple-touch-icon-linkit säilyivät.
+go: Ville 6.11.2026 klo 14.23
+push go: Ville 6.11.2026 klo 16.29
+
 30.10.2026  Hallabit-2026-10-30-Sivut-Alatunniste-v3
 - Alatunnisteen sähköpostilinkki, Tietosuoja/Privacy ja Evästeasetukset/Cookie settings ovat nyt 44 px korkeita kosketusalueita kaikilla kuudella sivulla suomeksi ja englanniksi. Ulkoasu ja rivivälit ennallaan.
 - Otsikot ennallaan suomeksi ja englanniksi, myös Seamless ja korostusten liukuväri (Villen päätös 30.10. klo 15.39).
