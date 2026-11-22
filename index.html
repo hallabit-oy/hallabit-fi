@@ -531,8 +531,220 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 <div class="lt-ipad"><div class="lt-ipad-frame"><img loading="lazy" decoding="async" src="img/laitteet/ipad_tunnit_v3k.webp" width="1066" height="1534" alt="HallaLink iPadilla: Tunnit-näkymä, jossa hyväksyttävänä olevat tuntilistat ja kuluvan jakson tunnit"></div></div>
 <div class="lt-phone"><div class="lt-phone-frame"><span class="lt-island"></span><img loading="lazy" decoding="async" src="img/laitteet/puhelin_kellotus_v3l.webp" width="900" height="1612" alt="HallaLink puhelimella: Kellotus työkohteelle As Oy Koivurinne ja Aloita kellotus -painike"></div></div>
 </div></div>
-<div class="wrap tuote" id="tuote-hallasport"><div class="tuote-teksti"><h3 class="title">HallaSport</h3><p class="sub">HallaSport kokoaa urheiluseuran toiminnan yhteen: joukkueiden hallinnan, tilastot ja laskutuksen. Seura saa valmiin kotisivupohjan sekä integraation fanituotekauppaan ja lipunmyyntiin.</p></div></div>
-<div class="wrap tuote" id="tuote-hallatalent"><div class="tuote-teksti"><h3 class="title">HallaTalent</h3><p class="sub">HallaTalent yhdistää työpaikan ja työnhakijan. Sovelluksen avulla työnhakija tekee kattavan vahvuusanalyysin omasta osaamisestaan, ja sitä verrataan työpaikkailmoituksen vaatimuksiin. Sovellus antaa konkreettisia kehitysaskeleita, joilla työnhakija voi kehittää osaamistaan ja parantaa ammattitaitoaan.</p></div></div>
+<div class="wrap tuote" id="tuote-hallasport"><div class="tuote-tausta" aria-hidden="true"><img src="media/hallasport_tausta_v1h_poster.jpg" alt="" width="1080" height="1920" decoding="async" loading="lazy"><video muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback width="1080" height="1920"><source src="media/hallasport_tausta_v1h.webm" type="video/webm"><source src="media/hallasport_tausta_v1h.mp4" type="video/mp4"></video></div><div class="tuote-teksti"><h3 class="title">HallaSport</h3><p class="sub">HallaSport kokoaa urheiluseuran toiminnan yhteen: joukkueiden hallinnan, tilastot ja laskutuksen. Seura saa valmiin kotisivupohjan sekä integraation fanituotekauppaan ja lipunmyyntiin.</p></div></div>
+<div class="wrap tuote" id="tuote-hallatalent"><div class="tuote-tausta" aria-hidden="true"><div class="talent-puhelin"><div class="talent-puhelin-kehys"><span class="talent-puhelin-saari"></span><div class="talent-puhelin-ruutu"><img src="media/hallatalent_puhelin_v1o_poster.jpg" alt="" width="393" height="852" decoding="async" loading="lazy"><video muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback width="393" height="852"><source src="media/hallatalent_puhelin_v1o.webm" type="video/webm"><source src="media/hallatalent_puhelin_v1o.mp4" type="video/mp4"></video></div></div></div></div><div class="tuote-teksti"><h3 class="title">HallaTalent</h3><p class="sub">HallaTalent yhdistää työpaikan ja työnhakijan. Sovelluksen avulla työnhakija tekee kattavan vahvuusanalyysin omasta osaamisestaan, ja sitä verrataan työpaikkailmoituksen vaatimuksiin. Sovellus antaa konkreettisia kehitysaskeleita, joilla työnhakija voi kehittää osaamistaan ja parantaa ammattitaitoaan.</p></div></div>
+<style id="tuotteet-taustat-v1">
+#connect{overflow-x:clip}
+#connect .tuote{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(32px,5vw,56px);align-items:center
+}
+#connect .tuote>.tuote-teksti{order:-1}
+.tuote-tausta{
+  position:relative;width:100%;margin-inline:auto;pointer-events:none;opacity:.18;
+  --tuote-mask-x:linear-gradient(90deg,transparent max(2px,2%),#000 24%,#000 76%,transparent min(calc(100% - 2px),98%));
+  --tuote-mask-y:linear-gradient(180deg,transparent max(2px,2%),#000 18%,#000 82%,transparent min(calc(100% - 2px),98%));
+  -webkit-mask-image:var(--tuote-mask-x),var(--tuote-mask-y);
+  mask-image:var(--tuote-mask-x),var(--tuote-mask-y);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect
+}
+.tuote-tausta>img,.tuote-tausta>video{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:contain;object-position:center;display:block
+}
+#tuote-hallasport {
+  --sport-ruutivali: clamp(32px, 5vw, 56px);
+  --sport-rivivali: clamp(40px, 5vw, 72px);
+  --sport-sivu: clamp(96px, calc(25vw - 140px), 220px);
+  --sport-yla: var(--sport-sivu);
+  --sport-ala: var(--sport-sivu);
+  isolation: isolate;
+}
+
+#tuote-hallasport .tuote-teksti {
+  position: relative;
+  z-index: 3;
+}
+
+#tuote-hallasport .tuote-teksti::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -4px -8px;
+  background: #EEF4FB;
+  pointer-events: none;
+}
+
+#tuote-hallasport .tuote-tausta {
+  --sport-opasiteetti: 1;
+  --sport-kuvalisa: calc((var(--sport-yla) + var(--sport-ala)) * 2 / 3);
+  width: min(960px, 68vw);
+  max-width: none;
+  aspect-ratio: 4 / 3;
+  justify-self: start;
+  margin-inline: 0;
+  overflow: visible;
+  isolation: isolate;
+  opacity: 1;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+#tuote-hallasport .tuote-tausta > img,
+#tuote-hallasport .tuote-tausta > video {
+  inset: calc(0px - var(--sport-yla)) auto auto calc(0px - var(--sport-kuvalisa));
+  width: calc(100% + 2 * var(--sport-kuvalisa));
+  height: calc(100% + var(--sport-yla) + var(--sport-ala));
+  object-fit: cover;
+  object-position: center 70%;
+  opacity: var(--sport-opasiteetti);
+  clip-path: inset(0 calc(var(--sport-kuvalisa) - var(--sport-sivu)));
+}
+
+#tuote-hallasport .tuote-tausta::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  inset: calc(0px - var(--sport-yla)) calc(0px - var(--sport-sivu)) calc(0px - var(--sport-ala));
+  background: radial-gradient(ellipse 50% 50% at 50% 50%,
+    rgba(238,244,251,0) 0% 30%,
+    rgba(238,244,251,.06) 42%,
+    rgba(238,244,251,.14) 50%,
+    rgba(238,244,251,.38) 64%,
+    rgba(238,244,251,.55) 74%,
+    rgba(238,244,251,.66) 80%,
+    rgba(238,244,251,.80) 86%,
+    rgba(238,244,251,.88) 91%,
+    rgba(238,244,251,.97) 97%,
+    #EEF4FB 100%);
+}
+
+@media (min-width: 861px) {
+  #connect #tuote-hallasport {
+    padding-block-start: max(var(--sport-rivivali), var(--sport-yla));
+    padding-block-end: max(0px, calc(var(--sport-ala) - var(--sport-rivivali)));
+  }
+
+  #tuote-hallasport .tuote-teksti {
+    max-width: min(36em, calc(100% + var(--sport-ruutivali) - var(--sport-sivu) - 8px));
+  }
+
+  #tuote-hallasport .tuote-tausta {
+    --sport-korkeusero: calc(min(720px, 51vw) - 202.5px);
+    margin-block-end: calc(round(up, var(--sport-korkeusero), 1px) - var(--sport-korkeusero));
+  }
+}
+
+@media (max-width: 860px) {
+  #tuote-hallasport {
+    --sport-sivu: 20px;
+    --sport-yla: min(64px, calc(var(--sport-ruutivali) - 4px));
+    --sport-ala: min(48px, var(--sport-rivivali));
+  }
+
+  #tuote-hallasport .tuote-tausta {
+    --sport-opasiteetti: 1;
+    width: 100%;
+    max-width: 556px;
+    justify-self: center;
+    margin-inline: 0;
+    margin-block-end: calc(min(75% + 30px, 417px) - min(75%, 417px));
+    overflow: hidden;
+  }
+
+  #tuote-hallasport .tuote-tausta > img,
+  #tuote-hallasport .tuote-tausta > video {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: none;
+  }
+
+  #tuote-hallasport .tuote-tausta::after {
+    inset: 0;
+  }
+}
+#tuote-hallatalent .tuote-tausta {
+  width: 100%;
+  max-width: 280px;
+  margin-inline: auto;
+  aspect-ratio: auto;
+  opacity: 1;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+#tuote-hallatalent .talent-puhelin {
+  width: 100%;
+  container-type: inline-size;
+}
+#tuote-hallatalent .talent-puhelin-kehys {
+  position: relative;
+  padding: 4cqi;
+  border-radius: 16cqi;
+  background: #0A1B36;
+  box-shadow: 0 0 0 1.5px rgba(255,255,255,.12) inset,0 18px 36px -22px rgba(11,42,91,.35);
+}
+#tuote-hallatalent .talent-puhelin-saari {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 8cqi;
+  left: 50%;
+  width: 30%;
+  height: 7.2cqi;
+  margin-left: -15%;
+  border-radius: 999px;
+  background: #000;
+}
+#tuote-hallatalent .talent-puhelin-ruutu {
+  position: relative;
+  aspect-ratio: 393 / 852;
+  display: grid;
+  grid-template: minmax(0,1fr) / minmax(0,1fr);
+  overflow: hidden;
+  border-radius: 12.8cqi;
+  background: linear-gradient(180deg,#F2F5F4 50%,#EAEEED 50%);
+}
+#tuote-hallatalent .talent-puhelin-ruutu > img,
+#tuote-hallatalent .talent-puhelin-ruutu > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#tuote-hallatalent .talent-puhelin-ruutu > img {
+  position: static;
+  inset: auto;
+}
+#tuote-hallatalent .talent-puhelin-ruutu > video {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+}
+#tuote-hallatalent .talent-puhelin-ruutu.soi > video {
+  visibility: visible;
+}
+#tuote-hallatalent .talent-puhelin-ruutu.soi > img {
+  visibility: hidden;
+}
+@media(prefers-reduced-motion:reduce){
+  #tuote-hallatalent .talent-puhelin-ruutu > video { display: none; }
+  #tuote-hallatalent .talent-puhelin-ruutu.soi > img { visibility: visible; }
+}
+@media(max-width:860px){
+  #connect .tuote{grid-template-columns:minmax(0,1fr)}
+  #connect .tuote>.tuote-tausta{opacity:1}
+  #tuote-hallatalent .tuote-tausta{max-width:320px}
+  #connect #tuote-hallatalent{margin-bottom:clamp(40px,5vw,72px)}
+}
+.tuote-tausta.soi>img{visibility:hidden}
+@media(prefers-reduced-motion:reduce){.tuote-tausta>video{display:none}.tuote-tausta.soi>img{visibility:visible}}
+</style>
+<script>/* tuoteosio taustat v1: video soi vain nakyvissa, prefers-reduced-motion pysayttaa (poster-kuva nakyy); poster-kuva piilotetaan, kun videolla on ruutu */
+(function(){var vs=[].slice.call(document.querySelectorAll('.tuote-tausta video'));if(!vs.length)return;var mq=matchMedia('(prefers-reduced-motion: reduce)'),nak=[];function aja(i){var v=vs[i];if(nak[i]&&!mq.matches&&!document.hidden){v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){})}else if(!v.paused){v.pause()}}vs.forEach(function(v){v.addEventListener('loadeddata',function(){v.parentNode.classList.add('soi')});v.addEventListener('error',function(){v.parentNode.classList.remove('soi')},true)});function kaikki(){vs.forEach(function(v,i){aja(i)})}if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=vs.indexOf(e.target);nak[i]=e.isIntersecting;aja(i)})});vs.forEach(function(v){io.observe(v)})}else{vs.forEach(function(v,i){nak[i]=true});kaikki()}if(mq.addEventListener)mq.addEventListener('change',kaikki);else if(mq.addListener)mq.addListener(kaikki);document.addEventListener('visibilitychange',kaikki)})();</script>
 </section>
 <!-- KATSELMOINTI 16.10.2026: tuotteen yksityiskohdat ja ekosysteemikaavio ovat hallalink.html-sivulla
 <section class="block" id="connect-vanha"><div class="wrap"><div class="eyebrow">Tuote</div><h2 class="title">HallaLink kokoaa rakennus- ja asennusalan työt yhteen paikkaan</h2>
