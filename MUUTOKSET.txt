@@ -2,6 +2,13 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+22.11.2026  Hallabit-2026-11-22-Etusivu-v1d
+- Etusivun herosta on poistettu lause Autamme löytämään kohdat, joissa tieto katkeaa, ja etsimään niihin ratkaisun.
+- Englanninkieliseltä etusivulta on poistettu vastaava lause We help find the points where information breaks off and look for a solution to them.
+- Muu sivu on ennallaan. Muutetut tiedostot: index.html ja en/index.html.
+go: Ville 22.11.2026 klo 10.48
+push go: Ville 22.11.2026 klo 10.48
+
 22.11.2026  Hallabit-2026-11-22-Etusivu-tuotteet-v1c
 - Etusivulle on lisätty Tuotteet-osio, jossa ovat HallaLink, HallaSport ja HallaTalent samalla asettelulla. Vain HallaLinkillä on linkki tuotesivulle.
 - Valikon Tuote on vaihdettu muotoon Tuotteet ja englanniksi Product muotoon Products. Sama muutos on tietosuojasivuilla.
