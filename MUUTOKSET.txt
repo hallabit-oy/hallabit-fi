@@ -2,6 +2,15 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+21.11.2026  Hallabit-2026-11-21-Etusivu-V1
+- Etusivun pääotsikko on nyt Älykkäät sovellukset. Sujuvampi arki. Vain sana Sujuvampi on liukuvärillä, muu otsikko on tasaväri #1B5596.
+- Etusivun johdanto, Mikä HallaBit on, tiimin otsikko ja yhteysosion tekstit on päivitetty hyväksyttyjen v1e-ehdotusten mukaan.
+- Koulutusportaan teksti on nyt Opastetaan tiimi käyttöön, työpöytä- ja mobiilikuvituksessa sekä ruudunlukijalistassa.
+- Englanninkielinen etusivu on päivitetty samoihin kohtiin. Pääotsikko on Smart applications. Smoother everyday work., ja vain sana Smoother on liukuvärillä. Brittienglanti ja liukuväri ennallaan.
+- Tuoteosio, HallaLinkin laitekuvat, alatunniste ja jakokuva ovat ennallaan. Uusia alasivuja ei lisätty.
+go: Ville 21.11.2026 klo 21.24
+push go: Ville 22.11.2026 klo 8.06
+
 6.11.2026  Hallabit-2026-11-06-Favicon-v1
 - Julkaistaville sivuille (hallabit.fi ja hallabit.fi/hallalink/) lisätty rel=icon PNG 192x192, suurempi kuin Googlen suositus 48 px. HallaBitissä virallinen v2b B-hiutale, HallaLinkissä virallinen v2c L-hiutale. Neliö 1:1, yksi merkki, ei puristettua sanamerkkiä.
 - HallaBitin juureen lisätty favicon.ico (16, 32 ja 48 px samasta v2b-favicon-SVG:stä), jotta hallabit.fi/favicon.ico ei enää palauta 404.
