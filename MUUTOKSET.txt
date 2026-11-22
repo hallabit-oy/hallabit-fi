@@ -2,6 +2,13 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+22.11.2026  Hallabit-2026-11-22-Etusivu-v1g
+- Kaavion 02-kortin teksti on vaihdettu muotoon Sovelluksen yhteensopivuuden analysointi organisaation toimintaan ja sovelluksen kehittäminen. Englanniksi Analysing how the app fits your operations, and developing it.
+- Teksti on vasemmalla, ja lohko on pystykeskitetty. Numerot, nuolet ja korttien koko ovat ennallaan.
+- Muutetut tiedostot: index.html ja en/index.html.
+go: Ville 22.11.2026 klo 11.50
+push go: Ville 22.11.2026 klo 11.50
+
 22.11.2026  Hallabit-2026-11-22-Etusivu-v1f
 - Prosessikaavion neljän kortin tekstilohko (otsikko tai logo ja kuvaus) on pystykeskitetty. Teksti on edelleen vasemmalla, ja 02-logon vaaka-asento on ennallaan.
 - Askelnumerot, nuolet ja korttien koko ovat ennallaan.
