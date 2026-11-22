@@ -2,6 +2,13 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+22.11.2026  Hallabit-2026-11-22-Etusivu-v1e
+- Etusivun HallaTalent-tuotekuvaus on vaihdettu Villen 10.56 hyväksymään tekstiin suomeksi ja englanniksi.
+- Vanha maininta yli 20 kriteeristä on poistettu. Kuvaus on yksi kappale otsikon alla.
+- Muutetut tiedostot: index.html ja en/index.html.
+go: Ville 22.11.2026 klo 10.56
+push go: Ville 22.11.2026 klo 10.56
+
 22.11.2026  Hallabit-2026-11-22-Etusivu-v1d
 - Etusivun herosta on poistettu lause Autamme löytämään kohdat, joissa tieto katkeaa, ja etsimään niihin ratkaisun.
 - Englanninkieliseltä etusivulta on poistettu vastaava lause We help find the points where information breaks off and look for a solution to them.
