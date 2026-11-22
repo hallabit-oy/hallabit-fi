@@ -2,6 +2,14 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+22.11.2026  Hallabit-2026-11-22-Etusivu-tuotteet-v1c
+- Etusivulle on lisätty Tuotteet-osio, jossa ovat HallaLink, HallaSport ja HallaTalent samalla asettelulla. Vain HallaLinkillä on linkki tuotesivulle.
+- Valikon Tuote on vaihdettu muotoon Tuotteet ja englanniksi Product muotoon Products. Sama muutos on tietosuojasivuilla.
+- Heron lause ja painike Tutustu tuotteisiin, neljän vaiheen kaavion tekstit, yhteysteksti ja meta-kuvaukset on päivitetty suomeksi ja englanniksi.
+- Muutetut tiedostot: index.html, en/index.html, tietosuoja.html ja en/privacy.html.
+go: Ville 22.11.2026 klo 10.36
+push go: Ville 22.11.2026 klo 10.36
+
 21.11.2026  Hallabit-2026-11-21-Etusivu-V1
 - Etusivun pääotsikko on nyt Älykkäät sovellukset. Sujuvampi arki. Vain sana Sujuvampi on liukuvärillä, muu otsikko on tasaväri #1B5596.
 - Etusivun johdanto, Mikä HallaBit on, tiimin otsikko ja yhteysosion tekstit on päivitetty hyväksyttyjen v1e-ehdotusten mukaan.
