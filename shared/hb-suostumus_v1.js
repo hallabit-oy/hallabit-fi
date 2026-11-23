@@ -20,7 +20,7 @@
   var T = {
     fi: {
       otsikko: 'Evästeet',
-      teksti: 'Sivusto toimii ilman evästeitä. Jos hyväksyt markkinointievästeet, sivu lataa Metan pikselin, jolla kohdistamme markkinointia Facebookissa ja Instagramissa sivuilla käyneille. ' +
+      teksti: 'Sivusto toimii ilman evästeitä. Jos hyväksyt markkinointievästeet, sivu lataa Google Tag Managerin ja Metan pikselin, jolla kohdistamme markkinointia Facebookissa ja Instagramissa sivuilla käyneille. ' +
         'Voit muuttaa valintaa sivun alareunan Evästeasetukset-linkistä. ',
       linkki: 'Lue tietosuojasta',
       hyvaksy: 'Hyväksy markkinointievästeet',
@@ -31,7 +31,7 @@
     },
     en: {
       otsikko: 'Cookies',
-      teksti: 'The website works without cookies. If you accept marketing cookies, the page loads the Meta Pixel, which we use to target marketing on Facebook and Instagram to people who have visited the website. ' +
+      teksti: 'The website works without cookies. If you accept marketing cookies, the page loads Google Tag Manager and the Meta Pixel, which we use to target marketing on Facebook and Instagram to people who have visited the website. ' +
         'You can change your choice using the Cookie settings link at the bottom of the page. ',
       linkki: 'Read the privacy notice',
       hyvaksy: 'Accept marketing cookies',
@@ -60,9 +60,17 @@
   }
 
   /* Metan virallinen peruskoodi ilman noscript-kuvaa. Ajetaan vain hyväksynnän jälkeen. */
-  function lataaPikseli() {
+  function lataaMarkkinointi() {
     if (pikseliLadattu) return;
     pikseliLadattu = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    var gtm = document.createElement('script');
+    gtm.async = true;
+    gtm.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MJ9WLDJM';
+    document.head.appendChild(gtm);
     if (!window.fbq) {
       var n = window.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
       if (!window._fbq) window._fbq = n;
@@ -164,10 +172,11 @@
       if (!b) return;
       if (b.getAttribute('data-hbs') === 'hyvaksy') {
         tallenna('hyvaksytty');
-        lataaPikseli();
+        lataaMarkkinointi();
       } else {
         tallenna('hylatty');
         lopetaSeuranta();
+        if (pikseliLadattu) window.location.reload();
       }
       sulje();
     });
@@ -206,7 +215,7 @@
   function kaynnista() {
     lisaaTyyli();
     var o = lue();
-    if (o && o.valinta === 'hyvaksytty') lataaPikseli();
+    if (o && o.valinta === 'hyvaksytty') lataaMarkkinointi();
     else if (o && o.valinta === 'hylatty') poistaMetanEvasteet();
     if (!o) nayta(false);
     var avaajat = document.querySelectorAll('[data-hbs-avaa]');
