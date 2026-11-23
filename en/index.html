@@ -529,8 +529,107 @@ section.alt h2.title .sp.sp-navy,h1 .sp.sp-navy,h2 .sp.sp-navy,.sp.sp-navy{backg
 <div class="lt-ipad"><div class="lt-ipad-frame"><img loading="lazy" decoding="async" src="../img/laitteet/ipad_tunnit_v3k.webp" width="1066" height="1534" alt="HallaLink on an iPad: the Hours view with timesheets waiting for approval and the hours for the current period"></div></div>
 <div class="lt-phone"><div class="lt-phone-frame"><span class="lt-island"></span><img loading="lazy" decoding="async" src="../img/laitteet/puhelin_kellotus_v3l.webp" width="900" height="1612" alt="HallaLink on a phone: the time clock for the job site As Oy Koivurinne and the Start clock button"></div></div>
 </div></div>
-<div class="wrap tuote" id="tuote-hallasport"><div class="tuote-teksti"><h3 class="title">HallaSport</h3><p class="sub">HallaSport brings a sports club's operations together: team management, statistics and invoicing. The club gets a ready website template as well as integration with a fan shop and ticket sales.</p></div></div>
-<div class="wrap tuote" id="tuote-hallatalent"><div class="tuote-teksti"><h3 class="title">HallaTalent</h3><p class="sub">HallaTalent connects employers and job seekers. With the app, job seekers carry out a thorough analysis of their own strengths, which is then compared with the requirements of a job posting. The app gives concrete next steps for developing their skills and improving their professional expertise.</p></div></div>
+<div class="wrap tuote" id="tuote-hallasport"><div class="tuote-tausta" aria-hidden="true"><div class="talent-puhelin"><div class="talent-puhelin-kehys"><span class="talent-puhelin-saari"></span><div class="talent-puhelin-ruutu"><img src="../media/hallasport_puhelin_v1r_poster.jpg" alt="" width="432" height="936" decoding="async" loading="lazy"><video muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback width="432" height="936"><source src="../media/hallasport_puhelin_v1r.webm" type="video/webm"><source src="../media/hallasport_puhelin_v1r.mp4" type="video/mp4"></video></div></div></div></div><div class="tuote-teksti"><h3 class="title">HallaSport</h3><p class="sub">HallaSport brings a sports club's operations together: team management, statistics and invoicing. The club gets a ready website template as well as integration with a fan shop and ticket sales.</p></div></div>
+<div class="wrap tuote" id="tuote-hallatalent"><div class="tuote-tausta" aria-hidden="true"><div class="talent-puhelin"><div class="talent-puhelin-kehys"><span class="talent-puhelin-saari"></span><div class="talent-puhelin-ruutu"><img src="../media/hallatalent_puhelin_v1r_poster.jpg" alt="" width="432" height="936" decoding="async" loading="lazy"><video muted playsinline loop preload="none" disablepictureinpicture disableremoteplayback width="432" height="936"><source src="../media/hallatalent_puhelin_v1r.webm" type="video/webm"><source src="../media/hallatalent_puhelin_v1r.mp4" type="video/mp4"></video></div></div></div></div><div class="tuote-teksti"><h3 class="title">HallaTalent</h3><p class="sub">HallaTalent connects employers and job seekers. With the app, job seekers carry out a thorough analysis of their own strengths, which is then compared with the requirements of a job posting. The app gives concrete next steps for developing their skills and improving their professional expertise.</p></div></div>
+<style id="tuotteet-taustat-v1">
+#connect{overflow-x:clip}
+#connect .tuote{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(32px,5vw,56px);align-items:center
+}
+#connect .tuote>.tuote-teksti{order:-1}
+.tuote-tausta{
+  position:relative;width:100%;margin-inline:auto;pointer-events:none;opacity:.18;
+  --tuote-mask-x:linear-gradient(90deg,transparent max(2px,2%),#000 24%,#000 76%,transparent min(calc(100% - 2px),98%));
+  --tuote-mask-y:linear-gradient(180deg,transparent max(2px,2%),#000 18%,#000 82%,transparent min(calc(100% - 2px),98%));
+  -webkit-mask-image:var(--tuote-mask-x),var(--tuote-mask-y);
+  mask-image:var(--tuote-mask-x),var(--tuote-mask-y);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect
+}
+.tuote-tausta>img,.tuote-tausta>video{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:contain;object-position:center;display:block
+}
+#connect .tuote .tuote-tausta {
+  width: 100%;
+  max-width: 200px;
+  margin-inline: auto;
+  aspect-ratio: auto;
+  opacity: 1;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+#connect .talent-puhelin {
+  width: 100%;
+  container-type: inline-size;
+}
+#connect .talent-puhelin-kehys {
+  position: relative;
+  padding: 4cqi;
+  border-radius: 16cqi;
+  background: #0A1B36;
+  box-shadow: 0 0 0 1.5px rgba(255,255,255,.12) inset,0 18px 36px -22px rgba(11,42,91,.35);
+}
+#connect .talent-puhelin-saari {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 8cqi;
+  left: 50%;
+  width: 30%;
+  height: 7.2cqi;
+  margin-left: -15%;
+  border-radius: 999px;
+  background: #000;
+}
+#connect .talent-puhelin-ruutu {
+  position: relative;
+  aspect-ratio: 393 / 852;
+  display: grid;
+  grid-template: minmax(0,1fr) / minmax(0,1fr);
+  overflow: hidden;
+  border-radius: 12.8cqi;
+  background: #0A1B36;
+}
+#connect .talent-puhelin-ruutu > img,
+#connect .talent-puhelin-ruutu > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#connect .talent-puhelin-ruutu > img {
+  position: static;
+  inset: auto;
+}
+#connect .talent-puhelin-ruutu > video {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+}
+#connect .talent-puhelin-ruutu.soi > video {
+  visibility: visible;
+}
+#connect .talent-puhelin-ruutu.soi > img {
+  visibility: hidden;
+}
+@media(prefers-reduced-motion:reduce){
+  #connect .talent-puhelin-ruutu > video { display: none; }
+  #connect .talent-puhelin-ruutu.soi > img { visibility: visible; }
+}
+@media(max-width:860px){
+  #connect .tuote{grid-template-columns:minmax(0,1fr)}
+  #connect .tuote>.tuote-tausta{opacity:1}
+  #connect .tuote .tuote-tausta{max-width:180px}
+  #connect #tuote-hallatalent{margin-bottom:clamp(40px,5vw,72px)}
+}
+.tuote-tausta.soi>img{visibility:hidden}
+@media(prefers-reduced-motion:reduce){.tuote-tausta>video{display:none}.tuote-tausta.soi>img{visibility:visible}}
+</style>
+<script>/* tuoteosio taustat v1r: video käynnistyy puoli näkymän korkeutta ennen kuin se tulee näkyviin, prefers-reduced-motion pysayttaa (poster-kuva nakyy); poster-kuva piilotetaan, kun videolla on ruutu */
+(function(){var vs=[].slice.call(document.querySelectorAll('.tuote-tausta video'));if(!vs.length)return;var mq=matchMedia('(prefers-reduced-motion: reduce)'),nak=[];function aja(i){var v=vs[i];if(nak[i]&&!mq.matches&&!document.hidden){v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){})}else if(!v.paused){v.pause()}}vs.forEach(function(v){v.addEventListener('loadeddata',function(){v.parentNode.classList.add('soi')});v.addEventListener('error',function(){v.parentNode.classList.remove('soi')},true)});function kaikki(){vs.forEach(function(v,i){aja(i)})}if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=vs.indexOf(e.target);nak[i]=e.isIntersecting;aja(i)})},{rootMargin:'50% 0px'});vs.forEach(function(v){io.observe(v)})}else{vs.forEach(function(v,i){nak[i]=true});kaikki()}if(mq.addEventListener)mq.addEventListener('change',kaikki);else if(mq.addListener)mq.addListener(kaikki);document.addEventListener('visibilitychange',kaikki)})();</script>
 </section>
 
 <section class="block alt" id="yhteys"><span class="ankkuri" id="konsultointi" aria-hidden="true"></span><div class="wrap"><div class="eyebrow">Consulting and contact</div><h2 class="title">Tell us what you do and what you want to make smoother</h2><p class="sub">We go through how your organisation works, together. We find the gaps in operations and communication and look at how our applications could help unify and streamline the way you work.</p><div class="actions"><a class="btn main fx-nousu" href="mailto:info@hallabit.fi">info@hallabit.fi</a></div><figure class="vp vp-A" role="group" aria-label="How we work together: steps"><svg class="vp-svg vp-desk" viewBox="0 -2 1122 488" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path class="vp-viiva" pathLength="1" d="M272,52 H391 Q403,52 403,64 V121" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki" d="M403,123 L409,112 L397,112 Z" fill="#0B2A5B"/><path class="vp-viiva" pathLength="1" d="M555,176 H674 Q686,176 686,188 V245" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki" d="M686,247 L692,236 L680,236 Z" fill="#0B2A5B"/><path class="vp-viiva" pathLength="1" d="M838,300 H957 Q969,300 969,312 V369" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki" d="M969,371 L975,360 L963,360 Z" fill="#0B2A5B"/><path class="vp-viiva vp-paluu" pathLength="1" d="M849,424 H419 Q403,424 403,408 V241" fill="none" stroke="#1B5596" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki vp-paluu" d="M403,239 L397,250 L409,250 Z" fill="#1B5596"/><g class="vp-kortti"><rect x="0" y="0" width="272" height="112" rx="14" fill="#fff" stroke="#C5D0CD" stroke-width="1.5"/><text x="256" y="26" text-anchor="end" class="vp-nro">01</text><text x="20" y="42.52" class="vp-otsikko" style="font-size:19px">Discovery</text><text x="20" y="66.52" class="vp-kuvaus" style="font-size:14px">We go through how your</text><text x="20" y="85.52" class="vp-kuvaus" style="font-size:14px">organisation works, together</text></g><g class="vp-kortti"><rect x="283" y="124" width="272" height="112" rx="14" fill="#fff" stroke="#0B2A5B" stroke-width="2"/><text x="539" y="150" text-anchor="end" class="vp-nro">02</text><image href="../brand/hallabit-logo_v2b.svg" x="302.5" y="145" width="115" height="30" role="img" aria-label="HallaBit"/><text x="303" y="192" class="vp-kuvaus" style="font-size:14px">Analysing how the app fits your</text><text x="303" y="211" class="vp-kuvaus" style="font-size:14px">operations, and developing it</text></g><g class="vp-kortti"><rect x="566" y="248" width="272" height="112" rx="14" fill="#fff" stroke="#C5D0CD" stroke-width="1.5"/><text x="822" y="274" text-anchor="end" class="vp-nro">03</text><text x="586" y="290.52" class="vp-otsikko" style="font-size:19px">Integration</text><text x="586" y="314.52" class="vp-kuvaus" style="font-size:14px">Built into your daily work,</text><text x="586" y="333.52" class="vp-kuvaus" style="font-size:14px">with training for the team</text></g><g class="vp-kortti"><rect x="849" y="372" width="272" height="112" rx="14" fill="#fff" stroke="#C5D0CD" stroke-width="1.5"/><text x="1105" y="398" text-anchor="end" class="vp-nro">04</text><text x="869" y="415.02" class="vp-otsikko" style="font-size:19px">Co-development</text><text x="869" y="439.02" class="vp-kuvaus" style="font-size:14px">Further development together,</text><text x="869" y="458.02" class="vp-kuvaus" style="font-size:14px">based on feedback</text></g></svg><svg class="vp-svg vp-mob" viewBox="0 -2 360 542" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path class="vp-viiva" pathLength="1" d="M50,112 V139" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki" d="M50,141 L56,130 L44,130 Z" fill="#0B2A5B"/><path class="vp-viiva" pathLength="1" d="M66,254 V281" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki" d="M66,283 L72,272 L60,272 Z" fill="#0B2A5B"/><path class="vp-viiva" pathLength="1" d="M82,396 V423" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki" d="M82,425 L88,414 L76,414 Z" fill="#0B2A5B"/><path class="vp-viiva vp-paluu" pathLength="1" d="M320,482 H330 Q342,482 342,470 V210 Q342,198 330,198 H291" fill="none" stroke="#1B5596" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path class="vp-karki vp-paluu" d="M289,198 L300,204 L300,192 Z" fill="#1B5596"/><g class="vp-kortti"><rect x="0" y="0" width="272" height="112" rx="14" fill="#fff" stroke="#C5D0CD" stroke-width="1.5"/><text x="256" y="26" text-anchor="end" class="vp-nro">01</text><text x="20" y="42.21" class="vp-otsikko" style="font-size:18px">Discovery</text><text x="20" y="66.21" class="vp-kuvaus" style="font-size:14px">We go through how your</text><text x="20" y="85.21" class="vp-kuvaus" style="font-size:14px">organisation works, together</text></g><g class="vp-kortti"><rect x="16" y="142" width="272" height="112" rx="14" fill="#fff" stroke="#0B2A5B" stroke-width="2"/><text x="272" y="168" text-anchor="end" class="vp-nro">02</text><image href="../brand/hallabit-logo_v2b.svg" x="35.5" y="163.45" width="115" height="30" role="img" aria-label="HallaBit"/><text x="36" y="210.45" class="vp-kuvaus" style="font-size:14px">Analysing how the app fits your</text><text x="36" y="229.45" class="vp-kuvaus" style="font-size:14px">operations, and developing it</text></g><g class="vp-kortti"><rect x="32" y="284" width="272" height="112" rx="14" fill="#fff" stroke="#C5D0CD" stroke-width="1.5"/><text x="288" y="310" text-anchor="end" class="vp-nro">03</text><text x="52" y="326.21" class="vp-otsikko" style="font-size:18px">Integration</text><text x="52" y="350.21" class="vp-kuvaus" style="font-size:14px">Built into your daily work,</text><text x="52" y="369.21" class="vp-kuvaus" style="font-size:14px">with training for the team</text></g><g class="vp-kortti"><rect x="48" y="426" width="272" height="112" rx="14" fill="#fff" stroke="#C5D0CD" stroke-width="1.5"/><text x="304" y="452" text-anchor="end" class="vp-nro">04</text><text x="68" y="468.21" class="vp-otsikko" style="font-size:18px">Co-development</text><text x="68" y="492.21" class="vp-kuvaus" style="font-size:14px">Further development together,</text><text x="68" y="511.21" class="vp-kuvaus" style="font-size:14px">based on feedback</text></g></svg><ol class="vp-sr"><li>Discovery: we go through how your organisation works, together</li><li>HallaBit: analysing how the app fits your operations, and developing it</li><li>Integration: built into your daily work, with training for the team</li><li>Co-development: further development together, based on feedback</li></ol><p class="vp-sr">From co-development, the cycle returns to HallaBit.</p></figure></div></section>
