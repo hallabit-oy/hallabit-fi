@@ -1,0 +1,26 @@
+/* v7: kartta on osiossa #piirteet. Toiminta tulee HallaLinkin net_v8.js:sta.
+   Avoimen solmun leveys on HallaLinkin net.css (--ow 260 / core 280), ei v3:n 410 px. */
+#piirteet .net { min-height: 600px; }
+#piirteet .net .n { overflow-wrap: anywhere; }
+#piirteet .more p { margin: .5em 0 .25em; }
+#piirteet .more > div { padding-inline: 3px; }
+
+@media (max-width: 800px) {
+  #piirteet .net .n.core > span { display: block; }
+  #piirteet .net.pino.has-open .n:not(.open) { filter: none; opacity: 1; }
+}
+
+/* v17: #paiva-geometria ja --pk-vaihevali tulevat HallaLinkin pk.css:sta
+   ja html-elementin inline-tyylista (--pk-vaihevali-tp / --pk-vaihevali-mob).
+   v16:n compact- ja vaihevali-ohitukset on poistettu, jotta kierto on sama kuin HallaLinkissa. */
+#paiva .pk-pending {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  border-radius: 3px;
+  background: #F1F4F3;
+  text-align: center;
+}
+#paiva .pk-lid .pk-pending { aspect-ratio: 1440 / 900; }
+#paiva .pk-ipad-frame .pk-pending { aspect-ratio: 820 / 1180; }
+#paiva .pk-static { padding-bottom: 24px; }

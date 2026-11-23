@@ -1,0 +1,66 @@
+/* v7 vari-kaanto: erillinen ylikirjoitus, ei muuta net_v8.js / net.css / halla-net_v2b.js.
+   Lahde: livesivu https://hallabit.fi/hallalink/ (curl 23.11.2026 14.04 EET, MD5 tasmasi
+   paikalliseen 01_Sivu/hallalink/ kopioon, ks. 06_Mittaukset/live_hallalink_md5.txt).
+
+   1) Varien kaanto. HallaLinkin kartta on vaalealla osiolla: tavalliset solmut
+      background:var(--bg) / color:var(--ink) / border:var(--ink). HallaSportin kartta
+      on navy-osiossa #piirteet.section.alt, jossa merkit on jo kaannetty
+      (--ink:#F3F6F5, --bg:#24527F, --soft:#C9D6E6, tausta #143A6B). Siksi net.css:n
+      var(--bg)/var(--ink) -saannot tuottavat tassa osiossa vaalean tekstin ja reunan
+      tummalla taytolla ilman erillista solmutason varien vaihtoa.
+
+   2) HallaSport-ydin (.n.core) ja HallaBit (.n.kt): vihrea #5CCB8A, teksti navy #0B2A5B
+      (kontrasti 6,93:1, WCAG AA). halla-net_v2b.js asettaa niille --frost-liukuvan
+      taustakuvan; tama tiedosto poistaa sen (!important), koska vari ei ole HallaLinkin
+      sininen liuku. */
+
+#piirteet .net .n.core,
+#piirteet .net .n.kt{
+  background-color:#5CCB8A !important;
+  background-image:none !important;
+  background-size:auto !important;
+  background-position:0 0 !important;
+  background-repeat:no-repeat !important;
+  color:#0B2A5B !important;
+  border-color:transparent;
+}
+#piirteet .net .n.core > span,
+#piirteet .net .n.kt > span,
+#piirteet .net .n.core .more,
+#piirteet .net .n.kt .more,
+#piirteet .net .n.kt .more li::marker{
+  color:#0B2A5B !important;
+  opacity:1;
+}
+#piirteet .net .n.core:focus-visible,
+#piirteet .net .n.kt:focus-visible{
+  outline-color:#0B2A5B;
+}
+#piirteet .nw:has(> .n.core) > .np,
+#piirteet .nw:has(> .n.kt) > .np{
+  background:#5CCB8A;
+}
+
+/* 44 px kosketuskohde (HallaLinkin solmut ovat jo suurimmat osin yli taman;
+   varmistus kapeassa pinossa ja lyhyilla otsikoilla). */
+#piirteet .net .n{
+  min-height:44px;
+  box-sizing:border-box;
+}
+
+@media (max-width: 640px) {
+  html #piirteet .net .n:not(.core) { --w: 140px; }
+  html #piirteet .net .n:not(.core):not(.open) { padding-left: 8px; padding-right: 8px; }
+  html #piirteet .net .n:not(.core) > b { font-size: 15px; }
+  html #piirteet .net .n { --ow: 290px; overflow-wrap: normal; }
+  html #piirteet .net .n.core { --w: 178px; padding: 12px; }
+  #piirteet .net .n.core b { font-size: 18px; white-space: nowrap; overflow-wrap: normal; }
+  html #piirteet .net .n.open:not(.core) { --w: var(--ow); }
+}
+@media (max-width: 359px) {
+  html #piirteet .net .n { --ow: 250px; }
+}
+/* Lähde: 01_Sivu/hallalink/index.html, rivit 391-393 (v3x). */
+#piirteet .net .n{display:flex;flex-direction:column;justify-content:center;align-items:stretch;text-align:center}
+#piirteet .net .n>b,#piirteet .net .n>span{text-align:center}
+#piirteet .net .n .more{text-align:left}

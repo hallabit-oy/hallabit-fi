@@ -1,0 +1,20 @@
+/*
+Lähde on 01_Sivu/hallalink/index.html, rivi 151 (--frost) ja
+style#liukuvari-yhteinen, rivit 380-389. Ominaisuudet ovat riveiltä
+386 ja 388. Kopioitu background-arvo on
+linear-gradient(100deg,#0B2A5B 0%,#154A8A 55%,#2E6FB5 100%).
+
+Kontrastit laskettiin 23.11.2026 taustaa #F3F6F5 vasten WCAG 2.1:n
+suhteellisella luminanssilla.
+- 0 % #0B2A5B, 12,90:1. AA normaali, AA suuri ja AAA normaali täyttyvät.
+- 55 % #154A8A, 8,12:1. AA normaali, AA suuri ja AAA normaali täyttyvät.
+- 100 % #2E6FB5, 4,76:1. AA normaali ja AA suuri täyttyvät. AAA normaali ei täyty.
+Rajat ovat AA normaalille tekstille 4,5:1, AA suurelle tekstille 3:1
+ja AAA normaalille tekstille 7:1.
+*/
+
+.hero h1{font-size:clamp(32px,4vw,46px)}
+
+.hero h1 .sp{font-style:normal;background:linear-gradient(100deg,#0B2A5B 0%,#154A8A 55%,#2E6FB5 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;-webkit-box-decoration-break:slice;box-decoration-break:clone}
+
+@media (forced-colors:active){.hero h1 .sp{background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}}
