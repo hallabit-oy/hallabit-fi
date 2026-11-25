@@ -14,3 +14,7 @@ exclude:
   - vendor/ruby/
   - MUUTOKSET.txt
   - README.md
+
+url: "https://hallabit.fi"
+plugins:
+  - jekyll-sitemap
