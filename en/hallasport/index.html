@@ -248,21 +248,7 @@ section.alt :focus-visible{outline-color:var(--acc)}
 </style><style>
 section:has(> .sport-divider){position:relative}
 
-.sport-divider{--angle:112deg;--pitch:14px;--edge:55%;--lift:-14px;position:absolute;z-index:4;inset:0 0 auto;height:clamp(24px,4vw,52px);transform:translateY(-50%);pointer-events:none;perspective:360px}
-.wave-1{--angle:68deg;--pitch:11px;--edge:40%;--lift:-10px}
-.wave-2{--angle:122deg;--pitch:18px;--edge:68%;--lift:-17px}
-.wave-3{--angle:104deg;--pitch:10px;--edge:47%;--lift:-12px}
-.wave-4{--angle:60deg;--pitch:16px;--edge:59%;--lift:-15px}
-.sport-divider b,.sport-divider b::before,.sport-divider b::after{position:absolute;inset:0;content:"";background:repeating-linear-gradient(var(--angle),transparent 0 2px,#0c3051 3px 5px,transparent 6px var(--pitch)),linear-gradient(100deg,#bcf053,#5ccb8a calc(var(--edge) - 15%),#225658 var(--edge),#102e50 calc(var(--edge) + 20%))}
-.sport-divider b::before{inset:32% 0 37%;background-position:5vw 0;background-size:110% 100%}
-.sport-divider b::after{inset:63% 0 0;background-position:-7vw 0;background-size:118% 100%}
-.sport-divider::after{content:"";position:absolute;inset:0;opacity:0;background:linear-gradient(105deg,transparent 43%,#e7ffd6 50%,transparent 57%) 100% 0/240% 100%}
-.sport-divider.glow::after{animation:stripe-sweep 1.7s ease-in-out}
-@keyframes stripe-sweep{0%{opacity:0;background-position:100% 0}20%,75%{opacity:.55}100%{opacity:0;background-position:0 0}}
-.sport-divider i{position:absolute;z-index:1;left:var(--x);top:var(--y);width:clamp(4px,.65vw,9px);aspect-ratio:1;opacity:0;background:linear-gradient(145deg,#edffb8,#70cd78 52%,#257363 53%);box-shadow:2px 3px 3px #062e3533}
-.sport-divider.glow i{animation:stripe-lift 1.05s ease-in-out var(--delay)}
-@keyframes stripe-lift{0%,100%{opacity:0;transform:translate3d(0,0,0) rotate(15deg)}45%{opacity:.94;transform:translate3d(2px,var(--lift),45px) rotate(46deg);box-shadow:3px 8px 5px #062e3544}}
-@media(prefers-reduced-motion:reduce){.sport-divider.glow::after,.sport-divider.glow i{animation:none}}
+.sport-divider{position:absolute;z-index:4;top:0;left:0;right:0;height:clamp(24px,4vw,52px);overflow:hidden;pointer-events:none;transform:translateY(-50%);background:linear-gradient(100deg,#85dca6,#309e69 35%,#73df9f 70%,#258653);-webkit-mask:repeating-linear-gradient(0deg,#000 0 4px,transparent 4px 8px);mask:repeating-linear-gradient(0deg,#000 0 4px,transparent 4px 8px)}
 </style><style>.hero .hero-txt h1{font-size:clamp(25px,6.6vw,40px)}</style><meta name="twitter:card" content="summary_large_image"><style>
 .sport-prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;margin-top:28px;max-width:900px}
 .sport-prices article{padding:clamp(24px,4vw,44px);border:1px solid #c5d7d2;border-radius:20px;background:white;color:#102e50}
@@ -280,7 +266,7 @@ section:has(> .sport-divider){position:relative}
 <p class="lead">HallaSport offers an ecosystem for running a sports club that makes club life smoother, so there is more time for the sport itself.</p>
 <div class="actions"><a class="btn main fx-nousu" href="mailto:info@hallabit.fi?subject=Walkthrough%20request%20HallaSport">Book a walkthrough</a></div></div>
 </div>
-<section id="piirteet" class="block alt" aria-labelledby="piirteet-otsikko"><span class="sport-divider wave-0" aria-hidden="true"><b></b><i style="--x:9%;--y:20%;--delay:0.000s"></i><i style="--x:17%;--y:39%;--delay:0.095s"></i><i style="--x:25%;--y:58%;--delay:0.190s"></i><i style="--x:33%;--y:29%;--delay:0.285s"></i><i style="--x:41%;--y:48%;--delay:0.380s"></i><i style="--x:49%;--y:67%;--delay:0.475s"></i><i style="--x:57%;--y:38%;--delay:0.570s"></i><i style="--x:65%;--y:57%;--delay:0.665s"></i><i style="--x:73%;--y:28%;--delay:0.760s"></i><i style="--x:81%;--y:47%;--delay:0.855s"></i><i style="--x:89%;--y:66%;--delay:0.950s"></i></span><div class="wrap">
+<section id="piirteet" class="block alt" aria-labelledby="piirteet-otsikko"><span class="sport-divider" aria-hidden="true"></span><div class="wrap">
 <h2 class="title" id="piirteet-otsikko">What HallaSport includes</h2>
 <div class="net" role="img" aria-label="Around HallaSport are Calendar, Messages, Payments, Teams, Statistics, Website, Fan shop, Integrations and HallaBit"><svg aria-hidden="true"></svg>
 <div class="n core"><b>HallaSport</b><div class="more"><div><p>HallaSport brings team schedules, messages and payments together. Players and guardians see what is coming up, and coaches know who will attend.</p></div></div></div>
@@ -294,7 +280,7 @@ section:has(> .sport-divider){position:relative}
 <div class="n"><b>Integrations</b><div class="more"><div><p>HallaSport can be connected to the services your club uses. Possible integrations include</p><ul><li>importing fixtures from a federation into the team calendar</li><li>showing training sessions and matches in family calendars</li><li>sending season fee and sales data to the club’s accounting software</li><li>publishing events and results on the club website</li></ul></div></div></div>
 <div class="n kt"><b>HallaBit</b><div class="more"><div><p>HallaSport is developed by HallaBit, a Finnish software company. Clubs can tell the developers directly what works and where they would like improvements.</p></div></div></div>
 </div></div></section>
-<section class="pk" id="paiva" data-versio="v3r" aria-labelledby="pk-otsikko"><span class="sport-divider wave-1" aria-hidden="true"><b></b><i style="--x:9%;--y:31%;--delay:0.000s"></i><i style="--x:17%;--y:50%;--delay:0.095s"></i><i style="--x:25%;--y:21%;--delay:0.190s"></i><i style="--x:33%;--y:40%;--delay:0.285s"></i><i style="--x:41%;--y:59%;--delay:0.380s"></i><i style="--x:49%;--y:30%;--delay:0.475s"></i><i style="--x:57%;--y:49%;--delay:0.570s"></i><i style="--x:65%;--y:20%;--delay:0.665s"></i><i style="--x:73%;--y:39%;--delay:0.760s"></i><i style="--x:81%;--y:58%;--delay:0.855s"></i><i style="--x:89%;--y:29%;--delay:0.950s"></i></span>
+<section class="pk" id="paiva" data-versio="v3r" aria-labelledby="pk-otsikko"><span class="sport-divider" aria-hidden="true"></span>
 <div class="wrap pk-head"><h2 class="title" id="pk-otsikko">Users</h2></div>
 <div class="pk-anim"><div class="pk-track"><div class="pk-stage">
 <div class="pk-bg" aria-hidden="true"></div>
@@ -337,10 +323,10 @@ section:has(> .sport-divider){position:relative}
 </div>
 </section>
 
-<section class="block alt" id="tekijat"><span class="sport-divider wave-2" aria-hidden="true"><b></b><i style="--x:9%;--y:42%;--delay:0.000s"></i><i style="--x:17%;--y:61%;--delay:0.095s"></i><i style="--x:25%;--y:32%;--delay:0.190s"></i><i style="--x:33%;--y:51%;--delay:0.285s"></i><i style="--x:41%;--y:22%;--delay:0.380s"></i><i style="--x:49%;--y:41%;--delay:0.475s"></i><i style="--x:57%;--y:60%;--delay:0.570s"></i><i style="--x:65%;--y:31%;--delay:0.665s"></i><i style="--x:73%;--y:50%;--delay:0.760s"></i><i style="--x:81%;--y:21%;--delay:0.855s"></i><i style="--x:89%;--y:40%;--delay:0.950s"></i></span><div class="wrap"><div class="eyebrow">The makers</div><h2 class="title">HallaSport is made by HallaBit</h2><p class="sub">HallaBit is a Finnish software company. We develop software that makes everyday work easier for businesses.</p><div class="actions"><a class="lnk fx-linkki" href="../#tiimi">Meet the team</a></div></div></section>
+<section class="block alt" id="tekijat"><span class="sport-divider" aria-hidden="true"></span><div class="wrap"><div class="eyebrow">The makers</div><h2 class="title">HallaSport is made by HallaBit</h2><p class="sub">HallaBit is a Finnish software company. We develop software that makes everyday work easier for businesses.</p><div class="actions"><a class="lnk fx-linkki" href="../#tiimi">Meet the team</a></div></div></section>
 
-<section class="block" id="hinnasto"><span class="sport-divider wave-3" aria-hidden="true"><b></b><i style="--x:9%;--y:53%;--delay:0.000s"></i><i style="--x:17%;--y:24%;--delay:0.095s"></i><i style="--x:25%;--y:43%;--delay:0.190s"></i><i style="--x:33%;--y:62%;--delay:0.285s"></i><i style="--x:41%;--y:33%;--delay:0.380s"></i><i style="--x:49%;--y:52%;--delay:0.475s"></i><i style="--x:57%;--y:23%;--delay:0.570s"></i><i style="--x:65%;--y:42%;--delay:0.665s"></i><i style="--x:73%;--y:61%;--delay:0.760s"></i><i style="--x:81%;--y:32%;--delay:0.855s"></i><i style="--x:89%;--y:51%;--delay:0.950s"></i></span><div class="wrap"><h2 class="title">Pricing</h2><div class="sport-prices"><article><h3>Monthly</h3><strong>€8.90</strong><span>per team per month</span></article><article><h3>Annual</h3><strong>€89.90</strong><span>per team per year</span><p>Save €16.90 per team compared with 12 monthly payments.</p></article></div></div></section>
-<section class="block alt" id="kokeile"><span class="sport-divider wave-4" aria-hidden="true"><b></b><i style="--x:9%;--y:64%;--delay:0.000s"></i><i style="--x:17%;--y:35%;--delay:0.095s"></i><i style="--x:25%;--y:54%;--delay:0.190s"></i><i style="--x:33%;--y:25%;--delay:0.285s"></i><i style="--x:41%;--y:44%;--delay:0.380s"></i><i style="--x:49%;--y:63%;--delay:0.475s"></i><i style="--x:57%;--y:34%;--delay:0.570s"></i><i style="--x:65%;--y:53%;--delay:0.665s"></i><i style="--x:73%;--y:24%;--delay:0.760s"></i><i style="--x:81%;--y:43%;--delay:0.855s"></i><i style="--x:89%;--y:62%;--delay:0.950s"></i></span><div class="wrap"><div class="eyebrow">Walkthrough</div><h2 class="title">Contact</h2><p class="sub">You can book a walkthrough of HallaSport at info@hallabit.fi.</p><div class="actions"><a class="btn main fx-nousu" href="mailto:info@hallabit.fi?subject=Walkthrough%20request%20HallaSport">Book a walkthrough</a></div></div></section>
+<section class="block" id="hinnasto"><span class="sport-divider" aria-hidden="true"></span><div class="wrap"><h2 class="title">Pricing</h2><div class="sport-prices"><article><h3>Monthly</h3><strong>€8.90</strong><span>per team per month</span></article><article><h3>Annual</h3><strong>€89.90</strong><span>per team per year</span><p>Save €16.90 per team compared with 12 monthly payments.</p></article></div></div></section>
+<section class="block alt" id="kokeile"><span class="sport-divider" aria-hidden="true"></span><div class="wrap"><div class="eyebrow">Walkthrough</div><h2 class="title">Contact</h2><p class="sub">You can book a walkthrough of HallaSport at info@hallabit.fi.</p><div class="actions"><a class="btn main fx-nousu" href="mailto:info@hallabit.fi?subject=Walkthrough%20request%20HallaSport">Book a walkthrough</a></div></div></section>
 </main><footer class="f"><div class="wrap"><div><img class="flogo" src="../../hallasport/brand/HallaSport_logo_vaaka_A_tummalle_pienkoko32_merkkitumma_v1.svg" alt="HallaSport" width="146" height="32"><strong class="f-r">HallaBit Oy</strong><a class="f-r" href="mailto:info@hallabit.fi">info@hallabit.fi</a><span class="f-r">Business ID 3659867-3</span><span class="f-r">Veteli</span><span class="f-tuote">HallaSport is a product of HallaBit Oy.</span></div><div class="f-linkit"><a href='/en/privacy'>Privacy</a></div></div></footer>
 <script src="../../hallasport/shared/net_v8.js"></script>
 <script src="../../hallasport/shared/halla-net_v2b.js"></script>
@@ -362,24 +348,4 @@ document.addEventListener('click',function(e){if(n.classList.contains('auki')&&!
 n.addEventListener('focusout',function(e){if(n.classList.contains('auki')&&e.relatedTarget&&!n.contains(e.relatedTarget)&&e.relatedTarget!==b)set(false);});
 (mq.addEventListener?mq.addEventListener('change',function(){if(!mq.matches)set(false);}):mq.addListener(function(){if(!mq.matches)set(false);}));
 })();</script>
-<script>
-(() => {
-  const stripes = document.querySelectorAll('.sport-divider');
-  const motion = matchMedia('(prefers-reduced-motion: reduce)');
-  function sweep() {
-    if (!document.hidden && !motion.matches) {
-      const visible = [...stripes].filter(stripe => {
-        const bounds = stripe.getBoundingClientRect();
-        return bounds.bottom > 0 && bounds.top < innerHeight;
-      });
-      const stripe = visible[Math.floor(Math.random() * visible.length)];
-      if (stripe) {
-        stripe.classList.add('glow');
-        setTimeout(() => stripe.classList.remove('glow'), 2150);
-      }
-    }
-    setTimeout(sweep, 4500 + Math.random() * 6500);
-  }
-  setTimeout(sweep, 1800 + Math.random() * 2200);
-})();
-</script></body></html>
+</body></html>
