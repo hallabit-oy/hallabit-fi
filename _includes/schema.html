@@ -33,9 +33,20 @@
       "name": {{ page.product | jsonify }}, "url": "{{ origin }}/{{ page.product | downcase }}/",
       "applicationCategory": "BusinessApplication", "publisher": {"@id": "{{ origin }}/#org"}{% if page.product == "HallaSport" %},
       "operatingSystem": "Web",
-      "offers": {"@type": "Offer", "url": "{{ canonical }}#hinnasto", "price": "8.90", "priceCurrency": "EUR",
-        "priceSpecification": {"@type": "UnitPriceSpecification", "price": "8.90", "priceCurrency": "EUR",
-          "unitText": {% if page.lang == 'en' %}"per team per month"{% else %}"joukkue / kuukausi"{% endif %}, "valueAddedTaxIncluded": false}}
+      "offers": [
+        {
+          "@type": "Offer", "url": "{{ canonical }}#hinnasto",
+          "name": {% if page.lang == 'en' %}"Monthly plan per team"{% else %}"Kuukausihinta joukkueelle"{% endif %},
+          "price": "8.90", "priceCurrency": "EUR",
+          "priceSpecification": {"@type": "UnitPriceSpecification", "price": "8.90", "priceCurrency": "EUR", "unitCode": "MON"}
+        },
+        {
+          "@type": "Offer", "url": "{{ canonical }}#hinnasto",
+          "name": {% if page.lang == 'en' %}"Annual plan per team"{% else %}"Vuosihinta joukkueelle"{% endif %},
+          "price": "89.90", "priceCurrency": "EUR",
+          "priceSpecification": {"@type": "UnitPriceSpecification", "price": "89.90", "priceCurrency": "EUR", "unitCode": "ANN"}
+        }
+      ]
       {% endif %}
     }{% endif %}
   ]
