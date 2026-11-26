@@ -112,8 +112,8 @@ jobs:
                   range.selectNodeContents(h);
                   const boxes=[...range.getClientRects()].filter(b=>b.width&&b.height);
                   const price=[...document.querySelectorAll('#hinnasto .sport-prices article')].map(e=>({text:e.innerText,visible:e.checkVisibility()}));
-                  const slides=[...document.querySelectorAll('li.kar-dia')];
-                  return {visible:h.checkVisibility(),fits:boxes.every(b=>b.left>=-2 && b.right<=innerWidth+2),price,list:slides.length===8&&slides.every(e=>!e.hasAttribute('role')&&['UL','OL'].includes(e.parentElement.tagName))};
+                  const slides=[...document.querySelectorAll('li.kar-dia:not(.kar-klooni)')];
+                  return {visible:h.checkVisibility(),fits:boxes.every(b=>b.left>=-2 && b.right<=innerWidth+2),price,list:[...document.querySelectorAll('.kar-klooni')].every(e=>e.getAttribute('aria-hidden')==='true')&&slides.length===8&&slides.every(e=>!e.hasAttribute('role')&&['UL','OL'].includes(e.parentElement.tagName))};
                 })()`);
                 assert(result.visible&&result.fits,path+' heading at '+width);
                 if(path.includes('hallasport/')){assert.equal(result.price.length,2);assert(result.price.every(x=>x.visible));assert.match(result.price[1].text,/89[.,]90/);assert.match(result.price[1].text,/16[.,]90/);}
