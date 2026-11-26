@@ -1,0 +1,128 @@
+name: Tarkista pääsivujen julkaisu 17
+on:
+  push:
+    branches: ["tarkistus/paasivujen-julkaisu-17"]
+permissions: {}
+env:
+  RELEASE: "ff4c6eacb11f80a2eb18584a71f180f9a0d2576c"
+jobs:
+  tarkistus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Tarkista kahdeksan pääsivua, hinnat ja kuvat julkisesta osoitteesta
+        shell: python
+        env:
+          META: "{\"/\":{\"title\":\"HallaBit – suomalaiset sovellukset seuroille ja kenttätyöhön\",\"description\":\"HallaBit on veteliläinen ohjelmistoyritys. Teemme HallaSportin urheiluseuroille ja HallaLinkin rakennus- ja asennusyrityksille. Tutustu sovelluksiin.\"},\"/en/\":{\"title\":\"HallaBit – Finnish software for sports clubs and field work\",\"description\":\"HallaBit builds software in Veteli, Finland. Explore HallaSport for sports clubs and HallaLink for construction and installation companies.\"},\"/hallalink/\":{\"title\":\"Toiminnanohjausjärjestelmä rakennus- ja asennusalalle | HallaLink\",\"description\":\"HallaLink kokoaa rakennus- ja asennusyrityksen tunnit, kulut, työmaapäiväkirjat, tarjoukset ja laskut samaan järjestelmään.\"},\"/en/hallalink/\":{\"title\":\"Field service software for construction and installation | HallaLink\",\"description\":\"Track working hours and expenses, keep site diaries, prepare quotes and invoice jobs with HallaLink for construction and installation companies.\"},\"/hallasport/\":{\"title\":\"Urheiluseuran sovellus maksuihin ja tilastoihin | HallaSport\",\"description\":\"Hallitse joukkueen kalenteria, ilmoittautumisia, maksuja ja tilastoja HallaSportissa. Hinta joukkueelle on 8,90 € kuukaudessa tai 89,90 € vuodessa.\"},\"/en/hallasport/\":{\"title\":\"HallaSport – sports club app for teams, fees and stats\",\"description\":\"Manage team calendars, registrations, fees and player stats with HallaSport. Choose a monthly plan at €8.90 or an annual plan at €89.90 per team.\"},\"/tietosuoja/\":{\"title\":\"Tietosuoja ja evästeet | HallaBit\",\"description\":\"Lue, miten HallaBitin verkkosivusto käyttää evästeitä, miten HallaLinkissa käsitellään tietoja ja kenelle voit lähettää tietosuojakysymyksen.\"},\"/en/privacy/\":{\"title\":\"Privacy and cookies | HallaBit\",\"description\":\"Read how the HallaBit website uses cookies, how data is handled in HallaLink and where to send questions about your personal data.\"}}"
+          ASSETS: "{\"hallalink/img/hero_v14/hallalink-hero_v14-kaista-1170.avif\":\"40fa0c7eef0d1ceac0b2ff6163f6abc2cb56a11decd1ee39129b6565c29b89fa\",\"hallalink/img/hero_v14/hallalink-hero_v14-kaista-390.avif\":\"1ae755e4501c8948db8555c86c88ebba6522e18df3e79462bf2b74eb47356f86\",\"hallalink/img/hero_v14/hallalink-hero_v14-kaista-780.avif\":\"bd563e32ca8e3f450f9e3c884297af8c31925211e971fc0719cdf28af5016f25\",\"hallasport/img/hero_v6/hallasport-hero_v6-kaista-1170.avif\":\"d1ffb232045e9b634e7b5b1627040aa3e0d4cb351778f7bfdd163f6a4db8f9f7\",\"hallasport/img/hero_v6/hallasport-hero_v6-kaista-390.avif\":\"b33f85b44bcf7919640621034cb5b8915ab3230f929ce76bc59152454938d5fe\",\"hallasport/img/hero_v6/hallasport-hero_v6-kaista-780.avif\":\"af232eaf2c7f4aa6db62b38b14047378e2ec8ea2e68179695b073917cd1b2ce2\",\"hallasport/img/kayttajat/huoltaja_koti-390.webp\":\"9ca479046610a3c77a83b3c7a5fe6b4deba1fb81252d61a835ea09febfe5e0b9\",\"hallasport/img/kayttajat/paakayttaja_koti-480.webp\":\"d663bfb9b6083394e22c440a6545e7b8dedbe5487c0cf3cf011a629b61cabf0e\",\"hallasport/img/kayttajat/paakayttaja_koti-615.webp\":\"b0267b52ceef8cbf90c54f9a9c2b0dd9de4e8dbf4347b23b7c5c9bd4bea0b6a4\",\"hallasport/img/kayttajat/seuran_kotisivu-1440.webp\":\"0f090da5fb27a0768cfa6513300e6eb09a68d04b720d05b83f3e3bde9991b5de\",\"hallasport/img/kayttajat/seuran_kotisivu-480.webp\":\"8c683016b569569e48eff506814a0cdc9e3e02e27517d38a8d34d8f601aca1f5\",\"hallasport/img/kayttajat/seuran_kotisivu-960.webp\":\"3042b1b505143904f33082fdbbdced8e5b06df1a281f19cf0797ce678390fdaf\",\"hallasport/img/kayttajat/valmentaja_koti-1440.webp\":\"6057c0ab7f4f1aae990c4d3ce414ae46ff738adf8f7c4e43e02727e1eadc88a4\",\"hallasport/img/kayttajat/valmentaja_koti-480.webp\":\"25a0314bdc19c74e07e6787b958a59f2f7863205b4c229a0eff9afb59fa20f2b\",\"hallasport/img/kayttajat/valmentaja_koti-960.webp\":\"b033f6047dc86624de10d7e471495109e64c18a416e4b388e0c2838c23c809b9\",\"img/hero_kaista_1170.avif\":\"26141cb1c0679efdae4a8c9f82dd36c36267930ea1a3b1b9d8a6a488cdbac172\",\"img/hero_kaista_1520.avif\":\"f1ef6f6f4b12fa632f32b306d5518dc5f80ea549f481fc98d26c9fb6b5eb4abe\",\"img/hero_kaista_390.avif\":\"e363c60d099d9377a2a34975aa01f050a8cefa888ed63bd378587b739e71128b\",\"img/hero_kaista_780.avif\":\"169fa61f6d28de3e3d7a749c9f9b3559f97b28bc47b286c0f7dc93e06b669dc3\"}"
+        run: |
+          import concurrent.futures, hashlib, json, os, re, time
+          from html.parser import HTMLParser
+          from urllib.parse import urljoin
+          from urllib.request import urlopen, Request
+          from xml.etree import ElementTree as ET
+          origin='https://hallabit.fi'
+          meta=json.loads(os.environ['META'])
+          assets=json.loads(os.environ['ASSETS'])
+          class Page(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.meta={}; self.title=''; self.ld=[]; self.field=None; self.text=[]; self.slides=[]; self.jpgsrc=[]
+              def handle_starttag(self,t,a):
+                  a=dict(a)
+                  if t=='meta': self.meta[a.get('property') or a.get('name')]=a.get('content')
+                  if t=='title' and not self.title: self.field='title'
+                  if t=='script' and a.get('type')=='application/ld+json':
+                      self.field='ld'; self.ld.append('')
+                  if t=='li' and 'kar-dia' in a.get('class','').split(): self.slides.append(a)
+                  if t=='img' and 'kayttajat' in a.get('srcset',''):self.jpgsrc.append(a['srcset'])
+              def handle_data(self,v):
+                  if self.field=='title':self.title+=v
+                  if self.field=='ld':self.ld[-1]+=v
+                  if v.strip():self.text.append(v.strip())
+              def handle_endtag(self,t):
+                  if t=='title' and self.field=='title' or t=='script' and self.field=='ld': self.field=None
+          def get(path):
+              req=Request(origin+path+'?v='+os.environ['RELEASE'],headers={'Cache-Control':'no-cache','User-Agent':'HallaBit-content-check'})
+              with urlopen(req,timeout=15) as r:
+                  assert r.status==200,path
+                  return r.read()
+          def check(p):
+              doc=Page();doc.feed(get(p).decode());expected=meta[p]
+              assert doc.title==expected['title'] and doc.meta.get('description')==expected['description'],p
+              nodes=json.loads(doc.ld[0])['@graph']
+              types={n['@type']:n for n in nodes}
+              assert types['Organization']['name']=='HallaBit Oy' and types['WebPage']['url']==origin+p,p
+              if 'hallasport' in p:
+                  amounts=['8,90 €','89,90 €','16,90 €'] if p.startswith('/hallasport') else ['€8.90','€89.90','€16.90']
+                  assert all(any(amount in line for line in doc.text) for amount in amounts),p
+                  assert [(o['price'],o['priceSpecification']['unitCode']) for o in types['SoftwareApplication']['offers']]==[('8.90','MON'),('89.90','ANN')],p
+                  assert len(doc.jpgsrc)==2 and all('.webp' in group for group in doc.jpgsrc),p
+              if 'hallalink' in p:assert len(doc.slides)==8 and all('role' not in li for li in doc.slides) and types['SoftwareApplication']['name']=='HallaLink',p
+              print('200',p,doc.title)
+          def image(p):
+              assert hashlib.sha256(get('/'+p)).hexdigest()==assets[p],p
+          for attempt in range(4):
+              try:
+                  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+                      list(pool.map(check,meta));list(pool.map(image,assets))
+                  urls=[node.text for node in ET.fromstring(get('/sitemap.xml')).findall('.//{*}loc')]
+                  assert len(urls)==30 and sum(u.startswith(origin+'/hallasport/') and u!=origin+'/hallasport/' for u in urls)==22
+                  break
+              except Exception:
+                  if attempt==3:raise
+                  time.sleep(12)
+          print(f'OK: {len(meta)} pages, both prices and savings in both languages, {len(assets)} image checksums.')
+          
+      - name: Tarkista otsikot, hinnastot ja karusellit puhelimen ja tietokoneen näkymässä
+        shell: bash
+        run: |
+          cat > "$RUNNER_TEMP/hallasport-tarkistus.mjs" <<'BROWSER_TEST'
+          import {spawn} from 'node:child_process';
+          import {mkdtemp,readFile} from 'node:fs/promises';
+          import {tmpdir} from 'node:os';
+          import {join} from 'node:path';
+          import assert from 'node:assert/strict';
+          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+          const profile=await mkdtemp(join(tmpdir(),'hallasport-check-'));
+          const proc=spawn('google-chrome',['--headless=new','--disable-dev-shm-usage','--no-sandbox','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{stdio:'ignore'});
+          try {
+            let port;
+            for(let i=0;i<80 && !port;i++){try{port=(await readFile(join(profile,'DevToolsActivePort'),'utf8')).split('\n')[0]}catch{await sleep(150)}}
+            assert(port,'Chrome startup');
+            const targets=await (await fetch('http://localhost:'+port+'/json/list')).json();
+            const ws=new WebSocket(targets.find(t=>t.type==='page').webSocketDebuggerUrl);
+            await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j});
+            const pending=new Map();let id=0;
+            ws.onmessage=evt=>{const m=JSON.parse(evt.data);if(pending.has(m.id)){const [r,j]=pending.get(m.id);pending.delete(m.id);if(m.error)j(Error(m.error.message));else r(m.result)}};
+            function send(method,params={}){const n=++id;return new Promise((r,j)=>{pending.set(n,[r,j]);ws.send(JSON.stringify({id:n,method,params}))})}
+            async function evaluate(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true});return r.result.value}
+            for(const width of [390,1440]){
+              await send('Emulation.setDeviceMetricsOverride',{width,height:850,deviceScaleFactor:1,mobile:width===390});
+              for(const path of ['/', '/en/', '/hallasport/','/en/hallasport/','/hallalink/','/en/hallalink/']){
+                const url='https://hallabit.fi'+path+'?v='+process.env.RELEASE;
+                await send('Page.navigate',{url});
+                let ready=false;
+                for(let i=0;i<60;i++){
+                  try{ready=await evaluate("location.href==="+JSON.stringify(url)+" && document.readyState!=='loading' && !!document.querySelector('script[type=\"application/ld+json\"]')")}catch{}
+                  if(ready)break;await sleep(200);
+                }
+                assert(ready,path);
+                const result=await evaluate(`(() => {
+                  const h=document.querySelector('h1'), range=document.createRange();
+                  range.selectNodeContents(h);
+                  const boxes=[...range.getClientRects()].filter(b=>b.width&&b.height);
+                  const price=[...document.querySelectorAll('#hinnasto .sport-prices article')].map(e=>({text:e.innerText,visible:e.checkVisibility()}));
+                  const slides=[...document.querySelectorAll('li.kar-dia')];
+                  return {visible:h.checkVisibility(),fits:boxes.every(b=>b.left>=-2 && b.right<=innerWidth+2),price,list:slides.length===8&&slides.every(e=>!e.hasAttribute('role')&&['UL','OL'].includes(e.parentElement.tagName))};
+                })()`);
+                assert(result.visible&&result.fits,path+' heading at '+width);
+                if(path.includes('hallasport/')){assert.equal(result.price.length,2);assert(result.price.every(x=>x.visible));assert.match(result.price[1].text,/89[.,]90/);assert.match(result.price[1].text,/16[.,]90/);}
+                if(path.includes('hallalink/'))assert(result.list);
+                console.log(width,path,'OK');
+              }
+            }
+            ws.close();
+          } finally {proc.kill('SIGTERM')}
+          
+          BROWSER_TEST
+          node "$RUNNER_TEMP/hallasport-tarkistus.mjs"
