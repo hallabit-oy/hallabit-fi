@@ -13,7 +13,7 @@ lastmod: "2026-11-26"
 crumbs: [{"name":"HallaBit","path":"/"},{"name":"HallaSport","path":"/hallasport/"},{"name":"Valmentajalle","path":"/hallasport/valmentajalle/"}]
 image: "/hallasport/img/og-hallasport-fi-v3.jpg"
 product: "HallaSport"
-related: ["/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/peliaika/","/hallasport/kalenteri/","/hallasport/tilastot/"]
+related: ["/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/peliaika/","/hallasport/kalenteri/","/hallasport/tilastot/","/hallasport/oppaat/peliaika-junioreille/"]
 ---
 
 ## Muokkaa harjoitusta jo ennen lähtöä
@@ -52,3 +52,5 @@ Kerro sijaiselle etukäteen, mistä hän löytää vuoron paikan, osallistujat j
 Pyydä harjoituksen jälkeen yksi käytännön havainto. Riittikö ilmoittautuneiden määrä harjoitesuunnitelmaan, tiesivätkö pelaajat, mihin mennä, ja jäikö läsnäoloja tarkistettavaksi? Vastauksesta saat seuraavalle viikolle konkreettisen tehtävän. Jos ongelma oli toistuvasti epäselvä kokoontumispaikka, sen täsmentäminen tapahtumassa auttaa sekä vakituista valmentajaa että seuraavaa sijaista.
 
 Pelaajan onnistuminen kannattaa ottaa mukaan myös silloin, kun seuraava korjaus koskee ryhmän järjestelyä. Kerro hänelle esimerkiksi, missä vaihdossa hän toteutti harjoitellun ratkaisun ja missä seuraava tilaisuus tulee. Jos yksittäinen lapsi jäi harjoitteessa jatkuvasti jonon päähän, muokkaa seuraavalle kerralle pisteiden aloittamisjärjestystä. Saat seurannasta välittömän päätöksen seuraavaan harjoitukseen ja lapsi saa mahdollisuuden näyttää, mitä hän ehti edellisellä kerralla oppia.
+
+Kun valmennus sopii kauden peluutuksesta, tarkista oman ikäluokan kilpailuohje. [Opas juniorien peliaikaan](/hallasport/oppaat/peliaika-junioreille/) kokoaa lajiliittojen lähteet ja antaa esimerkkejä siitä, miten vaihtoja voi seurata ottelussa.

@@ -13,7 +13,7 @@ lastmod: "2026-11-26"
 crumbs: [{"name":"HallaBit","path":"/"},{"name":"HallaSport","path":"/hallasport/"},{"name":"Huoltajalle","path":"/hallasport/huoltajalle/"}]
 image: "/hallasport/img/og-hallasport-fi-v3.jpg"
 product: "HallaSport"
-related: ["/hallasport/kalenteri/","/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/kausimaksut/","/hallasport/tietosuoja-ja-lasten-tiedot/"]
+related: ["/hallasport/kalenteri/","/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/kausimaksut/","/hallasport/tietosuoja-ja-lasten-tiedot/","/hallasport/oppaat/kausimaksun-maarittaminen/"]
 ---
 
 ## Käy viikon tapahtumat läpi lapsi kerrallaan
@@ -52,3 +52,5 @@ Ennen ensimmäistä vieraspeliä lapsi voi itse etsiä seuraavan tapahtuman ja k
 Kun perhe vaihtaa joukkuetta tai lapsi siirtyy vanhempien ryhmään, katsokaa yhdessä, minkä joukkueen tapahtumia kalenterissa näkyy. Jos mukana on vanha ryhmä tai uusi harjoitus puuttuu, pyytäkää seuraa tarkistamaan jäsenyys. Tämä on nopeampi ensimmäinen askel kuin kaikkien kalenterimerkintöjen lisääminen käsin uudelleen.
 
 Jos et ole varma, koskiko viesti koko ryhmää vai omaa lastasi, lue ensin tapahtuman otsikko ja viimeisin päivitys. Kysy tarvittaessa lähettäjältä yhdellä täsmällisellä kysymyksellä. Esimerkiksi kyytiä järjestävälle aikuiselle olennaista on tietää, päättyykö päivä otteluun vai jäävätkö pelaajat vielä yhteiseen ruokailuun. Kysymyksen vastaus voi samalla auttaa muita samaa kyytiä käyttäviä perheitä.
+
+Jos pohdit, miksi joukkueen yhteinen maksu on eri suuruinen kuin viime kaudella, [kausimaksun laskuesimerkki](/hallasport/oppaat/kausimaksun-maarittaminen/) näyttää, miten pelaajamäärä ja hallivuorojen kulut näkyvät perheen osuudessa.

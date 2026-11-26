@@ -14,7 +14,7 @@ crumbs: [{"name":"HallaBit","path":"/"},{"name":"HallaSport","path":"/hallasport
 image: "/hallasport/tilastot/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Mitä maalivahdin luvuista kannattaa tarkistaa ensin?","a":"Tarkista pelaaja, ottelu ja osallistumisjakso. Jos maalivahti vaihtui kesken ottelun, yhden pelaajan suorituksia on vaikea tulkita koko joukkueen tuloksen perusteella."},{"q":"Voidaanko tuloksia tuoda lajiliiton palvelusta?","a":"HallaSportissa on tulosten tuonti. Käykää esittelyssä läpi juuri oman sarjanne tuloslähde, joukkueen tunnistaminen ja täsmäytys omiin kirjauksiin ennen kuin sovitte ottelupäivän työnjaosta."},{"q":"Mihin CSV-vientiä käytetään?","a":"Joukkue voi tarkastella sovittua kautta ja käyttää aineistoa omaan seurantaan. Rajaa vienti tarvittaviin tietoihin ja henkilöihin. Yksittäisen lapsen kehityskeskustelu ei edellytä koko seuran aineiston jakamista."}]
-related: ["/hallasport/peliaika/","/hallasport/lajit/","/hallasport/valmentajalle/","/hallasport/joukkueenjohtajalle/"]
+related: ["/hallasport/peliaika/","/hallasport/lajit/","/hallasport/valmentajalle/","/hallasport/joukkueenjohtajalle/","/hallasport/ilmoittautumiset-ja-lasnaolo/"]
 editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 

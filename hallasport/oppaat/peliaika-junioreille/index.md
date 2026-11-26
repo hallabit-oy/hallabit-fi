@@ -36,7 +36,7 @@ Keskustelkaa päivän jälkeen pienestä toteutettavasta muutoksesta seuraavaan 
 
 ## Yhteinen kysymys valmennukselle
 
-Pyydä jokaista valmennustiimin jäsentä nimeämään yksi havainto pelaajien osallistumisesta. Tämän jälkeen voitte verrata havaintoja [toteutuneisiin peliminuutteihin](/hallasport/peliaika/) ja kirjata tarvittavan muutoksen [valmentajan suunnitelmaan](/hallasport/valmentajalle/). Lajiliittojen lähteet tarkistettu 26.11.2026.
+Pyydä jokaista valmennustiimin jäsentä nimeämään yksi havainto pelaajien osallistumisesta. Tämän jälkeen voitte verrata havaintoja [toteutuneisiin peliminuutteihin](/hallasport/peliaika/) ja kirjata tarvittavan muutoksen [valmentajan suunnitelmaan](/hallasport/valmentajalle/).
 
 
 ## Futsalissa kellon käyttötapa kuuluu suunnitelmaan
