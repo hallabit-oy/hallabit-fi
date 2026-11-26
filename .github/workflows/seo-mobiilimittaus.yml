@@ -39,6 +39,6 @@ jobs:
             "$RUNNER_TEMP/mittaus/node_modules/.bin/lighthouse" "http://127.0.0.1:8925$page" --quiet --only-categories=performance,accessibility --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --output=json --output-path="$RUNNER_TEMP/tulos.json"
             values=$(jq -r '[.audits["largest-contentful-paint"].numericValue, .audits["cumulative-layout-shift"].numericValue, .categories.accessibility.score] | @tsv' "$RUNNER_TEMP/tulos.json")
             echo "SEO_MOBILE $page $values"
-            jq -c '[.audits["lcp-breakdown-insight","lcp-discovery-insight"].details.items[]? | {subItems:(.items // [] | map({phase,timing,percent})), selector:.node.selector}]' "$RUNNER_TEMP/tulos.json"
+            jq -c '[.audits["lcp-breakdown-insight"].details | .. | objects | select(has("selector") or has("subpart")) | {selector,subpart,duration}]' "$RUNNER_TEMP/tulos.json"
             echo "- $page (LCP millisekunteina, CLS, saavutettavuus) $values" >> "$GITHUB_STEP_SUMMARY"
           done
