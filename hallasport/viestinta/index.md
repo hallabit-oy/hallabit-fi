@@ -15,6 +15,7 @@ image: "/hallasport/viestinta/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Tarkoittaako avaus, että huoltaja on hyväksynyt asian?","a":"Avaustieto kertoo viestin avaamisesta. Pyydä erillinen vastaus, jos tarvitset osallistumispäätöksen, luvan tai vahvistuksen tietystä järjestelystä."},{"q":"Mihin pelaajan henkilökohtainen kysymys kuuluu?","a":"Käytä suoraa yhteyttä valmentajaan tai asiaa hoitavaan vastuuhenkilöön. Joukkueen yhteisessä viestissä voi kertoa kaikille kuuluvan toimintaohjeen ilman lapsen henkilökohtaista selitystä."},{"q":"Miten tavoitetaan ne, joilta viesti jäi huomaamatta?","a":"Tarkista ensin vastaanottajaryhmä ja avaustilanne. Jos lähtö lähestyy, käytä seuran ennalta sopimaa kiireellisen yhteydenoton tapaa. Kerro uudelleen vain tarvittava tieto."}]
 related: ["/hallasport/kalenteri/","/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/huoltajalle/","/hallasport/joukkueenjohtajalle/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Valitse yleisö ennen kirjoittamista
@@ -23,7 +24,7 @@ Seuran uutinen sopii yhteiseen talkoopäivään, kauden avaukseen tai koko seura
 
 Vapaaehtoinen saattaa kirjoittaa viestin matkalla harjoituksiin. Yhden lauseen ilmoitus uudesta hallista tuntuu silloin riittävältä, mutta vastaanottajalla ei välttämättä ole samaa taustatietoa. Perhe voi olla kahdessa joukkueessa tai osallistua samalla viikolla kolmena eri päivänä. Kirjoita joukkue, päivämäärä ja muutoksen kohde jo alkuun. Koko keskustelua ei pitäisi joutua lukemaan sen selvittämiseksi, koskeeko uusi tieto juuri tätä lasta.
 
-## Näin tieto kulkee muuttuneesta harjoituksesta
+## Näin se toimii
 
 ### Korjaa ensin ajantasaisen tiedon lähde
 
@@ -56,3 +57,11 @@ HallaSportin esittelyssä voi testata yhden konkreettisen tilanteen lähettäjä
 ## Kokeile perehdytystä uudella perheellä
 
 Pyydä ensimmäiseen tapahtumaansa tulevaa huoltajaa etsimään edellinen yhteinen ohje ja tarkistamaan, kuka sen lähetti. Pyydä sen jälkeen näyttämään, mistä hän ottaisi yhteyttä valmentajaan henkilökohtaisesti. Jos nämä tehtävät sekoittuvat, selitä ero käytännön esimerkin avulla. Seuran yhteisen tiedotteen avaaminen onnistuu usein jo ensimmäisellä kerralla, mutta vastaajan valinta voi vaatia harjoittelua. Kun asia käydään läpi aloitusviikolla, lapsen ensimmäiseen peliin liittyvä henkilökohtainen kysymys löytää helpommin oikealle aikuiselle.
+
+## Kenelle toiminto sopii?
+
+[Huoltaja](/hallasport/huoltajalle/) tarvitsee lapsensa ryhmää koskevat viestit. Joukkueenjohtaja tavoittaa ryhmän yhteisissä asioissa ja valmentaja vastaa harjoituksiin liittyviin kysymyksiin.
+
+## Miksi HallaSport?
+
+Viestin vastaanottaja löytyy jo joukkueen yhteydestä. Perhe voi palata harjoituksen tietoihin ja tarvittaessa kysyä valmentajalta ilman uuden erillisen keskusteluryhmän perustamista.

@@ -15,6 +15,7 @@ image: "/hallasport/kalenteri/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Voiko vanhempi nähdä eri seurojen tapahtumat yhdessä?","a":"Voi, kun huoltajalla on asianmukainen yhteys lapsiin ja heidän joukkueisiinsa HallaSportissa. Aloita tarkistamalla, että kunkin lapsen seuraava tuttu harjoitus löytyy."},{"q":"Tarkoittaako merkintä omassa kalenterissa ilmoittautumista?","a":"Kalenteritilaus välittää tapahtumatietoa. Joukkueelle annettava osallistumisvastaus tehdään HallaSportin tapahtumassa. Näin valmentaja saa käyttöönsä oikean osallistujamäärän."},{"q":"Miksi oma kalenteri näyttää toisinaan vanhan paikan?","a":"Ulkoisen kalenterin sovellus päättää, milloin tilaus päivittyy. Kiireellisessä muutoksessa tarkista joukkueen tapahtuma HallaSportista. Ryhmälle kannattaa myös lähettää muutoksesta viesti."}]
 related: ["/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/viestinta/","/hallasport/huoltajalle/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Katso viikon kokonaisuutta ennen yksittäistä treeniä
@@ -23,7 +24,7 @@ Kotona tehtävä suunnittelu alkaa usein kuljettajasta ja ajomatkasta. Kaksi eri
 
 Joukkueen kalenteriin merkitty aloitus on hyvä erottaa lapsen henkilökohtaisesta lähtöajasta. Valmentaja voi kertoa kaikille yhteisen kokoontumisen. Yksittäisen perheen lähtöaika riippuu puolestaan koulupäivästä, varusteiden hakemisesta ja kyytiringistä. Perheen omat muistutukset voi lisätä omaan kalenteriin. Näin joukkueen yhteinen harjoitusaika pysyy kaikille ymmärrettävänä ja henkilökohtaiset järjestelyt siellä, missä niitä sovitaan.
 
-## Näin kalenteri rakennetaan käyttökelpoiseksi
+## Näin se toimii
 
 ### Luo tapahtuma perheen tunnistamalla nimellä
 
@@ -54,3 +55,11 @@ Kun joukkue ottaa kalenterin käyttöön, kokeilkaa yhtä tavallista viikkoa ja 
 ## Tarkista lomaviikko erikseen
 
 Koulun loma voi katkaista toistuvan harjoitusrytmin juuri silloin, kun perhe suunnittelee matkaa. Kysy hallin vuoroista vastaavalta, onko harjoitus oikeasti peruttu vai ainoastaan eri aikaan. Kerro ryhmälle selkeästi, mikä tapahtuma loman jälkeen jatkuu tavalliseen tapaan. Jos kalenterissa on useita saman päivän merkintöjä, pyydä toista ohjaajaa lukemaan ne kuin hän näkisi viikon ensimmäistä kertaa. Löytyykö niistä syy sille, miksi yksi lapsi kutsuttiin kahteen peräkkäiseen harjoitukseen? Jos selitys puuttuu, lisää se ennen seuraavaa viikkoa.
+
+## Kenelle toiminto sopii?
+
+[Huoltaja](/hallasport/huoltajalle/) sovittaa lasten harrastukset perheen viikkoon. Valmentaja ylläpitää harjoituksen varsinaista aikaa ja paikkaa, joihin perheen näkymä perustuu.
+
+## Miksi HallaSport?
+
+Sisarusten aikatauluja voi lukea samassa yhteydessä. Oma kalenteritilaus helpottaa harrastuksen sovittamista työvuoroon ilman, että tapahtuman tiedot pitää kirjoittaa käsin joka kerta.

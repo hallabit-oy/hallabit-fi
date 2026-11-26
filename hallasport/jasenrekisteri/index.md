@@ -15,6 +15,7 @@ image: "/hallasport/jasenrekisteri/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Entä jos huoltajalla on lapsia kahdessa seurassa?","a":"Sama käyttäjä voi kuulua useampaan seuraan. Tarkistakaa yhteydet kunkin lapsen ja joukkueen kohdalla erikseen. Toisen seuran toimihenkilö ei automaattisesti tarvitse tietoja toisesta seurasta."},{"q":"Kuka käsittelee käyttöoikeuspyynnön?","a":"HallaSportin pääkäyttäjä käsittelee pyyntöjä. Seuran kannattaa sopia, keneltä ylläpitäjä varmistaa hakijan tehtävän sekä mitä tehdään, jos pyyntö koskee tuttua henkilöä uudessa roolissa."},{"q":"Voiko seuran lakisääteiset velvollisuudet todeta roolilistan perusteella?","a":"Joukkueen osallistujalista antaa tietoa toiminnasta. Seuran pitää erikseen selvittää jäsenluetteloonsa kuuluvat henkilöt, tarvittavat tiedot ja vastuuhenkilöt sekä tarkistaa käytäntönsä omien sääntöjensä ja velvoitteidensa mukaisesti."}]
 related: ["/hallasport/tietosuoja-ja-lasten-tiedot/","/hallasport/kausimaksut/","/hallasport/huoltajalle/","/hallasport/joukkueenjohtajalle/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla.", "TODO: Kehitystiimin tai juristin tarkistus ennen julkaisua."]
 ---
 
 ## Erota harrastaja, huoltaja ja yhdistyksen jäsen
@@ -23,7 +24,7 @@ Pelaaja voi olla mukana kokeilujaksolla, vanhempi voi maksaa lapsensa harrastuks
 
 Aloita pienestä todellisesta työtilanteesta. Jos uutta perhettä ei tavoiteta harjoituspaikan vaihtuessa, syy voi olla väärä joukkue tai puuttuva huoltajayhteys. Selvitys on nopeampi, kun yhteyshenkilö pystyy tarkistamaan oikean lapsen, kauden ja ryhmän. Pelkästä samasta sukunimestä ei kannata päätellä, kuka hoitaa minkäkin lapsen asioita. Samassa seurassa voi olla samannimisiä perheitä ja lapsella voi olla useita vastuuaikuisia.
 
-## Näin jäsen- ja joukkuetiedot pidetään ajan tasalla
+## Näin se toimii
 
 ### Perusta ryhmä oikealle kaudelle
 
@@ -54,3 +55,11 @@ Esittelyyn voi tuoda kuvitteellisen perheen, jonka toinen lapsi vaihtaa ryhmää
 ## Käytä kauden alussa pientä tarkistusotosta
 
 Valitse eri joukkueista yksi aloittava pelaaja, yksi ryhmää vaihtava pelaaja ja yksi toimihenkilö, jolla on seurassa monta tehtävää. Tarkista kunkin kanssa hänen oman näkymänsä ymmärrettävyys. Jos lapsi on jo siirtynyt syyskauden ryhmään mutta huoltajan mielestä päivämäärät näyttävät kevään harjoituksilta, selvitä ensin mitä kautta ruudulla katsotaan. Oikeatkin tiedot voivat näyttää virheellisiltä väärässä kausiyhteydessä. Tämän jälkeen korjaa itse tieto vain, jos siinä on todellinen virhe. Kirjaa tekemäsi havainto perehdytykseen, jotta seuraava ylläpitäjä osaa erottaa väärän näkymän väärästä jäsenyydestä.
+
+## Kenelle toiminto sopii?
+
+[Joukkueenjohtaja](/hallasport/joukkueenjohtajalle/) tunnistaa, kenen pitäisi kuulua omaan ryhmään. Seuran pääkäyttäjä tarkistaa, mitä joukkuetta, kautta ja roolia pyyntö koskee.
+
+## Miksi HallaSport?
+
+Jäsenyys, joukkue ja tehtävä voidaan käsitellä toisistaan erillään. Sama aikuinen saattaa valmentaa yhtä ryhmää ja seurata toisen joukkueen tapahtumia oman lapsensa huoltajana.

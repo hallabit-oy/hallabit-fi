@@ -34,3 +34,23 @@ Futsalturnauksessa lyhyet siirtymät, pukuhuoneet ja sisäpelivarusteet korostuv
 
 Talven hallivuokrat ja kesän turnauskuljetukset voivat osua eri laskutusjaksoille. Kertokaa vanhempainillassa, mitkä kulut sisältyvät yhteiseen kausimaksuun ja mistä tapahtumista päätetään erikseen. Näin perhe voi arvioida koko harrastusvuoden kustannuksia ennen turnaukseen ilmoittautumista.
 
+
+## Järjestä kahden peliryhmän viikonloppu
+
+Saman ikäluokan pelaajat voivat jakautua viikonlopuksi kahteen peliryhmään. Toinen ryhmä aloittaa aamulla kotikentällä ja toinen matkustaa iltapäiväksi naapurikuntaan. Tarkista ensin, että kummankin tapahtuman kuvaus kertoo ryhmän, vastustajan, pelipaikan ja paikalle saapumisen ajan. Jos perhe näkee kalenterissaan molemmat tapahtumat, kerro miten pelaaja saa tietää, kumpaan hänen odotetaan osallistuvan. Epävarmaa valintaa ei pidä jättää lapsen pääteltäväksi joukkueen nimen perusteella.
+
+Valmentajien kannattaa sopia ennen ryhmien vahvistamista, miten menetellään, jos toinen joukkue tarvitsee täydennystä. Pelaajan siirtyminen ottelusta toiseen vaikuttaa kyytiin, ruokailuun ja palautumiseen. Tarkista ensin perheen mahdollisuus ja kerro sen jälkeen päätöksestä molemmille valmentajille. Pelkkä pelaajan lisääminen kokoonpanoon ei vielä tarkoita, että tieto uudesta lähtöajasta on tavoittanut huoltajan.
+
+## Valmistele vaihdot kentän koon mukaan
+
+Pienpelissä toinen joukkue voi päästä hyökkäykseen heti vaihdon yhteydessä. Nimeä vaihtoja seuraava aikuinen ja sopikaa, kuka sillä välin ohjaa kentällä olevia. Isommalla kentällä eri laitojen ja keskikentän roolit tuovat toisenlaisen kysymyksen. Jos sama pelaaja on koko kauden samassa paikassa, kokonaispeliaika ei kerro, onko hän saanut harjoitella erilaisia tehtäviä. Valitkaa yksi otteluun sopiva kehityskohde ja keskustelkaa siitä pelaajan kanssa etukäteen.
+
+Kun tarkastelette otteluiden minuutteja, erottakaa paikallaolo ja pelaaminen. Turnauspäivän neljään peliin osallistunut pelaaja on erilaisessa tilanteessa kuin kesken päivän mukaan tullut. Valmentajan kannattaa käydä poikkeus läpi yhdessä toisen toimihenkilön kanssa ennen kuin käyttää lukua perusteluna seuraavan pelin päätöksille. Yksittäistä ottelua voi käyttää esimerkkinä, mutta pidempi jakso kertoo, toistuuko sama tilanne.
+
+## Siirry nurmelta halliin hallitusti
+
+Talvikauden ensimmäisessä kutsussa kannattaa sanoa, tarvitaanko sisäkengät, missä pukuhuoneet ovat ja milloin hallin ovet avautuvat. Harjoitusaika saattaa alkaa heti edellisen vuoron jälkeen, jolloin varusteiden vaihto on tehtävä ennen saliin menoa. Kun kenttävuoro siirtyy takaisin ulos, käy samalla tavalla läpi kentän numero ja varustautuminen. Ensimmäistä kautta mukana olevalle perheelle nämä yksityiskohdat eivät ole ennestään tuttuja.
+
+Jos seura tarjoaa samaan aikaan jalkapalloa ja futsalia, säilyttäkää tapahtumien nimissä näkymä siihen, mitä oikeasti harjoitellaan. Saliin siirretty jalkapalloharjoitus ja futsalin sarjaottelu ovat perheelle kaksi eri tilannetta. Selkeä nimi auttaa myös rahastonhoitajaa myöhemmin yhdistämään salivuoron oikeaan toimintaan.
+
+Kauden viimeisen ulkopelin jälkeen sopikaa vielä, kuka vahvistaa ensimmäisen halliharjoituksen tiedot. Jos talviryhmässä on mukana pelaajia useasta kesän joukkueesta, huoltajan pitää tunnistaa uusi ryhmä kutsusta. Merkitse tapahtumaan myös ensimmäisen tapaamisen yhteyshenkilö. Perheen on silloin helppo kysyä oikealta aikuiselta, jos esimerkiksi lapsen nimi näkyy vanhassa ryhmässä mutta uusi harjoitus puuttuu kokonaan.

@@ -41,3 +41,21 @@ Valitse yksi kuukauden aineisto ja käykää se seuraajan kanssa läpi tapahtuma
 
 Jos seura käyttää HallaSportia, [rahastonhoitajan näkymä](/hallasport/rahastonhoitajalle/) ja [kulukorvausten käsittely](/hallasport/kulukorvaukset/) yhdistävät osan näistä työvaiheista samaan paikkaan.
 
+
+## Mitä ensimmäisellä tapaamisella kannattaa selvittää?
+
+Pyydä seuran talousvastaavalta esimerkki yhdestä tavallisesta maksuketjusta. Kuka päättää siitä, paljonko perheiltä kerätään, kuka perustaa maksun, kuka seuraa suorituksia ja missä vaiheessa kirjanpitäjä tarvitsee aineiston? Kirjoita yhteyshenkilön lisäksi myös hänen tehtävänsä. Kun joku vaihtuu kesken kauden, tiedät keneltä uuden henkilön tiedot pyydetään. Jos toimit itse useassa roolissa, merkitse nekin näkyviin, jotta seura voi sopia sijaisesta.
+
+Selvitä, miten joukkueen varat näkyvät seuran kirjanpidossa ja miten saat omaa ryhmääsi koskevat tiedot. Älä päättele tilin yleisestä saldosta, paljonko yksittäisen joukkueen käytettävissä on. Samalla tilillä voi olla eri ryhmien suorituksia tai jo muihin menoihin varattuja varoja. Varmista, mitä kuluja päätät joukkueen valtuuksilla ja mitkä hankinnat edellyttävät seuran erillisen päätöksen.
+
+## Kun tositteen ja maksun päivät eivät täsmää
+
+Lasku voi olla päivätty kuukauden viimeiselle päivälle, vaikka se maksetaan seuraavan kuukauden puolella. Pidä aineistossa näkyvissä sekä laskun tiedot että maksun toteutuminen. Jos löydät tiliotteelta tapahtuman, jonka kuvaus ei yksin riitä, tarkista ensin viite, summa ja ajankohta. Pyydä tarvittaessa lisätieto siltä, joka hankinnan teki. Samansuuruinen maksu ei automaattisesti kuulu samaan turnaukseen.
+
+Kerro kauden välikatsauksessa, mihin päivään asti kirjaukset on käyty läpi. Näin kokouksessa päätöstä tekevät ymmärtävät, voiko lähiaikoina saapua vielä kululasku edellisestä vieraspelistä. Jos puuttuva erä vaikuttaa tulevan hankinnan mahdollisuuteen, merkitse se avoimeksi asiaksi ja palaa päätökseen sovittuna ajankohtana.
+
+## Anna seuraajalle ratkaistava esimerkki
+
+Perehdytyksessä uusi rahastonhoitaja voi harjoitella yksinkertaisen esimerkin avulla. Yksi maksu puuttuu, yhdellä ostolla on kaksi eri kustannuspaikkaa ja yhdelle laskulle on jo sovittu uusi eräpäivä. Pyydä seuraajaa kertomaan, mistä hän selvittäisi tilanteen ja keneltä hän kysyisi päätöstä. Esimerkissä voi käyttää kuvitteellisia summia ja tunnistamattomia tapahtumia. Todellisen perheen taloustietoja ei tarvita työnkulun harjoitteluun.
+
+Lopeta luovutus tarkistamalla yhdessä seuraavan kuukauden ensimmäinen määräaika. Kun seuraaja tietää mistä aloittaa, perehdytys palvelee arkista työtä. Samalla seura saa tiedon mahdollisesta käyttöoikeudesta tai aineistosta, joka vielä puuttuu ennen vastuun todellista siirtymistä.

@@ -15,6 +15,7 @@ image: "/hallasport/kulukorvaukset/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Voiko hakija hyväksyä oman hankintansa?","a":"HallaSportissa hakija ja oman hakemuksen hyväksyjä ovat eri henkilöitä. Sopikaa joukkueelle varahyväksyjä myös niitä kertoja varten, jolloin tavallinen hyväksyjä teki itse ostoksen."},{"q":"Miten samalla kuitilla olevat omat ostokset käsitellään?","a":"Hae korvausta vain seuran osuudesta. Selosta mitkä rivit kuuluvat joukkueelle ja miten hakemuksen summa muodostuu. Selvintä on maksaa henkilökohtaiset ostokset erikseen jo kassalla."},{"q":"Onko kuitin hyväksyminen sama asia kuin maksaminen?","a":"Hyväksyntä kertoo, että seura on tarkastanut menon. Rahastonhoitaja huolehtii maksamisesta seuran sovitulla tavalla ja tarkistaa, ettei sama suoritus lähde kahdesti."}]
 related: ["/hallasport/seuran-talous/","/hallasport/kausimaksut/","/hallasport/rahastonhoitajalle/","/hallasport/oppaat/kulukorvaukset-yhdistyksessa/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Sovi pelisäännöt ennen ensimmäistä ostosta
@@ -23,7 +24,7 @@ Pienessäkin joukkueessa hankintoja voi tehdä moni. Huoltaja hoitaa vieraspelin
 
 Sopikaa käytäntö myös silloin, kun yhtä tilausta käyttää useampi joukkue. Turnausta varten hankittu yhteinen opastepaketti saattaa palvella koko seuraa, vaikka sen nouti yhden ikäluokan huoltaja. Kulun käsittelevä rahastonhoitaja ei voi tietää tätä kuitin myyjän nimestä. Lyhyt kuvaus käyttäjistä ja käyttötarkoituksesta auttaa tekemään saman ratkaisun myös seuraavan vastaavan hankinnan kohdalla.
 
-## Näin ostos kulkee HallaSportissa
+## Näin se toimii
 
 ### Ota kuitista luettava kuva heti
 
@@ -54,3 +55,11 @@ Hakijalle tärkeintä on saada kuitti talteen silloin, kun tilanne on vielä mui
 HallaSportin esittelyyn voi ottaa mukaan yhden keksityn mallitositteen sekä kuvauksen seuran hyväksymisjärjestyksestä. Kokeilkaa tavallisen ostoksen lisäksi tilannetta, jossa hankinnan tekee rahastonhoitaja itse. Se paljastaa nopeasti, onko varahenkilön rooli sovittu riittävän tarkasti. Näin seura voi arvioida kuittien käsittelyä todellisen työnjaon kautta jo ennen seuraavaa kiireistä turnauskautta.
 
 Kauden lopussa kannattaa verrata muutamaa samaa tapahtumaa koskevaa hakemusta keskenään. Jos tapahtumapaikka on kaikissa eri nimellä, seuraavan vuoden järjestäjä joutuu kokoamaan menot käsin useasta kohdasta. Sopikaa seuraavaan turnaukseen yhteinen tapahtumanimi sekä henkilö, jolta vapaaehtoinen voi varmistaa epäselvän kustannuspaikan jo ennen ostosta. Näin kokemuksesta jää hyötyä tulevallekin joukkueelle.
+
+## Kenelle toiminto sopii?
+
+[Rahastonhoitaja](/hallasport/rahastonhoitajalle/) seuraa hyväksyttyjä kuluja. Myös varusteita ostava huoltaja ja vieraspelin järjestävä joukkueenjohtaja hyötyvät siitä, että kuitti kulkee hakemuksen mukana.
+
+## Miksi HallaSport?
+
+Kun hakemus ja sen hyväksyntä liittyvät samaan tositteeseen, hyväksyjän kysymys kohdistuu oikeaan ostokseen. Joukkueen vaihtaessa rahastonhoitajaa selvitystyö ei jää edeltäjän puhelimeen.

@@ -32,3 +32,23 @@ Avaa sen lapsen tiedot, jonka kausi- tai leirimaksusta on kyse. Tarkista summa j
 
 Harjoitteen sisältöä koskeva kysymys kuuluu usein valmentajalle, kuljetus joukkueenjohtajalle ja lasku rahastonhoitajalle. Joukkueen viesteistä voi tarkistaa viimeisimmän yhteisen ohjeen. Lasta koskevan asian voi kertoa valmentajalle yksityisesti. Uuden huoltajan on hyvä aloittaa varmistamalla, että lapsen oikea joukkue ja tuleva harjoitus näkyvät. Jos perheen tai lapsen yhteys on väärä, pyydä seuran ylläpitäjää tarkistamaan se ennen kuin lähetät tietoja tai vastaat toisen lapsen puolesta.
 
+
+## Kun kaksi lasta tarvitsee kyydin eri suuntiin
+
+Lue ensin kummankin lapsen oman tapahtuman paikka ja kokoontumisaika. Sama halli voi tarkoittaa kahta eri sisäänkäyntiä, ja nuorempi ryhmä saattaa kokoontua ulkona ennen vuoroa. Jos toinen aikuinen ottaa kyydin hoitaakseen, kerro hänelle nimenomaan kokoontumispaikka. Ottelun alkamisaika ei vielä kerro, milloin lapsen pitää olla vaihtamassa varusteita. Palaa joukkueen tapahtumaan lähtöpäivänä, sillä aiemmin lähetetty kuvakaappaus ei päivity, jos järjestäjä vaihtaa kenttää.
+
+Jos vastaus riippuu kyydistä, selvitä kyyti ja päivitä ilmoittautuminen heti ratkaisun jälkeen. Valmentajan on helpompi valmistella harjoitus, kun avoimeksi jää vain aidosti epävarma osallistuminen. Jos lapsi sairastuu samana aamuna, vaihda jo annettu vastaus. Mahdollisen lisäviestin voi osoittaa joukkueen vastuuhenkilölle. Koko ryhmän ei tarvitse tietää poissaolon yksityiskohtia.
+
+## Kun perheen saama veloitus tuntuu oudolta
+
+Lue maksun nimi, eräpäivä ja lapsi ennen yhteydenottoa. Sisarukset voivat osallistua samalle leirille, vaikka vain toinen pelaisi leirin jälkeen turnauksessa. Kaksi samansummaista veloitusta voivat siten kuulua eri lapsille. Jos et tunnista tapahtumaa, kysy rahastonhoitajalta maksun peruste. Kerro viestissä, minkä maksun haluat selvittää ja kenelle se on osoitettu. Pankkitilin saldoa tai muiden lasten maksutietoja ei tarvita asian selvittämiseen.
+
+Kun toinen huoltaja on jo maksanut, sopikaa ensin keskenänne, kumpi selvittää asian. Näin seura saa yhden kysymyksen eikä kahta rinnakkaista selvitystä. Jos eräpäivä lähestyy, kerro siitä yhteydenotossa. Mahdollisesta uudesta maksuaikataulusta sovitaan seuran kanssa erikseen.
+
+## Harjoittele toimintaa lapsen kanssa
+
+Ennen ensimmäistä vieraspeliä lapsi voi itse etsiä seuraavan tapahtuman ja kertoa, missä joukkue tapaa. Aikuinen tarkistaa tiedon hänen kanssaan. Samalla voi sopia, kuka ilmoittaa osallistumisen ja kenelle lapsi kertoo aikataulun muutoksesta. Vastuun jako kannattaa sanoa ääneen varsinkin silloin, kun lapsi viettää viikkoa kahdessa kodissa. Kumpikin aikuinen tietää silloin, mitä toiselta odotetaan.
+
+Kun perhe vaihtaa joukkuetta tai lapsi siirtyy vanhempien ryhmään, katsokaa yhdessä, minkä joukkueen tapahtumia kalenterissa näkyy. Jos mukana on vanha ryhmä tai uusi harjoitus puuttuu, pyytäkää seuraa tarkistamaan jäsenyys. Tämä on nopeampi ensimmäinen askel kuin kaikkien kalenterimerkintöjen lisääminen käsin uudelleen.
+
+Jos et ole varma, koskiko viesti koko ryhmää vai omaa lastasi, lue ensin tapahtuman otsikko ja viimeisin päivitys. Kysy tarvittaessa lähettäjältä yhdellä täsmällisellä kysymyksellä. Esimerkiksi kyytiä järjestävälle aikuiselle olennaista on tietää, päättyykö päivä otteluun vai jäävätkö pelaajat vielä yhteiseen ruokailuun. Kysymyksen vastaus voi samalla auttaa muita samaa kyytiä käyttäviä perheitä.

@@ -36,3 +36,21 @@ Säilytä yhteys hakijan selvityksen, hyväksynnän, maksusuorituksen ja joukkue
 
 Viralliset ohjeet tarkistettu 26.11.2026. [Verohallinnon ohje vapaaehtoistoiminnan ennakkoperinnästä](https://vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48059/yleishyodyllisten-yhteisojen-ja-julkisyhteisojen-vapaaehtoistoiminnan-ennakkoperintakysymykset5/) ja [Tulorekisterin ohje yhdistyksille](https://www.vero.fi/tulorekisteri/yritykset-ja-organisaatiot/suorituksen-maksajat/yhdistykset/).
 
+
+## Kirjaa ostoksen käyttötarkoitus heti
+
+Kuitissa voi lukea vain tavaran nimi tai liikkeen oma lyhenne. Kuukauden päästä rahastonhoitaja ei välttämättä enää tiedä, ostettiinko samat teipit ensiapulaukkuun, kentän merkintään vai yksityiseen käyttöön. Pyydä ostajaa kirjoittamaan yhdellä lauseella, mitä tapahtumaa tai ryhmää varten hankinta tehtiin. Jos kuitilla on mukana omia ostoksia, erittele seuralta haettava osuus. Alkuperäisen tositteen ja haetun summan välinen ero on silloin myöhemminkin selitettävissä.
+
+Kuvaa kuitti niin, että sen reunat, maksupäivä ja haettavat rivit näkyvät. Jos kuitti on pitkä, tarkista heti, että keskeltä ei jää epäselväksi tuotteen määrä tai rivin hinta. Puuttuvan kuitin tapauksessa kysy hyväksyjältä, miten seuran ohjeen mukaan toimitaan. Älä korvaa puuttuvaa tietoa myöhemmin kootulla arvauksella, jonka alkuperää kirjanpitäjä ei voi arvioida.
+
+## Tarkistus ennen maksamista
+
+Hyväksyjä tarkistaa kaksi eri asiaa. Oliko ostokselle seuran toimintaan liittyvä peruste, ja täsmääkö haettu summa liitteen tietoihin? Jos vastaukset ovat selvät, merkitse vielä oikea joukkue tai tapahtuma. Samana päivänä pelattu kotiturnaus ja seuraavan viikon vierasmatka voivat kuulua eri ryhmille. Tiliotteella näkyvä summa ei yksin kerro, kumman tapahtuman budjetissa kulu pitää huomioida.
+
+Jos kysymys koskee matkakustannusten käsittelyä, kokoa tosiasiat ennen kuin esität asian kirjanpitäjälle. Mikä tehtävä oli kyseessä, kenelle suoritus maksetaan, miten matka liittyi tehtävään ja mihin ajankohtaan se sijoittui? Verokohtelu ja mahdollinen ilmoitusvelvollisuus tarkistetaan suorituksen luonteen ja ajantasaisen viranomaisohjeen perusteella. Säilytä päätöksen tueksi tarvittava tieto seuran sovitussa paikassa.
+
+## Korjaa samasta ostosta tehty toinen hakemus
+
+Kaksi toimihenkilöä saattaa lähettää saman kuitin, jos toinen on tehnyt tilauksen ja toinen hakenut tavaran. Pysäytä toisen hakemuksen käsittely ennen uutta maksua ja selvitä, kenen tililtä ostos todella maksettiin. Tarkista samalla, onko ensimmäinen hakemus vasta hyväksytty vai onko maksu jo suoritettu. Näiden tilanteiden korjaaminen edellyttää eri työvaiheita.
+
+Kirjaa selvityksen tulos niin, että seuraava henkilö näkee miksi toinen hakemus ei johtanut maksuun. Jos korvaus on jo lähtenyt väärin tai kahdesti, ota asia kirjanpitäjän ja maksun saajan kanssa käsittelyyn seuran käytännön mukaan. Älä tasaa virhettä hiljaisesti vähentämällä summaa myöhemmästä, eri asiaa koskevasta hakemuksesta. Ymmärrettävä tapahtumaketju helpottaa sekä kauden päättämistä että vapaaehtoisen omaa selvitystyötä.

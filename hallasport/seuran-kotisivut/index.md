@@ -15,6 +15,7 @@ image: "/hallasport/seuran-kotisivut/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Mitä aloittelevan harrastajan pitäisi löytää ensimmäiseksi?","a":"Sopiva ryhmä, tieto harjoituspaikasta ja henkilö tai osoite, jonka kautta voi kysyä mukaan pääsemisestä. Seuran sisäiset ryhmätunnukset kannattaa avata myös tavallisella kielellä."},{"q":"Miten fanikauppa ja lipunmyynti tuodaan esiin?","a":"Ohjaa kävijä tapahtuman tai uutisen yhteydestä oikeaan ostamisen paikkaan. Kerro mistä ottelusta, tuotteesta tai ajankohdasta on kyse. Tarkista linkin kohde aina tapahtuman vaihtuessa."},{"q":"Mistä tiedän, mitä tietoja voin julkaista?","a":"Seura päättää ja selvittää julkaisun perusteet omassa toiminnassaan. Julkiseen joukkue-esittelyyn voi yleensä suunnitella hyödyllisen sisällön jo harjoitusryhmän, toiminnan kuvauksen ja seuran yhteystiedon varaan."}]
 related: ["/hallasport/viestinta/","/hallasport/jasenrekisteri/","/hallasport/joukkueenjohtajalle/","/hallasport/lajit/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Aloita kysymyksestä, jonka uusi perhe oikeasti esittää
@@ -23,7 +24,7 @@ Lapsi haluaisi tulla kokeilemaan lajia, mutta huoltaja ei vielä tiedä kuuluuko
 
 Myös jo toiminnassa mukana olevan perheen läheinen voi käydä sivuilla vain kerran kaudessa. Hän saattaa haluta katsoa ensimmäisen kotiottelun, ostaa lipun tai hankkia seuran tuotteen lahjaksi. Tälle kävijälle merkityksellisiä ovat tapahtuman nimi, oikea osoite ja toimiva reitti ostamiseen. Joukkueen ilmoittautumisohjeet tai valmennuksen sisäiset tiedot kuuluvat toiseen paikkaan. Mieti sivun rakennetta näiden kahden vierailijan kautta ennen pitkän esittelytekstin kirjoittamista.
 
-## Näin seura rakentaa käyttökelpoisen kotisivun
+## Näin se toimii
 
 ### Esittele joukkue sen omilla sanoilla
 
@@ -54,3 +55,11 @@ Esittelyä varten seura voi valita yhden joukkueen, yhden uutisen ja yhden tapah
 ## Arvioi julkinen sivu myös kauden jälkeen
 
 Kotiturnauksen päätyttyä katso mitä uutisessa kannattaa säilyttää. Tapahtuman ajankohta ja tulokset voivat yhä kiinnostaa, mutta vanha lippulinkki ei enää auta seuraavaan peliin tulevaa vierasta. Päivitä menneen tapahtuman luonne lukijalle selväksi ja tarkista mihin ajankohtaisia otteluita etsivä pääsee siitä eteenpäin. Varusteiden ennakkotilausta koskeva uutinen tarvitsee samanlaisen tarkistuksen, jos tilausaika sulkeutuu ennen kauden päättymistä. Näin tuttu sivusto pysyy uskottavana myös silloin, kun sitä käyttää vain muutaman kerran vuodessa.
+
+## Kenelle toiminto sopii?
+
+[Joukkueenjohtaja](/hallasport/joukkueenjohtajalle/) tuntee tapahtumat ja tunnistaa, mikä niistä kuuluu julkiselle sivulle. Seuran viestinnästä vastaava sopii päivitysten tekijät ja tarkistusajat.
+
+## Miksi HallaSport?
+
+Seura voi koota julkisen uutisen, ottelun ja tiedon siitä, miten uusi harrastaja pääsee mukaan, samaan asiointiin. Nykyisten jäsenten yksityiskohdat voidaan kertoa erikseen joukkueen omassa viestinnässä.

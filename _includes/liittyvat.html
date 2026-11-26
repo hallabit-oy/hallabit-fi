@@ -1,0 +1,10 @@
+{% capture links %}
+  {% for path in page.related %}
+    {% assign target = site.pages | where: "permalink", path | first %}
+    {% if target %}{% if include.category == nil or target.category == include.category %}
+      <li><a href="{{ path }}">{{ target.label | escape }}</a></li>
+    {% endif %}{% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign links = links | strip %}
+{% if links != empty %}<aside><h2>{{ include.heading | escape }}</h2><ul>{{ links }}</ul></aside>{% endif %}

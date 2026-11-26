@@ -15,6 +15,7 @@ image: "/hallasport/ilmoittautumiset-ja-lasnaolo/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Onko vastaamatta jättänyt pelaaja poissa?","a":"Vastaus puuttuu, joten osallistuminen on vielä auki. Jos pelaajamäärä ratkaisee harjoituksen toteutumisen, muistuta vastaamattomia ja kerro mihin mennessä tarvitset tiedon."},{"q":"Mitä tehdään, jos lapsi sairastuu vastauksen jälkeen?","a":"Perhe päivittää osallistumistiedon joukkueen ohjeen mukaan. Jos lähtö on aivan käsillä, tieto kannattaa välittää myös harjoituksesta vastaavalle henkilölle sovittua kanavaa pitkin."},{"q":"Miksi lopullista osallistumista seurataan?","a":"Valmennus voi vertailla suunniteltuja ja toteutuneita ryhmäkokoja. Kun poissaoloja tarkastellaan jakson yli, joukkue pystyy pohtimaan harjoitusajan, paikan ja muun kuormituksen käytännön vaikutuksia."}]
 related: ["/hallasport/kalenteri/","/hallasport/peliaika/","/hallasport/valmentajalle/","/hallasport/huoltajalle/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Tee vastaamisesta helppoa perheelle
@@ -23,7 +24,7 @@ Tapahtuman nimen pitää kertoa huoltajalle, minkä lapsen ja joukkueen harjoitu
 
 Ilmoita myös joukkueen yhteinen vastauskäytäntö. Viikkoharjoitukseen voi riittää eri aikataulu kuin turnaukseen, johon järjestetään kuljetus. Perheen kannalta on selkeämpää, jos määräaika perustellaan konkreettisella päätöksellä. Kun bussi pitää varata keskiviikkona, tiistain vastaus vaikuttaa todelliseen järjestelyyn. Viimeinen vastauspäivä ei silloin tunnu satunnaiselta muistuttelulta. Sama käytäntö on hyvä kertoa uudelle perheelle sen liittyessä mukaan kesken kauden.
 
-## Näin harjoitusviikon tiedot tarkentuvat
+## Näin se toimii
 
 ### Perhe ilmoittaa lapsen mukaan tai poissaolevaksi
 
@@ -54,3 +55,11 @@ Joukkueenjohtaja vastaa usein tapahtuman perustietojen toimivuudesta ja valmenta
 Selaimessa toimivaa HallaSportia kannattaa kokeilla tavallisen treeni-illan lisäksi yhdellä poikkeavalla tapahtumalla. Vaihtakaa harjoituspaikkaa, tarkistakaa tilanne huoltajan näkökulmasta ja käykää läpi valmentajan läsnäolokuittaus. Näin seura näkee, miten tieto kulkee kotona tehdystä vastauksesta kentän laidalle ja mitä perehdytykseen pitää kirjata ennen uuden kauden alkua.
 
 Vanhempainillassa ilmoittautumista kannattaa harjoitella yhden oikean tulevan treenikerran avulla. Pyydä huoltajaa näyttämään, mistä hän tunnistaa lapsen, harjoitusryhmän ja tapahtuman ajankohdan. Samalla selviää, onko tieto ymmärrettävä myös perheelle, joka liittyi seuraan juuri eikä vielä tunne harjoituspaikkojen lempinimiä. Kirjaa kysymykset uuden pelaajan perehdytykseen seuraavaa aloitusryhmää varten.
+
+## Kenelle toiminto sopii?
+
+[Valmentaja](/hallasport/valmentajalle/) tarvitsee määrän ennen harjoituksen suunnittelua. Huoltaja antaa lapsensa vastauksen, ja paikalla oleva aikuinen tarkistaa toteutuneen läsnäolon.
+
+## Miksi HallaSport?
+
+Ilmoittautuminen ja paikallaolon tarkistus kuvaavat saman tapahtuman eri hetkiä. Kun molemmat ovat joukkueen käytössä, harjoitusmäärän selvittäminen jälkikäteen on helpompaa.

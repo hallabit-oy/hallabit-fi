@@ -32,3 +32,23 @@ Valmentaja keskittyy peliin ja pelaajien ohjaamiseen. Joukkueenjohtaja voi autta
 
 Tee lyhyt kierros kalenteriin ennen kuin viikonloppu unohtuu. Jos harjoitusvuoro vaihtui pysyvämmin, yksi korjattu päivämäärä ei riitä. Jos seuraavana viikonloppuna on kaksi peliä eri paikoissa, tarkista että kumpikin on tunnistettavissa omalla nimellään. Näiden asioiden tarkastaminen vie vähemmän aikaa kuin saman epäselvyyden selvittäminen yksi perhe kerrallaan. HallaSportin esittelyssä kannattaa käydä läpi juuri oman joukkueen tavallinen vieraspelimatka.
 
+
+## Kun turnausohjelma muuttuu kesken viikon
+
+Turnausjärjestäjä saattaa muuttaa otteluohjelmaa sen jälkeen, kun perheet ovat jo sopineet kyydit. Vertaa uutta ohjelmaa tapahtumaan ja etsi ensin muuttunut tieto. Vaihtuiko ensimmäisen ottelun alkamisaika vai kokoontuminen? Pelataanko samalla kentällä vai siirrytäänkö toiseen rakennukseen? Kirjaa tapahtumaan uusi tieto kokonaisena. Pelkkä viesti siitä, että aloitusta siirrettiin puolella tunnilla, jättää myöhässä mukaan lukevan perheen arvaamaan lähtöajan.
+
+Lähetä muutoksesta lyhyt ilmoitus ja ohjaa lukemaan ajantasainen tapahtuma. Tarkista valmentajan kanssa, vaikuttaako muutos kokoonpanoon tai siihen, mihin mennessä osallistuminen tarvitaan. Jos kaikille pelaajille ei ole järjestetty samaa kuljetusta, käsittele yksittäiset kyytipulmat kyseisten perheiden kanssa. Kaikille tarkoitettu tapahtumatieto pysyy silloin helposti löydettävänä.
+
+## Tee vapaaehtoisen tehtävästä riittävän pieni
+
+Kun haet toimitsijaa tai muita apukäsiä, kerro milloin työ alkaa, milloin se päättyy ja kuka perehdyttää. Uuden huoltajan on helpompi lupautua rajattuun vuoroon kuin järjestämään koko kotiturnaus. Jos tehtävä vaatii seuran erillistä osaamista tai oikeutta, varmista kelpoisuus ennen vuorolistan vahvistamista. Tehtävän kuvauksessa kannattaa erottaa paikalle saapuminen ja ensimmäinen varsinainen suoritus.
+
+Pidä omaan käyttöön lyhyt luettelo tehtävistä, joilla on nimetty vastuuhenkilö, sekä tehtävistä, joihin vielä etsitään tekijää. Pelaajan ilmoittautuminen otteluun ei kerro, voiko hänen huoltajansa tulla koko päiväksi pöytäkirjan ääreen. Kysy aikuisen mahdollisuudesta erikseen. Kun vuoro on sovittu, kerro tarvittavat saapumistiedot juuri sille henkilölle, joka tulee paikalle.
+
+## Kokoa vieraspäivästä tieto seuraavalle vetäjälle
+
+Vieraspelin jälkeen on hyvä hetki päättää, mikä käytännön järjestely kannattaa säilyttää. Kirjaa, löytyikö oikea sisäänkäynti annetuilla ohjeilla, jäikö ryhmälle riittävästi aikaa varusteiden vaihtoon ja tiesikö paluukyyti, mistä pelaajat noudetaan. Näistä havainnoista syntyy seuraavan vierailun lähtökohta. Pelaajien henkilökohtaiset asiat jätetään tällaisen yleisen muistion ulkopuolelle.
+
+Jos joukkueenjohtaja vaihtuu kesken sarjan, anna seuraajalle yksi lähiviikon tehtävä hoidettavaksi yhdessä. Hän voi päivittää kentän tiedon tai lähettää osallistumisesta muistutuksen. Samalla käy ilmi, näkeekö hän oikean ryhmän ja tietääkö hän, ketä seurassa pyydetään avuksi poikkeustilanteessa. Lyhyt yhteinen harjoitus kertoo perehdytyksen onnistumisesta enemmän kuin pitkä luettelo sovelluksen valikoista.
+
+Jos kaksi seurajoukkuetta käyttää samoja vapaaehtoisia, tarkista tapahtumat myös heidän näkökulmastaan. Toinen ryhmä voi olettaa saman aikuisen avaavan hallin oven samalla hetkellä, kun hänen pitäisi olla vierasottelun lähtöpaikalla. Selvitä päällekkäisyys ennen kuin lähetät lopullisen ohjeen. Nimeä päätöksen jälkeen vastuuhenkilö kumpaankin tapahtumaan erikseen, vaikka ryhmät olisivat alkuviikon suunnitelmassa tehneet järjestelyt yhdessä.
