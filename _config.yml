@@ -16,5 +16,3 @@ exclude:
   - README.md
 
 url: "https://hallabit.fi"
-plugins:
-  - jekyll-sitemap
