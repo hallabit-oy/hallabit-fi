@@ -11,11 +11,11 @@
   var AVAIN = 'hb_consent';
   var VOIMASSA_PV = 365;
   var skripti = document.currentScript;
-  var tietosuojaUrl = (skripti && skripti.getAttribute('data-tietosuoja')) || 'tietosuoja.html';
   var pikseliLadattu = false;
   var banneri = null;
   var edellinenFokus = null;
   var KIELI = String(document.documentElement.getAttribute('lang') || 'fi').slice(0, 2).toLowerCase() === 'en' ? 'en' : 'fi';
+  var tietosuojaUrl = (skripti && skripti.getAttribute('data-tietosuoja')) || (KIELI === 'en' ? '/en/privacy/' : '/tietosuoja/');
   var KUUKAUDET_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   var T = {
     fi: {
