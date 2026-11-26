@@ -1,0 +1,8 @@
+{% assign ominaisuudet = site.pages | where: "category", "ominaisuus" | sort: "order" %}
+{% assign roolit = site.pages | where: "category", "rooli" | sort: "order" %}
+<details class="sport-ryhma"><summary>Ominaisuudet</summary><ul>{% for item in ominaisuudet %}<li><a href="{{ item.permalink }}">{{ item.label | escape }}</a></li>{% endfor %}</ul></details>
+<details class="sport-ryhma"><summary>Kenelle</summary><ul>{% for item in roolit %}<li><a href="{{ item.permalink }}">{{ item.label | escape }}</a></li>{% endfor %}</ul></details>
+<a href="/hallasport/lajit/">Lajit</a>
+<a href="/hallasport/#hinnasto">Hinnasto</a>
+<a href="/hallasport/#oppaat">Oppaat</a>
+<a href="/hallasport/#kokeile">Pyydä esittely</a>

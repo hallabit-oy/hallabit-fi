@@ -1,0 +1,5 @@
+{% assign articles = site.pages | where: "category", include.category | sort: "order" %}
+{% if articles.size > 0 %}<section class="wrap" id="{{ include.anchor }}">
+  <h2>{{ include.heading }}</h2>
+  <ul>{% for article in articles %}<li><a href="{{ article.permalink }}">{{ article.label | escape }}</a>{% if include.descriptions %}<p>{{ article.lead | escape }}</p>{% endif %}</li>{% endfor %}</ul>
+</section>{% endif %}

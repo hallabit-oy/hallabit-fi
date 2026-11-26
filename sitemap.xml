@@ -15,4 +15,8 @@ layout: null
   </url>
 {% endfor -%}
 {% endfor -%}
+{% assign articles = site.pages | where: "layout", "sisalto" | sort: "url" %}
+{% for article in articles %}
+  <url><loc>{{ article.permalink | absolute_url | xml_escape }}</loc><lastmod>{{ article.lastmod }}</lastmod></url>
+{% endfor %}
 </urlset>

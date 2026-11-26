@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  {% assign canonical = page.url | remove: 'index.html' | absolute_url %}
+  <link rel="canonical" href="{{ canonical }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | escape }}">
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  <link rel="icon" href="/brand/hallabit-favicon_v2b.svg">
+  <link rel="stylesheet" href="/fonts/plus-jakarta-sans.css">
+  <link rel="stylesheet" href="/shared/sisalto.css">
+  {% if page.product == "HallaSport" %}<link rel="stylesheet" href="/shared/sport-valikko.css">{% endif %}
+  {% include schema.html %}
+</head>
+<body class="sisalto">
+  <header><a href="/"><img src="/brand/hallabit-logo-tummalle_v2b.svg" alt="HallaBit" width="138" height="36"></a>
+    <nav aria-label="Tuotteet"><a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a></nav>
+  </header>
+  {% if page.product == "HallaSport" %}<nav class="sport-nav sport-article-nav" aria-label="HallaSportin sivut">{% include sport-valikko.html %}</nav>{% endif %}
+  <main>
+    {% include murupolku.html %}
+    <article>
+      <h1>{{ page.heading | escape }}</h1>
+      <p class="johdanto">{{ page.lead | escape }}</p>
+      {% if page.screen %}<figure><img src="{{ page.screen.src }}" width="{{ page.screen.width }}" height="{{ page.screen.height }}" alt="{{ page.screen.alt | escape }}"><figcaption>{{ page.screen.caption | escape }}</figcaption></figure>{% endif %}
+      {{ content }}
+      {% if page.faq %}<section><h2>Usein kysyttyä</h2>
+        {% for item in page.faq %}<details><summary>{{ item.q | escape }}</summary><p>{{ item.a | escape }}</p></details>{% endfor %}
+      </section>{% endif %}
+      {% if page.category == 'ominaisuus' %}
+        {% include liittyvat.html category="ominaisuus" heading="Liittyvät ominaisuudet" %}
+        {% include liittyvat.html category="rooli" heading="HallaSport eri rooleissa" %}
+        {% include liittyvat.html category="opas" heading="Seuratoimijan oppaat" %}
+      {% else %}
+        {% include liittyvat.html heading="Aiheeseen liittyvää" %}
+      {% endif %}
+      {% if page.product == 'HallaSport' %}<aside class="yhteys"><h2>HallaSport seurallesi</h2><p>8,90 € / joukkue / kk + alv</p><a href="mailto:info@hallabit.fi?subject=HallaSport-esittely">Pyydä esittely</a></aside>{% endif %}
+    </article>
+  </main>
+  <footer><strong>HallaBit Oy</strong> · Veteli · Y-tunnus 3659867-3 <nav aria-label="Alatunniste"><a href="/#mika">Tietoa HallaBitistä</a> <a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a> <a href="/tietosuoja/">Tietosuoja</a> <a href="/#yhteys">Yhteys</a></nav></footer>
+</body>
+</html>

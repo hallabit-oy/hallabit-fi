@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+.sisalto { margin: 0; color: #112b43; background: #fff; font: 1.08rem/1.7 'Plus Jakarta Sans', system-ui, sans-serif; }
+.sisalto header, .sisalto footer { background: #102943; color: white; padding: 1.25rem max(5vw, calc((100% - 70rem)/2)); }
+.sisalto header { display: flex; gap: 1rem 2rem; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.sisalto header img { display: block; }
+.sisalto nav a { margin-right: .75rem; }
+.sisalto header a, .sisalto footer a { color: white; }
+.sisalto main { max-width: 51rem; margin: 0 auto; padding: 2.5rem max(1.25rem, 3vw) 4rem; }
+.sisalto h1, .sisalto h2, .sisalto h3 { line-height: 1.18; text-wrap: balance; }
+.sisalto h1 { font-size: clamp(2.2rem, 6vw, 3.75rem); letter-spacing: -.045em; }
+.sisalto h2 { margin-top: 2.5rem; font-size: 1.65rem; }
+.sisalto h3 { margin-top: 1.75rem; }
+.sisalto .johdanto { font-size: 1.23rem; }
+.sisalto figure { margin: 2rem 0; }
+.sisalto figure img { display: block; max-width: 100%; height: auto; max-height: 26rem; object-fit: contain; }
+.sisalto figcaption, .sisalto .wrap { font-size: .92rem; }
+.sisalto a { text-underline-offset: .18em; }
+.sisalto details { border-bottom: 1px solid #c7d3db; padding: .85rem 0; }
+.sisalto summary { font-weight: 650; cursor: pointer; }
+.sisalto .yhteys { background: #eaf5f4; padding: 1.4rem; margin: 2rem 0; }
+.sisalto .yhteys h2 { margin: 0; }
