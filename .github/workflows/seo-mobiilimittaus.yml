@@ -1,0 +1,38 @@
+name: SEO-esikatselun mobiilimittaus
+on:
+  pull_request:
+    branches: [seo/sivunopeus]
+permissions:
+  contents: read
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - name: Rakenna GitHub Pagesin Jekyll-versiolla
+        run: |
+          gem install jekyll -v 3.10.0 --no-document
+          gem install kramdown-parser-gfm webrick --no-document
+          JEKYLL_ENV=production jekyll build --destination "$RUNNER_TEMP/sivusto"
+      - name: Mittaa kolme sivua mobiilissa
+        shell: bash
+        run: |
+          npm install --prefix "$RUNNER_TEMP/mittaus" lighthouse@13.6.0
+          python3 -m http.server 8925 --bind 127.0.0.1 --directory "$RUNNER_TEMP/sivusto" > /dev/null 2>&1 &
+          trap 'kill $!' EXIT
+          export CHROME_PATH="$(command -v google-chrome)"
+          for page in / /hallalink/ /hallasport/; do
+            "$RUNNER_TEMP/mittaus/node_modules/.bin/lighthouse" "http://127.0.0.1:8925$page" --quiet --only-categories=performance,accessibility --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --output=json --output-path="$RUNNER_TEMP/tulos.json"
+            values=$(jq -r '[.audits["largest-contentful-paint"].numericValue, .audits["cumulative-layout-shift"].numericValue, .categories.accessibility.score] | @tsv' "$RUNNER_TEMP/tulos.json")
+            echo "SEO_MOBILE $page $values"
+            echo "- $page (LCP millisekunteina, CLS, saavutettavuus) $values" >> "$GITHUB_STEP_SUMMARY"
+          done
