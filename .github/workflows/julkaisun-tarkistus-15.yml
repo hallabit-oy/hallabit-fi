@@ -1,0 +1,80 @@
+name: Tarkista HallaSport-julkaisu 15
+on:
+  push:
+    branches: ["tarkistus/hallasport-julkaisu-15"]
+permissions: {}
+jobs:
+  tuotanto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Tarkista julkinen sivukartta, valikot ja artikkelit
+        shell: python
+        run: |
+          from concurrent.futures import ThreadPoolExecutor
+          from html.parser import HTMLParser
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError
+          import time
+          import xml.etree.ElementTree as ET
+
+          origin = "https://hallabit.fi"
+          articles = ["/hallasport/huoltajalle/","/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/joukkueenjohtajalle/","/hallasport/kalenteri/","/hallasport/kausimaksut/","/hallasport/kulukorvaukset/","/hallasport/lajit/","/hallasport/lajit/jaakiekko/","/hallasport/lajit/jalkapallo/","/hallasport/lajit/salibandy/","/hallasport/oppaat/joukkueen-rahastonhoitajan-tehtavat/","/hallasport/oppaat/joukkueenjohtajan-tehtavat/","/hallasport/oppaat/kausimaksun-maarittaminen/","/hallasport/oppaat/kulukorvaukset-yhdistyksessa/","/hallasport/oppaat/peliaika-junioreille/","/hallasport/peliaika/","/hallasport/rahastonhoitajalle/","/hallasport/seuran-kotisivut/","/hallasport/seuran-talous/","/hallasport/tilastot/","/hallasport/valmentajalle/","/hallasport/viestinta/"]
+          held = ["/hallasport/jasenrekisteri/", "/hallasport/tietosuoja-ja-lasten-tiedot/"]
+
+          class Page(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.links = set()
+                  self.article = False
+                  self.canonical = None
+                  self.byline = False
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == "a" and attrs.get("href"):
+                      self.links.add(attrs["href"])
+                  if tag == "article":
+                      self.article = True
+                  if tag == "link" and attrs.get("rel") == "canonical":
+                      self.canonical = attrs.get("href")
+                  for attr in ("rel", "itemprop", "class", "id"):
+                      if {"author", "byline", "kirjoittaja"} & set((attrs.get(attr) or "").lower().split()):
+                          self.byline = True
+
+          def fetch(path):
+              req = Request(origin + path + "?release=15", headers={"User-Agent": "HallaBit-release-check/15", "Cache-Control": "no-cache"})
+              with urlopen(req, timeout=15) as res:
+                  assert res.status == 200
+                  return res.read().decode("utf-8")
+
+          def check(path):
+              p = Page()
+              p.feed(fetch(path))
+              assert p.article and p.canonical == origin + path and not p.byline, path
+              print("200", path)
+
+          for attempt in range(3):
+              try:
+                  sitemap = ET.fromstring(fetch("/sitemap.xml"))
+                  urls = {n.text for n in sitemap.findall(".//{*}loc")}
+                  assert {origin+p for p in articles} <= urls
+                  assert not any(origin+p in urls for p in held)
+                  nav = Page()
+                  nav.feed(fetch("/hallasport/"))
+                  assert set(articles) <= nav.links and not set(held) & nav.links
+                  with ThreadPoolExecutor(max_workers=4) as pool:
+                      list(pool.map(check, articles))
+                  for path in held:
+                      try:
+                          fetch(path)
+                      except HTTPError as exc:
+                          assert exc.code == 404, (path, exc.code)
+                          print("404", path)
+                      else:
+                          raise AssertionError(path)
+                  break
+              except Exception:
+                  if attempt == 2:
+                      raise
+                  time.sleep(12)
+          print("22 artikkelia, sivukartta, valikot ja kaksi luonnososoitetta tarkistettu.")
