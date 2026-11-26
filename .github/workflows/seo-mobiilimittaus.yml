@@ -26,13 +26,19 @@ jobs:
       - name: Mittaa kolme sivua mobiilissa
         shell: bash
         run: |
-          npm install --prefix "$RUNNER_TEMP/mittaus" lighthouse@13.6.0
-          python3 -m http.server 8925 --bind 127.0.0.1 --directory "$RUNNER_TEMP/sivusto" > /dev/null 2>&1 &
+          npm install --prefix "$RUNNER_TEMP/mittaus" lighthouse@13.6.0 http-server@14.1.1
+          find "$RUNNER_TEMP/sivusto" -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.svg" \) -exec gzip --keep --best {} \;
+          "$RUNNER_TEMP/mittaus/node_modules/.bin/http-server" "$RUNNER_TEMP/sivusto" -p 8925 -a 127.0.0.1 --gzip -c600 > /dev/null 2>&1 &
           trap 'kill $!' EXIT
           export CHROME_PATH="$(command -v google-chrome)"
+          for attempt in {1..20}; do
+            if curl -fsS -H "Accept-Encoding: gzip" -I http://127.0.0.1:8925/ | grep -iq "content-encoding: gzip"; then break; fi
+            sleep 1
+          done
           for page in / /hallalink/ /hallasport/; do
             "$RUNNER_TEMP/mittaus/node_modules/.bin/lighthouse" "http://127.0.0.1:8925$page" --quiet --only-categories=performance,accessibility --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --output=json --output-path="$RUNNER_TEMP/tulos.json"
             values=$(jq -r '[.audits["largest-contentful-paint"].numericValue, .audits["cumulative-layout-shift"].numericValue, .categories.accessibility.score] | @tsv' "$RUNNER_TEMP/tulos.json")
             echo "SEO_MOBILE $page $values"
+            jq -c '[.audits["lcp-breakdown-insight","lcp-discovery-insight"].details.items[]? | {subItems:(.items // [] | map({phase,timing,percent})), selector:.node.selector}]' "$RUNNER_TEMP/tulos.json"
             echo "- $page (LCP millisekunteina, CLS, saavutettavuus) $values" >> "$GITHUB_STEP_SUMMARY"
           done
