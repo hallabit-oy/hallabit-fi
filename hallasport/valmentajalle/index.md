@@ -13,7 +13,7 @@ lastmod: "2026-11-26"
 crumbs: [{"name":"HallaBit","path":"/"},{"name":"HallaSport","path":"/hallasport/"},{"name":"Valmentajalle","path":"/hallasport/valmentajalle/"}]
 image: "/hallasport/img/og-hallasport-fi-v3.jpg"
 product: "HallaSport"
-related: ["/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/peliaika/","/hallasport/kalenteri/","/hallasport/tilastot/"]
+related: ["/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/peliaika/","/hallasport/kalenteri/","/hallasport/tilastot/","/hallasport/oppaat/peliaika-junioreille/"]
 ---
 
 ## Muokkaa harjoitusta jo ennen lähtöä
@@ -32,3 +32,25 @@ Valitse valmennuksen kanssa etukäteen, mitä haluatte seurata. Jos tavoitteena 
 
 Kun paikka vaihtuu sateen vuoksi, päivitä tapahtuman tiedot ja lähetä viesti, joka kertoo minne mennään, milloin siellä ollaan ja tarvitseeko mukaan erilaiset varusteet. Jos muutoksella on vaikutusta osallistumiseen, pyydä päivittämään vastaus. Tarkista vielä, että valmennusryhmän sijainen näkee saman tiedon. Esittelyssä voi harjoitella koko ketjun yhdellä kuvitteellisella treenipäivällä.
 
+
+## Valmistele sama harjoite kahdelle ryhmäkoolle
+
+Kirjoita harjoituksen tavoite yhdellä lauseella ennen kuin jaat osallistujat ryhmiin. Jos tavoitteena on esimerkiksi pallon vastaanottaminen liikkeessä, mieti kaksi toteutusta. Pienellä ryhmällä pelaaja voi saada paljon toistoja yhdessä harjoitteessa. Suuremmalla ryhmällä toinen piste vähentää jonottamista. Kun näet ilmoittautuneiden määrän, päätät vasta toteutustavan. Näin harjoituksen tavoite säilyy, vaikka paikalle saapuisi eri määrä pelaajia kuin edellisenä iltana näytti.
+
+Sovi apuvalmentajan kanssa, kuka vastaanottaa paikalle myöhemmin saapuvan pelaajan. Jos valmentaja keskeyttää jokaisen harjoitteen järjestääkseen ryhmät uudelleen, harjoitusaika hupenee. Myöhään saapuvan voi ottaa ensin lähimmälle pisteelle ja tarkistaa ryhmäjaon seuraavan yhteisen tauon aikana. Läsnäolomerkinnän voi silloin tehdä se aikuinen, joka on todella nähnyt pelaajan saapuvan.
+
+## Tee ottelukirjauksista valmennuskysymys
+
+Päätä ennen peliä, mitä haluat selvittää. Tarkasteletko esimerkiksi sitä, saavatko samat pelaajat toistuvasti lyhyet jaksot vai pääseekö uusi pelaaja kokeilemaan sovittua pelipaikkaa? Pelkkä vaihdosta toiseen kertyvä minuuttimäärä ei vastaa jälkimmäiseen kysymykseen. Sopikaa siksi kirjurin kanssa myös, mikä kohta pelistä kannattaa käydä läpi heti loppuvihellyksen jälkeen.
+
+Jos laskenta katkesi hetkeksi, merkitkää kohta itsellenne epävarmaksi. Virheelliseltä vaikuttava luku kannattaa tarkistaa ennen keskustelua pelaajan tai perheen kanssa. Valitse kauden koosteesta sellaisia otteluita, joihin pelaaja osallistui vastaavassa roolissa. Yksi lyhyeksi jäänyt peli voi johtua sovitusta paluusta sairastelun jälkeen. Lapsen terveydentilaa ei tarvitse avata joukkueen yhteisessä keskustelussa.
+
+## Perehdytä tuuraava valmentaja yhteen harjoitukseen
+
+Kerro sijaiselle etukäteen, mistä hän löytää vuoron paikan, osallistujat ja yhteyshenkilön. Käykää läpi harjoituksen aloitus ja se, kuka vastaa huoltajan viestiin, jos harjoituskenttä vaihtuu viime hetkellä. Tarkistakaa seuran kanssa hänen tarvitsemansa rooli. Omaa tunnusta ei tarvitse antaa toisen henkilön käyttöön.
+
+Pyydä harjoituksen jälkeen yksi käytännön havainto. Riittikö ilmoittautuneiden määrä harjoitesuunnitelmaan, tiesivätkö pelaajat, mihin mennä, ja jäikö läsnäoloja tarkistettavaksi? Vastauksesta saat seuraavalle viikolle konkreettisen tehtävän. Jos ongelma oli toistuvasti epäselvä kokoontumispaikka, sen täsmentäminen tapahtumassa auttaa sekä vakituista valmentajaa että seuraavaa sijaista.
+
+Pelaajan onnistuminen kannattaa ottaa mukaan myös silloin, kun seuraava korjaus koskee ryhmän järjestelyä. Kerro hänelle esimerkiksi, missä vaihdossa hän toteutti harjoitellun ratkaisun ja missä seuraava tilaisuus tulee. Jos yksittäinen lapsi jäi harjoitteessa jatkuvasti jonon päähän, muokkaa seuraavalle kerralle pisteiden aloittamisjärjestystä. Saat seurannasta välittömän päätöksen seuraavaan harjoitukseen ja lapsi saa mahdollisuuden näyttää, mitä hän ehti edellisellä kerralla oppia.
+
+Kun valmennus sopii kauden peluutuksesta, tarkista oman ikäluokan kilpailuohje. [Opas juniorien peliaikaan](/hallasport/oppaat/peliaika-junioreille/) kokoaa lajiliittojen lähteet ja antaa esimerkkejä siitä, miten vaihtoja voi seurata ottelussa.

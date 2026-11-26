@@ -14,7 +14,8 @@ crumbs: [{"name":"HallaBit","path":"/"},{"name":"HallaSport","path":"/hallasport
 image: "/hallasport/tilastot/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Mitä maalivahdin luvuista kannattaa tarkistaa ensin?","a":"Tarkista pelaaja, ottelu ja osallistumisjakso. Jos maalivahti vaihtui kesken ottelun, yhden pelaajan suorituksia on vaikea tulkita koko joukkueen tuloksen perusteella."},{"q":"Voidaanko tuloksia tuoda lajiliiton palvelusta?","a":"HallaSportissa on tulosten tuonti. Käykää esittelyssä läpi juuri oman sarjanne tuloslähde, joukkueen tunnistaminen ja täsmäytys omiin kirjauksiin ennen kuin sovitte ottelupäivän työnjaosta."},{"q":"Mihin CSV-vientiä käytetään?","a":"Joukkue voi tarkastella sovittua kautta ja käyttää aineistoa omaan seurantaan. Rajaa vienti tarvittaviin tietoihin ja henkilöihin. Yksittäisen lapsen kehityskeskustelu ei edellytä koko seuran aineiston jakamista."}]
-related: ["/hallasport/peliaika/","/hallasport/lajit/","/hallasport/valmentajalle/","/hallasport/joukkueenjohtajalle/"]
+related: ["/hallasport/peliaika/","/hallasport/lajit/","/hallasport/valmentajalle/","/hallasport/joukkueenjohtajalle/","/hallasport/ilmoittautumiset-ja-lasnaolo/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Päätä ensin mitä kannattaa kirjata
@@ -23,7 +24,7 @@ Valitkaa ennen kautta muutama havainto, joiden avulla valmennus pystyy tekemää
 
 Hyvä vertailu alkaa samanlaisista tapahtumista. Jos harjoituspelissä kokeillaan uusia rooleja ja sarjaottelussa kokoonpano on erilainen, luvut kannattaa erottaa toisistaan selityksessä. Sama koskee kahta eri joukkuetta, joissa lapsi pelaa eri pelipaikoilla. Esimerkiksi maaliin siirtyminen voi muuttaa kaikkia tavallisia kenttäpelaajan lukuja, vaikka osallistuminen ja panos joukkueelle kasvaisivat. Tilastoijan ei tarvitse ratkaista valmennuksellista kysymystä kentän laidalla. Hän tarvitsee yksiselitteisen kirjaustavan.
 
-## Näin ottelukirjauksesta tulee käyttökelpoinen
+## Näin se toimii
 
 ### Varmista kokoonpano ennen aloitusta
 
@@ -54,3 +55,11 @@ Esittelyyn kannattaa valita yksi tuttu laji ja kuvitteellinen kokoonpano. Käyk�
 ## Kun oma pelaaja käy toisen ryhmän mukana
 
 Jos pelaaja täydentää saman seuran toisen ikäluokan kokoonpanoa, tarkistakaa miten ottelu näkyy tapahtuman osallistujissa ja mahdollisessa yhteisessä koosteessa. Kaksi valmentajaa voi muuten kumpikin päätellä, että toinen vastaa peliminuuttien kirjaamisesta. Sopikaa myös kuka kertoo pelaajalle, mitä kirjauksesta jäi näkyviin ja miksi jakso voi erota hänen normaalista roolistaan. Tämän pienen työnjaon ansiosta seuraavan kauden valmentaja pystyy tulkitsemaan muutaman vierailuottelun erillään pelaajan oman ryhmän pitkästä sarjasta. Vastuusta sopiminen vie vähemmän aikaa kuin kahden eri muistilistan sovittaminen yhteen jälkikäteen.
+
+## Kenelle toiminto sopii?
+
+[Valmentaja](/hallasport/valmentajalle/) päättää mitä tietoa harjoittelun tueksi tarvitaan. Tilastoija tekee sovitut kirjaukset ja joukkueenjohtaja huolehtii, että tehtävällä on tekijä.
+
+## Miksi HallaSport?
+
+Lajin mittarit voidaan valita seuran tarpeeseen. Samaa tilastokieltä ei tarvitse sovittaa sekä maalivahdin torjuntoihin että toisen lajin kokonaan erilaiseen suoritukseen.

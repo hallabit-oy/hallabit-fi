@@ -36,3 +36,21 @@ Koko kauden budjetti voi olla tasapainossa, vaikka joukkueen tilillä olisi alku
 
 Hyvä maksutiedote kertoo summan, eräpäivät, maksun sisällön sekä tärkeimmät sen ulkopuolelle jäävät kulut. Jos turnaus edellyttää erillisen maksun, mainitse se jo ennen sitovaa ilmoittautumista. Kauden lopussa vertaa toteumaa budjettiin ja kirjaa syy isoimpaan eroon. Tämä yksi havainto auttaa seuraavaa [rahastonhoitajaa](/hallasport/rahastonhoitajalle/) määrittämään realistisen summan ennen [kausimaksujen laskutusta](/hallasport/kausimaksut/).
 
+
+## Tarkista, mitä yhden maksajan vähemmän tarkoittaa
+
+Palaa esimerkkijoukkueen laskelmaan. Jos kokoonpano pienenee, aina ei riitä, että jaetaan sama loppusumma uudella pelaajamäärällä. Harjoitusvuorosta maksetaan usein sovittu kokonaishinta, mutta osallistujille yksittäin tilattujen aterioiden määrä voi muuttua. Jaa kulut riveiksi ja merkitse, mitkä jäävät joka tapauksessa maksettaviksi ja mitkä muuttuvat osallistujamäärän mukana. Tee uusi päätös vasta sen jälkeen. Näin yksittäisen perheen aloittaminen tai lopettaminen ei muuta toisten maksuja virheellisen oletuksen takia.
+
+Kysy myös, miltä ajankohdalta pelaajamäärä on laskettu. Kiinnostuksensa ilmaisseet, harjoituksiin tutustuvat ja koko kaudeksi sitoutuneet voivat olla eri joukkoja. Kirjoita laskelman yhteyteen päätöksessä käytetty määrä ja päivämäärä. Seuraava rahastonhoitaja pystyy silloin selittämään, miksi alkuperäinen arvio poikkeaa kevään toteutuneesta määrästä.
+
+## Erota koko kauden toiminta vapaaehtoisesta lisätapahtumasta
+
+Kaukana pelattava turnaus saattaa kiinnostaa osaa joukkueesta, vaikka kaikkien perheiden ei ole mahdollista lähteä mukaan. Laske tapahtumalle erikseen ainakin kulkeminen, mahdollinen majoitus ja järjestäjän osallistumismaksu. Kerro kyselyssä, onko kyse vasta kiinnostuksen kartoituksesta vai sitovasta ilmoittautumisesta. Jos bussihinta riippuu lopullisesta osallistujamäärästä, anna perheille tieto siitä, milloin hinta vahvistuu ja mihin mennessä heiltä tarvitaan päätös.
+
+Kun turnaus kuuluu kaikille tarkoitettuun kausiohjelmaan, näytä sekin budjetissa. Perhe voi muuten käsittää poikkeavan viikonlopun erillislaskutukseksi, vaikka se olisi jo maksettu kausimaksussa. Erityisen tärkeää tämä on silloin, kun kaksi saman perheen lasta pelaa eri joukkueissa ja vain toinen joukkue kerää turnauskulut etukäteen.
+
+## Valmistele vastaus tavalliseen vanhempainillan kysymykseen
+
+Kun perhe kysyy, miksi tämän kauden maksu on viimevuotista suurempi, avaa yksi tai kaksi muutoksen tärkeintä syytä. Kasvoiko harjoitusvuorojen määrä, muuttuiko sarjaan osallistuminen vai jakaantuuko sama kustannus pienemmälle joukolle? Konkreettinen selitys auttaa perhettä vertaamaan kausia. Selitä myös, mikä vielä on arvio ja milloin arvio tarkistetaan.
+
+Sopikaa lopuksi, kuka tekee laskutuksen ja kuka tarkistaa ensimmäisen maksuerän ennen sen lähettämistä. Vertaa yhden esimerkkiperheen laskua vanhempainillassa jaettuun päätökseen. Ovatko summa, eräpäivä ja maksun kuvaus samat? Yhden tapauksen tarkistaminen tässä vaiheessa säästää koko ryhmältä korjausviestin myöhemmin.

@@ -15,6 +15,7 @@ image: "/hallasport/peliaika/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Kannattaako pelaajia verrata vain koko kauden yhteisminuuteilla?","a":"Tarkista ensin osallistutut ottelut, pelimuoto ja pelaajan sovittu rooli. Pitkään poissa ollut voi saada paluunsa jälkeen sovitun vastuun, vaikka kauden summa jäisi muita pienemmäksi."},{"q":"Kuka voi huolehtia minuuttien kirjaamisesta?","a":"Sopikaa vastuusta ennen ottelua. Valmentaja tarvitsee huomiotaan peliin, joten tehtävä voi sopia toiselle toimihenkilölle. Kirjaajan täytyy nähdä vaihdot ja tietää, millä tarkkuudella niitä seurataan."},{"q":"Mitä perheelle voi näyttää keskustelussa?","a":"Käykää läpi oman pelaajan osallistumiset ja sovitut tavoitteet. Muiden lasten henkilökohtaisia muistiinpanoja ei tarvita sen selittämiseen, mitä seuraavissa peleissä aiotaan tehdä."}]
 related: ["/hallasport/tilastot/","/hallasport/ilmoittautumiset-ja-lasnaolo/","/hallasport/valmentajalle/","/hallasport/joukkueenjohtajalle/","/hallasport/oppaat/peliaika-junioreille/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Sopikaa mitä tasaisuudella tarkoitetaan
@@ -23,7 +24,7 @@ Kauden avauspalaverissa kannattaa käydä läpi konkreettinen ottelutilanne. Jos
 
 Peliajan seuranta palvelee keskustelua parhaiten, kun sääntöjen, joukkueen tavoitteiden ja yksittäisen ottelun tapahtumien ero on selvä. Ikäluokan ja sarjan määräykset tarkistetaan asianomaiselta lajiliitolta. Joukkue sopii niiden puitteissa omista käytännöistään. Vamman vuoksi kesken jäänyt peli puolestaan on yksittäinen tapahtuma, joka täytyy huomioida lukuja tulkittaessa. Näitä kolmea asiaa on turha yrittää ratkaista yhdellä kausiprosentilla.
 
-## Näin seuranta kulkee ottelun mukana
+## Näin se toimii
 
 ### Tarkista lähtötilanne
 
@@ -54,3 +55,11 @@ Valmentaja käyttää havaintoja harjoittelun ja peluuttamisen suunnitteluun. Jo
 HallaSportin esittelyssä voi käyttää kuvitteellista ottelupäivää, jossa yksi pelaaja lähtee kesken pelin ja toinen pelaa kahdessa ryhmässä. Pyydä näyttämään miten valmennus lukee näiden pelaajien kauden kokonaisuutta. Samalla voidaan selvittää, millainen kirjaustarkkuus omassa lajissa on järkevä ja kuka sitä pystyy ylläpitämään viikonlopusta toiseen.
 
 Viikkopalaverin lopuksi sopikaa yksi kysymys seuraavaa ottelua varten. Pääsivätkö palanneet pelaajat kokeilemaan edellisissä harjoituksissa opeteltua roolia? Kirjatkaa valmennuksen vastaus pelin jälkeen omin sanoin. Tällainen lyhyt laadullinen havainto antaa minuuteille asiayhteyden ja auttaa myös uutta apuvalmentajaa ymmärtämään, miksi juuri tietyn pelaajan vastuuta haluttiin seurata tällä viikolla.
+
+## Kenelle toiminto sopii?
+
+[Valmentaja](/hallasport/valmentajalle/) suunnittelee peluutuksen ja tarkastelee kauden kehitystä. Joukkueenjohtaja voi tukea käytännön kirjausta, jotta valmentaja ehtii seurata myös kentän tapahtumia.
+
+## Miksi HallaSport?
+
+Peliaika ja ottelun tapahtumat löytyvät saman joukkueen yhteydestä. Valmennus voi ottaa yhden pelaajan oman kehityskysymyksen mukaan seuraavan harjoituksen suunnitteluun.

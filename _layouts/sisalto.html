@@ -20,12 +20,14 @@
   <link rel="icon" href="/brand/hallabit-favicon_v2b.svg">
   <link rel="stylesheet" href="/fonts/plus-jakarta-sans.css">
   <link rel="stylesheet" href="/shared/sisalto.css">
+  {% if page.product == "HallaSport" %}<link rel="stylesheet" href="/shared/sport-valikko.css">{% endif %}
   {% include schema.html %}
 </head>
 <body class="sisalto">
   <header><a href="/"><img src="/brand/hallabit-logo-tummalle_v2b.svg" alt="HallaBit" width="138" height="36"></a>
     <nav aria-label="Tuotteet"><a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a></nav>
   </header>
+  {% if page.product == "HallaSport" %}<nav class="sport-nav sport-article-nav" aria-label="HallaSportin sivut">{% include sport-valikko.html %}</nav>{% endif %}
   <main>
     {% include murupolku.html %}
     <article>
@@ -36,12 +38,16 @@
       {% if page.faq %}<section><h2>Usein kysyttyä</h2>
         {% for item in page.faq %}<details><summary>{{ item.q | escape }}</summary><p>{{ item.a | escape }}</p></details>{% endfor %}
       </section>{% endif %}
-      {% capture links %}{% for path in page.related %}{% for target in site.pages %}{% if target.permalink == path %}<li><a href="{{ path }}">{{ target.label | escape }}</a></li>{% endif %}{% endfor %}{% endfor %}{% endcapture %}
-      {% assign links = links | strip %}
-      {% if links != empty %}<aside><h2>Aiheeseen liittyvää</h2><ul>{{ links }}</ul></aside>{% endif %}
+      {% if page.category == 'ominaisuus' %}
+        {% include liittyvat.html category="ominaisuus" heading="Liittyvät ominaisuudet" %}
+        {% include liittyvat.html category="rooli" heading="HallaSport eri rooleissa" %}
+        {% include liittyvat.html category="opas" heading="Seuratoimijan oppaat" %}
+      {% else %}
+        {% include liittyvat.html heading="Aiheeseen liittyvää" %}
+      {% endif %}
       {% if page.product == 'HallaSport' %}<aside class="yhteys"><h2>HallaSport seurallesi</h2><p>8,90 € / joukkue / kk + alv</p><a href="mailto:info@hallabit.fi?subject=HallaSport-esittely">Pyydä esittely</a></aside>{% endif %}
     </article>
   </main>
-  <footer><strong>HallaBit Oy</strong> · Veteli · Y-tunnus 3659867-3 <nav aria-label="Alatunniste"><a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a> <a href="/tietosuoja/">Tietosuoja</a> <a href="/#yhteys">Yhteys</a></nav></footer>
+  <footer><strong>HallaBit Oy</strong> · Veteli · Y-tunnus 3659867-3 <nav aria-label="Alatunniste"><a href="/yritys/">Tietoa HallaBitistä</a> <a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a> <a href="/tietosuoja/">Tietosuoja</a> <a href="/#yhteys">Yhteys</a></nav></footer>
 </body>
 </html>

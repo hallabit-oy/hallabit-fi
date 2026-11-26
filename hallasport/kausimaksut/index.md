@@ -15,6 +15,7 @@ image: "/hallasport/kausimaksut/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Miten kahden sisaruksen maksut erottaa toisistaan?","a":"Huoltaja tarkistaa maksun lapsen kohdalta. Nimeä myös maksukausi ja joukkue niin, että perhe tunnistaa kumman lapsen syksyn harjoituksista tai turnauksesta on kyse."},{"q":"Pitääkö leirimaksu sisällyttää kausimaksuun?","a":"Seura sopii tämän talousarviossaan. Jos leirille ilmoittaudutaan erikseen, oma maksu auttaa näyttämään perheelle, mihin osallistumiseen summa liittyy."},{"q":"Mitä teen, jos maksu näkyy avoimena maksamisen jälkeen?","a":"Tarkista ensin saaja, summa, päivä ja käyttämäsi viite. Lähetä tiedot seuran nimeämälle yhteyshenkilölle yksityisesti. Odota selvitystä ennen kuin maksat saman erän uudelleen."}]
 related: ["/hallasport/kulukorvaukset/","/hallasport/seuran-talous/","/hallasport/rahastonhoitajalle/","/hallasport/oppaat/kausimaksun-maarittaminen/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Erittele, mitä perheeltä veloitetaan
@@ -23,7 +24,7 @@ Harjoitusvuorot ja valmennus voivat kuulua kaikkien pelaajien yhteiseen kausimak
 
 HallaSportissa kausi-, leiri- ja turnausmaksut voidaan kohdistaa lapsikohtaisesti. Tämä on tärkeää myös saman perheen sisällä. Nuorempi sisarus voi käydä harjoituksissa koko kauden, kun vanhempi lähtee ensimmäistä kertaa kolmipäiväiseen turnaukseen. Maksun tarkoituksen pitää olla ymmärrettävissä vielä tiliotetta tarkistettaessa. Lyhyt nimi toimii, kun saman joukkueen viestinnässä käytetään johdonmukaisesti samoja sanoja.
 
-## Näin laskutuskierros etenee
+## Näin se toimii
 
 ### Rajaa maksajat ennen lähettämistä
 
@@ -54,3 +55,11 @@ Joukkueessa tehtävät vaihtuvat usein kauden päättyessä. Kirjaa seuraajalle,
 HallaSport toimii selaimessa, joten huoltaja voi tarkistaa maksun puhelimella ja rahastonhoitaja selvittää nousseen kysymyksen suuremmalta näytöltä. Joukkuekohtainen hinnoittelu helpottaa sovelluskulun lisäämistä kauden budjettiin. Esittelyssä kannattaa käydä läpi oman seuran tyypillinen maksukierros osallistujien tarkistamisesta viimeisen suorituksen selvittämiseen. Silloin näette heti, mitkä vaiheet kuuluvat sovellukseen ja mistä päätöksistä seura vastaa itse.
 
 Kun maksukierros on päättynyt, kokoa seuraavaa kertaa varten lyhyt huomio siitä, mistä perheet kysyivät eniten. Jos moni luuli turnausmaksun sisältävän ruokailun, tarkenna maksun kuvausta ennen seuraavaa tapahtumaa. Sama havainto auttaa myös budjettia laativaa joukkuetta. Perheiden käsitys kauden kustannuksista tarkentuu, kun maksujen kuvaukset ja vanhempainillan materiaali käyttävät samoja nimityksiä ja ajankohtia.
+
+## Kenelle toiminto sopii?
+
+[Rahastonhoitaja](/hallasport/rahastonhoitajalle/) kohdistaa maksun oikealle pelaajalle. Huoltaja tarvitsee maksusta selitteen ja eräpäivän, joiden perusteella hän tunnistaa perheelle kuuluvan veloituksen.
+
+## Miksi HallaSport?
+
+Sama joukkuehinta pätee, vaikka mukana olisi monta eri maksua hoitavaa vapaaehtoista. Huoltajan näkymässä saman perheen lasten eri maksut on helpompi erottaa toisistaan.

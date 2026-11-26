@@ -32,3 +32,23 @@ Vertaa pankin viitetietoja avoimiin eriin ja kokoa erikseen poikkeukset, joista 
 
 Joukkueen rahastonhoitajalle tärkeää on oman ryhmän tilanne. Seuran rahastonhoitaja tarvitsee lisäksi näkymän siihen, että joukkueiden luvut perustuvat samoihin kirjaustapoihin. Sopikaa yhdessä kustannuspaikkojen nimistä, kuukauden katkaisupäivästä ja siitä, kuka käsittelee selvitystä odottavat maksut. Jos vastuu vaihtuu kesken kauden, käykää läpi yksi avoin tapaus seuraajan kanssa alusta loppuun. Näin maksu löytyy vielä senkin jälkeen, kun alkuperäinen vapaaehtoinen on siirtynyt toisiin tehtäviin.
 
+
+## Erota maksupäätös ja toteutunut suoritus
+
+Vanhempainillassa hyväksytty talousarvio kertoo, paljonko toimintaan arvioidaan tarvittavan rahaa. Se ei vielä kerro, milloin raha on joukkueen käytettävissä. Merkitse kausisuunnitelmaan ensimmäisen hallilaskun, sarjamaksun ja turnauksen ilmoittautumismaksun eräpäivät. Vertaa niitä perheiden maksueriin. Jos suuri lasku erääntyy ensin, asia kuuluu joukkueen tai seuran päätettäväksi jo kauden alussa. Pelkkä vuoden lopun tasapainoinen budjetti ei ratkaise alkukauden kassavajetta.
+
+Kun huoltaja pyytää maksulle lisäaikaa, toimi seuran kanssa sovitun käytännön mukaan. Varmista, kuka voi hyväksyä järjestelyn ja kuka seuraa uutta ajankohtaa. Älä kerro yksittäisen perheen tilanteesta vanhempainillan talouskatsauksessa. Muulle joukkueelle riittää yleensä tieto siitä, kuinka paljon maksuja on yhteensä kertynyt ja mitä hankintoja voidaan tehdä.
+
+## Selvitä yhdellä kuitilla maksetut eri joukkueiden kulut
+
+Vapaaehtoinen voi ostaa samalla käynnillä sekä turnauksen tarvikkeet että toisen joukkueen tarvitsemat varusteet. Pyydä häntä nimeämään, mitkä kuitin rivit liittyvät mihinkin tapahtumaan. Tarkista, että rivien yhteissumma täsmää tositteeseen ja mahdollinen alennus on huomioitu. Jos jako jää epäselväksi, kysy ennen käsittelyn päättämistä. Vapaaehtoisen on helpompi vastata, kun ostos on vielä muistissa.
+
+Jos vetäjä maksoi osan seuran kortilla ja osan itse, hänelle korvattava osuus on vain hänen itse maksamansa osuus. Säilytä erittely seuran käytännön mukaisesti. Näin samaa ostosta ei myöhemmin tulkita uudeksi saatavaksi. Tämän kaltaisen poikkeuksen voi käydä läpi myös seuraavan rahastonhoitajan kanssa käyttämällä henkilötiedoista tyhjennettyä esimerkkiä.
+
+## Valmistele kauden viimeinen kokous
+
+Valitse kokousta varten luvut, jotka vastaavat perheiden kysymyksiin. Mitkä alkuperäiset kustannukset toteutuivat arvioitua suurempina? Kuinka paljon joukkue käytti yhteisiin tapahtumiin? Jäikö maksettavaksi seuraavalle kuukaudelle kustannuksia, jotka kuuluvat päättyvälle kaudelle? Kun kerrot myös ajanjakson, tilin saldoa ei vahingossa tulkita kokonaan vapaaksi rahaksi.
+
+Sovi lopuksi, milloin oman roolisi käyttöoikeus päättyy ja kenelle keskeneräiset selvitykset siirretään. Anna seuraajalle lista avoimista tehtävistä seuran hyväksymässä paikassa. Jos raha-asiaa pitää vielä kysyä perheeltä, merkitse mitä tietoa odotetaan ja mihin mennessä. Uuden rahastonhoitajan ei silloin tarvitse pyytää samaa kuittia tai selitystä toistamiseen.
+
+Säilytä myös tieto siitä, kuka vastaa kauden jälkeen saapuvasta viimeisestä laskusta. Pelireissu voi olla ohi ja joukkue jo kesätauolla, kun kuljetusliike toimittaa laskun. Jos uusi rahastonhoitaja aloittaa vasta syksyllä, selvitä etukäteen, kuka tarkistaa laskun sitä ennen ja mistä käy ilmi, minkä ryhmän tilaus on kyseessä.

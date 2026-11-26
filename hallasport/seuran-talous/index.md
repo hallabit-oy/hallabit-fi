@@ -15,6 +15,7 @@ image: "/hallasport/seuran-talous/jakokuva.jpg"
 product: "HallaSport"
 faq: [{"q":"Tarvitseeko jokainen joukkue oman pankkitilin?","a":"HallaSportissa taloutta voidaan jäsentää joukkueiden kustannuspaikoilla. Seura päättää yhteisen tilin tai joukkuetilien käytöstä omien käytäntöjensä perusteella."},{"q":"Mitä hyötyä pankin viitemaksuaineistosta on?","a":"camt.054-aineiston avulla saapuvia viitemaksuja voi kohdistaa avoimiin maksuihin. Selvittäkää pankin kanssa, mistä aineisto saadaan ja kuka seurassa saa sen käsitellä."},{"q":"Korvaako CSV-vienti kirjanpitäjän tarkistuksen?","a":"Vienti kokoaa tietoja sovitussa muodossa. Sopikaa kirjanpitäjän kanssa kentistä, kustannuspaikoista, tositteista ja siitä, miten myöhemmin löytynyt korjaus toimitetaan jo viedylle jaksolle."}]
 related: ["/hallasport/kausimaksut/","/hallasport/kulukorvaukset/","/hallasport/rahastonhoitajalle/","/hallasport/oppaat/joukkueen-rahastonhoitajan-tehtavat/"]
+editorial_notes: ["TODO: Täydennä omistajan hyväksymillä, henkilötiedottomilla puhelin- ja työpöytäkuvilla sekä vaihekuvilla."]
 ---
 
 ## Valitse rakenne ennen ensimmäistä maksukierrosta
@@ -23,7 +24,7 @@ Pienessä yhden joukkueen seurassa rahastonhoitaja saattaa tunnistaa jokaisen ma
 
 Yhteinen pankkitili voi vähentää seurattavien tilien määrää, mutta silloin joukkuekohtaisen kirjauksen johdonmukaisuus korostuu. Joukkuetileilläkin seura tarvitsee yhteiset käytännöt esimerkiksi tilikauden katkaisuun ja tositteiden toimitukseen. Käykää käyttöönotossa läpi yksi todellinen toimintamalli kerrallaan. Jos ryhmä käyttää sekä käteiskassaa että pankkia, päättäkää kumpi vastuuhenkilö tarkistaa kummankin saldon ja milloin tietoja verrataan keskenään.
 
-## Näin aineisto etenee kuukauden aikana
+## Näin se toimii
 
 ### Nimeä joukkueen kustannuspaikka
 
@@ -54,3 +55,11 @@ Esittelyyn kannattaa valita oman seuran tavallinen maksu sekä yksi poikkeus. Se
 ## Tarkistus kahden joukkueen turnausmatkalle
 
 Jos kaksi joukkuetta jakaa bussin, päättäkää jakoperuste silloin kun matka tilataan. Pelaajamäärien mukainen osuus voi muuttua matkan peruuntumisten vuoksi, kun taas ennalta sovittu kiinteä osuus säilyy samana. Kirjoita päätöksen peruste molempien joukkueiden vastuuhenkilöille ennen laskun tuloa. Vertaa lopullista laskua tilauksen vahvistukseen ja selvitä mahdolliset lisäkulut, kuten muuttunut ajoreitti. Kerro kirjanpitäjälle, että yhdellä tositteella on kahdelle kustannuspaikalle kuuluvia rivejä. Kauden päättyessä molempien joukkueiden pitäisi pystyä selittämään oma matkakulunsa ilman, että niiden tarvitsee pyytää alkuperäistä kuljetustarjousta uudelleen liikennöitsijältä. Säilytä päätös seuran sovitussa paikassa myös seuraavan turnausjärjestäjän saatavilla.
+
+## Kenelle toiminto sopii?
+
+[Rahastonhoitaja](/hallasport/rahastonhoitajalle/) katsoo oman joukkueensa menoja ja tuloja. Seuratasolla tarvitaan samaan aikaan kokonaiskuva siitä, mihin joukkueisiin tapahtumat kuuluvat.
+
+## Miksi HallaSport?
+
+Kuluhakemus ja kausimaksu voidaan jäljittää joukkueen omasta toiminnasta. Tämä helpottaa talousvastaavan ja joukkueen välistä keskustelua silloin, kun kaksi ryhmää osallistuu yhteiseen tapahtumaan.

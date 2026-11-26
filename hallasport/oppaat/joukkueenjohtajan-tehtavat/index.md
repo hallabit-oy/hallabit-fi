@@ -39,3 +39,23 @@ Palauta lainavarusteet ja ota yhteys henkilöön, jonka hoidettavaksi jokin avoi
 
 Katso miten [joukkueenjohtajan työkalut](/hallasport/joukkueenjohtajalle/) ja [ilmoittautumiset](/hallasport/ilmoittautumiset-ja-lasnaolo/) tukevat samaa työnjakoa HallaSportissa.
 
+
+## Päätä, mihin ensimmäinen viikon viesti vastaa
+
+Perheiden on usein helpompi toimia yhden ajantasaisen tapahtuman kuin pitkän viestiketjun perusteella. Jos viikon ainoa poikkeus on vierasottelun vaihtunut kenttä, nosta esiin juuri se. Kerro paikka, kokoontuminen ja se, pyydetäänkö perheeltä uusi vastaus. Normaalia harjoitusohjelmaa ei tarvitse kopioida viestiin uudelleen, jos kalenteri näyttää sen jo oikein. Lyhyt viesti toimii muistutuksena ja tapahtuma pysyy tiedon varsinaisena säilytyspaikkana.
+
+Anna loppuviikosta tavoitteellisesti yksi tehtävä toiselle aikuiselle. Hän voi esimerkiksi tarkistaa harjoitusvuoron sisäänkäynnin tai varmistaa toimitsijan saapumisen. Kerro samalla, mistä näkee tehtävän taustat ja kenelle valmistumisesta ilmoitetaan. Näin joukkueenjohtajan poissaolo ei pysäytä koko viikon järjestelyjä, ja seuralle jää jo perehtynyt sijainen.
+
+## Käsittele turnauskutsu ennen kuin lähetät sen perheille
+
+Lue järjestäjän alkuperäisestä kutsusta ilmoittautumisen takaraja, maksu ja se, milloin ohjelma vahvistuu. Jos osallistuminen vaatii yön yli matkustamista, tarkista ensin valmentajan mahdollisuus ja alustava ryhmäkoko. Tee sen jälkeen selvä ero kiinnostuskyselyn ja sitovan ilmoittautumisen välille. Perheen kuuluu tietää, missä vaiheessa sen vastaus johtaa matkajärjestelyyn tai maksuun.
+
+Kun ilmoittautuminen vahvistetaan, kerro vastuuhenkilöt erikseen urheilullisille kysymyksille ja talousasioille. Valmentaja ratkaisee ryhmän urheilullisen suunnitelman, rahastonhoitaja selvittää maksun ja joukkueenjohtaja huolehtii aikataulun välittämisestä. Jos olet seurassa sopinut toisin, käytä oman seurasi työnjakoa. Tärkeintä on, että perhe saa vastauksen samasta paikasta riippumatta siitä, keneltä kysymys ensimmäiseksi tuli.
+
+## Tee kauden vaihdosta yhteinen tehtävä
+
+Käy seuraavan ikäluokan toimihenkilöiden kanssa läpi kolme tilannetta: tavallinen harjoitus, kotipeli ja matkaa vaativa tapahtuma. Selvittäkää yhdessä, mikä tieto muuttuu sarjakauden vaihtuessa ja mikä säilyy. Vanhasta kutsusta kopioitu saapumisaika voi olla väärä, jos lämmittelylle varattu tila tai kentän koko muuttuu. Ajantasainen perustieto kannattaa kirjoittaa kerran kunnolla.
+
+Pyydä lopuksi uudelta joukkueenjohtajalta palaute ensimmäisen oman peliviikon jälkeen. Millaisen asian hän joutui selvittämään alusta lähtien, mihin löytyi hyvä valmis ohje ja mikä yhteystieto oli vanhentunut? Korjaa havainto seuran omaan perehdytysmateriaaliin. Se pieni työ auttaa seuraavaa ryhmää enemmän kuin pitkä kausiyhteenveto, jonka kukaan ei löydä ensimmäisen kiireisen vieraspelin aamuna.
+
+Päättäkää myös, kuka ilmoittaa seuralle, kun joukkueen yhteyshenkilö vaihtuu. Muuten turnauskutsu voi ensi kaudella saapua edelleen entiselle vetäjälle. Tarkistakaa seuraavan tapahtuman järjestäjältä, mihin osoitteeseen aikataulumuutokset lähetetään ja kenelle perheet voivat esittää niitä koskevan kysymyksen.
