@@ -15,7 +15,8 @@
       "name": "HallaBit", "inLanguage": ["fi", "en"], "publisher": {"@id": "{{ origin }}/#org"}
     },
     {
-      "@type": "WebPage", "@id": "{{ canonical }}#page", "url": {{ canonical | jsonify }},
+      "@type": {% if page.faq %}["WebPage", "FAQPage"]{% else %}"WebPage"{% endif %},{% if page.faq %}
+      "mainEntity": [{% for item in page.faq %}{"@type":"Question","name":{{ item.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}],{% endif %} "@id": "{{ canonical }}#page", "url": {{ canonical | jsonify }},
       "name": {{ page.title | jsonify }}, "inLanguage": {{ page.lang | jsonify }},
       "isPartOf": {"@id": "{{ origin }}/#website"}{% if page.product %},
       "about": {"@id": "{{ origin }}/{{ page.product | downcase }}/#app"}{% endif %}{% if page.crumbs %},
