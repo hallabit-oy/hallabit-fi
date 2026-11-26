@@ -1,0 +1,47 @@
+<main>
+  <article>
+    <header class="artikkelin-alku">
+      <div class="wrap">
+        {% include murupolku.html %}
+        <div class="artikkelin-esittely">
+          <h1>{{ page.heading | escape }}</h1>
+          <p>{{ page.lead | escape }}</p>
+        </div>
+      </div>
+    </header>
+    <div class="artikkelin-sarakkeet wrap">
+      <div class="artikkeliteksti">
+        {% if page.screen %}
+          <figure>
+            <img src="{{ page.screen.src }}" width="{{ page.screen.width }}" height="{{ page.screen.height }}" alt="{{ page.screen.alt | escape }}">
+            <figcaption>{{ page.screen.caption | escape }}</figcaption>
+          </figure>
+        {% endif %}
+        {{ content }}
+        {% if page.faq %}
+          <section class="kysymykset">
+            <h2>Usein kysyttyä</h2>
+            {% for item in page.faq %}
+              <details><summary>{{ item.q | escape }}</summary><p>{{ item.a | escape }}</p></details>
+            {% endfor %}
+          </section>
+        {% endif %}
+      </div>
+      <div class="aihelinkit">
+        {% if page.category == 'ominaisuus' %}
+          {% include liittyvat.html category="ominaisuus" heading="Liittyvät ominaisuudet" %}
+          {% include liittyvat.html category="rooli" heading="HallaSport eri rooleissa" %}
+          {% include liittyvat.html category="opas" heading="Seuratoimijan oppaat" %}
+        {% else %}
+          {% include liittyvat.html heading="Aiheeseen liittyvää" %}
+        {% endif %}
+      </div>
+    </div>
+  </article>
+  <aside class="sport-yhteys">
+    <div class="wrap">
+      <div><h2>HallaSport seurallesi</h2><p>8,90 € / joukkue / kk + alv</p></div>
+      <a href="mailto:info@hallabit.fi?subject=HallaSport-esittely">Pyydä esittely</a>
+    </div>
+  </aside>
+</main>
