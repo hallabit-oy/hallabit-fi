@@ -1,0 +1,42 @@
+{% assign origin = site.url %}
+{% assign canonical = page.url | remove: 'index.html' | prepend: origin %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization", "@id": "{{ origin }}/#org", "name": "HallaBit Oy",
+      "url": "{{ origin }}/", "logo": "{{ origin }}/brand/hallabit-logo_v2b.svg",
+      "email": "info@hallabit.fi", "taxID": "3659867-3",
+      "address": {"@type": "PostalAddress", "addressLocality": "Veteli", "addressCountry": "FI"}
+    },
+    {
+      "@type": "WebSite", "@id": "{{ origin }}/#website", "url": "{{ origin }}/",
+      "name": "HallaBit", "inLanguage": ["fi", "en"], "publisher": {"@id": "{{ origin }}/#org"}
+    },
+    {
+      "@type": "WebPage", "@id": "{{ canonical }}#page", "url": {{ canonical | jsonify }},
+      "name": {{ page.title | jsonify }}, "inLanguage": {{ page.lang | jsonify }},
+      "isPartOf": {"@id": "{{ origin }}/#website"}{% if page.product %},
+      "about": {"@id": "{{ origin }}/{{ page.product | downcase }}/#app"}{% endif %}{% if page.crumbs %},
+      "breadcrumb": {"@id": "{{ canonical }}#breadcrumb"}{% endif %}
+    }{% if page.crumbs %},
+    {
+      "@type": "BreadcrumbList", "@id": "{{ canonical }}#breadcrumb",
+      "itemListElement": [
+        {% for crumb in page.crumbs %}{"@type": "ListItem", "position": {{ forloop.index }}, "name": {{ crumb.name | jsonify }}, "item": {{ crumb.path | prepend: origin | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+      ]
+    }{% endif %}{% if page.product_home %},
+    {
+      "@type": "SoftwareApplication", "@id": "{{ origin }}/{{ page.product | downcase }}/#app",
+      "name": {{ page.product | jsonify }}, "url": "{{ origin }}/{{ page.product | downcase }}/",
+      "applicationCategory": "BusinessApplication", "publisher": {"@id": "{{ origin }}/#org"}{% if page.product == "HallaSport" %},
+      "operatingSystem": "Web",
+      "offers": {"@type": "Offer", "url": "{{ canonical }}#hinnasto", "price": "8.90", "priceCurrency": "EUR",
+        "priceSpecification": {"@type": "UnitPriceSpecification", "price": "8.90", "priceCurrency": "EUR",
+          "unitText": {% if page.lang == 'en' %}"per team per month"{% else %}"joukkue / kuukausi"{% endif %}, "valueAddedTaxIncluded": false}}
+      {% endif %}
+    }{% endif %}
+  ]
+}
+</script>

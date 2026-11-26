@@ -1,0 +1,3 @@
+<nav class="wrap" aria-label="{% if page.lang == 'en' %}Breadcrumb{% else %}Murupolku{% endif %}">
+  {% for crumb in page.crumbs %}{% unless forloop.first %} <span aria-hidden="true">›</span> {% endunless %}{% if forloop.last %}<span aria-current="page">{{ crumb.name | escape }}</span>{% else %}<a href="{{ crumb.path }}">{{ crumb.name | escape }}</a>{% endif %}{% endfor %}
+</nav>
