@@ -1,10 +1,10 @@
 # Lisää uusi indeksoitava sivu omaan ryhmäänsä tai käännös samaan ryhmään.
 # Päivitä lastmod, kun kyseisen kieliversion sisältö tai ensisijainen osoite muuttuu.
-- fi: { path: "/", lastmod: "2026-11-25" }
-  en: { path: "/en/", lastmod: "2026-11-25" }
-- fi: { path: "/hallalink/", lastmod: "2026-11-25" }
-  en: { path: "/en/hallalink/", lastmod: "2026-11-24" }
-- fi: { path: "/hallasport/", lastmod: "2026-11-25" }
-  en: { path: "/en/hallasport/", lastmod: "2026-11-25" }
+- fi: { path: "/", lastmod: "2026-11-26" }
+  en: { path: "/en/", lastmod: "2026-11-26" }
+- fi: { path: "/hallalink/", lastmod: "2026-11-26" }
+  en: { path: "/en/hallalink/", lastmod: "2026-11-26" }
+- fi: { path: "/hallasport/", lastmod: "2026-11-26" }
+  en: { path: "/en/hallasport/", lastmod: "2026-11-26" }
 - fi: { path: "/tietosuoja/", lastmod: "2026-11-26" }
   en: { path: "/en/privacy/", lastmod: "2026-11-26" }
