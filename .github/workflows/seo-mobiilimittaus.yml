@@ -1,0 +1,44 @@
+name: SEO-esikatselun mobiilimittaus
+on:
+  pull_request:
+    branches: [seo/sivunopeus]
+permissions:
+  contents: read
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - name: Rakenna GitHub Pagesin Jekyll-versiolla
+        run: |
+          gem install jekyll -v 3.10.0 --no-document
+          gem install kramdown-parser-gfm webrick --no-document
+          JEKYLL_ENV=production jekyll build --destination "$RUNNER_TEMP/sivusto"
+      - name: Mittaa kolme sivua mobiilissa
+        shell: bash
+        run: |
+          npm install --prefix "$RUNNER_TEMP/mittaus" lighthouse@13.6.0 http-server@14.1.1
+          find "$RUNNER_TEMP/sivusto" -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" -o -name "*.svg" \) -exec gzip --keep --best {} \;
+          "$RUNNER_TEMP/mittaus/node_modules/.bin/http-server" "$RUNNER_TEMP/sivusto" -p 8925 -a 127.0.0.1 --gzip -c600 > /dev/null 2>&1 &
+          trap 'kill $!' EXIT
+          export CHROME_PATH="$(command -v google-chrome)"
+          for attempt in {1..20}; do
+            if curl -fsS -H "Accept-Encoding: gzip" -I http://127.0.0.1:8925/ | grep -iq "content-encoding: gzip"; then break; fi
+            sleep 1
+          done
+          for page in / /hallalink/ /hallasport/; do
+            "$RUNNER_TEMP/mittaus/node_modules/.bin/lighthouse" "http://127.0.0.1:8925$page" --quiet --only-categories=performance,accessibility --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage" --output=json --output-path="$RUNNER_TEMP/tulos.json"
+            values=$(jq -r '[.audits["largest-contentful-paint"].numericValue, .audits["cumulative-layout-shift"].numericValue, .categories.accessibility.score] | @tsv' "$RUNNER_TEMP/tulos.json")
+            echo "SEO_MOBILE $page $values"
+            jq -c '[.audits["lcp-breakdown-insight"].details | .. | objects | select(has("selector") or has("subpart")) | {selector,subpart,duration}]' "$RUNNER_TEMP/tulos.json"
+            echo "- $page (LCP millisekunteina, CLS, saavutettavuus) $values" >> "$GITHUB_STEP_SUMMARY"
+          done
