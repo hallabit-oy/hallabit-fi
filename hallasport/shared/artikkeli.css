@@ -1,0 +1,129 @@
+* { box-sizing: border-box; }
+html { scroll-padding-top: 80px; }
+.sport-artikkeli {
+  margin: 0;
+  color: var(--sport-navy);
+  background: var(--sport-tausta);
+  font: 400 18px/1.65 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+.wrap {
+  width: min(1120px, calc(100% - 40px - env(safe-area-inset-left) - env(safe-area-inset-right)));
+  margin-inline: auto;
+}
+.sport-artikkeli :is(h1, h2, h3) {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.sport-artikkeli p { text-wrap: pretty; }
+.sport-artikkeli a { color: inherit; text-underline-offset: .18em; }
+.sport-artikkeli main :focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.artikkelin-alku {
+  position: relative;
+  isolation: isolate;
+  background: var(--sport-tausta);
+}
+.artikkelin-alku > .wrap {
+  position: relative;
+  padding-block: 22px clamp(42px, 5vw, 76px);
+}
+.artikkelin-alku nav {
+  width: auto;
+  margin: 0 0 clamp(24px, 3.5vw, 50px);
+  color: var(--sport-teksti);
+  font-size: 14px;
+}
+.artikkelin-alku nav span[aria-hidden] { padding-inline: 4px; }
+.artikkelin-alku nav a:hover { color: var(--sport-navy); }
+.artikkelin-esittely { max-width: 65%; }
+.artikkelin-esittely h1 { font-size: clamp(36px, 4.3vw, 60px); }
+.artikkelin-esittely p { margin: 18px 0 0; max-width: 56ch; color: var(--sport-teksti); font-size: clamp(18px, 1.6vw, 21px); }
+@media (min-width: 801px) {
+  .artikkelin-alku > .wrap::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 54%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 34%;
+    aspect-ratio: 3 / 2;
+    background: url('/hallasport/img/hero_v6/hallasport-hero_v6-kaista-780.webp') center / contain no-repeat;
+    mask-image: linear-gradient(to right, transparent, black 9% 91%, transparent),
+                linear-gradient(to bottom, transparent, black 12% 88%, transparent);
+    mask-composite: intersect;
+  }
+}
+.artikkelin-alku::after {
+  content: "";
+  display: block;
+  height: 12px;
+  background: linear-gradient(100deg, #85dca6, #309e69 35%, #73df9f 70%, #258653);
+  mask-image: repeating-linear-gradient(0deg, black 0 3px, transparent 3px 6px);
+}
+.artikkelin-sarakkeet {
+  display: grid;
+  grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 6vw, 88px);
+  padding-block: clamp(36px, 5vw, 76px) clamp(56px, 7vw, 108px);
+}
+.artikkeliteksti { min-width: 0; color: #24323b; }
+.artikkeliteksti h2 { margin: 1.65em 0 .55em; font-size: clamp(26px, 2.7vw, 36px); color: var(--sport-navy); }
+.artikkeliteksti h3 { margin: 1.5em 0 .5em; font-size: clamp(21px, 2vw, 26px); color: var(--sport-navy); }
+.artikkeliteksti > :first-child { margin-top: 0; }
+.artikkeliteksti p { margin: 0 0 1em; }
+.artikkeliteksti a { color: var(--sport-navy); text-decoration-thickness: 1px; }
+.artikkeliteksti a:hover { text-decoration-thickness: 2px; }
+.artikkeliteksti ul, .artikkeliteksti ol { padding-left: 1.4em; }
+.artikkeliteksti li { margin-block: .35em; }
+.artikkeliteksti li::marker { color: var(--sport-navy); }
+.artikkeliteksti figure { margin: 0 0 2rem; }
+.artikkeliteksti figure img { display: block; max-width: 100%; height: auto; max-height: 26rem; object-fit: contain; }
+.artikkeliteksti figcaption { margin-top: .5rem; font-size: 15px; color: var(--sport-teksti); }
+.kysymykset details { border-bottom: 1px solid var(--sport-reuna); }
+.kysymykset summary { padding: 14px 0; color: var(--sport-navy); cursor: pointer; font-weight: 600; }
+.aihelinkit { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.aihelinkit aside {
+  padding: clamp(18px, 2vw, 28px);
+  border: 1px solid var(--sport-reuna);
+  border-radius: 20px;
+  background: white;
+}
+.aihelinkit h2 { font-size: 21px; }
+.aihelinkit ul { margin: 14px 0 0; padding: 0; list-style: none; }
+.aihelinkit li + li { border-top: 1px solid #e6ecea; }
+.aihelinkit a { display: block; padding-block: 10px; font-size: 16px; line-height: 1.45; }
+.sport-yhteys { padding-block: clamp(32px, 5vw, 64px); background: var(--sport-sininen); color: white; }
+.sport-yhteys .wrap { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
+.sport-yhteys h2 { font-size: clamp(28px, 3.8vw, 46px); }
+.sport-yhteys p { margin: 8px 0 0; color: #e8f0fa; }
+.sport-yhteys a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 26px;
+  border-radius: 8px;
+  background: var(--sport-vihrea);
+  color: var(--sport-navy);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sport-yhteys a:hover { background: #85dca6; }
+.sport-artikkeli .sport-yhteys a:focus-visible { outline-color: white; }
+
+@media (max-width: 960px) {
+  .artikkelin-sarakkeet { grid-template-columns: minmax(0, 2fr) minmax(13rem, 1fr); gap: 28px; }
+}
+@media (max-width: 800px) {
+  .artikkelin-esittely { max-width: 65ch; }
+  .artikkelin-sarakkeet { grid-template-columns: minmax(0, 1fr); }
+  .sport-artikkeli { font-size: 17px; }
+  .aihelinkit { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+}

@@ -17,17 +17,29 @@
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description | escape }}">
   <meta name="twitter:image" content="{{ page.image | absolute_url }}">
-  <link rel="icon" href="/brand/hallabit-favicon_v2b.svg">
   <link rel="stylesheet" href="/fonts/plus-jakarta-sans.css">
-  <link rel="stylesheet" href="/shared/sisalto.css">
-  {% if page.product == "HallaSport" %}<link rel="stylesheet" href="/shared/sport-valikko.css">{% endif %}
+  {% if page.product == "HallaSport" %}
+    <meta name="theme-color" content="#0B2A5B">
+    <link rel="icon" href="/hallasport/brand/HallaSport_logo_v5c_ajo2_p03_16.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/shared/sport-valikko.css">
+    <link rel="stylesheet" href="/hallasport/shared/artikkeli.css">
+    <script src="/shared/sport-valikko.js" defer></script>
+  {% else %}
+    <link rel="icon" href="/brand/hallabit-favicon_v2b.svg">
+    <link rel="stylesheet" href="/shared/sisalto.css">
+  {% endif %}
   {% include schema.html %}
 </head>
+{% if page.product == "HallaSport" %}
+<body class="sport-artikkeli">
+  {% include sport-ylapalkki.html %}
+  {% include sport-artikkeli.html %}
+  {% include sport-alatunniste.html %}
+{% else %}
 <body class="sisalto">
   <header><a href="/"><img src="/brand/hallabit-logo-tummalle_v2b.svg" alt="HallaBit" width="138" height="36"></a>
     <nav aria-label="Tuotteet"><a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a></nav>
   </header>
-  {% if page.product == "HallaSport" %}<nav class="sport-nav sport-article-nav" aria-label="HallaSportin sivut">{% include sport-valikko.html %}</nav>{% endif %}
   <main>
     {% include murupolku.html %}
     <article>
@@ -45,9 +57,9 @@
       {% else %}
         {% include liittyvat.html heading="Aiheeseen liittyvää" %}
       {% endif %}
-      {% if page.product == 'HallaSport' %}<aside class="yhteys"><h2>HallaSport seurallesi</h2><p>8,90 € / joukkue / kk + alv</p><a href="mailto:info@hallabit.fi?subject=HallaSport-esittely">Pyydä esittely</a></aside>{% endif %}
     </article>
   </main>
   <footer><strong>HallaBit Oy</strong> · Veteli · Y-tunnus 3659867-3 <nav aria-label="Alatunniste"><a href="/#mika">Tietoa HallaBitistä</a> <a href="/hallasport/">HallaSport</a> <a href="/hallalink/">HallaLink</a> <a href="/tietosuoja/">Tietosuoja</a> <a href="/#yhteys">Yhteys</a></nav></footer>
+{% endif %}
 </body>
 </html>
