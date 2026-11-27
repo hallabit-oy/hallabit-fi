@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Seuran ja joukkueiden talous">
+  <style>
+    @keyframes rise{0%{transform:scaleY(.25)}24%,86%{transform:scaleY(1)}100%{transform:scaleY(.25)}}@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}.col{transform-box:fill-box;transform-origin:center bottom;animation:rise 5.8s cubic-bezier(.23,1,.32,1) infinite}.c2{animation-delay:.12s}.c3{animation-delay:.24s}.c4{animation-delay:.36s}.c5{animation-delay:.48s}.c6{animation-delay:.6s}.float-card{animation:floatY 4.8s cubic-bezier(.23,1,.32,1) infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <rect x="26" y="22" width="356" height="224" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <line x1="26" y1="64" x2="382" y2="64" stroke="#E4ECE9" stroke-width="1.25"/>
+  <text x="46" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Seuran talous, kausi 2026</text>
+  <circle cx="268" cy="44" r="4.5" fill="#0B2A5B"/><text x="278" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#4A5A64">Tulot</text>
+  <circle cx="322" cy="44" r="4.5" fill="#5CCB8A"/><text x="332" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#4A5A64">Saldo</text>
+
+  <!-- Vaakaviivat -->
+  <g stroke="#EDF2F0" stroke-width="1">
+    <line x1="46" y1="100" x2="362" y2="100"/>
+    <line x1="46" y1="140" x2="362" y2="140"/>
+    <line x1="46" y1="180" x2="362" y2="180"/>
+  </g>
+  <line x1="46" y1="210" x2="362" y2="210" stroke="#C5D0CD" stroke-width="1.2"/>
+
+  <!-- Joukkuepalkit U13, U11, U9 -->
+  <rect class="col c1" x="68" y="96" width="24" height="114" rx="5" fill="#0B2A5B"/>
+  <rect class="col c2" x="98" y="132" width="24" height="78" rx="5" fill="#5CCB8A"/>
+  <text x="95" y="229" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0B2A5B" text-anchor="middle">U13</text>
+
+  <rect class="col c3" x="164" y="114" width="24" height="96" rx="5" fill="#0B2A5B"/>
+  <rect class="col c4" x="194" y="146" width="24" height="64" rx="5" fill="#5CCB8A"/>
+  <text x="191" y="229" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0B2A5B" text-anchor="middle">U11</text>
+
+  <rect class="col c5" x="260" y="128" width="24" height="82" rx="5" fill="#0B2A5B"/>
+  <rect class="col c6" x="290" y="156" width="24" height="54" rx="5" fill="#5CCB8A"/>
+  <text x="287" y="229" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0B2A5B" text-anchor="middle">U9</text>
+
+  <!-- Budjettitoteuma kortti -->
+  <g class="float-card">
+    <rect x="234" y="76" width="160" height="50" rx="12" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.5"/>
+    <text x="250" y="97" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#4A5A64">Budjettitoteuma</text>
+    <text x="250" y="116" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#0B2A5B">+4 280 €</text>
+    <circle cx="372" cy="101" r="8" fill="#5CCB8A"/>
+  </g>
+
+</svg>

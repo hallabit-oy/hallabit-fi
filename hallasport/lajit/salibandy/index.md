@@ -22,7 +22,7 @@ Kun päivän ensimmäinen peli päättyy ja seuraava alkaa toisella kentällä, 
 
 ## Pelimaailma ja Säbäkipinä
 
-Salibandyliitto julkaisee Pelimaailman ja Säbäkipinän säännöt erikseen. Pelimaailman kauden 2026–2027 ohjeessa suositellaan pelipäivää, johon voi kuulua useita lyhyempiä pelejä. Joukkueen on hyödyllistä tarkastella osallistumista koko päivän tasolla ja seurata samalla, kuinka ensimmäinen vaihto ja viimeisen pelin loppu jakautuvat lasten kesken. Tarkista oma ikäluokka, sarja ja sovellettavat säännöt ennen tapahtumaa. Lähde tarkistettu 26.11.2026. [Salibandyliiton alueellisten sarjojen säännöt](https://salibandy.fi/info-2/saannot/alueellisten-sarjojen-saannot/).
+Salibandyliitto julkaisee Pelimaailman ja Säbäkipinän säännöt erikseen. Pelimaailman kauden 2026-2027 ohjeessa suositellaan pelipäivää, johon voi kuulua useita lyhyempiä pelejä. Joukkueen on hyödyllistä tarkastella osallistumista koko päivän tasolla ja seurata samalla, kuinka ensimmäinen vaihto ja viimeisen pelin loppu jakautuvat lasten kesken. Tarkista oma ikäluokka, sarja ja sovellettavat säännöt ennen tapahtumaa. Lähde tarkistettu 26.11.2026. [Salibandyliiton alueellisten sarjojen säännöt](https://salibandy.fi/info-2/saannot/alueellisten-sarjojen-saannot/).
 
 ## Tilastointi sivurajan tuntumassa
 

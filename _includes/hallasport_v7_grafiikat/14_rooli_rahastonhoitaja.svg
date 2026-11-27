@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Rahastonhoitajan koontinäkymä">
+  <style>
+    @keyframes progGrow{0%{transform:scaleX(.25)}25%,86%{transform:scaleX(1)}100%{transform:scaleX(.25)}}@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}.prog{transform-box:fill-box;transform-origin:left center;animation:progGrow 5.6s cubic-bezier(.23,1,.32,1) infinite}.float-card{animation:floatY 5s cubic-bezier(.23,1,.32,1) infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <!-- Vasen kortti: Maksuerät -->
+  <rect x="20" y="26" width="186" height="220" rx="14" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <text x="36" y="52" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#0B2A5B">Kausimaksut</text>
+  <rect x="36" y="66" width="154" height="10" rx="5" fill="#E9EFF6"/>
+  <rect class="prog" x="36" y="66" width="132" height="10" rx="5" fill="#5CCB8A"/>
+  <text x="36" y="92" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">16 / 18 maksettu</text>
+
+  <rect x="36" y="108" width="154" height="34" rx="8" fill="#F3F6F5"/>
+  <circle cx="50" cy="125" r="5" fill="#5CCB8A"/>
+  <text x="62" y="129" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0B2A5B">Erä 1 · 120 €</text>
+
+  <rect x="36" y="150" width="154" height="34" rx="8" fill="#F3F6F5"/>
+  <circle cx="50" cy="167" r="5" fill="#5CCB8A"/>
+  <text x="62" y="171" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0B2A5B">Erä 2 · 120 €</text>
+
+  <rect x="36" y="192" width="154" height="34" rx="8" fill="#E9EFF6"/>
+  <circle cx="50" cy="209" r="5" fill="#0B2A5B"/>
+  <text x="62" y="213" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0B2A5B">2 avoinna</text>
+
+  <!-- Oikea kortti: Odottavat kuitit -->
+  <g class="float-card">
+    <rect x="218" y="26" width="182" height="220" rx="14" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.5"/>
+    <text x="234" y="52" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#0B2A5B">Kuitit jonossa</text>
+    <rect x="234" y="68" width="150" height="48" rx="9" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.2"/>
+    <text x="246" y="88" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0B2A5B">Bussivuokra</text>
+    <text x="246" y="105" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">340,00 € · Kuitti OK</text>
+
+    <rect x="234" y="126" width="150" height="48" rx="9" fill="#F3F6F5" stroke="#C5D0CD" stroke-width="1.1"/>
+    <text x="246" y="146" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0B2A5B">Varustetäydennys</text>
+    <text x="246" y="163" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">89,90 € · Odottaa</text>
+
+    <rect x="234" y="190" width="150" height="36" rx="9" fill="#0B2A5B"/>
+    <text x="309" y="212" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Hyväksy ja maksa</text>
+  </g>
+
+</svg>

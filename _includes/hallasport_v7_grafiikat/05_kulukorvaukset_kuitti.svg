@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Kulukorvaukset kuitteineen">
+  <style>
+    @keyframes scanY{0%,100%{transform:translateY(0);opacity:.2}50%{transform:translateY(76px);opacity:.9}}@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-3.5px)}}@keyframes drawChk{0%,15%{stroke-dashoffset:20}35%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:20}}.scan{animation:scanY 4.4s cubic-bezier(.23,1,.32,1) infinite}.float-card{animation:floatY 5s cubic-bezier(.23,1,.32,1) infinite}.chk{stroke-dasharray:20;animation:drawChk 5.5s cubic-bezier(.23,1,.32,1) infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <rect x="26" y="24" width="248" height="218" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <line x1="26" y1="64" x2="274" y2="64" stroke="#E4ECE9" stroke-width="1.25"/>
+  <text x="46" y="49" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Kulukorvaus</text>
+  <rect x="196" y="36" width="60" height="20" rx="10" fill="#E6F7ED"/>
+  <text x="226" y="50" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0B2A5B" text-anchor="middle">Kuitti OK</text>
+
+  <!-- Kuittikuva miniatyyri -->
+  <rect x="46" y="80" width="76" height="104" rx="10" fill="#F3F6F5" stroke="#C5D0CD" stroke-width="1.2"/>
+  <rect x="58" y="94" width="42" height="5" rx="2.5" fill="#0B2A5B"/>
+  <rect x="58" y="106" width="50" height="3.5" rx="1.75" fill="#8CA0B8"/>
+  <rect x="58" y="116" width="38" height="3.5" rx="1.75" fill="#8CA0B8"/>
+  <line x1="56" y1="130" x2="112" y2="130" stroke="#C5D0CD" stroke-width="1" stroke-dasharray="3 2"/>
+  <rect x="58" y="140" width="28" height="3.5" rx="1.75" fill="#4A5A64"/>
+  <rect x="58" y="152" width="44" height="6" rx="3" fill="#5CCB8A"/>
+  <line class="scan" x1="50" y1="90" x2="118" y2="90" stroke="#5CCB8A" stroke-width="2" opacity="0.85"/>
+
+  <!-- Tiedot -->
+  <text x="138" y="96" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">Kululaji</text>
+  <text x="138" y="114" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Turnauskyyti</text>
+  <text x="138" y="142" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">Summa</text>
+  <text x="138" y="164" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#0B2A5B">64,50 €</text>
+
+  <rect x="46" y="198" width="208" height="28" rx="8" fill="#E9EFF6"/>
+  <text x="58" y="216" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0B2A5B">U11 joukkuekassa</text>
+
+  <!-- Kelluva hyväksyntäkortti -->
+  <g class="float-card">
+    <rect x="218" y="182" width="178" height="68" rx="13" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.5"/>
+    <circle cx="246" cy="216" r="14" fill="#5CCB8A"/>
+    <path class="chk" pathLength="20" d="M240 216.2 L244.2 220.4 L252.5 212" fill="none" stroke="#0B2A5B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="270" y="211" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#0B2A5B">Hyväksytty</text>
+    <text x="270" y="229" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4A5A64">Maksuun rahastosta</text>
+  </g>
+
+</svg>

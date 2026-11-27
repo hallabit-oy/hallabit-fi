@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Pelaaja- ja joukkuetilastot">
+  <style>
+    @keyframes drawLine{0%{stroke-dashoffset:340}32%,86%{stroke-dashoffset:0}100%{stroke-dashoffset:340}}@keyframes dotPop{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}.trend{stroke-dasharray:340;animation:drawLine 5.8s cubic-bezier(.23,1,.32,1) infinite}.end-dot{transform-box:fill-box;transform-origin:center;animation:dotPop 3.4s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <rect x="26" y="22" width="356" height="224" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <line x1="26" y1="64" x2="382" y2="64" stroke="#E4ECE9" stroke-width="1.25"/>
+  <text x="46" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Kauden tilastot</text>
+  <rect x="278" y="34" width="84" height="20" rx="10" fill="#E6F7ED"/>
+  <text x="320" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0B2A5B" text-anchor="middle">18 ottelua</text>
+
+  <!-- 3 tunnuslukua -->
+  <rect x="46" y="78" width="96" height="50" rx="10" fill="#F3F6F5"/>
+  <text x="58" y="96" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#4A5A64">Harjoitukset</text>
+  <text x="58" y="118" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="17" font-weight="800" fill="#0B2A5B">42</text>
+
+  <rect x="154" y="78" width="96" height="50" rx="10" fill="#F3F6F5"/>
+  <text x="166" y="96" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#4A5A64">Tehopisteet</text>
+  <text x="166" y="118" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="17" font-weight="800" fill="#0B2A5B">9 + 11</text>
+
+  <rect x="262" y="78" width="100" height="50" rx="10" fill="#E6F7ED"/>
+  <text x="274" y="96" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#0B2A5B">Aktiivisuus</text>
+  <text x="274" y="118" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="17" font-weight="800" fill="#0B2A5B">92 %</text>
+
+  <!-- Kevyt pylväs + trendiviiva -->
+  <g fill="#E9EFF6">
+    <rect x="54" y="182" width="28" height="44" rx="4"/>
+    <rect x="104" y="170" width="28" height="56" rx="4"/>
+    <rect x="154" y="176" width="28" height="50" rx="4"/>
+    <rect x="204" y="158" width="28" height="68" rx="4"/>
+    <rect x="254" y="150" width="28" height="76" rx="4"/>
+    <rect x="304" y="142" width="28" height="84" rx="4" fill="#E6F7ED"/>
+  </g>
+  <path class="trend" pathLength="340" d="M68 186 L118 172 L168 178 L218 158 L268 150 L318 140" fill="none" stroke="#0B2A5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="68" cy="186" r="3.5" fill="#0B2A5B"/>
+  <circle cx="118" cy="172" r="3.5" fill="#0B2A5B"/>
+  <circle cx="168" cy="178" r="3.5" fill="#0B2A5B"/>
+  <circle cx="218" cy="158" r="3.5" fill="#0B2A5B"/>
+  <circle cx="268" cy="150" r="3.5" fill="#0B2A5B"/>
+  <circle class="end-dot" cx="318" cy="140" r="5.5" fill="#5CCB8A" stroke="#0B2A5B" stroke-width="1.8"/>
+
+</svg>

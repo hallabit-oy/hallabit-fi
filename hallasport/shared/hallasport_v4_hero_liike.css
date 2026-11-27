@@ -1,0 +1,114 @@
+/*
+HallaSport v4, HAL-23 27.11.2026 (Kehari). Villen palaute klo 18.42: enemmän liikettä heroon ja välillä valojuova menemään.
+Luonnos, go: ei vielä. Ladataan hallasport_v3_tiivistys.css:n jälkeen. Koskee vain heroa ja yläsiirtymää #v1-alku.
+Kaikki liike pelkillä transform- ja opacity-ominaisuuksilla. Alasiirtymä #v2-loppu ja keskikohdan raidat ennallaan.
+*/
+
+/* 1. Heron kelluvat merkit (.iso-nodes .ib, 84 kpl iso-d ja 84 kpl iso-m).
+   Aiemmin: 32 s kierros, pelkkä opacity, näkyvissä noin 3 s.
+   Nyt: 16 s kierros. Rivikohtaiset viiveet (0 - 31,3 s) jakautuvat 16 s:n kierrokselle tasaisesti, koska 32 = 2 x 16.
+   Merkki nousee ja ponnahtaa esiin, kelluu, sykähtää ja nousee pois. Näkyvissä noin 2,7 s, joten kerralla näkyy noin 13 merkkiä (aiemmin noin 8).
+   Nousun pituus skaalautuu muuttujalla --hs4-nousu (puhelimessa merkit ovat pienempiä, joten liikerata suhteessa suurempi). */
+.herobg .iso-nodes { --hs4-nousu: 1; }
+@media (max-width: 860px) {
+  .herobg .iso-nodes { --hs4-nousu: 1.6; }
+}
+.iso-nodes .ib {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  will-change: transform, opacity;
+  animation: hs4-merkki 16s cubic-bezier(0.37, 0, 0.63, 1) infinite both;
+}
+@keyframes hs4-merkki {
+  0%   { opacity: 0; transform: translate3d(0, calc(var(--hs4-nousu) * 9px), 0) scale(0.82); }
+  3%   { opacity: 1; transform: translate3d(0, calc(var(--hs4-nousu) * -2px), 0) scale(1.07); }
+  5%   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  9%   { opacity: 1; transform: translate3d(0, calc(var(--hs4-nousu) * -5px), 0) scale(1.04); }
+  13%  { opacity: 1; transform: translate3d(0, calc(var(--hs4-nousu) * -1px), 0) scale(1); }
+  17%  { opacity: 0; transform: translate3d(0, calc(var(--hs4-nousu) * -10px), 0) scale(0.94); }
+  100% { opacity: 0; transform: translate3d(0, calc(var(--hs4-nousu) * -10px), 0) scale(0.94); }
+}
+
+/* 2. Kenttäkuvan hidas hengitys: kuva ja merkkikerros skaalautuvat samassa tahdissa (sama kesto, viive ja origo),
+   joten merkit pysyvät kohdallaan. Skaala vain kasvaa (1 -> 1,018), joten kuvan reuna ei koskaan paljastu. */
+.herobg > picture > img,
+.herobg .iso-nodes {
+  transform-origin: 50% 60%;
+  will-change: transform;
+  animation: hs4-kentta 18s cubic-bezier(0.37, 0, 0.63, 1) infinite normal;
+}
+@keyframes hs4-kentta {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50%      { transform: translate3d(0, 0, 0) scale(1.018); }
+}
+
+/* 3. Yläsiirtymä #v1-alku noin 37 % nopeammaksi. Silmukat 60/46/70 s -> 38/29/44 s, hengitys 44/34/50 s -> 28/22/32 s.
+   Edelleen linear infinite normal (0 % = 100 %), ei alternatea. Hengityksen liikerata noin 1,5-kertainen. */
+.siirtyma-alku .hs-silmukka-huntu { animation-duration: 38s; }
+.siirtyma-alku .hs-silmukka-paa   { animation-duration: 29s; }
+.siirtyma-alku .hs-silmukka-valo  { animation-duration: 44s; }
+.hs-siirtyma.siirtyma-alku .kerros-huntu { animation: hs4-hengitys-huntu 28s cubic-bezier(0.37, 0, 0.63, 1) infinite normal; }
+.hs-siirtyma.siirtyma-alku .kerros-paa   { animation: hs4-hengitys-paa 22s cubic-bezier(0.37, 0, 0.63, 1) infinite normal; }
+.hs-siirtyma.siirtyma-alku .kerros-valo  { animation: hs4-hengitys-valo 32s cubic-bezier(0.37, 0, 0.63, 1) infinite normal; }
+@keyframes hs4-hengitys-huntu {
+  0%, 100% { transform: translate3d(0, 6px, 0) scaleY(0.93); }
+  50%      { transform: translate3d(0, -8px, 0) scaleY(1.06); }
+}
+@keyframes hs4-hengitys-paa {
+  0%, 100% { transform: translate3d(0, -6px, 0) scaleY(1.045); }
+  50%      { transform: translate3d(0, 8px, 0) scaleY(0.94); }
+}
+@keyframes hs4-hengitys-valo {
+  0%, 100% { transform: translate3d(0, -5px, 0) scaleY(1.03); }
+  50%      { transform: translate3d(0, 6px, 0) scaleY(0.94); }
+}
+
+/* 4. Valojuova yläsiirtymässä. Kerros kerros-juova saa valoaallon hengityksen (luokka kerros-valo), ja sen maskina on
+   valoaallon oma polku, joka siirtyy samassa tahdissa kuin valoaalto (44 s, 0 -> -1600 yksikköä = yksi jakso).
+   Kerros on aalto-kehyksen sisällä, joten kehyksen pystymaski häivyttää sen nollaan ylä- ja alareunassa.
+   Juova (700 yksikön levyinen pehmeä liukuväri, screen-sekoitus, jotta se kirkastaa vihreää aaltoa) kulkee vasemmalta oikealle 12 s välein:
+   0-3,8 s sisään, kirkkaana aallon läpi ja ulos, 3,8-12 s rauhallinen (opacity 0). */
+.hs-siirtyma.siirtyma-alku .kerros-juova {
+  filter: blur(8px);
+  opacity: 1;
+  mix-blend-mode: screen;
+}
+.hs4-juova-maskisilmukka {
+  transform: translate3d(0, 0, 0);
+  animation: hs4-juova-maskisilmukka 44s linear infinite normal;
+}
+@keyframes hs4-juova-maskisilmukka {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-1600px, 0, 0); }
+}
+.hs4-juova {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+  animation: hs4-juova 12s linear infinite normal;
+}
+@keyframes hs4-juova {
+  0%      { opacity: 0;    transform: translate3d(0, 0, 0); }
+  5%      { opacity: 0.6;  transform: translate3d(375px, 0, 0); }
+  10%     { opacity: 1;    transform: translate3d(750px, 0, 0); }
+  22%     { opacity: 1;    transform: translate3d(1650px, 0, 0); }
+  27%     { opacity: 0.6;  transform: translate3d(2025px, 0, 0); }
+  31.667% { opacity: 0;    transform: translate3d(2375px, 0, 0); }
+  100%    { opacity: 0;    transform: translate3d(2375px, 0, 0); }
+}
+
+/* 5. Vähennetty liike: kaikki uudet liikkeet pois. Merkit näkymättömiin kuten ennen (hallasport/index.html rivi 207). */
+@media (prefers-reduced-motion: reduce) {
+  .iso-nodes .ib,
+  .herobg > picture > img,
+  .herobg .iso-nodes,
+  .hs4-juova-maskisilmukka,
+  .hs4-juova,
+  .hs-siirtyma.siirtyma-alku .kerros-huntu,
+  .hs-siirtyma.siirtyma-alku .kerros-paa,
+  .hs-siirtyma.siirtyma-alku .kerros-valo {
+    animation: none !important;
+  }
+  .iso-nodes .ib { opacity: 0; transform: none; }
+  .hs4-juova { opacity: 0; }
+}

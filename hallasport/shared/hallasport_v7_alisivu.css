@@ -1,0 +1,154 @@
+/* HAL-26 v7: siirretty sellaisenaan Brändärin mallisivun inline-tyyleistä:
+   /workspace/brandari/2026-11-27_hallasport_alisivut_hero_grafiikat_v7/02_Kausimaksut_mallisivu/index.html rivit 18-169 (27.11.2026, Kehari). */
+
+.artikkelin-alku {
+  padding-block: clamp(28px, 4vw, 48px) clamp(20px, 3vw, 32px);
+}
+.artikkelin-alku .wrap > nav[aria-label="Murupolku"] {
+  padding: 0;
+  margin-bottom: 18px;
+}
+.hero-ruudukko {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+}
+.hero-tunniste {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #E8F7EE;
+  border: 1px solid #BCE5CD;
+  color: #0B2A5B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 14px;
+}
+.hero-tunniste-piste {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5CCB8A;
+  flex: none;
+}
+.hero-teksti h1 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 3.6vw, 42px);
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #0B2A5B;
+  max-width: 22ch;
+}
+.hero-johdanto {
+  margin: 0;
+  font-size: clamp(16px, 1.45vw, 18px);
+  line-height: 1.55;
+  color: #2B4263;
+  max-width: 54ch;
+}
+.hero-grafiikka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #D9E4E0;
+  border-radius: 20px;
+  padding: 12px;
+}
+.hero-grafiikka svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.artikkelin-sarakkeet {
+  padding-block: clamp(28px, 4vw, 48px) clamp(40px, 5vw, 64px);
+}
+.artikkeliteksti {
+  max-width: 64ch;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1D324D;
+}
+.artikkeliteksti p {
+  margin: 0 0 1.2em;
+}
+.artikkeliteksti h2 {
+  margin: 2.1em 0 0.65em;
+  font-size: clamp(22px, 2.2vw, 27px);
+  line-height: 1.25;
+  color: #0B2A5B;
+  scroll-margin-top: 84px;
+}
+.artikkeliteksti h3 {
+  margin: 1.6em 0 0.5em;
+  font-size: 19px;
+  line-height: 1.35;
+  color: #0B2A5B;
+  scroll-margin-top: 84px;
+}
+.vinkkilaatikko {
+  margin: 26px 0;
+  padding: 18px 20px;
+  background: #F3F6F5;
+  border: 1px solid #D5E2DD;
+  border-left: 4px solid #5CCB8A;
+  border-radius: 12px;
+}
+.vinkki-otsikko {
+  margin: 0 0 6px !important;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0B2A5B;
+}
+.vinkkilaatikko p:last-child {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.sisalto-hyppy {
+  padding: clamp(18px, 2vw, 24px);
+  border: 1px solid #D5E2DD;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+.sisalto-hyppy h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #0B2A5B;
+}
+.sisalto-hyppy ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sisalto-hyppy li + li {
+  border-top: 1px solid #E8EFEC;
+}
+.sisalto-hyppy a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0B2A5B;
+  text-decoration: none;
+}
+.sisalto-hyppy a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .hero-ruudukko {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .hero-teksti h1 {
+    max-width: none;
+  }
+}
+

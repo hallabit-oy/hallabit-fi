@@ -2,6 +2,67 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v7b (HAL-26 + HAL-25)
+- Yhdistetty luonnos: HallaSportin v7 (22 alisivua v7-mallissa ja HC Ketut pääsivun karusellissa) sekä Hallan HAL-25 v5 -aallot HallaBitin etusivulle ja HallaLinkin sivulle.
+- HallaBitin etusivulla (/) on nyt tummansinisestä vaaleaan vaihtuva jäänsininen aalto ja sen päällä koodisade. Jos laitteessa on valittu vähennetty liike, koodisade näkyy pysäytyskuvana.
+- HallaLinkin sivulla (/hallalink/) on kaksi utuaaltoa: herosta Tuttua?-osioon ja Hinnastosta Esittely-osioon. Solmuverkkoa ei ole. Vähennetty liike pysäyttää aallot.
+- Muutetut tiedostot (Hallan v5:stä sellaisenaan): index.html, hallalink/index.html sekä uudet shared/hallabit-aalto_v4.css, shared/hallabit-aalto_v4.js ja hallalink/shared/hallalink-aallot_v5.css. v7 ei ollut muuttanut index.html- eikä hallalink/index.html-tiedostoa, joten mikään v7-muutos ei kadonnut. EN-sivuja ei muutettu.
+go: Ville 27.11.2026 klo 22.53
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v7 (HAL-26)
+- HallaSportin kaikki 22 suomenkielistä alisivua käyttävät nyt Villen hyväksymää HAL-26 v7 -mallia (Villen hyväksyntä 27.11.2026 klo 21.50). Vaalealla herolla on kategoriatunniste, otsikko, lyhyt johdanto, Lue alta lisää -linkki ja sivun oma liikkuva kuvitus. Heron alla on aalto vaaleasta tummansiniseen, tumma Lyhyesti-kaista kolmella kohdalla, vaalea artikkeli ja oikealla Sisältö-hyppylista sivun omista väliotsikoista. Artikkelin jälkeen on oma aalto ennen HallaSport seurallesi -osiota.
+- Sivujen alkuperäinen teksti säilyy kokonaan. Aiempi ingressi on nyt artikkelin ensimmäinen kappale. Heron johdanto ja Lyhyesti-kohdat on tiivistetty sivun omasta tekstistä. Usein kysyttyä -osiolla on nyt ankkuri.
+- Evästeasetukset-painike ja evästesuostumus ovat edelleen jokaisella sivulla.
+- HallaSportin pääsivun karusellin Seuran kotisivu -näkymässä on nyt esimerkkiseura HC Ketut (Brändärin v2, Villen hyväksyntä 27.11.2026 klo 21.50).
+- Muutetut tiedostot: _includes/sport-artikkeli.html (v7-rakenne), _layouts/sisalto.html (tyylitiedostojen linkit), hallasport/index.html (seuran kotisivun kuva) sekä uudet _data/hallasport_v7_alisivut.yml, _includes/sport-artikkeli-v7-ylaaalto.html, _includes/sport-artikkeli-v7-alaaalto.html, _includes/hallasport_v7_grafiikat/ (18 kuvitusta), hallasport/shared/hallasport_v7_lisaykset.css, hallasport/shared/hallasport_v7_alisivu.css ja hallasport/img/kotisivu_kettu_v2/hc_ketut_v2_kotisivu-1600.webp. hallasport/shared/artikkeli.css ja hallasport/shared/hallasport_v6_artikkeliaalto.css korvattiin mallisivun versioilla. _includes/sport-artikkeli-aalto.html ei ole enää mukana. EN-sivuja ei muutettu.
+go: ei vielä
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v6 (HAL-23)
+- Tietosuojasivu kattaa nyt HallaSportin ja HallaLinkin sivut. Sovellusosio koskee molempia sovelluksia, ja sivun lopussa on linkit HallaBitiin, HallaSportiin ja HallaLinkiin.
+- Evästeosion nimi on nyt Evästeet ja markkinointitunnisteet. Google Tag Manager (GTM-MJ9WLDJM) ja Google Ireland Limited on kuvattu Metan rinnalla: vastaanottaja, siirto Yhdysvaltoihin ja linkki Googlen tietosuojakäytäntöön. Evästelistaan lisättiin _fbc. Päiväys on 27.11.2026.
+- HallaSportin pääsivun ja kaikkien 22 artikkelin alatunnisteessa on nyt Evästeasetukset-painike, ja sivut lataavat evästesuostumuksen (shared/hb-suostumus_v1.js). Aiemmin HallaSport-sivuilla ei kysytty evästevalintaa.
+- HallaSportin pääsivun sisäosioiden väliltä poistettiin kaikki vihreät vauhtiraidat (Villen pyyntö 27.11.2026 klo 20.09). Osiot vaihtuvat nyt pelkällä taustavärin vaihdolla. Heron alla oleva aalto ja Hinnaston jälkeinen aalto ovat ennallaan.
+- HallaSportin 22 alisivulla heron alla ollut vihreä raita poistettiin (Villen päätös 27.11.2026 klo 20.14). Tilalla on matala ja vaalea HallaSport-väriaalto, joka on kopioitu pääsivun yläaallosta ja liikkuu samalla tavalla. Jos laitteessa on valittu vähennetty liike, aalto pysyy paikallaan.
+- Muutetut tiedostot: tietosuoja/index.html, _includes/sport-alatunniste.html (painike ja skripti), _includes/sport-artikkeli.html (aalto heron jälkeen), _layouts/sisalto.html ja hallasport/index.html (tyylitiedostojen linkit, raitaelementit pois), _includes/linkkihakemisto.html (raitaelementti pois), hallasport/shared/artikkeli.css (heron raita pois) sekä uudet _includes/sport-artikkeli-aalto.html, hallasport/shared/hallasport_v6_evasteet.css, hallasport/shared/hallasport_v6_rajat.css ja hallasport/shared/hallasport_v6_artikkeliaalto.css. hallasport/shared/hallasport_v5_raita.css ja hallasport/shared/vauhtiraita_v1.css eivät ole enää mukana. EN-sivuja ei muutettu.
+go: ei vielä
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v5 (HAL-23)
+- HallaSportin pääsivulla Mitä HallaSport sisältää -osion ja Oppaat ja ominaisuudet -osion rajalla on nyt sama liikkuva vihreä vauhtiraita kuin muilla osiorajoilla. Raita on puoliksi tummansinisen ja puoliksi vaalean osion päällä, ja sen valojuova kulkee omassa vaiheessaan.
+- Kaikki sivun osiorajat tarkistettiin. Jokaisella värirajalla on nyt joko pehmeä aalto (heron alla ja Hinnaston jälkeen) tai vihreä vauhtiraita.
+- HallaSport-logo palautettiin aiempaan hyväksyttyyn v5c-merkkiin ilman sisäviivaa (Villen päätös 27.11.2026 klo 19.38). Pääsivun ja 22 artikkelin yläpalkki ja alatunniste sekä HallaBitin etusivun HallaSport-kortti ovat samat kuin v3:ssa. v4:n v6-merkkitiedostot ja niiden tyylitiedosto eivät ole enää mukana.
+- Muutetut tiedostot: _includes/linkkihakemisto.html (raita osion alkuun), hallasport/index.html (tyylitiedoston linkki) ja uusi hallasport/shared/hallasport_v5_raita.css. Logon palautus: _includes/sport-ylapalkki.html, _includes/sport-alatunniste.html, _layouts/sisalto.html ja index.html v3:n mukaisiksi, hallasport/index.html:stä v6-merkin tyylilinkki pois, hallasport/brand/HallaSport_logo_v6_*.svg ja hallasport/shared/hallasport_merkki_v6.css pois reposta. EN-sivuja ei muutettu.
+go: ei vielä
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v4 (HAL-23)
+- HallaSportin pääsivun hero elää enemmän. Kenttäkuvan merkit nousevat esiin, kelluvat ja sykähtävät 16 sekunnin rytmissä, ja niitä näkyy kerralla useampi kuin ennen. Kenttäkuva ja merkit hengittävät hitaasti yhdessä.
+- Heron alla oleva aalto liikkuu noin kolmanneksen nopeammin ja hengittää hieman enemmän.
+- Aallon läpi kulkee 12 sekunnin välein pehmeä vaaleanvihreä valojuova vasemmalta oikealle. Juova näkyy noin 4 sekuntia ja pysyy aallon muodon sisällä.
+- Jos laitteessa on valittu vähennetty liike, kaikki nämä liikkeet ovat pois päältä.
+- HallaSportin uusi merkki v6 V1 Ohut avoin sisäviiva (Villen valinta 27.11.2026 klo 18.52) näkyy suomenkielisillä sivuilla: HallaSportin pääsivun ja kaikkien 22 artikkelin yläpalkissa ja alatunnisteessa sekä HallaBitin etusivun HallaSport-kortissa. Tummalla pohjalla tumman pohjan versio, kortissa vaalean pohjan versio. Sanamerkki HallaSport on ennallaan.
+- Muutetut tiedostot: hallasport/index.html (tyylitiedostojen linkit ja valojuovan kerros yläaaltoon), index.html (kortin merkki ja tyylitiedoston linkki), _includes/sport-ylapalkki.html, _includes/sport-alatunniste.html, _layouts/sisalto.html (tyylitiedoston linkki), uudet hallasport/shared/hallasport_v4_hero_liike.css ja hallasport/shared/hallasport_merkki_v6.css sekä kuusi uutta merkkitiedostoa hallasport/brand/HallaSport_logo_v6_V1_ohut_ajo2_*.svg (kopioitu sellaisenaan). EN-sivuja ei muutettu.
+go: ei vielä
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v3 (HAL-23)
+- HallaSportin pääsivulla hero-kuvan ja ylemmän aallon välinen tyhjä tila on pienempi. Puhelimessa (390 px) kuvan alareunasta aallon vihreään on nyt noin 43 px, aiemmin noin 121 px. Tietokoneella (1440 px) väli on noin 34 px, aiemmin noin 98 px.
+- Ominaisuudet-osion otsikon yläpuolella sekä Hinnaston ja Yhteys-osion välissä osion oma tyhjä tila on puolitettu, koska aallon vaalea ja tumma pää toimivat jo väleinä.
+- Mitä HallaSport sisältää -kaaviossa pillerit eivät enää mene puhelimessa päällekkäin. Sarakkeet ovat kauempana toisistaan ja pillereiden leijunta on puhelimessa maltillisempi, joten vierekkäisten pillereiden väli on 360 px näytöllä vähintään noin 19 px myös liikkeen aikana. Tietokoneen näkymä on ennallaan.
+- Muutetut tiedostot: hallasport/index.html (kaksi riviä), uusi hallasport/shared/hallasport_v3_tiivistys.css ja uusi hallasport/shared/net_v9.js. EN-sivuja ei muutettu.
+go: ei vielä
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v2 (HAL-23)
+- HallaSportin pääsivulla vaalean ylätunnisteen ja tummansinisen Ominaisuudet-osion välissä on nyt korkea, pehmeä utuaalto. Vanha vihreä raita poistui tästä kohdasta.
+- Hinnaston ja Yhteys-osion välissä on sama pehmeä siirtymä, ja sen aallon sisällä kulkee hidas vihreä värivirta. Yhteys-osio on samaa tummansinistä kuin alatunniste.
+- Aallot liikkuvat tasaisesti ilman pysähdyksiä, ja liike pysähtyy kokonaan, jos laitteessa on valittu vähennetty liike. Keskikohdan vihreät raidat ja artikkelien otsikkoraita ovat ennallaan.
+- Muutetut tiedostot: hallasport/index.html ja uusi hallasport/shared/utuaalto_v2.css. EN-sivuja ei muutettu.
+go: ei vielä
+
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v1 (HAL-23)
+- HallaSportin pääsivun otsikko on kahdella rivillä Seurasi arki / yhdessä sovelluksessa., ja sen alla kerrotaan, mikä HallaSport on. Neljä artikkelilistaa on koottu yhdeksi linkkihakemistoksi.
+- HallaBitin etusivulla HallaSportin tuotesivun linkki on oma toimintonsa, ja kolme luetuinta ominaisuutta ovat sen alla omana ryhmänään.
+- Vihreisiin vauhtiraitoihin tuli hidas liukuväri ja ajoittainen valojuova. Artikkeleissa otsikko on puhelimessa pienempi, alareunassa näkyvät kuukausi- ja vuosihinta, ja linkkien kosketusalueet ovat vähintään 44 px.
+- Muutetut tiedostot: index.html, hallasport/index.html, tietosuoja/index.html, _layouts/sisalto.html, _includes/sport-artikkeli.html, uusi _includes/linkkihakemisto.html, hallasport/shared/artikkeli.css, uusi hallasport/shared/vauhtiraita_v1.css, shared/sport-valikko.css sekä neljän artikkelin tekstit (peliaika, peliaika-junioreille, jaakiekko, salibandy). EN-sivuja ei muutettu.
+go: ei vielä
+
 22.11.2026  Hallabit-2026-11-22-Etusivu-v1g
 - Kaavion 02-kortin teksti on vaihdettu muotoon Sovelluksen yhteensopivuuden analysointi organisaation toimintaan ja sovelluksen kehittäminen. Englanniksi Analysing how the app fits your operations, and developing it.
 - Teksti on vasemmalla, ja lohko on pystykeskitetty. Numerot, nuolet ja korttien koko ovat ennallaan.

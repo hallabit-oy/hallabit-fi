@@ -2,7 +2,7 @@
 layout: "sisalto"
 lang: "fi"
 permalink: "/hallasport/peliaika/"
-title: "Tasainen peliaika junioreille – seuranta | HallaSport"
+title: "Tasainen peliaika junioreille ja sen seuranta | HallaSport"
 heading: "Tasainen peliaika junioreille läpi kauden"
 label: "Peliajan seuranta"
 description: "Seuraa pelaajien minuutteja ja tarkastele otteluita yhdessä valmennuksen kanssa. Tunnista toistuvat erot ja suunnittele seuraava peli. Pyydä esittely."

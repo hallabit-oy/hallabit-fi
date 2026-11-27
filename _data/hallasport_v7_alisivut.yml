@@ -1,0 +1,205 @@
+# HAL-26 v7 (27.11.2026, Kehari): HallaSport-alisivujen v7-mallin sivukohtaiset tiedot.
+# Avain = sivun permalink. Kentät: tunniste (heron kategoriatunniste), johdanto (heron tiivis johdanto),
+# lyhyesti (3 kohtaa tummaan LYHYESTI-kaistaan), grafiikka (_includes/hallasport_v7_grafiikat/-tiedosto, jako:
+# /workspace/brandari/2026-11-27_hallasport_alisivut_hero_grafiikat_v3/00_Alikategoriajako.txt).
+# Johdanto ja LYHYESTI on tiivistetty sivun omasta tekstistä (description, lead ja otsikot). Kausimaksut sellaisenaan
+# Brändärin hyväksytystä mallisivusta (02_Kausimaksut_mallisivu/index.html rivit 203-205 ja 274-286).
+# Sivun alkuperäinen lead säilyy artikkelitekstin ensimmäisenä kappaleena.
+
+"/hallasport/kalenteri/":
+  tunniste: "Ominaisuus · Kalenteri"
+  johdanto: "Näe lasten treenit ja pelit useasta joukkueesta samassa näkymässä ja tilaa ne omaan kalenteriin."
+  lyhyesti:
+    - "Eri lasten ja seurojen tapahtumat kootaan perheelle samaan näkymään."
+    - "Tapahtumat tunnistaa väreistä, ja ne voi tilata omaan kalenteriin."
+    - "Valmentaja ylläpitää joukkueen tapahtumaa, ja perhe näkee, mitä viikko tuo tullessaan."
+  grafiikka: "01_kalenteri_perhe_joukkue.svg"
+
+"/hallasport/kausimaksut/":
+  tunniste: "Ominaisuus · Talous"
+  johdanto: "Kohdista kausi- ja turnausmaksut lapsikohtaisesti. Huoltaja näkee avoimet erät ja rahastonhoitaja poikkeukset heti."
+  lyhyesti:
+    - "Kausi-, leiri- ja turnausmaksut voidaan kohdistaa lapsikohtaisesti myös saman perheen sisaruksille."
+    - "Huoltaja näkee avoimet ja maksetut erät yhdessä näkymässä selitteineen ja eräpäivineen."
+    - "Rahastonhoitaja ja joukkueenjohtaja tarkistavat maksajat ja poikkeukset yhdestä paikasta ilman erillisiä maksulistoja."
+  grafiikka: "02_kausimaksut_laskutus.svg"
+
+"/hallasport/peliaika/":
+  tunniste: "Ominaisuus · Peliaika"
+  johdanto: "Seuraa pelaajien minuutteja ja tarkastele otteluita yhdessä valmennuksen kanssa ennen seuraavaa peliä."
+  lyhyesti:
+    - "Ottelun jälkeen valmentaja ja joukkueenjohtaja voivat tarkastella pelaajakohtaisia minuutteja."
+    - "Toistuvat erot peliajassa erottuvat, kun otteluita katsotaan pidemmältä jaksolta."
+    - "Seuranta auttaa valmentajaa tarkistamaan oman muistikuvansa ennen seuraavan ottelun suunnittelua."
+  grafiikka: "03_juniorien_peliaika.svg"
+
+"/hallasport/kulukorvaukset/":
+  tunniste: "Ominaisuus · Talous"
+  johdanto: "Valmentaja liittää kuitin kuluhakemukseen, hyväksyjä tarkistaa hankinnan ja rahastonhoitaja kohdistaa menon."
+  lyhyesti:
+    - "Valmentaja liittää kuitin kuluhakemukseen ja kertoo, mitä hankittiin ja mihin tarkoitukseen."
+    - "Hyväksyjä tarkistaa hankinnan ennen maksua."
+    - "Rahastonhoitaja kohdistaa menon oikealle joukkueelle."
+  grafiikka: "05_kulukorvaukset_kuitti.svg"
+
+"/hallasport/ilmoittautumiset-ja-lasnaolo/":
+  tunniste: "Ominaisuus · Treenit"
+  johdanto: "Huoltaja ilmoittaa lapsen treeneihin, ja valmentaja kuittaa läsnäolot kentällä samaan harjoitukseen."
+  lyhyesti:
+    - "Huoltaja ilmoittaa lapsen treeneihin, ja valmentaja näkee vastausmäärät."
+    - "Valmentaja voi muistuttaa vastaamatta jättäneitä ennen harjoitusta."
+    - "Ilmoittautuminen ja kentällä kuitattu läsnäolo liittyvät samaan harjoitukseen."
+  grafiikka: "06_ilmoittautumiset_lasnaolo.svg"
+
+"/hallasport/seuran-talous/":
+  tunniste: "Ominaisuus · Talous"
+  johdanto: "Seuraa joukkueiden kustannuspaikkoja, kohdista viitemaksuja ja kokoa CSV-vienti kirjanpitoon."
+  lyhyesti:
+    - "Joukkueiden tulot ja menot pysyvät erillään, vaikka seuralla on yksi yhteinen pankkitili."
+    - "Viitemaksut kohdistetaan pankin aineistosta oikealle joukkueelle."
+    - "Kirjanpitoa varten aineiston voi koota CSV-vientinä."
+  grafiikka: "07_seuran_talous.svg"
+
+"/hallasport/tilastot/":
+  tunniste: "Ominaisuus · Tilastot"
+  johdanto: "Kirjaa ottelutapahtumat, tarkista pelaajien ja maalivahtien luvut ja kokoa joukkueen kausi."
+  lyhyesti:
+    - "Ottelukirjaukset, pelaajien havainnot ja joukkueen luvut kootaan samaan yhteyteen."
+    - "Pelaajien ja maalivahtien luvut voi tarkistaa ottelusta kauden yhteenvetoon."
+    - "Lajipohja vaikuttaa siihen, mitä tapahtumia seurataan."
+  grafiikka: "08_tilastot.svg"
+
+"/hallasport/viestinta/":
+  tunniste: "Ominaisuus · Viestintä"
+  johdanto: "Tiedota harjoituspaikan vaihdosta, tarkista viestin avaukset ja tavoita valmentaja suoraan."
+  lyhyesti:
+    - "Harjoitusryhmän viestit, seuran yhteiset uutiset ja huoltajan yhteys valmentajaan palvelevat eri tilanteita."
+    - "Lukukuittaus kertoo, kuinka moni vastaanottajista on avannut viestin."
+    - "Joukkue voi sopia etukäteen, missä mikäkin asia kerrotaan."
+  grafiikka: "09_viestinta_tiedote.svg"
+
+"/hallasport/seuran-kotisivut/":
+  tunniste: "Ominaisuus · Kotisivut"
+  johdanto: "Esittele joukkueet, julkaise seuran uutisia ja ohjaa kannattajat fanikauppaan ja lipunmyyntiin."
+  lyhyesti:
+    - "Kotisivupohjalla seura voi esitellä joukkueitaan ja kertoa, miten mukaan pääsee."
+    - "Uusi perhe löytää sopivan joukkueen jo ennen ensimmäisiä harjoituksia."
+    - "Kannattajalle samalla sivustolla ovat ottelut, uutiset, fanikauppa ja lipunmyynti."
+  grafiikka: "10_seuran_kotisivut.svg"
+
+"/hallasport/lajit/jaakiekko/":
+  tunniste: "Laji · Jääkiekko"
+  johdanto: "Joukkueen aikataulut, pelipäivän työnjako ja oma lajipohja jääkiekkoseuran jäähallin arkeen."
+  lyhyesti:
+    - "Jään alku, joukkueen kokoontuminen ja pelin aloitus pysyvät yhteisessä kalenterissa erillään."
+    - "Kentällisten työtä kannattaa tarkastella riittävän pitkältä jaksolta."
+    - "Vieraspelin kulujen rajat sovitaan ennen matkaa."
+  grafiikka: "04_jaakiekko_kentta.svg"
+
+"/hallasport/lajit/jalkapallo/":
+  tunniste: "Laji · Jalkapallo ja futsal"
+  johdanto: "Joukkueen aikataulut, pelipäivän työnjako ja oma lajipohja jalkapalloseuralle kentältä talvikauteen."
+  lyhyesti:
+    - "Pelimuoto ja tapahtuman luonne kannattaa näyttää jo kalenterin suunnittelussa."
+    - "Vaihdot valmistellaan kentän koon mukaan."
+    - "Siirtymä nurmelta halliin ja futsal kulkevat samassa talvikauden ohjelmassa."
+  grafiikka: "11_jalkapallo_kentta.svg"
+
+"/hallasport/lajit/salibandy/":
+  tunniste: "Laji · Salibandy"
+  johdanto: "Joukkueen aikataulut, pelipäivän työnjako ja oma lajipohja salibandyseuran pelipäiviin."
+  lyhyesti:
+    - "Pelipäivä rakennetaan kentällisten ympärille."
+    - "Ottelun aloitus ja joukkueen kokoontuminen erotetaan toisistaan."
+    - "Ketjujen minuutteja luetaan yhdessä pelitapahtumien kanssa."
+  grafiikka: "12_salibandy_kentta.svg"
+
+"/hallasport/lajit/":
+  tunniste: "Laji · Lajipohjat"
+  johdanto: "Lajipohja määrittää, millä nimillä seura kuvaa pelipaikkoja, tilastoja ja kautta."
+  lyhyesti:
+    - "Lajipohja kertoo pelipaikkojen, tilastojen ja kauden nimet seuran omalla tavalla."
+    - "Pohjia voidaan rakentaa rajattomasti."
+    - "Saman seuran eri lajit voivat kirjata harjoitukset ja kilpailut toisistaan poikkeavalla tavalla."
+  grafiikka: "13_lajit_kolme_kenttaa.svg"
+
+"/hallasport/rahastonhoitajalle/":
+  tunniste: "Rooli · Rahastonhoitaja"
+  johdanto: "Seuraa pelaajamaksuja, tarkista kuitit ja kokoa kirjanpitoaineisto samassa paikassa."
+  lyhyesti:
+    - "Pelaajamaksut näkyvät, ja kahdesti näkyvä maksu on helpompi selvittää."
+    - "Valmentajan toimittama kuitti tarkistetaan ennen korvausta."
+    - "Kuukauden vaihtuessa kirjanpitoaineisto kootaan kirjanpitäjälle."
+  grafiikka: "14_rooli_rahastonhoitaja.svg"
+
+"/hallasport/joukkueenjohtajalle/":
+  tunniste: "Rooli · Joukkueenjohtaja"
+  johdanto: "Tarkista ilmoittautumiset, tavoita puuttuvat vastaajat ja pidä valmennus ajan tasalla ennen pelipäivää."
+  lyhyesti:
+    - "Muuttunut pelipaikka päivitetään siihen tapahtumaan, josta perheet katsovat ajan."
+    - "Ilmoittautumiset tarkistetaan ennen kokoonpanon viimeistelyä."
+    - "Puuttuvat vastaajat tavoitetaan ajoissa ennen viikonloppua."
+  grafiikka: "15_rooli_joukkueenjohtaja.svg"
+
+"/hallasport/valmentajalle/":
+  tunniste: "Rooli · Valmentaja"
+  johdanto: "Suunnittele treenit osallistujamäärän mukaan, kirjaa läsnäolot ja seuraa pelaajien minuutteja."
+  lyhyesti:
+    - "Harjoitusta voi muokata osallistujamäärän mukaan jo ennen lähtöä."
+    - "Paikallaolijat tarkistetaan ennen ensimmäistä harjoitetta."
+    - "Ottelun jälkeiset havainnot ja minuutit tukevat keskustelua pelaajan kanssa."
+  grafiikka: "16_rooli_valmentaja.svg"
+
+"/hallasport/huoltajalle/":
+  tunniste: "Rooli · Huoltaja"
+  johdanto: "Katso sisarusten harjoitukset, vastaa oikean lapsen puolesta ja tarkista avoimet maksut."
+  lyhyesti:
+    - "Lasten tapahtumat voi koota yhteen, vaikka sisaruksilla on harjoitukset eri halleissa."
+    - "Vastaat osallistumisesta sen lapsen puolesta, jota tapahtuma koskee."
+    - "Avoimet maksut voi tarkistaa ennen kuin maksaa saman maksun toistamiseen."
+  grafiikka: "01_kalenteri_perhe_joukkue.svg"
+
+"/hallasport/oppaat/joukkueen-rahastonhoitajan-tehtavat/":
+  tunniste: "Opas · Rahastonhoitaja"
+  johdanto: "Muistilista rahastonhoitajan tehtäviin ennen kauden alkua, joka kuukausi, turnauksen jälkeen ja tehtävän vaihtuessa."
+  lyhyesti:
+    - "Tehtävät alkavat ennen ensimmäistä laskua, ja kauden suuret maksupäivät merkitään kalenteriin."
+    - "Joukkue sopii, mitä se tekee itse ja mitä seuran yhteinen taloushallinto hoitaa."
+    - "Seuraaja saa lopuksi selvän kuvan joukkueen rahoista."
+  grafiikka: "17_opas_muistilista_talous.svg"
+
+"/hallasport/oppaat/joukkueenjohtajan-tehtavat/":
+  tunniste: "Opas · Joukkueenjohtaja"
+  johdanto: "Muistilista joukkueenjohtajan tehtäviin ennen vanhempainiltaa, viikon aikana ja pelipäivänä."
+  lyhyesti:
+    - "Joukkueenjohtaja pitää ihmiset, aikataulut ja käytännön järjestelyt samassa suunnassa."
+    - "Tehtävän rajat kannattaa sopia kirjallisesti."
+    - "Turnauskutsu käsitellään ennen kuin se lähetetään perheille."
+  grafiikka: "18_opas_muistilista_jojo.svg"
+
+"/hallasport/oppaat/peliaika-junioreille/":
+  tunniste: "Opas · Peliaika"
+  johdanto: "Lähtökohdat juniorien tasaiseen peliaikaan jalkapallossa, jääkiekossa ja salibandyssä."
+  lyhyesti:
+    - "Peliaikaa suunnitellessa täytyy tietää ikäluokka, pelimuoto ja oman sarjan ohje."
+    - "Ottelun kokonaiskesto ja yksittäiselle pelaajalle annettava aika ovat eri asioita."
+    - "Havaintoja voi verrata toteutuneisiin peliminuutteihin."
+  grafiikka: "03_juniorien_peliaika.svg"
+
+"/hallasport/oppaat/kulukorvaukset-yhdistyksessa/":
+  tunniste: "Opas · Talous"
+  johdanto: "Erota seuran hankinta, matkalasku ja palkkio ja tarkista kulukorvauksen peruste."
+  lyhyesti:
+    - "Seuran varustehankinta, omalla autolla tehty matka ja palkkio tarvitsevat erilaisen selvityksen."
+    - "Yleishyödyllisen yhdistyksen kulukorvauksen peruste tarkistetaan Verohallinnon ja Tulorekisterin ohjeista."
+    - "Rahastonhoitaja tunnistaa tilanteen ennen maksamista."
+  grafiikka: "05_kulukorvaukset_kuitti.svg"
+
+"/hallasport/oppaat/kausimaksun-maarittaminen/":
+  tunniste: "Opas · Talous"
+  johdanto: "Rakenna kausimaksu kustannuksista, muista tuloista ja maksavien osallistujien määrästä."
+  lyhyesti:
+    - "Menot kootaan kauden todellisista hankinnoista ja sitoumuksista."
+    - "Varmistuneet muut tulot vähennetään ennen jakoa maksaville osallistujille."
+    - "Laskuesimerkki auttaa viestimään valmiin päätöksen perheille."
+  grafiikka: "02_kausimaksut_laskutus.svg"

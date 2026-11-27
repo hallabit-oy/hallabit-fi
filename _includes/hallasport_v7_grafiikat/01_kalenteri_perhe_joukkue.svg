@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Perheen ja joukkueen kalenteri">
+  <style>
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-3.5px)}}@keyframes dayPulse{0%,100%{opacity:1}50%{opacity:.45}}@keyframes drawChk{0%,15%{stroke-dashoffset:20}35%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:20}}.float-card{animation:floatY 4.8s cubic-bezier(.23,1,.32,1) infinite}.day-bar{animation:dayPulse 3.6s ease-in-out infinite}.chk{stroke-dasharray:20;animation:drawChk 5.5s cubic-bezier(.23,1,.32,1) infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+<!-- Kevyt taustakehys -->
+  <rect x="26" y="24" width="342" height="210" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <!-- Yläpalkki -->
+  <line x1="26" y1="66" x2="368" y2="66" stroke="#E4ECE9" stroke-width="1.25"/>
+  <text x="46" y="50" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Viikko 48</text>
+  <!-- Väriavaimet -->
+  <circle cx="240" cy="46" r="4.5" fill="#0B2A5B"/>
+  <text x="250" y="50" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">U11</text>
+  <circle cx="292" cy="46" r="4.5" fill="#5CCB8A"/>
+  <text x="302" y="50" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">U9</text>
+
+  <!-- Päiväsarakkeet Ma-Pe -->
+  <g font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64" text-anchor="middle">
+    <text x="66" y="88">Ma</text>
+    <text x="132" y="88">Ti</text>
+    <text x="198" y="88" fill="#0B2A5B" font-weight="700">Ke</text>
+    <text x="264" y="88">To</text>
+    <text x="330" y="88">Pe</text>
+  </g>
+  <!-- Ke-päivän kevyt korostusviiva -->
+  <rect class="day-bar" x="184" y="94" width="28" height="2.5" rx="1.25" fill="#5CCB8A"/>
+
+  <!-- Sarakeviivat -->
+  <g stroke="#EDF2F0" stroke-width="1">
+    <line x1="99" y1="74" x2="99" y2="222"/>
+    <line x1="165" y1="74" x2="165" y2="222"/>
+    <line x1="231" y1="74" x2="231" y2="222"/>
+    <line x1="297" y1="74" x2="297" y2="222"/>
+  </g>
+  <!-- Vaakasuorat tuntiviivat -->
+  <g stroke="#F1F5F3" stroke-width="1">
+    <line x1="40" y1="138" x2="354" y2="138"/>
+    <line x1="40" y1="180" x2="354" y2="180"/>
+  </g>
+
+  <!-- Tapahtumapalkit -->
+  <!-- Ma: U11 Treenit -->
+  <rect x="42" y="108" width="48" height="26" rx="7" fill="#E9EFF6" stroke="#0B2A5B" stroke-width="1.25"/>
+  <rect x="48" y="116" width="24" height="3.5" rx="1.75" fill="#0B2A5B"/>
+  <rect x="48" y="123" width="16" height="3" rx="1.5" fill="#4A5A64" opacity="0.65"/>
+
+  <!-- Ti: U9 Harjoitus -->
+  <rect x="108" y="144" width="48" height="28" rx="7" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.25"/>
+  <rect x="114" y="153" width="26" height="3.5" rx="1.75" fill="#0B2A5B"/>
+  <rect x="114" y="161" width="18" height="3" rx="1.5" fill="#4A5A64" opacity="0.65"/>
+
+  <!-- Ke: U11 Peli (korostettu) -->
+  <rect x="174" y="110" width="48" height="34" rx="7" fill="#0B2A5B"/>
+  <rect x="180" y="119" width="28" height="3.5" rx="1.75" fill="#FFFFFF"/>
+  <rect x="180" y="128" width="18" height="3" rx="1.5" fill="#5CCB8A"/>
+
+  <!-- To: kaksi tapahtumaa peräkkäin -->
+  <rect x="240" y="108" width="48" height="24" rx="7" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.25"/>
+  <rect x="246" y="118" width="26" height="3.5" rx="1.75" fill="#0B2A5B"/>
+  <rect x="240" y="146" width="48" height="24" rx="7" fill="#E9EFF6" stroke="#0B2A5B" stroke-width="1.25"/>
+  <rect x="246" y="156" width="24" height="3.5" rx="1.75" fill="#0B2A5B"/>
+
+  <!-- Pe: U9 Peli -->
+  <rect x="306" y="124" width="48" height="28" rx="7" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.25"/>
+  <rect x="312" y="133" width="24" height="3.5" rx="1.75" fill="#0B2A5B"/>
+  <rect x="312" y="141" width="16" height="3" rx="1.5" fill="#4A5A64" opacity="0.65"/>
+
+  <!-- Kelluva pieni osallistumiskortti oikeassa alakulmassa -->
+  <g class="float-card">
+  <rect x="210" y="192" width="186" height="62" rx="13" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.5"/>
+  <circle cx="236" cy="223" r="13" fill="#5CCB8A"/>
+  <path class="chk" pathLength="20" d="M230.5 223.2 L234.5 227 L242 219" fill="none" stroke="#0B2A5B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="259" y="218" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#0B2A5B">Ke 17.30 Ottelu</text>
+  <text x="259" y="236" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#4A5A64">Ilmoittauduttu</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Joukkueen viestintä">
+  <style>
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-3.5px)}}@keyframes progGrow{0%{transform:scaleX(.2)}25%,86%{transform:scaleX(1)}100%{transform:scaleX(.2)}}.float-card{animation:floatY 4.8s cubic-bezier(.23,1,.32,1) infinite}.prog{transform-box:fill-box;transform-origin:left center;animation:progGrow 5.4s cubic-bezier(.23,1,.32,1) infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <rect x="26" y="22" width="346" height="218" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <line x1="26" y1="64" x2="372" y2="64" stroke="#E4ECE9" stroke-width="1.25"/>
+  <text x="46" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Joukkueen tiedote</text>
+  <rect x="262" y="34" width="90" height="20" rx="10" fill="#E9EFF6"/>
+  <text x="307" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0B2A5B" text-anchor="middle">U11 huoltajat</text>
+
+  <text x="46" y="92" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0B2A5B">Turnausbussi lähtee la 08.15</text>
+  <rect x="46" y="106" width="286" height="5" rx="2.5" fill="#8CA0B8" opacity="0.55"/>
+  <rect x="46" y="118" width="248" height="5" rx="2.5" fill="#8CA0B8" opacity="0.45"/>
+  <rect x="46" y="130" width="184" height="5" rx="2.5" fill="#8CA0B8" opacity="0.45"/>
+
+  <!-- Kiinnitetty liite -->
+  <rect x="46" y="152" width="196" height="30" rx="8" fill="#F3F6F5" stroke="#C5D0CD" stroke-width="1"/>
+  <circle cx="62" cy="167" r="5" fill="#0B2A5B"/>
+  <text x="74" y="171" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0B2A5B">Aikataulu ja halliohje.pdf</text>
+
+  <!-- Kelluva luettu-kuittauskortti -->
+  <g class="float-card">
+    <rect x="196" y="190" width="200" height="64" rx="13" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.5"/>
+    <text x="214" y="212" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#0B2A5B">Luettu 17 / 18</text>
+    <rect x="214" y="224" width="164" height="10" rx="5" fill="#E9EFF6"/>
+    <rect class="prog" x="214" y="224" width="154" height="10" rx="5" fill="#5CCB8A"/>
+  </g>
+
+</svg>

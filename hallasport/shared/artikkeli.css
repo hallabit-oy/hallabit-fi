@@ -40,6 +40,8 @@ html { scroll-padding-top: 80px; }
 }
 .artikkelin-alku nav span[aria-hidden] { padding-inline: 4px; }
 .artikkelin-alku nav a:hover { color: var(--sport-navy); }
+/* HAL-23: murupolun linkit vähintään 44 px korkeiksi kosketusalueiksi. */
+.artikkelin-alku nav a { display: inline-flex; align-items: center; min-height: 44px; }
 .artikkelin-esittely { max-width: 65%; }
 .artikkelin-esittely h1 { font-size: clamp(36px, 4.3vw, 60px); }
 .artikkelin-esittely p { margin: 18px 0 0; max-width: 56ch; color: var(--sport-teksti); font-size: clamp(18px, 1.6vw, 21px); }
@@ -53,19 +55,13 @@ html { scroll-padding-top: 80px; }
     transform: translateY(-50%);
     width: 34%;
     aspect-ratio: 3 / 2;
-    background: url('/hallasport/img/hero_v6/hallasport-hero_v6-kaista-780.webp') center / contain no-repeat;
+    background: none;
     mask-image: linear-gradient(to right, transparent, black 9% 91%, transparent),
                 linear-gradient(to bottom, transparent, black 12% 88%, transparent);
     mask-composite: intersect;
   }
 }
-.artikkelin-alku::after {
-  content: "";
-  display: block;
-  height: 12px;
-  background: linear-gradient(100deg, #85dca6, #309e69 35%, #73df9f 70%, #258653);
-  mask-image: repeating-linear-gradient(0deg, black 0 3px, transparent 3px 6px);
-}
+/* HAL-23 v6 27.11.2026: heron alareunan vihreä raita (.artikkelin-alku::after) poistettu. Tilalla matala väriaalto, ks. hallasport_v6_artikkeliaalto.css. */
 .artikkelin-sarakkeet {
   display: grid;
   grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr);
@@ -98,11 +94,12 @@ html { scroll-padding-top: 80px; }
 .aihelinkit h2 { font-size: 21px; }
 .aihelinkit ul { margin: 14px 0 0; padding: 0; list-style: none; }
 .aihelinkit li + li { border-top: 1px solid #e6ecea; }
-.aihelinkit a { display: block; padding-block: 10px; font-size: 16px; line-height: 1.45; }
+.aihelinkit a { display: flex; align-items: center; min-height: 44px; padding-block: 10px; font-size: 16px; line-height: 1.45; }
 .sport-yhteys { padding-block: clamp(32px, 5vw, 64px); background: var(--sport-sininen); color: white; }
 .sport-yhteys .wrap { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
 .sport-yhteys h2 { font-size: clamp(28px, 3.8vw, 46px); }
 .sport-yhteys p { margin: 8px 0 0; color: #e8f0fa; }
+.sport-yhteys-hinnat span { display: block; }
 .sport-yhteys a {
   display: inline-flex;
   align-items: center;
@@ -123,6 +120,7 @@ html { scroll-padding-top: 80px; }
 }
 @media (max-width: 800px) {
   .artikkelin-esittely { max-width: 65ch; }
+  .artikkelin-esittely h1 { font-size: clamp(26px, 7.2vw, 34px); }
   .artikkelin-sarakkeet { grid-template-columns: minmax(0, 1fr); }
   .sport-artikkeli { font-size: 17px; }
   .aihelinkit { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }

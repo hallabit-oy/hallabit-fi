@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Ilmoittautumiset ja läsnäolot">
+  <style>
+    @keyframes progGrow{0%{transform:scaleX(.25)}25%,86%{transform:scaleX(1)}100%{transform:scaleX(.25)}}@keyframes pulseS{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}.prog{transform-box:fill-box;transform-origin:left center;animation:progGrow 5.6s cubic-bezier(.23,1,.32,1) infinite}.dot-ok{transform-box:fill-box;transform-origin:center;animation:pulseS 3.6s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <rect x="26" y="22" width="346" height="222" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <line x1="26" y1="64" x2="372" y2="64" stroke="#E4ECE9" stroke-width="1.25"/>
+  <text x="46" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">To 18.00 Jääharjoitus</text>
+  <rect x="282" y="34" width="70" height="20" rx="10" fill="#E6F7ED"/>
+  <text x="317" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0B2A5B" text-anchor="middle">88 % mukana</text>
+
+  <!-- Mukana / Poissa laskurit -->
+  <rect x="46" y="80" width="144" height="58" rx="11" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.25"/>
+  <text x="62" y="101" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#0B2A5B">Mukana</text>
+  <text x="62" y="126" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#0B2A5B">14</text>
+  <circle class="dot-ok" cx="168" cy="109" r="9" fill="#5CCB8A"/>
+  <path d="M164 109 L167 112 L172.5 106.5" fill="none" stroke="#0B2A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="206" y="80" width="146" height="58" rx="11" fill="#F3F6F5" stroke="#C5D0CD" stroke-width="1.25"/>
+  <text x="222" y="101" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">Poissa</text>
+  <text x="222" y="126" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#0B2A5B">2</text>
+
+  <!-- Läsnäolopalkki -->
+  <text x="46" y="164" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">Kauden läsnäoloaste</text>
+  <rect x="46" y="174" width="306" height="12" rx="6" fill="#E9EFF6"/>
+  <rect class="prog" x="46" y="174" width="268" height="12" rx="6" fill="#5CCB8A"/>
+
+  <!-- Pelaajapisteet -->
+  <g>
+    <circle cx="56" cy="212" r="8" fill="#0B2A5B"/><circle cx="78" cy="212" r="8" fill="#0B2A5B"/>
+    <circle cx="100" cy="212" r="8" fill="#0B2A5B"/><circle cx="122" cy="212" r="8" fill="#5CCB8A"/>
+    <circle cx="144" cy="212" r="8" fill="#5CCB8A"/><circle cx="166" cy="212" r="8" fill="#5CCB8A"/>
+    <circle cx="188" cy="212" r="8" fill="#E4ECE9" stroke="#C5D0CD" stroke-width="1"/>
+  </g>
+  <text x="210" y="216" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#4A5A64">16 vastausta saapunut</text>
+
+</svg>

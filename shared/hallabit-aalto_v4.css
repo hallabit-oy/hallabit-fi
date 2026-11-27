@@ -1,0 +1,71 @@
+/*
+HallaBit aalto v4, HAL-25 27.11.2026 (Halla). Luonnos, go: ei vielä.
+Saumaton utuaalto #tiimi #0B2A5B > #connect #EEF4FB ja pystysuora koodisade ylhäältä alas.
+Rakenne (periaate otettu HallaSportin utuaalto_v2.css:stä, polut ja värit omia):
+  1. vyöhykkeen tausta: 33 pysähdyksen smootherstep-liuku, reunoilla tasan naapuriosion väri (0 px sauma)
+  2. .v4-kehys: pystymaski häivyttää sumennetut jäänsiniset nauhat nollaan ennen ylä- ja alareunaa
+  3. canvas.hb4-sade (hallabit-aalto_v4.js): kaksi syvyystasoa putoavia merkkijonoja, kirkas kärkimerkki
+     ja hiipuva häntä, alareunassa aaltomainen utu, johon sade liukenee. Oma pystymaski.
+prefers-reduced-motion: reduce: 0 CSS-animaatiota, JS piirtää yhden terävän pysäytyskuvan.
+*/
+.v4-vyohyke {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: clamp(250px, 27vw, 390px);
+  margin: -1px 0; /* 1 px limitys: reunarivit ovat naapuriosion värisiä, joten alipikselirakoa ei synny */
+  overflow: hidden;
+  pointer-events: none;
+  line-height: 0;
+  isolation: isolate;
+  contain: paint;
+}
+.hb4-matrix { background: linear-gradient(180deg, #0B2A5B 0%, #0B2A5B 3.12%, #0B2A5B 6.25%, #0B2A5B 9.38%, #0B2A5B 12.50%, #0B2B5C 15.62%, #0B2B5C 18.75%, #0B2B5D 21.88%, #0C2C5E 25%, #0C2D60 28.12%, #0D3063 31.25%, #0F3368 34.38%, #11386E 37.50%, #153E76 40.62%, #1A4680 43.75%, #22518D 46.88%, #2B5E9C 50%, #386DAD 53.12%, #4A7EBC 56.25%, #6394CC 59.38%, #7EABDB 62.50%, #97BFE7 65.62%, #ACCEEF 68.75%, #BED9F4 71.88%, #CDE2F7 75%, #D9E9F8 78.12%, #E1EDF9 81.25%, #E7F0FA 84.38%, #EBF2FA 87.50%, #EDF3FB 90.62%, #EEF4FB 93.75%, #EEF4FB 96.88%, #EEF4FB 100%); }
+
+.v4-kehys {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 3%, rgba(0,0,0,.3) 12%, #000 30%, #000 64%, rgba(0,0,0,.4) 82%, transparent 96%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, transparent 3%, rgba(0,0,0,.3) 12%, #000 30%, #000 64%, rgba(0,0,0,.4) 82%, transparent 96%, transparent 100%);
+}
+.v4-kerros {
+  position: absolute;
+  top: -14%;
+  bottom: -14%;
+  left: -18%;
+  width: 136%;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.v4-kerros svg { display: block; width: 100%; height: 100%; }
+.v4-huntu { filter: blur(30px); opacity: .66; animation: hb4-keinu-a 24s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+.v4-paa   { filter: blur(16px); opacity: .62; animation: hb4-keinu-b 20s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+.v4-valo  { filter: blur(10px); opacity: .50; animation: hb4-keinu-c 28s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+@keyframes hb4-keinu-a { 0% { transform: translate3d(-4.2%, 4px, 0) scaleY(.96); } 50% { transform: translate3d(.6%, -5px, 0) scaleY(1.05); } 100% { transform: translate3d(4.4%, 2px, 0) scaleY(.98); } }
+@keyframes hb4-keinu-b { 0% { transform: translate3d(4.8%, -3px, 0) scaleY(1.04); } 50% { transform: translate3d(-.4%, 5px, 0) scaleY(.95); } 100% { transform: translate3d(-5%, -4px, 0) scaleY(1.03); } }
+@keyframes hb4-keinu-c { 0% { transform: translate3d(-3.4%, -2px, 0) scaleY(1.03); } 100% { transform: translate3d(3.8%, 4px, 0) scaleY(.97); } }
+
+.hb4-sade {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 2%, rgba(0,0,0,.5) 9%, #000 18%, #000 84%, rgba(0,0,0,.5) 92%, transparent 98%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, transparent 2%, rgba(0,0,0,.5) 9%, #000 18%, #000 84%, rgba(0,0,0,.5) 92%, transparent 98%, transparent 100%);
+}
+
+/* v4: sumea sisarkangas (JS luo), merkit tarkentuvat yläreunassa ja sumenevat alareunan utuun */
+.hb4-sade-sumea { filter: blur(2.2px); }
+
+@media (max-width: 600px) {
+  .v4-vyohyke { height: clamp(230px, 62vw, 280px); }
+  .v4-huntu { filter: blur(22px); }
+  .v4-paa { filter: blur(12px); }
+  .v4-valo { filter: blur(8px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v4-huntu, .v4-paa, .v4-valo { animation: none !important; }
+}

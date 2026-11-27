@@ -24,13 +24,13 @@ Tee vaihtosuunnitelma kentälle tulevien pelaajien nimillä. Jos vain ensimmäin
 
 ## Jääkiekko
 
-Jääkiekkoliiton kauden 2026–2027 lasten pelaamisen ohjeessa U11- ja U12-pienpelien valmentajalle annetaan vastuu tasapuolisesta peluuttamisesta. Ohjeessa kuvataan myös lentävät vaihdot. Vaihtoaition työnjako on siksi olennainen osa toteutusta. Kuka seuraa milloin seuraava ryhmä lähtee ja kuka huomaa, jos yksi lapsi joutuu toistuvasti odottamaan ylimääräisen vaihdon?
+Jääkiekkoliiton kauden 2026-2027 lasten pelaamisen ohjeessa U11- ja U12-pienpelien valmentajalle annetaan vastuu tasapuolisesta peluuttamisesta. Ohjeessa kuvataan myös lentävät vaihdot. Vaihtoaition työnjako on siksi olennainen osa toteutusta. Kuka seuraa milloin seuraava ryhmä lähtee ja kuka huomaa, jos yksi lapsi joutuu toistuvasti odottamaan ylimääräisen vaihdon?
 
-Tarkista vanhempien ikäluokkien sarjat erikseen. Merkitse maalivahdin vuorot erilleen kenttäpelaajien vaihdoista ja sopikaa, miten kesken tapahtuman vaihtunut rooli kirjataan. [Jääkiekkoliiton lasten pelaamisen ohjeistus 2026–2027](https://www.finhockey.fi/index.php/ajankohtaista/sarjatoiminta/item/download/3411_58486bd29b317a972f7ed86d6da4f958).
+Tarkista vanhempien ikäluokkien sarjat erikseen. Merkitse maalivahdin vuorot erilleen kenttäpelaajien vaihdoista ja sopikaa, miten kesken tapahtuman vaihtunut rooli kirjataan. [Jääkiekkoliiton lasten pelaamisen ohjeistus 2026-2027](https://www.finhockey.fi/index.php/ajankohtaista/sarjatoiminta/item/download/3411_58486bd29b317a972f7ed86d6da4f958).
 
 ## Salibandy
 
-Pelimaailman säännöissä kaudelle 2026–2027 korostuvat osallistuminen ja pelipäivä, joka voi sisältää useita lyhyitä pelejä. Tarkista kuuluuko joukkue Pelimaailmaan vai Säbäkipinään ja avaa juuri sen kilpailun ohjeet. Sovi ennen matkaan lähtöä kentällisten jaosta sekä siitä, kuka seuraa päivän aikana pelaajien vuoroja. Jos kokoonpano muuttuu pelien välissä, päivitä myös vaihtoihin liittyvä suunnitelma.
+Pelimaailman säännöissä kaudelle 2026-2027 korostuvat osallistuminen ja pelipäivä, joka voi sisältää useita lyhyitä pelejä. Tarkista kuuluuko joukkue Pelimaailmaan vai Säbäkipinään ja avaa juuri sen kilpailun ohjeet. Sovi ennen matkaan lähtöä kentällisten jaosta sekä siitä, kuka seuraa päivän aikana pelaajien vuoroja. Jos kokoonpano muuttuu pelien välissä, päivitä myös vaihtoihin liittyvä suunnitelma.
 
 Keskustelkaa päivän jälkeen pienestä toteutettavasta muutoksesta seuraavaan tapahtumaan. Säilyttäkää myös tieto siitä, osallistuiko lapsi kaikkiin peleihin vai vain osaan. [Salibandyliiton alueellisten sarjojen säännöt](https://salibandy.fi/info-2/saannot/alueellisten-sarjojen-saannot/).
 
@@ -41,13 +41,13 @@ Pyydä jokaista valmennustiimin jäsentä nimeämään yksi havainto pelaajien o
 
 ## Futsalissa kellon käyttötapa kuuluu suunnitelmaan
 
-Palloliiton itäisen alueen kauden 2026–2027 ohje näyttää, mistä sarjan peliajan muoto löytyy tulospalvelussa. Tehokasta aikaa käyttävässä ottelussa pelikello pysähtyy katkoilla. Valmennuksen kannattaa siksi päättää, seurataanko jaksoja ottelukellon vai kentän laidalla käyvän kellon mukaan. Kauden kahden pelin minuutit eivät ole vertailukelpoisia, jos toisessa kello käy katkoilla ja toisessa pysähtyy. Tarkista oman alueen ja sarjan määräys erikseen. [Palloliiton itäisen alueen futsalohje 2026–2027](https://www-assets.palloliitto.fi/62562/1790156345-toimintaohjeet-2026-27-itainen-futsal.pdf).
+Palloliiton itäisen alueen kauden 2026-2027 ohje näyttää, mistä sarjan peliajan muoto löytyy tulospalvelussa. Tehokasta aikaa käyttävässä ottelussa pelikello pysähtyy katkoilla. Valmennuksen kannattaa siksi päättää, seurataanko jaksoja ottelukellon vai kentän laidalla käyvän kellon mukaan. Kauden kahden pelin minuutit eivät ole vertailukelpoisia, jos toisessa kello käy katkoilla ja toisessa pysähtyy. Tarkista oman alueen ja sarjan määräys erikseen. [Palloliiton itäisen alueen futsalohje 2026-2027](https://www-assets.palloliitto.fi/62562/1790156345-toimintaohjeet-2026-27-itainen-futsal.pdf).
 
 Jos sama pelaaja käy viikonlopun aikana sekä jalkapallo- että futsalottelussa, tarkastelkaa niitä ensin erillään. Lyhyet vaihdot sisällä ja pitkät jaksot isolla kentällä antavat pelaajalle erilaisia kokemuksia. Vanhemman kysymykseen voi vastata kertomalla, miten juuri tämän päivän vaihdoista sovittiin ja mitä seuraavaan peliin on suunniteltu.
 
 ## Lasten koripallossa tarkista ikäluokan poikkeukset
 
-Koripalloliitto on julkaissut kaudelle 2026–2027 omat tarkennukset 6–12-vuotiaille. Esimerkiksi 6–8-vuotiaiden sarjaotteluissa ei pidetä pöytäkirjaa eikä tuloksia julkaista. Valmennus voi silti miettiä ennen tapahtumaa, miten jokainen saa osallistua peliin. Suunnitelkaa seuraava vaihto ja sopikaa, kuka tunnistaa penkiltä vuoroaan odottavan lapsen. Pelaajien keskinäistä minuuttijärjestystä ei tarvitse asettaa tavoitteeksi tai julkaista perheille. [Koripalloliiton ikäluokkakohtaiset säännöt 2026–2027](https://basket.fi/uutiset/6-12-vuotiaiden-lasten-vahvistetut-pelisaannot-kaudelle-2026-27/).
+Koripalloliitto on julkaissut kaudelle 2026-2027 omat tarkennukset 6-12-vuotiaille. Esimerkiksi 6-8-vuotiaiden sarjaotteluissa ei pidetä pöytäkirjaa eikä tuloksia julkaista. Valmennus voi silti miettiä ennen tapahtumaa, miten jokainen saa osallistua peliin. Suunnitelkaa seuraava vaihto ja sopikaa, kuka tunnistaa penkiltä vuoroaan odottavan lapsen. Pelaajien keskinäistä minuuttijärjestystä ei tarvitse asettaa tavoitteeksi tai julkaista perheille. [Koripalloliiton ikäluokkakohtaiset säännöt 2026-2027](https://basket.fi/uutiset/6-12-vuotiaiden-lasten-vahvistetut-pelisaannot-kaudelle-2026-27/).
 
 Kun huoltaja kysyy peliajasta, pyydä häntä kertomaan tilanteesta mahdollisimman tarkasti. Jäikö lapsi pitkäksi ajaksi penkille yhdessä jaksossa, vai onko sama toistunut useissa peleissä? Ensimmäiseen voi riittää selostus tapahtuneesta ja korjaus seuraavan jakson vaihtojärjestykseen. Toistuvaan havaintoon tarvitaan valmennuksen yhteinen tarkistus siitä, ketkä saavat vastuuta ja miten sovittu käytäntö toteutuu.
 

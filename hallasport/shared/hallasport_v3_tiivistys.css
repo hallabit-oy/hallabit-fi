@@ -1,0 +1,29 @@
+/*
+HallaSport v3, HAL-23 27.11.2026 (Kehari). Villen iPhone-palaute klo 18.10. Luonnos, go: ei vielä.
+Ladataan utuaalto_v2.css:n jälkeen. Ei muuta utuaaltoa, taustaliukua eikä silmukoita.
+*/
+/* 1. Hero -> yläutuaalto tiiviimmäksi */
+/* 1a. Puhelimella hero-kuva on heron viimeinen elementti ja sen alareuna häivytetään jo kuvan omalla maskilla (90-100 %),
+       joten heron alapehmuste (48 px) oli pelkkää tyhjää. */
+@media (max-width: 860px) {
+  .wrap.hero { padding-bottom: 0; }
+}
+/* 1b. Utuaaltovyöhyke alkaa heron häivytetyn alareunan päältä. Hero piirretään vyöhykkeen päälle (z-index 2 > 1),
+       joten kuvan oma häivytys liukuu vyöhykkeen vaalean yläpään päälle ilman reunaa. Vyöhykkeen ylimmät rivit ovat #F3F6F5. */
+.wrap.hero { z-index: 2; }
+.hs-siirtyma.siirtyma-alku { margin-top: -12px; }
+@media (min-width: 861px) {
+  .hs-siirtyma.siirtyma-alku { margin-top: -40px; }
+}
+/* 1c. Yläsiirtymän aallot 12 % ylemmäs vyöhykkeessä (kehysmaski pysyy paikallaan, joten yläreunan alfa on yhä 0). */
+.hs-siirtyma.siirtyma-alku .aalto-kerros { top: -24%; bottom: 0; }
+/* 1d. Osioiden pehmusteet utuaaltojen vieressä: vyöhykkeen tumma tai vaalea pää on jo itsessään väli,
+       joten osion oma pehmuste puolitettu (aiemmin clamp(56px, 7vw, 108px)). */
+#piirteet { padding-top: clamp(24px, 3.5vw, 48px); }
+#hinnasto { padding-bottom: clamp(24px, 3.5vw, 48px); }
+#kokeile { padding-top: clamp(24px, 3.5vw, 48px); }
+/* 2. Ekosysteemikaavio puhelimella: leijunnan amplitudi 60 % (vaaka ±6,6 px, pysty ±6 px), jotta parien väli pysyy >= 12 px.
+      Sarakkeiden paikat ovat net_v9.js:ssä (.23 / .77). */
+@media (max-width: 640px) {
+  #piirteet .net { --na: .6; }
+}

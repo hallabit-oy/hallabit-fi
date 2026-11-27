@@ -1,0 +1,6 @@
+/* HAL-23 v6 (27.11.2026): sisäosioiden vihreät väliraidat poistettu (Ville klo 20.09).
+   Raitaelementit (span.sport-divider) on poistettu merkinnästä: #aiheet (_includes/linkkihakemisto.html), #paiva, #tekijat ja #hinnasto (hallasport/index.html).
+   Osiot vaihtuvat pelkällä taustavärin vaihdolla. Yläaalto ja ala-aalto ovat ennallaan.
+   Aiemmin sääntö section:has(> .sport-divider){position:relative} antoi näille osioille position:relative.
+   Se säilytetään, jotta osioiden sisäinen asettelu pysyy täsmälleen samana. */
+#aiheet, #paiva, #tekijat, #hinnasto { position: relative; }

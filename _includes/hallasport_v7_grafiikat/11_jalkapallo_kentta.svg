@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Jalkapallokenttä">
+  <style>
+    @keyframes ballMove{0%,100%{transform:translate(144.4px,186.2px)}48%{transform:translate(210.0px,142.0px)}82%{transform:translate(276.7px,98.4px)}}@keyframes dashMove{0%{stroke-dashoffset:40}100%{stroke-dashoffset:0}}.ball{animation:ballMove 5.6s cubic-bezier(.23,1,.32,1) infinite}.pass-line{animation:dashMove 3.2s linear infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <path d="M 13.00 192.50 L 293.00 52.50 L 407.00 109.50 L 127.00 249.50 Z" fill="#E4ECE9" stroke="#C5D0CD" stroke-width="1.20"/>
+  <path d="M 13.00 183.50 L 293.00 43.50 L 407.00 100.50 L 127.00 240.50 Z" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.60"/>
+  <!-- Kevyet nurmikaistat -->
+  <path d="M 60.60 159.70 L 106.80 136.60 L 220.80 193.60 L 174.60 216.70 Z" fill="#E6F7ED" fill-opacity="0.45"/>
+  <path d="M 153.00 113.50 L 199.20 90.40 L 313.20 147.40 L 267.00 170.50 Z" fill="#E6F7ED" fill-opacity="0.45"/>
+  <path d="M 245.40 67.30 L 293.00 43.50 L 407.00 100.50 L 359.40 124.30 Z" fill="#E6F7ED" fill-opacity="0.45"/>
+  <!-- Keskiviiva ja keskiympyrä -->
+  <line x1="153.00" y1="113.50" x2="267.00" y2="170.50" stroke="#5CCB8A" stroke-width="2.00"/>
+  <path d="M 243.60 125.20 L 247.62 127.86 L 250.20 131.06 L 251.24 134.68 L 250.69 138.58 L 248.57 142.62 L 244.98 146.63 L 240.04 150.46 L 233.94 153.97 L 226.92 157.02 L 219.26 159.49 L 211.24 161.29 L 203.17 162.34 L 195.36 162.62 L 188.12 162.10 L 181.72 160.81 L 176.40 158.80 L 172.38 156.14 L 169.80 152.94 L 168.76 149.32 L 169.31 145.42 L 171.43 141.38 L 175.02 137.37 L 179.96 133.54 L 186.06 130.03 L 193.08 126.98 L 200.74 124.51 L 208.76 122.71 L 216.83 121.66 L 224.64 121.38 L 231.88 121.90 L 238.28 123.19 Z" fill="#E6F7ED" fill-opacity="0.5" stroke="#5CCB8A" stroke-width="1.60"/>
+  <circle cx="210.00" cy="142.00" r="3.00" fill="#0B2A5B"/>
+  <!-- Rangaistus- ja maalialueet -->
+  <path d="M 36.94 195.47 L 84.54 171.67 L 150.66 204.73 L 103.06 228.53 Z" fill="none" stroke="#0B2A5B" stroke-width="1.35"/>
+  <path d="M 316.94 55.47 L 269.34 79.27 L 335.46 112.33 L 383.06 88.53 Z" fill="none" stroke="#0B2A5B" stroke-width="1.35"/>
+  <path d="M 54.04 204.02 L 70.84 195.62 L 102.76 211.58 L 85.96 219.98 Z" fill="#E6F7ED" fill-opacity="0.55" stroke="#5CCB8A" stroke-width="1.20"/>
+  <path d="M 334.04 64.02 L 317.24 72.42 L 349.16 88.38 L 365.96 79.98 Z" fill="#E6F7ED" fill-opacity="0.55" stroke="#5CCB8A" stroke-width="1.20"/>
+  
+  <path class="pass-line" pathLength="200" d="M 144.4 186.2 Q 210.0 116.0 276.7 98.4" fill="none" stroke="#5CCB8A" stroke-width="2" stroke-dasharray="5 4"/>
+  <g class="ball">
+    <circle cx="0" cy="0" r="5.2" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="1.8" fill="#0B2A5B"/>
+  </g>
+
+
+</svg>

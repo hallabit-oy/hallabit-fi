@@ -1,0 +1,97 @@
+/* HAL-26 v6 (27.11.2026): HallaSport-alisivun saumaton revontuliaalto (#F3F6F5 -> #0B2A5B)
+   ja tummansininen LYHYESTI-kaista, jonka alta siisti vaihto vaaleaan artikkelitaustaan (#F3F6F5).
+   Taustaliuku (41 pysähdyksen smoothstep #F3F6F5 -> #0B2A5B), 200 % silmukka, smoothstep-kehysmaski,
+   margin -1px 0 ja prefers-reduced-motion tulevat sellaisinaan tiedostosta ./shared/utuaalto_v2.css
+   (.hs-siirtyma.vyohyke-vaalea-tummaan, rivit 342-358). */
+.hs-siirtyma.hs-art-aalto-v6 {
+  height: clamp(176px, 18vw, 248px);
+}
+/* Runsaat, näkyvät HallaSportin revontulikerrokset (sama perhe kuin /hallasport/ yläaalto) */
+.hs-art-aalto-v6 .kerros-huntu { filter: blur(18px); opacity: 0.90; }
+.hs-art-aalto-v6 .kerros-paa   { filter: blur(12px); opacity: 0.95; }
+.hs-art-aalto-v6 .kerros-valo  { filter: blur(7px);  opacity: 0.88; }
+
+/* Tasapainoinen väli heron ja aallon välissä */
+.artikkelin-alku > .wrap {
+  padding-bottom: clamp(10px, 1.8vw, 22px);
+}
+
+/* Tummansininen LYHYESTI-kaista heti revontuliaallon alla (#0B2A5B, 0 px sauma) */
+.lyhyesti-kaista {
+  position: relative;
+  z-index: 2;
+  background: #0B2A5B;
+  color: #FFFFFF;
+  padding-block: clamp(28px, 3.6vw, 44px) clamp(34px, 4.2vw, 52px);
+}
+.lyhyesti-kaista-otsikko {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 clamp(18px, 2.2vw, 24px);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #5CCB8A;
+}
+.lyhyesti-kaista-otsikko::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background: #5CCB8A;
+  flex: none;
+}
+.lyhyesti-lista {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 36px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lyhyesti-lista li {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 16px;
+  line-height: 1.55;
+  color: #F4F8FC;
+}
+.lyhyesti-merkki {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: #5CCB8A;
+  color: #0B2A5B;
+  flex: none;
+}
+.lyhyesti-merkki svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+/* Siisti vaihto sinisestä kaistasta vaaleaan artikkelitaustaan (#F3F6F5) */
+.lyhyesti-kaista + .artikkelin-sarakkeet {
+  padding-top: clamp(32px, 4.4vw, 56px);
+}
+
+@media (max-width: 900px) {
+  .lyhyesti-lista {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .lyhyesti-lista li {
+    padding-top: 12px;
+    font-size: 15.5px;
+  }
+}

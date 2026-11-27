@@ -1,0 +1,73 @@
+/*
+HallaLink aallot v5, HAL-25 27.11.2026 (Halla). Luonnos, go: ei vielä.
+Kaksi saumatonta utuaaltoa HallaLinkin jäänsinisessä ja navy-paletissa:
+  .hl5-yla  hero #F3F6F5 > karuselli #0B2A5B
+  .hl5-ala  #hinnasto #F3F6F5 > #kokeile #143A6B
+Rakenne (periaate otettu HallaSportin utuaalto_v2.css:stä, polut ja värit omia):
+  1. vyöhykkeen tausta: 33 pysähdyksen smootherstep-liuku, reunoilla tasan naapuriosion väri (0 px sauma)
+  2. .v5-kehys: pystymaski häivyttää kaikki sumennetut nauhat nollaan ennen ylä- ja alareunaa
+  3. nauhat: runko, huntu, pää ja valo, kukin oma sumennus ja oma rytmi (translate3d, GPU)
+v5 (Ville 27.11.2026: "ota pois nodet"): solmuverkko, canvas ja JS poistettu. Pelkkä CSS.
+prefers-reduced-motion: reduce: 0 CSS-animaatiota, nauhat jäävät paikoilleen.
+*/
+.v5-vyohyke {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: clamp(210px, 21vw, 310px);
+  margin: -1px 0; /* 1 px limitys: reunarivit ovat naapuriosion värisiä, joten alipikselirakoa ei synny */
+  overflow: hidden;
+  pointer-events: none;
+  line-height: 0;
+  isolation: isolate;
+  contain: paint;
+}
+.hl5-yla { background: linear-gradient(180deg, #F3F6F5 0%, #F3F6F5 3.12%, #F3F6F5 6.25%, #F3F6F5 9.38%, #F2F5F5 12.50%, #F1F5F5 15.62%, #EFF4F5 18.75%, #EDF2F5 21.88%, #E9F0F5 25%, #E4EDF4 28.12%, #DDE9F4 31.25%, #D4E4F2 34.38%, #C7DDF0 37.50%, #B9D4EE 40.62%, #A8C9EA 43.75%, #95BDE4 46.88%, #81AEDD 50%, #6C9ED3 53.12%, #598DC7 56.25%, #477BB7 59.38%, #3769A6 62.50%, #2A5996 65.62%, #204D89 68.75%, #19437D 71.88%, #143B72 75%, #11356A 78.12%, #0F3064 81.25%, #0D2E60 84.38%, #0C2C5D 87.50%, #0B2B5C 90.62%, #0B2A5B 93.75%, #0B2A5B 96.88%, #0B2A5B 100%); }
+.hl5-ala { background: linear-gradient(180deg, #F3F6F5 0%, #F3F6F5 3.12%, #F3F6F5 6.25%, #F3F6F5 9.38%, #F2F5F5 12.50%, #F1F5F5 15.62%, #EFF4F5 18.75%, #EDF3F5 21.88%, #E9F1F5 25%, #E4EEF5 28.12%, #DEEAF5 31.25%, #D5E5F3 34.38%, #CADEF1 37.50%, #BCD6EE 40.62%, #ADCCEA 43.75%, #9BC0E5 46.88%, #87B3DF 50%, #73A4D7 53.12%, #6194CB 56.25%, #5083BC 59.38%, #4071AA 62.50%, #33629B 65.62%, #29568F 68.75%, #224E85 71.88%, #1D477D 75%, #1A4276 78.12%, #183F72 81.25%, #163D6F 84.38%, #153B6D 87.50%, #143B6C 90.62%, #143A6B 93.75%, #143A6B 96.88%, #143A6B 100%); height: clamp(200px, 19vw, 290px); }
+
+.v5-kehys {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 3%, rgba(0,0,0,.28) 13%, rgba(0,0,0,.82) 26%, #000 36%, #000 66%, rgba(0,0,0,.82) 76%, rgba(0,0,0,.28) 88%, transparent 97%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, transparent 3%, rgba(0,0,0,.28) 13%, rgba(0,0,0,.82) 26%, #000 36%, #000 66%, rgba(0,0,0,.82) 76%, rgba(0,0,0,.28) 88%, transparent 97%, transparent 100%);
+}
+.v5-kerros {
+  position: absolute;
+  top: -14%;
+  bottom: -14%;
+  left: -18%;
+  width: 136%;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.v5-kerros svg { display: block; width: 100%; height: 100%; }
+
+.v5-runko { filter: blur(24px); opacity: .62; animation: hl5-keinu-a 31s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+.v5-huntu { filter: blur(30px); opacity: .70; animation: hl5-keinu-b 23s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+.v5-paa   { filter: blur(15px); opacity: .80; animation: hl5-keinu-c 19s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+.v5-valo  { filter: blur(9px);  opacity: .58; animation: hl5-keinu-d 27s cubic-bezier(.45,.05,.55,.95) infinite alternate; }
+
+.hl5-ala .v5-runko { animation-delay: -12s; animation-duration: 34s; filter: blur(36px); opacity: .5; }
+.hl5-ala .v5-valo  { opacity: .44; }
+.hl5-ala .v5-huntu { animation-delay: -7s;  animation-duration: 26s; }
+.hl5-ala .v5-paa   { animation-delay: -15s; animation-duration: 21s; animation-direction: alternate-reverse; }
+.hl5-ala .v5-valo  { animation-delay: -4s;  animation-duration: 29s; }
+
+@keyframes hl5-keinu-a { 0% { transform: translate3d(-3.2%, 3px, 0) scaleY(.97); } 100% { transform: translate3d(3.4%, -4px, 0) scaleY(1.03); } }
+@keyframes hl5-keinu-b { 0% { transform: translate3d(4.6%, -5px, 0) scaleY(1.05); } 50% { transform: translate3d(.4%, 4px, 0) scaleY(.95); } 100% { transform: translate3d(-4.4%, -2px, 0) scaleY(1.02); } }
+@keyframes hl5-keinu-c { 0% { transform: translate3d(-5.2%, 4px, 0) scaleY(.96); } 50% { transform: translate3d(-.8%, -6px, 0) scaleY(1.06); } 100% { transform: translate3d(4.8%, 3px, 0) scaleY(.98); } }
+@keyframes hl5-keinu-d { 0% { transform: translate3d(3.6%, -3px, 0) scaleY(1.04); } 50% { transform: translate3d(-1.4%, 5px, 0) scaleY(.95); } 100% { transform: translate3d(-4.2%, -4px, 0) scaleY(1.03); } }
+
+@media (max-width: 600px) {
+  .v5-vyohyke { height: clamp(190px, 52vw, 240px); }
+  .hl5-ala { height: clamp(180px, 48vw, 230px); }
+  .v5-huntu { filter: blur(22px); }
+  .v5-paa { filter: blur(11px); }
+  .v5-valo { filter: blur(7px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v5-runko, .v5-huntu, .v5-paa, .v5-valo { animation: none !important; }
+}

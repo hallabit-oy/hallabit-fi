@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Kausimaksujen laskutus">
+  <style>
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-3.5px)}}@keyframes progGrow{0%{transform:scaleX(.2);opacity:.75}22%,86%{transform:scaleX(1);opacity:1}100%{transform:scaleX(.2);opacity:.75}}.float-card{animation:floatY 5s cubic-bezier(.23,1,.32,1) infinite}.prog{transform-box:fill-box;transform-origin:left center;animation:progGrow 6s cubic-bezier(.23,1,.32,1) infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+<!-- Pääkortti -->
+  <rect x="26" y="18" width="336" height="206" rx="16" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.5"/>
+  <text x="46" y="46" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0B2A5B">Kausimaksut</text>
+  <text x="342" y="46" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#0B2A5B" text-anchor="end">85 % maksettu</text>
+
+  <!-- Kevyt etenemisviiva -->
+  <rect x="46" y="58" width="296" height="7" rx="3.5" fill="#E6ECEA"/>
+  <rect x="46" y="58" width="250" height="7" rx="3.5" fill="#5CCB8A"/>
+
+  <!-- Rivi 1: Maksettu -->
+  <rect x="46" y="80" width="296" height="38" rx="10" fill="#F7FAF9" stroke="#E0E8E5" stroke-width="1.2"/>
+  <circle cx="66" cy="99" r="9" fill="#5CCB8A"/>
+  <path d="M62 99.2 L65 102 L70.5 96" fill="none" stroke="#0B2A5B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="86" y="103" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0B2A5B">Syyskausi, erä 1</text>
+  <text x="328" y="103" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#4A5A64" text-anchor="end">Maksettu</text>
+
+  <!-- Rivi 2: Maksettu -->
+  <rect x="46" y="126" width="296" height="38" rx="10" fill="#F7FAF9" stroke="#E0E8E5" stroke-width="1.2"/>
+  <circle cx="66" cy="145" r="9" fill="#5CCB8A"/>
+  <path d="M62 145.2 L65 148 L70.5 142" fill="none" stroke="#0B2A5B" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="86" y="149" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0B2A5B">Syyskausi, erä 2</text>
+  <text x="328" y="149" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#4A5A64" text-anchor="end">Maksettu</text>
+
+  <!-- Rivi 3: Avoin -->
+  <rect x="46" y="172" width="296" height="38" rx="10" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.25"/>
+  <circle cx="66" cy="191" r="8.25" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.8"/>
+  <text x="86" y="195" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#0B2A5B">Turnausmaksu</text>
+  <text x="328" y="195" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#0B2A5B" text-anchor="end">Avoin</text>
+
+  <!-- Pieni viitekohdistuskortti oikeassa alakulmassa (selkeästi rivin 3 alapuolella) -->
+  <rect x="236" y="218" width="160" height="46" rx="12" fill="#0B2A5B"/>
+  <circle cx="258" cy="241" r="6" fill="#5CCB8A"/>
+  <text x="274" y="237" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Viite 10482</text>
+  <text x="274" y="252" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#D5E3F2">Kohdistettu</text>
+</svg>

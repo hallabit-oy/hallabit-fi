@@ -1,0 +1,81 @@
+/* HAL-26 v7 (27.11.2026):
+   1. Heron kevyt ankkurilinkki "Lue alta lisää" (#lyhyesti, >= 44 px kosketusalue, ei painikelaatikkoa).
+   2. Artikkelin lopun saumaton HallaSport-revontuliaalto (#F3F6F5 -> #0B2A5B) suoraan
+      HallaSport seurallesi -osion (.sport-yhteys) ylle, 0 px sauma ja oma uniikki käyrä. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-lue-lisaa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 8px 2px;
+  background: transparent;
+  border: 0;
+  color: #0B2A5B;
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.hero-lue-lisaa span {
+  text-decoration: underline;
+  text-decoration-color: rgba(11, 42, 91, 0.34);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 180ms ease;
+}
+.hero-lue-lisaa svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: #1D6F4B;
+  transition: transform 180ms ease;
+}
+.hero-lue-lisaa:hover span,
+.hero-lue-lisaa:focus-visible span {
+  text-decoration-color: #0B2A5B;
+}
+.hero-lue-lisaa:hover svg,
+.hero-lue-lisaa:focus-visible svg {
+  transform: translateY(2px);
+}
+
+#lyhyesti {
+  scroll-margin-top: 64px;
+}
+
+/* Artikkelin lopun ja ala-aallon tasapainoinen väli */
+.artikkelin-sarakkeet {
+  padding-bottom: clamp(20px, 3vw, 36px);
+}
+
+/* Saumaton revontuliaalto artikkelin lopussa (#F3F6F5 -> #0B2A5B) */
+.hs-siirtyma.hs-art-aalto-v7-loppu {
+  height: clamp(168px, 17vw, 232px);
+}
+.hs-art-aalto-v7-loppu .kerros-huntu { filter: blur(18px); opacity: 0.88; }
+.hs-art-aalto-v7-loppu .kerros-paa   { filter: blur(12px); opacity: 0.94; }
+.hs-art-aalto-v7-loppu .kerros-valo  { filter: blur(7px);  opacity: 0.86; }
+
+/* HallaSport seurallesi -osion tausta sama #0B2A5B kuin ala-aallon tumma pää -> 0 px sauma */
+.sport-yhteys {
+  position: relative;
+  z-index: 2;
+  background: #0B2A5B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-lue-lisaa span,
+  .hero-lue-lisaa svg {
+    transition: none;
+  }
+}

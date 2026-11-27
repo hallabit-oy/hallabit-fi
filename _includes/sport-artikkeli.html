@@ -1,16 +1,46 @@
+{% comment %} HAL-26 v7 (27.11.2026): rakenne Brändärin hyväksytystä mallisivusta
+/workspace/brandari/2026-11-27_hallasport_alisivut_hero_grafiikat_v7/02_Kausimaksut_mallisivu/index.html.
+Sivukohtaiset tiedot: _data/hallasport_v7_alisivut.yml (avain = permalink). {% endcomment %}
+{% assign v7 = site.data.hallasport_v7_alisivut[page.permalink] %}
 <main>
   <article>
     <header class="artikkelin-alku">
       <div class="wrap">
         {% include murupolku.html %}
-        <div class="artikkelin-esittely">
-          <h1>{{ page.heading | escape }}</h1>
-          <p>{{ page.lead | escape }}</p>
+        <div class="hero-ruudukko">
+          <div class="hero-teksti">
+            <div class="hero-tunniste"><span class="hero-tunniste-piste" aria-hidden="true"></span>{{ v7.tunniste | escape }}</div>
+            <h1>{{ page.heading | escape }}</h1>
+            <p class="hero-johdanto">{{ v7.johdanto | escape }}</p>
+            <a class="hero-lue-lisaa" href="#lyhyesti">
+              <span>Lue alta lisää</span>
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.2v9.2M4.2 8.8L8 12.6l3.8-3.8"/></svg>
+            </a>
+          </div>
+          <div class="hero-grafiikka">
+            {% include hallasport_v7_grafiikat/{{ v7.grafiikka }} %}
+          </div>
         </div>
       </div>
     </header>
+{% include sport-artikkeli-v7-ylaaalto.html %}
+
+<section class="lyhyesti-kaista" id="lyhyesti" aria-label="Lyhyesti">
+  <div class="wrap">
+    <p class="lyhyesti-kaista-otsikko">Lyhyesti</p>
+    <ul class="lyhyesti-lista">
+      {% for kohta in v7.lyhyesti %}
+      <li>
+        <span class="lyhyesti-merkki" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 8.4L6.4 11.5L12.8 4.8"/></svg></span>
+        <span>{{ kohta | escape }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
     <div class="artikkelin-sarakkeet wrap">
       <div class="artikkeliteksti">
+        <p>{{ page.lead | escape }}</p>
         {% if page.screen %}
           <figure>
             <img src="{{ page.screen.src }}" width="{{ page.screen.width }}" height="{{ page.screen.height }}" alt="{{ page.screen.alt | escape }}">
@@ -19,7 +49,7 @@
         {% endif %}
         {{ content }}
         {% if page.faq %}
-          <section class="kysymykset">
+          <section class="kysymykset" id="usein-kysyttya">
             <h2>Usein kysyttyä</h2>
             {% for item in page.faq %}
               <details><summary>{{ item.q | escape }}</summary><p>{{ item.a | escape }}</p></details>
@@ -28,6 +58,14 @@
         {% endif %}
       </div>
       <div class="aihelinkit">
+        {% assign h2osat = content | split: '<h2 id="' %}
+<aside class="sisalto-hyppy" aria-label="Sisältö">
+  <h2>Sisältö</h2>
+  <ol>
+    {% for osa in h2osat offset:1 %}{% assign h2id = osa | split: '"' | first %}{% assign h2teksti = osa | split: '</h2>' | first | remove_first: h2id | remove_first: '">' %}<li><a href="#{{ h2id }}">{{ h2teksti }}</a></li>
+    {% endfor %}{% if page.faq %}<li><a href="#usein-kysyttya">Usein kysyttyä</a></li>{% endif %}
+  </ol>
+</aside>
         {% if page.category == 'ominaisuus' %}
           {% include liittyvat.html category="ominaisuus" heading="Liittyvät ominaisuudet" %}
           {% include liittyvat.html category="rooli" heading="HallaSport eri rooleissa" %}
@@ -38,9 +76,10 @@
       </div>
     </div>
   </article>
-  <aside class="sport-yhteys">
+{% include sport-artikkeli-v7-alaaalto.html %}
+  <aside class="sport-yhteys" id="esittely">
     <div class="wrap">
-      <div><h2>HallaSport seurallesi</h2><p>8,90 € / joukkue / kk + alv</p></div>
+      <div><h2>HallaSport seurallesi</h2><p class="sport-yhteys-hinnat"><span>8,90 € / joukkue / kk + alv</span> <span>89,90 € / joukkue / vuosi + alv</span></p></div>
       <a href="mailto:info@hallabit.fi?subject=HallaSport-esittely">Pyydä esittely</a>
     </div>
   </aside>

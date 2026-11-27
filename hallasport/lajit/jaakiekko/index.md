@@ -22,7 +22,7 @@ Joukkueenjohtaja tarkistaa hallin, pukukopin ja avainten luovutuksen. Valmentaja
 
 ## Tasapuolisuus lentävissä vaihdoissa
 
-Jääkiekkoliiton kauden 2026–2027 ohje osoittaa U11- ja U12-pienpeleissä valmentajalle vastuun tasapuolisesta peluuttamisesta. Vaihdot tehdään lennosta. Aition toimihenkilö voi auttaa seuraamalla vaihtovuoroja erityisesti silloin, kun joukkue on jaettu kahteen pienpeliryhmään. Kertokaa ennen peliä kuka seuraa kumpaakin ryhmää. Tarkista U13–U15-sarjoissa oman sarjan määräykset erikseen. Lähde tarkistettu 26.11.2026. [Lasten pelaamisen ohjeistus](https://www.finhockey.fi/index.php/ajankohtaista/sarjatoiminta/item/download/3411_58486bd29b317a972f7ed86d6da4f958).
+Jääkiekkoliiton kauden 2026-2027 ohje osoittaa U11- ja U12-pienpeleissä valmentajalle vastuun tasapuolisesta peluuttamisesta. Vaihdot tehdään lennosta. Aition toimihenkilö voi auttaa seuraamalla vaihtovuoroja erityisesti silloin, kun joukkue on jaettu kahteen pienpeliryhmään. Kertokaa ennen peliä kuka seuraa kumpaakin ryhmää. Tarkista U13-U15-sarjoissa oman sarjan määräykset erikseen. Lähde tarkistettu 26.11.2026. [Lasten pelaamisen ohjeistus](https://www.finhockey.fi/index.php/ajankohtaista/sarjatoiminta/item/download/3411_58486bd29b317a972f7ed86d6da4f958).
 
 ## Maalivahdin tilasto tarvitsee asiayhteyden
 

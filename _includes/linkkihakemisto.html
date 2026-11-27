@@ -1,0 +1,18 @@
+{% comment %}HAL-23 27.11.2026: neljä aihevalikkoa yhtenä linkkihakemistona. Rakenne kopioitu tiedostosta _includes/aihevalikko.html (rivit 1-16), ryhmän kortti artikkelin sivupalkista hallasport/shared/artikkeli.css (.aihelinkit, rivit 89-99).{% endcomment %}
+{% assign hk_ryhmat = "rooli|kenelle|HallaSport eri rooleissa;laji|lajit|Lajit;opas|oppaat|Oppaat seuratoimijoille;ominaisuus|ominaisuussivut|HallaSportin ominaisuudet" | split: ";" %}
+<section class="sport-hakemisto" id="aiheet" aria-labelledby="aiheet-otsikko">
+  <div class="wrap">
+    <h2 class="title" id="aiheet-otsikko">Oppaat ja ominaisuudet</h2>
+    <div class="hakemisto-ryhmat">
+      {% for hk_ryhma in hk_ryhmat %}{% assign hk = hk_ryhma | split: "|" %}{% assign articles = site.pages | where: "category", hk[0] | sort: "order" %}
+      <div class="hakemisto-ryhma" id="{{ hk[1] }}">
+        <h3 id="{{ hk[1] }}-otsikko">{{ hk[2] | escape }}</h3>
+        <ul aria-labelledby="{{ hk[1] }}-otsikko">
+          {% for article in articles %}<li><a href="{{ article.permalink }}">{{ article.label | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
