@@ -1,0 +1,4 @@
+/* HAL-26 v7c (27.11.2026, Kehari): HallaSport seurallesi -otsikon sanamerkkivärit kuten tummapohjaisessa HallaSport-logossa.
+   Halla #5CCB8A, Sport ja muu teksti #F3F6F5. */
+.sport-yhteys h2.sport-yhteys-otsikko { color: #F3F6F5; }
+.sport-yhteys h2.sport-yhteys-otsikko .sport-yhteys-halla { color: #5CCB8A; }

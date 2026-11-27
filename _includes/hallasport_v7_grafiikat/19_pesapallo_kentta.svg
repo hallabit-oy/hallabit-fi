@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" width="420" height="280" role="img" aria-label="Pesäpallokenttä">
+  <style>
+    @keyframes ppRing{0%{transform:scale(.75);opacity:.85}75%{transform:scale(2.3);opacity:0}100%{transform:scale(2.3);opacity:0}}
+    @keyframes ppBall{0%,100%{transform:translate(124.5px,183.8px)}24%{transform:translate(134.0px,133.0px)}52%{transform:translate(276.0px,154.0px)}76%{transform:translate(224.0px,88.0px)}}
+    @keyframes ppBase1{0%,16%,34%,100%{opacity:.55}24%{opacity:1}}
+    @keyframes ppBase2{0%,44%,62%,100%{opacity:.55}52%{opacity:1}}
+    @keyframes ppBase3{0%,68%,86%,100%{opacity:.55}76%{opacity:1}}
+    .pp-ring{transform-box:fill-box;transform-origin:center;animation:ppRing 3.6s cubic-bezier(.23,1,.32,1) infinite}
+    .pp-ball{animation:ppBall 6.8s cubic-bezier(.23,1,.32,1) infinite}
+    .pp-b1{animation:ppBase1 6.8s ease-in-out infinite}
+    .pp-b2{animation:ppBase2 6.8s ease-in-out infinite}
+    .pp-b3{animation:ppBase3 6.8s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+
+  <!-- Pohjalaatan varjo ja kansi -->
+  <path d="M 266.00 65.00 L 268.34 64.10 L 271.07 63.54 L 274.00 63.34 L 276.93 63.54 L 279.66 64.10 L 282.00 65.00 L 378.00 113.00 L 379.80 114.17 L 380.93 115.54 L 381.31 117.00 L 380.93 118.46 L 379.80 119.83 L 378.00 121.00 L 156.00 232.00 L 153.66 232.90 L 150.93 233.46 L 148.00 233.66 L 145.07 233.46 L 142.34 232.90 L 140.00 232.00 L 44.00 184.00 L 42.20 182.83 L 41.07 181.46 L 40.69 180.00 L 41.07 178.54 L 42.20 177.17 L 44.00 176.00 Z" fill="#E4ECE9" stroke="#C5D0CD" stroke-width="1.20"/>
+  <path d="M 266.00 57.00 L 268.34 56.10 L 271.07 55.54 L 274.00 55.34 L 276.93 55.54 L 279.66 56.10 L 282.00 57.00 L 378.00 105.00 L 379.80 106.17 L 380.93 107.54 L 381.31 109.00 L 380.93 110.46 L 379.80 111.83 L 378.00 113.00 L 156.00 224.00 L 153.66 224.90 L 150.93 225.46 L 148.00 225.66 L 145.07 225.46 L 142.34 224.90 L 140.00 224.00 L 44.00 176.00 L 42.20 174.83 L 41.07 173.46 L 40.69 172.00 L 41.07 170.54 L 42.20 169.17 L 44.00 168.00 Z" fill="#FFFFFF" stroke="#C5D0CD" stroke-width="1.10"/>
+
+  <!-- Pelikentän sisäalue (hiekkatekonurmen hienovarainen sävy) -->
+  <path d="M 84.00 160.00 L 274.00 65.00 L 362.00 109.00 L 172.00 204.00 Z" fill="#F4FAF6" stroke="#0B2A5B" stroke-width="1.60"/>
+
+  <!-- Takaraja korostusvärillä -->
+  <line x1="274.00" y1="65.00" x2="362.00" y2="109.00" stroke="#5CCB8A" stroke-width="2.20"/>
+
+  <!-- Polttolinja (kevyt apuviiva) -->
+  <line x1="160.00" y1="122.00" x2="248.00" y2="166.00" stroke="#C5D0CD" stroke-width="1.15" stroke-dasharray="4 4"/>
+
+  <!-- Etukaari kotipesän edessä -->
+  <path d="M 96.00 166.00 L 99.96 164.51 L 104.77 163.54 L 110.29 163.14 L 116.34 163.32 L 122.75 164.05 L 129.32 165.34 L 135.85 167.13 L 142.14 169.37 L 148.00 172.00 L 153.25 174.93 L 157.74 178.08 L 161.32 181.34 L 163.89 184.62 L 165.37 187.83 L 165.71 190.86 L 164.91 193.61 L 162.99 196.02 L 160.00 198.00" fill="none" stroke="#5CCB8A" stroke-width="1.60"/>
+
+  <!-- Kotipesä (puoliympyrä etulinjan takana) -->
+  <path d="M 154.00 195.00 L 149.93 196.72 L 145.31 198.07 L 140.27 199.03 L 134.93 199.57 L 129.41 199.68 L 123.87 199.35 L 118.42 198.59 L 113.21 197.43 L 108.36 195.89 L 104.00 194.00 L 100.23 191.82 L 97.14 189.40 L 94.81 186.79 L 93.30 184.07 L 92.64 181.29 L 92.86 178.54 L 93.94 175.86 L 95.86 173.34 L 98.57 171.04 L 102.00 169.00 L 154.00 195.00 Z" fill="#E6F7ED" fill-opacity="0.72" stroke="#5CCB8A" stroke-width="1.60"/>
+
+  <!-- 1-, 2- ja 3-pesät -->
+  <path class="pp-b1" d="M 125.00 139.50 L 123.27 138.36 L 122.18 137.00 L 121.79 135.49 L 122.11 133.91 L 123.12 132.33 L 124.78 130.84 L 127.00 129.50 L 129.67 128.39 L 132.66 127.56 L 135.82 127.05 L 138.99 126.89 L 142.01 127.09 L 144.72 127.64 L 147.00 128.50 Z" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.50"/>
+  <path class="pp-b2" d="M 285.00 147.50 L 286.73 148.64 L 287.82 150.00 L 288.21 151.51 L 287.89 153.09 L 286.88 154.67 L 285.22 156.16 L 283.00 157.50 L 280.33 158.61 L 277.34 159.44 L 274.18 159.95 L 271.01 160.11 L 267.99 159.91 L 265.28 159.36 L 263.00 158.50 Z" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.50"/>
+  <path class="pp-b3" d="M 215.00 94.50 L 213.27 93.36 L 212.18 92.00 L 211.79 90.49 L 212.11 88.91 L 213.12 87.33 L 214.78 85.84 L 217.00 84.50 L 219.67 83.39 L 222.66 82.56 L 225.82 82.05 L 228.99 81.89 L 232.01 82.09 L 234.72 82.64 L 237.00 83.50 Z" fill="#E6F7ED" stroke="#5CCB8A" stroke-width="1.50"/>
+
+  <!-- Pesäpallon siksak-etenemisreitti -->
+  <path d="M 124.50 183.75 L 136.00 134.00 L 274.00 153.00 L 226.00 89.00 L 124.50 183.75" fill="none" stroke="#5CCB8A" stroke-width="1.30" stroke-dasharray="4 4" opacity="0.75"/>
+
+  <!-- Syöttölautanen kotipesässä ja pesäpisteet -->
+  <path d="M 128.70 181.65 L 129.99 182.61 L 130.44 183.75 L 129.99 184.89 L 128.70 185.85 L 126.77 186.49 L 124.50 186.72 L 122.23 186.49 L 120.30 185.85 L 119.01 184.89 L 118.56 183.75 L 119.01 182.61 L 120.30 181.65 L 122.23 181.01 L 124.50 180.78 L 126.77 181.01 L 128.70 181.65 Z" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.50"/>
+  <circle cx="136.00" cy="134.00" r="2.60" fill="#0B2A5B"/>
+  <circle cx="274.00" cy="153.00" r="2.60" fill="#0B2A5B"/>
+  <circle cx="226.00" cy="89.00" r="2.60" fill="#0B2A5B"/>
+
+  <!-- Animoitu syöttölautasen pulssi ja kiertävä pallo -->
+  <circle class="pp-ring" cx="124.50" cy="183.75" r="8.0" fill="none" stroke="#5CCB8A" stroke-width="1.60"/>
+  <g class="pp-ball">
+    <circle cx="0" cy="0" r="4.8" fill="#FFFFFF" stroke="#0B2A5B" stroke-width="1.70"/>
+    <path d="M -2.2 -1.6 Q 0 0 -2.2 1.6 M 2.2 -1.6 Q 0 0 2.2 1.6" fill="none" stroke="#5CCB8A" stroke-width="1.20" stroke-linecap="round"/>
+  </g>
+</svg>

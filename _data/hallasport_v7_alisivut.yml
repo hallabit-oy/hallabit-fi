@@ -114,6 +114,15 @@
     - "Ketjujen minuutteja luetaan yhdessä pelitapahtumien kanssa."
   grafiikka: "12_salibandy_kentta.svg"
 
+"/hallasport/lajit/pesapallo/":
+  tunniste: "Laji · Pesäpallo"
+  johdanto: "Kesäkauden aikataulut, pelinjohtajan ja valmentajan työnjako sekä oma lajipohja pesäpalloseuralle."
+  lyhyesti:
+    - "Kesän sarjapelit, talven hallivuorot ja leiriviikot pysyvät samassa kalenterissa."
+    - "Ulkopelipaikat ja lyöntijärjestys päivittyvät läsnäolotietojen pohjalta ennen ottelua."
+    - "Kenttä- ja tuomarikulut sekä leirimaksut ja talkoot kulkevat joukkueen mukana läpi kauden."
+  grafiikka: "19_pesapallo_kentta.svg"
+
 "/hallasport/lajit/":
   tunniste: "Laji · Lajipohjat"
   johdanto: "Lajipohja määrittää, millä nimillä seura kuvaa pelipaikkoja, tilastoja ja kautta."
@@ -121,7 +130,7 @@
     - "Lajipohja kertoo pelipaikkojen, tilastojen ja kauden nimet seuran omalla tavalla."
     - "Pohjia voidaan rakentaa rajattomasti."
     - "Saman seuran eri lajit voivat kirjata harjoitukset ja kilpailut toisistaan poikkeavalla tavalla."
-  grafiikka: "13_lajit_kolme_kenttaa.svg"
+  grafiikka: "13b_lajit_nelja_kenttaa.svg"
 
 "/hallasport/rahastonhoitajalle/":
   tunniste: "Rooli · Rahastonhoitaja"

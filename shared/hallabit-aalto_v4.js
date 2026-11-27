@@ -9,6 +9,10 @@ Pystysuora koodisade utuaallon sisällä, ylhäältä alas. Ei ulkoisia riippuvu
 - v4 (Ville 27.11.2026 klo 22.05): ylä- ja alareunassa merkit tulevat esiin ja liukenevat pehmeästi sumeina.
   Jokainen merkki jaetaan kahdelle kankaalle: terävälle ja sen alla olevalle sumealle (CSS blur).
   Osuus sumealle kasvaa yläreunaa ja alareunan aaltoutua kohti, joten merkki tarkentuu tullessaan ja sumenee lähtiessään.
+- v7c (Kehari 27.11.2026, HAL-26): kaikki canvas.hb4-sade-kankaat alustetaan (querySelectorAll), jokaisella oma
+  IntersectionObserver ja oma .hb4-sade-sumea-sisarkangas. Vyöhykekohtaiset asetukset canvas-elementin data-attribuuteista:
+  data-utu="r,g,b;r,g,b;r,g,b" (alareunan utuliuku, oletus vaalea #EEF4FB kuten ennen) ja data-siemen (eri sadekuvio).
+  prefers-reduced-motion: reduce pysäyttää kaikki vyöhykkeet.
 */
 (function () {
   'use strict';
@@ -47,6 +51,19 @@ Pystysuora koodisade utuaallon sisällä, ylhäältä alas. Ei ulkoisia riippuvu
     kangas.parentNode.insertBefore(su, kangas);
     this.cs = su; this.ctxS = su.getContext('2d');
     this.W = 0; this.H = 0; this.tasot = []; this.nakyy = true; this.kaynnissa = false;
+    /* v7c: vyöhykekohtainen utuväri ja siemen */
+    this.utu = ['rgb(214,231,248)', 'rgb(230,239,250)', 'rgb(238,244,251)'];
+    var du = kangas.getAttribute('data-utu');
+    if (du) { var osat = du.split(';'); if (osat.length === 3) this.utu = osat.map(function (x) { return 'rgb(' + x.trim() + ')'; }); }
+    this.siemen = parseInt(kangas.getAttribute('data-siemen') || '0', 10) || 0;
+    var self = this;
+    if ('IntersectionObserver' in window) {
+      this.io = new IntersectionObserver(function (ent) {
+        for (var i = 0; i < ent.length; i++) { self.nakyy = ent[i].isIntersecting; }
+        self.paivita();
+      }, { rootMargin: '120px 0px' });
+      this.io.observe(kangas);
+    }
   }
   Sade.prototype.rakenna = function () {
     var rect = this.c.getBoundingClientRect();
@@ -58,7 +75,7 @@ Pystysuora koodisade utuaallon sisällä, ylhäältä alas. Ei ulkoisia riippuvu
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     this.cs.width = this.c.width; this.cs.height = this.c.height;
     this.ctxS.setTransform(dpr, 0, 0, dpr, 0, 0);
-    var r = satunnainen(4049 + W);
+    var r = satunnainen(4049 + W + this.siemen);
     this.r = r;
     this.tasot = [];
     for (var ti = 0; ti < TASOT.length; ti++) {
@@ -97,9 +114,9 @@ Pystysuora koodisade utuaallon sisällä, ylhäältä alas. Ei ulkoisia riippuvu
     var pisteet = [];
     for (var x = -aste; x <= W + aste; x += aste) pisteet.push([x, this.utuRaja(x, t) + H * 0.02]);
     var g = ctx.createLinearGradient(0, H * 0.45, 0, H);
-    g.addColorStop(0, 'rgb(214,231,248)');
-    g.addColorStop(0.6, 'rgb(230,239,250)');
-    g.addColorStop(1, 'rgb(238,244,251)');
+    g.addColorStop(0, this.utu[0]);
+    g.addColorStop(0.6, this.utu[1]);
+    g.addColorStop(1, this.utu[2]);
     ctx.fillStyle = g;
     var edellinen = 0;
     for (var k = 1; k <= N; k++) {
@@ -199,12 +216,7 @@ Pystysuora koodisade utuaallon sisällä, ylhäältä alas. Ei ulkoisia riippuvu
     });
     for (i = 0; i < sateet.length; i++) ro.observe(sateet[i].c);
   }
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (ent) {
-      for (var i = 0; i < ent.length; i++) for (var j = 0; j < sateet.length; j++) if (sateet[j].c === ent[i].target) { sateet[j].nakyy = ent[i].isIntersecting; sateet[j].paivita(); }
-    }, { rootMargin: '120px 0px' });
-    for (i = 0; i < sateet.length; i++) io.observe(sateet[i].c);
-  }
+  /* v7c: IntersectionObserver on nyt jokaisella Sade-oliolla omansa (konstruktorissa). */
   document.addEventListener('visibilitychange', kaikki);
   if (mq) { if (mq.addEventListener) mq.addEventListener('change', kaikki); else if (mq.addListener) mq.addListener(kaikki); }
   kaikki();

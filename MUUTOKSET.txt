@@ -2,12 +2,27 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v7c (HAL-26)
+- HallaSportin 23 alisivun (22 aiempaa ja uusi Pesäpallo) lopussa olevassa HallaSport seurallesi -otsikossa sana Halla on vihreä (#5CCB8A) ja muu teksti vaalea (#F3F6F5), kuten tummapohjaisessa HallaSport-logossa.
+- HallaSportin suomenkielisen yläpalkin viimeisenä linkkinä on nyt HallaBit, joka vie HallaBitin etusivulle. Englanninkielisen HallaSport-sivun HallaBit-linkki osoittaa nyt suoraan /en/-sivulle.
+- Etusivun HallaSport-linkin teksti on nyt Lue lisää HallaSportista, samaan tapaan kuin Lue lisää HallaLinkistä.
+- Etusivulla (/ ja /en/) on nyt kolme utuaaltoa koodisateineen: Yritys-osiosta Tiimiin, Tiimistä Tuotteisiin ja Yhteys-osiosta alatunnisteeseen. Jos laitteessa on valittu vähennetty liike, kaikki kolme pysähtyvät.
+- Englanninkielisellä HallaLink-sivulla (/en/hallalink/) on samat kaksi utuaaltoa kuin suomenkielisellä.
+- Englanninkielinen HallaSport-sivu (/en/hallasport/) sai suomenkielisen sivun ulkoasuparannukset: utuaallot heron alla ja ennen Contact-osiota, vihreät väliraidat pois, HC Ketut seuran kotisivun kuvana, verkkokuvan tarkennettu versio (net_v9.js) sekä Cookie settings -painike ja evästesuostumus. Tekstit pysyivät englanniksi.
+- HallaSportin 23 alisivun herosta poistettiin pyöreä kategoriatunniste (esimerkiksi Ominaisuus · Talous, Villen päätös 27.11.2026 klo 23.19). Otsikon yläpuolella on nyt pelkkä murupolku.
+- Kahden alisivukuvituksen animaatio korjattiin: kausimaksujen etenemispalkki kasvaa ja viitekortti kelluu, peliajan viisi palkkia sykkivät vuorotellen. Jos laitteessa on valittu vähennetty liike, kuvitukset pysyvät paikallaan.
+- HallaSportin yläpalkin järjestys on nyt Ominaisuudet, Kenelle, Lajit, Oppaat, Hinnasto, Esittely ja HallaBit (Villen päätös klo 23.24). Pyydä esittely on lyhennetty muotoon Esittely, kuten HallaLinkissä. Englanninkielisellä HallaSport-sivulla järjestys on Features, Users, Pricing, Demo ja HallaBit.
+- Rooli-, laji- ja opassivujen sivupalkissa on Sisältö-kortin jälkeen kortti saman ryhmän muista sivuista: Muut roolit, Muut lajit tai Muut oppaat. Lista päivittyy itsestään, kun ryhmään tulee uusi sivu. Ominaisuussivuilla on jo omat korttinsa, joten niille ei lisätty uutta.
+- Uusi lajisivu Pesäpallo (/hallasport/lajit/pesapallo/, Brändärin paketti 27.11.2026, Villen päätös klo 23.22): oma kenttäkuvitus, Lyhyesti-kohdat ja linkki Lajit-hakemistoon. Lajit-sivu mainitsee nyt neljä lajia ja sen kuvituksessa on neljä kenttää.
+- Muutetut tiedostot: _includes/sport-artikkeli.html, _includes/sport-valikko.html, hallasport/lajit/index.md, _data/hallasport_v7_alisivut.yml, uudet hallasport/lajit/pesapallo/index.md, _includes/hallasport_v7_grafiikat/19_pesapallo_kentta.svg ja _includes/hallasport_v7_grafiikat/13b_lajit_nelja_kenttaa.svg, _layouts/sisalto.html, index.html, shared/hallabit-aalto_v4.css, shared/hallabit-aalto_v4.js, en/index.html, en/hallalink/index.html, en/hallasport/index.html, _includes/hallasport_v7_grafiikat/02_kausimaksut_laskutus.svg, _includes/hallasport_v7_grafiikat/03_juniorien_peliaika.svg ja uusi hallasport/shared/hallasport_v7c.css.
+go: ei vielä
+
 27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v7b (HAL-26 + HAL-25)
 - Yhdistetty luonnos: HallaSportin v7 (22 alisivua v7-mallissa ja HC Ketut pääsivun karusellissa) sekä Hallan HAL-25 v5 -aallot HallaBitin etusivulle ja HallaLinkin sivulle.
 - HallaBitin etusivulla (/) on nyt tummansinisestä vaaleaan vaihtuva jäänsininen aalto ja sen päällä koodisade. Jos laitteessa on valittu vähennetty liike, koodisade näkyy pysäytyskuvana.
 - HallaLinkin sivulla (/hallalink/) on kaksi utuaaltoa: herosta Tuttua?-osioon ja Hinnastosta Esittely-osioon. Solmuverkkoa ei ole. Vähennetty liike pysäyttää aallot.
 - Muutetut tiedostot (Hallan v5:stä sellaisenaan): index.html, hallalink/index.html sekä uudet shared/hallabit-aalto_v4.css, shared/hallabit-aalto_v4.js ja hallalink/shared/hallalink-aallot_v5.css. v7 ei ollut muuttanut index.html- eikä hallalink/index.html-tiedostoa, joten mikään v7-muutos ei kadonnut. EN-sivuja ei muutettu.
-go: Ville 27.11.2026 klo 22.53
+go: ei vielä
 
 27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v7 (HAL-26)
 - HallaSportin kaikki 22 suomenkielistä alisivua käyttävät nyt Villen hyväksymää HAL-26 v7 -mallia (Villen hyväksyntä 27.11.2026 klo 21.50). Vaalealla herolla on kategoriatunniste, otsikko, lyhyt johdanto, Lue alta lisää -linkki ja sivun oma liikkuva kuvitus. Heron alla on aalto vaaleasta tummansiniseen, tumma Lyhyesti-kaista kolmella kohdalla, vaalea artikkeli ja oikealla Sisältö-hyppylista sivun omista väliotsikoista. Artikkelin jälkeen on oma aalto ennen HallaSport seurallesi -osiota.

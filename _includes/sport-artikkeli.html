@@ -9,7 +9,6 @@ Sivukohtaiset tiedot: _data/hallasport_v7_alisivut.yml (avain = permalink). {% e
         {% include murupolku.html %}
         <div class="hero-ruudukko">
           <div class="hero-teksti">
-            <div class="hero-tunniste"><span class="hero-tunniste-piste" aria-hidden="true"></span>{{ v7.tunniste | escape }}</div>
             <h1>{{ page.heading | escape }}</h1>
             <p class="hero-johdanto">{{ v7.johdanto | escape }}</p>
             <a class="hero-lue-lisaa" href="#lyhyesti">
@@ -66,6 +65,11 @@ Sivukohtaiset tiedot: _data/hallasport_v7_alisivut.yml (avain = permalink). {% e
     {% endfor %}{% if page.faq %}<li><a href="#usein-kysyttya">Usein kysyttyä</a></li>{% endif %}
   </ol>
 </aside>
+        {% comment %}HAL-26 v7c (27.11.2026, Villen päätös klo 23.24): saman ryhmän muut sivut automaattisesti. Ominaisuussivuilla on jo omat korttinsa, joten niille ei lisätä.{% endcomment %}
+        {% case page.category %}{% when 'rooli' %}{% assign sisar_otsikko = 'Muut roolit' %}{% when 'laji' %}{% assign sisar_otsikko = 'Muut lajit' %}{% when 'opas' %}{% assign sisar_otsikko = 'Muut oppaat' %}{% else %}{% assign sisar_otsikko = nil %}{% endcase %}
+        {% if sisar_otsikko %}{% assign sisaret = site.pages | where: "category", page.category | where: "lang", page.lang | sort: "order" %}
+<aside class="sisarkortti" aria-labelledby="sisaret-otsikko"><h2 id="sisaret-otsikko">{{ sisar_otsikko }}</h2><ul>{% for sisar in sisaret %}{% if sisar.permalink != page.permalink %}<li><a href="{{ sisar.permalink }}">{{ sisar.label | escape }}</a></li>{% endif %}{% endfor %}</ul></aside>
+        {% endif %}
         {% if page.category == 'ominaisuus' %}
           {% include liittyvat.html category="ominaisuus" heading="Liittyvät ominaisuudet" %}
           {% include liittyvat.html category="rooli" heading="HallaSport eri rooleissa" %}
@@ -79,7 +83,7 @@ Sivukohtaiset tiedot: _data/hallasport_v7_alisivut.yml (avain = permalink). {% e
 {% include sport-artikkeli-v7-alaaalto.html %}
   <aside class="sport-yhteys" id="esittely">
     <div class="wrap">
-      <div><h2>HallaSport seurallesi</h2><p class="sport-yhteys-hinnat"><span>8,90 € / joukkue / kk + alv</span> <span>89,90 € / joukkue / vuosi + alv</span></p></div>
+      <div><h2 class="sport-yhteys-otsikko"><span class="sport-yhteys-halla">Halla</span>Sport seurallesi</h2><p class="sport-yhteys-hinnat"><span>8,90 € / joukkue / kk + alv</span> <span>89,90 € / joukkue / vuosi + alv</span></p></div>
       <a href="mailto:info@hallabit.fi?subject=HallaSport-esittely">Pyydä esittely</a>
     </div>
   </aside>

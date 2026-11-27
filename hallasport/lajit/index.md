@@ -9,11 +9,11 @@ description: "HallaSport sopii jokaiseen lajiin. Tutustu joukkueen aikatauluihin
 lead: "Lajipohja määrittää, millä nimillä seura kuvaa pelipaikkoja, tilastoja ja kautta. Pohjia voidaan rakentaa rajattomasti. Myös saman seuran eri lajit voivat tarvita toisistaan poikkeavan tavan kirjata harjoituksia ja kilpailuja."
 category: "laji"
 order: 1
-lastmod: "2026-11-26"
+lastmod: "2026-11-27"
 crumbs: [{"name":"HallaBit","path":"/"},{"name":"HallaSport","path":"/hallasport/"},{"name":"Lajipohjat","path":"/hallasport/lajit/"}]
 image: "/hallasport/img/og-hallasport-fi-v3.jpg"
 product: "HallaSport"
-related: ["/hallasport/lajit/jalkapallo/","/hallasport/lajit/jaakiekko/","/hallasport/lajit/salibandy/","/hallasport/tilastot/"]
+related: ["/hallasport/lajit/jalkapallo/","/hallasport/lajit/jaakiekko/","/hallasport/lajit/salibandy/","/hallasport/lajit/pesapallo/","/hallasport/tilastot/"]
 ---
 
 ## Aloita yhden joukkueen oikeasta tapahtumasta
@@ -30,7 +30,7 @@ Kesälajin kilpailukausi, talven harjoitusjakso ja ympärivuotinen harrasteryhm�
 
 ## Kerro lajisi, niin rakennetaan pohja
 
-Jalkapallo, jääkiekko ja salibandy ovat esimerkkejä erilaisista pelitapahtumista. Myös futsalin, käsipallon, ringeten, kaukalopallon, bandyn tai yksilölajin lähtökohta voi olla täysin omanlaisensa. Kerro esittelypyynnössä laji, ryhmäkoko ja yksi tapahtuma, jonka järjestämistä halutaan helpottaa. Niiden avulla voidaan käydä läpi millainen pohja palvelisi juuri teidän seuraanne.
+Jalkapallo, jääkiekko, salibandy ja pesäpallo ovat esimerkkejä erilaisista pelitapahtumista. Myös futsalin, käsipallon, ringeten, kaukalopallon, bandyn tai yksilölajin lähtökohta voi olla täysin omanlaisensa. Kerro esittelypyynnössä laji, ryhmäkoko ja yksi tapahtuma, jonka järjestämistä halutaan helpottaa. Niiden avulla voidaan käydä läpi millainen pohja palvelisi juuri teidän seuraanne.
 
 
 ## Tunnista, mikä on lajille ja mikä joukkueelle ominaista

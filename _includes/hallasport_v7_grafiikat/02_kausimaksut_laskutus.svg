@@ -10,7 +10,7 @@
 
   <!-- Kevyt etenemisviiva -->
   <rect x="46" y="58" width="296" height="7" rx="3.5" fill="#E6ECEA"/>
-  <rect x="46" y="58" width="250" height="7" rx="3.5" fill="#5CCB8A"/>
+  <rect class="prog" x="46" y="58" width="250" height="7" rx="3.5" fill="#5CCB8A"/>
 
   <!-- Rivi 1: Maksettu -->
   <rect x="46" y="80" width="296" height="38" rx="10" fill="#F7FAF9" stroke="#E0E8E5" stroke-width="1.2"/>
@@ -33,8 +33,10 @@
   <text x="328" y="195" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#0B2A5B" text-anchor="end">Avoin</text>
 
   <!-- Pieni viitekohdistuskortti oikeassa alakulmassa (selkeästi rivin 3 alapuolella) -->
+  <g class="float-card">
   <rect x="236" y="218" width="160" height="46" rx="12" fill="#0B2A5B"/>
   <circle cx="258" cy="241" r="6" fill="#5CCB8A"/>
   <text x="274" y="237" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Viite 10482</text>
   <text x="274" y="252" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="500" fill="#D5E3F2">Kohdistettu</text>
+  </g>
 </svg>

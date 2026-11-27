@@ -3,6 +3,7 @@
 <details class="sport-ryhma" name="sport-alavalikko"><summary>Ominaisuudet</summary><ul>{% for item in ominaisuudet %}<li><a href="{{ item.permalink }}"{% if item.permalink == page.url %} aria-current="page"{% endif %}>{{ item.label | escape }}</a></li>{% endfor %}</ul></details>
 <details class="sport-ryhma" name="sport-alavalikko"><summary>Kenelle</summary><ul>{% for item in roolit %}<li><a href="{{ item.permalink }}"{% if item.permalink == page.url %} aria-current="page"{% endif %}>{{ item.label | escape }}</a></li>{% endfor %}</ul></details>
 <a href="/hallasport/lajit/"{% if page.url == "/hallasport/lajit/" %} aria-current="page"{% endif %}>Lajit</a>
-<a href="/hallasport/#hinnasto">Hinnasto</a>
 <a href="/hallasport/#oppaat">Oppaat</a>
-<a href="/hallasport/#kokeile">Pyydä esittely</a>
+<a href="/hallasport/#hinnasto">Hinnasto</a>
+<a href="/hallasport/#kokeile">Esittely</a>
+{% if page.lang != "en" %}<a href="/" class="sport-paluu">HallaBit</a>{% endif %}
