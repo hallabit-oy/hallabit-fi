@@ -1,0 +1,14 @@
+{% comment %}HallaTalent v7f (28.11.2026): yläpalkki kopioitu Brändärin v1i:stä (02_Alisivut/*/index.html rivit 17-29, etusivu 01_Konsepti/index.html rivit 288-300). etusivu=true: ankkurilinkit.{% endcomment -%}
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand-link" href="{% if include.etusivu %}#alku{% else %}/hallatalent/{% endif %}" aria-label="HallaTalent etusivu">
+      <img src="/hallatalent/brand/hallabit-merkki-tummalle_v2b.svg" alt="HallaBit-merkki" width="30" height="30">
+      <span class="brand-name">Halla<span>Talent</span></span>
+    </a>
+    <nav class="topnav" aria-label="Päävalikko">
+      <a href="{% unless include.etusivu %}/hallatalent/{% endunless %}#etusivu-ilme">Miten toimii</a>
+      <a href="{% unless include.etusivu %}/hallatalent/{% endunless %}#roolit">Hakijalle ja työnantajalle</a>
+      <a class="nav-cta" href="#esittely">Pyydä esittely</a>
+    </nav>
+  </div>
+</header>

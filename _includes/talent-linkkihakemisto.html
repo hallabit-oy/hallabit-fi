@@ -1,0 +1,7 @@
+{% comment %}HallaTalent v7f (28.11.2026): sivupalkin linkkihakemisto, sama malli kuin _includes/linkkihakemisto.html (ryhmät site.pages-haulla). Ryhmät ja järjestys sivun talent_ryhmat-kentästä, linkit sivujen talent_ryhma, talent_jarjestys ja talent_nimi -kentistä. Kentät ovat omia, jotta HallaSportin category-haut eivät poimi näitä sivuja. Merkintä kopioitu v1i:n sivupalkista.{% endcomment -%}
+{%- assign th_rivinvaihto = "
+" -%}
+{%- assign th_ryhmat = page.talent_ryhmat | split: "|" -%}
+{%- for th_ryhma in th_ryhmat -%}{%- assign th_sivut = site.pages | where: "talent_ryhma", th_ryhma | sort: "talent_jarjestys" -%}
+<aside><h2>{{ th_ryhma }}</h2><ul>{%- for th in th_sivut -%}<li><a href="{{ th.url }}"{% if th.url == page.url %} aria-current="page"{% endif %}>{{ th.talent_nimi }}</a></li>{%- endfor -%}</ul></aside>{% unless forloop.last %}{{ th_rivinvaihto }}{% endunless %}
+{%- endfor -%}

@@ -1,0 +1,426 @@
+/* A. Muuttujat: HS shared/sport-valikko.css rivit 2 ja 9 välillä (nimet ennallaan, arvot vaihdettu riveillä 4, 5, 7 ja 8)
+   ja V1D rivit 13 ja 31 välillä (vain tarvittavat HallaTalentin muuttujat). */
+:root {
+  --sport-navy: #0b2a5b;
+  --sport-sininen: #0b2a5b;
+  --sport-vihrea: #7cc0ff;
+  --sport-tausta: #f3f6f5;
+  --sport-teksti: #475b73;
+  --sport-reuna: #c9d8ea;
+}
+:root{
+  --navy:#0B2A5B;
+  --acc:#1B5596;
+  --acc-hover:#154378;
+  --ice:#7CC0FF;
+  --ice-soft:#D9ECFF;
+  --bg:#EEF4FB;
+  --line:#C9D8EA;
+  --line-soft:#DCE6F2;
+  --head:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+}
+
+/* B. HS hallasport/shared/artikkeli.css rivit 1 ja 34 välillä, rivin 29 tausta #EEF4FB (yläaallon .ht5-yla yläreuna).
+   Murupolun rivit 35 ja 44 välillä ja .artikkelin-esittely rivit 45 ja 63 välillä pois (ei murupolkua, luokka ei käytössä). */
+* { box-sizing: border-box; }
+html { scroll-padding-top: 80px; }
+.sport-artikkeli {
+  margin: 0;
+  color: var(--sport-navy);
+  background: var(--sport-tausta);
+  font: 400 18px/1.65 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+.wrap {
+  width: min(1120px, calc(100% - 40px - env(safe-area-inset-left) - env(safe-area-inset-right)));
+  margin-inline: auto;
+}
+.sport-artikkeli :is(h1, h2, h3) {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.sport-artikkeli p { text-wrap: pretty; }
+.sport-artikkeli a { color: inherit; text-underline-offset: .18em; }
+.sport-artikkeli main :focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.artikkelin-alku {
+  position: relative;
+  isolation: isolate;
+  background: #EEF4FB;
+}
+.artikkelin-alku > .wrap {
+  position: relative;
+  padding-block: 22px clamp(42px, 5vw, 76px);
+}
+
+/* C. HS artikkeli.css rivit 65 ja 116 välillä. Pois: rivi 74 (h3) ja rivit 79 ja 86 välillä (listat, kuvat, kysymykset), rivi 102 (.sport-yhteys-hinnat, ei hintoja).
+   Värit vaihdettu riveillä 96 ja 115. */
+.artikkelin-sarakkeet {
+  display: grid;
+  grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 6vw, 88px);
+  padding-block: clamp(36px, 5vw, 76px) clamp(56px, 7vw, 108px);
+}
+.artikkeliteksti { min-width: 0; color: #24323b; }
+.artikkeliteksti h2 { margin: 1.65em 0 .55em; font-size: clamp(26px, 2.7vw, 36px); color: var(--sport-navy); }
+.artikkeliteksti > :first-child { margin-top: 0; }
+.artikkeliteksti p { margin: 0 0 1em; }
+.artikkeliteksti a { color: var(--sport-navy); text-decoration-thickness: 1px; }
+.artikkeliteksti a:hover { text-decoration-thickness: 2px; }
+.aihelinkit { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.aihelinkit aside {
+  padding: clamp(18px, 2vw, 28px);
+  border: 1px solid var(--sport-reuna);
+  border-radius: 20px;
+  background: white;
+}
+.aihelinkit h2 { font-size: 21px; }
+.aihelinkit ul { margin: 14px 0 0; padding: 0; list-style: none; }
+.aihelinkit li + li { border-top: 1px solid #dce6f2; }
+.aihelinkit a { display: flex; align-items: center; min-height: 44px; padding-block: 10px; font-size: 16px; line-height: 1.45; }
+.sport-yhteys { padding-block: clamp(32px, 5vw, 64px); background: var(--sport-sininen); color: white; }
+.sport-yhteys .wrap { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
+.sport-yhteys h2 { font-size: clamp(28px, 3.8vw, 46px); }
+.sport-yhteys p { margin: 8px 0 0; color: #e8f0fa; }
+.sport-yhteys a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 26px;
+  border-radius: 8px;
+  background: var(--sport-vihrea);
+  color: var(--sport-navy);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sport-yhteys a:hover { background: #a4d4ff; }
+.sport-artikkeli .sport-yhteys a:focus-visible { outline-color: white; }
+
+/* D. HS artikkeli.css rivit 118 ja 127 välillä (.artikkelin-esittely rivit 122 ja 123 pois, luokka ei käytössä). */
+@media (max-width: 960px) {
+  .artikkelin-sarakkeet { grid-template-columns: minmax(0, 2fr) minmax(13rem, 1fr); gap: 28px; }
+}
+@media (max-width: 800px) {
+  .artikkelin-sarakkeet { grid-template-columns: minmax(0, 1fr); }
+  .sport-artikkeli { font-size: 17px; }
+  .aihelinkit { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+}
+
+/* E. HS hallasport/shared/hallasport_v7_alisivu.css rivit 4 ja 6, 11 ja 16, 38 ja 86 sekä 113 ja 153 välillä.
+   Pois: murupolku rivit 7 ja 10, .hero-tunniste eli pilleri rivit 17 ja 37, h3 rivit 87 ja 93, .vinkkilaatikko rivit 94 ja 112 välillä.
+   Värit vaihdettu riveillä 58, 115 ja 130. */
+.artikkelin-alku {
+  padding-block: clamp(28px, 4vw, 48px) clamp(20px, 3vw, 32px);
+}
+.hero-ruudukko {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+}
+.hero-teksti h1 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 3.6vw, 42px);
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #0B2A5B;
+  max-width: 22ch;
+}
+.hero-johdanto {
+  margin: 0;
+  font-size: clamp(16px, 1.45vw, 18px);
+  line-height: 1.55;
+  color: #2B4263;
+  max-width: 54ch;
+}
+.hero-grafiikka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #DCE6F2;
+  border-radius: 20px;
+  padding: 12px;
+}
+.hero-grafiikka svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.artikkelin-sarakkeet {
+  padding-block: clamp(28px, 4vw, 48px) clamp(40px, 5vw, 64px);
+}
+.artikkeliteksti {
+  max-width: 64ch;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1D324D;
+}
+.artikkeliteksti p {
+  margin: 0 0 1.2em;
+}
+.artikkeliteksti h2 {
+  margin: 2.1em 0 0.65em;
+  font-size: clamp(22px, 2.2vw, 27px);
+  line-height: 1.25;
+  color: #0B2A5B;
+  scroll-margin-top: 84px;
+}
+.sisalto-hyppy {
+  padding: clamp(18px, 2vw, 24px);
+  border: 1px solid #C9D8EA;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+.sisalto-hyppy h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #0B2A5B;
+}
+.sisalto-hyppy ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sisalto-hyppy li + li {
+  border-top: 1px solid #DCE6F2;
+}
+.sisalto-hyppy a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0B2A5B;
+  text-decoration: none;
+}
+.sisalto-hyppy a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .hero-ruudukko {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .hero-teksti h1 {
+    max-width: none;
+  }
+}
+
+/* F. V1D rivi 103 (.hero-copy h1 .accent), valitsin heron rakenteeseen: yksi korostusväri pääotsikossa. */
+.hero-teksti h1 .accent{color:var(--acc)}
+
+/* G. HS hallasport/shared/hallasport_v7_lisaykset.css rivit 6 ja 32, 40 ja 43, 49 ja 56 sekä 66 ja 81 välillä.
+   Pois: nuolikuvake .hero-lue-lisaa svg rivit 33 ja 39, 44 ja 47 sekä rivi 78 (ei nuolia); rivit 58 ja 64 (ala-aaltona HallaTalentin .ht5-ala). */
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-lue-lisaa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 8px 2px;
+  background: transparent;
+  border: 0;
+  color: #0B2A5B;
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.hero-lue-lisaa span {
+  text-decoration: underline;
+  text-decoration-color: rgba(11, 42, 91, 0.34);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 180ms ease;
+}
+.hero-lue-lisaa:hover span,
+.hero-lue-lisaa:focus-visible span {
+  text-decoration-color: #0B2A5B;
+}
+
+#lyhyesti {
+  scroll-margin-top: 64px;
+}
+
+/* Artikkelin lopun ja ala-aallon tasapainoinen väli */
+.artikkelin-sarakkeet {
+  padding-bottom: clamp(20px, 3vw, 36px);
+}
+
+/* HallaTalentin loppuosion tausta sama #0B2A5B kuin ala-aallon .ht5-ala tumma pää, 0 px sauma */
+.sport-yhteys {
+  position: relative;
+  z-index: 2;
+  background: #0B2A5B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-lue-lisaa span {
+    transition: none;
+  }
+}
+
+/* H. HS hallasport/shared/hallasport_v6_artikkeliaalto.css rivit 14 ja 97 välillä (.hs-art-aalto-v6 rivit 6 ja 12 pois:
+   aaltoina HallaTalentin omat .ht5-yla ja .ht5-ala). Vihreä #5CCB8A vaihdettu #7CC0FF riveillä 36, 43 ja 73. */
+.artikkelin-alku > .wrap {
+  padding-bottom: clamp(10px, 1.8vw, 22px);
+}
+.lyhyesti-kaista {
+  position: relative;
+  z-index: 2;
+  background: #0B2A5B;
+  color: #FFFFFF;
+  padding-block: clamp(28px, 3.6vw, 44px) clamp(34px, 4.2vw, 52px);
+}
+.lyhyesti-kaista-otsikko {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 clamp(18px, 2.2vw, 24px);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #7CC0FF;
+}
+.lyhyesti-kaista-otsikko::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background: #7CC0FF;
+  flex: none;
+}
+.lyhyesti-lista {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 36px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lyhyesti-lista li {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 16px;
+  line-height: 1.55;
+  color: #F4F8FC;
+}
+.lyhyesti-merkki {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: #7CC0FF;
+  color: #0B2A5B;
+  flex: none;
+}
+.lyhyesti-merkki svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+/* Siisti vaihto sinisestä kaistasta vaaleaan artikkelitaustaan (#F3F6F5) */
+.lyhyesti-kaista + .artikkelin-sarakkeet {
+  padding-top: clamp(32px, 4.4vw, 56px);
+}
+
+@media (max-width: 900px) {
+  .lyhyesti-lista {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .lyhyesti-lista li {
+    padding-top: 12px;
+    font-size: 15.5px;
+  }
+}
+
+/* I. Yläpalkki ja alatunniste kuten etusivulla: V1D rivit 41 ja 43 (rivi 42 pois), 47 ja 79, 220 ja 235 välillä, rivi 268 ja 270 sekä 274 ja 278 (rivi 275 pois). */
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+header.topbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--navy);
+  color:#FFFFFF;
+  border-bottom:1px solid rgba(124,192,255,.18);
+}
+.topbar-in{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;min-height:68px;
+}
+.brand-link{
+  display:inline-flex;align-items:center;gap:10px;
+  min-height:44px;text-decoration:none;
+}
+.brand-link img{height:30px;width:auto}
+.brand-name{
+  font:700 20px/1 var(--head);
+  letter-spacing:-.02em;color:#FFFFFF;
+}
+.brand-name span{color:var(--ice)}
+nav.topnav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+nav.topnav a{
+  display:inline-flex;align-items:center;min-height:44px;
+  padding:0 12px;text-decoration:none;font:500 15px/1 var(--head);
+  color:#DCEBFF;border-radius:8px;
+  transition:background-color 160ms var(--ease),color 160ms var(--ease);
+}
+nav.topnav a:hover{background:rgba(124,192,255,.14);color:#FFFFFF}
+nav.topnav a.nav-cta{
+  background:var(--acc);color:#FFFFFF;font-weight:600;
+  border:1px solid rgba(124,192,255,.35);margin-left:6px;
+}
+nav.topnav a.nav-cta:hover{background:var(--acc-hover)}
+footer.site-foot{
+  background:var(--navy);color:#CBE0F8;
+  padding:28px 0 40px;font-size:14.5px;
+}
+.foot-in{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+}
+.foot-brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.foot-brand img{height:28px;width:auto}
+.foot-links{display:flex;gap:16px;flex-wrap:wrap}
+.foot-links a{
+  display:inline-flex;align-items:center;min-height:44px;
+  color:#DCEBFF;text-decoration:none;
+}
+.foot-links a:hover{text-decoration:underline;color:#FFFFFF}
+@media(max-width:560px){
+  nav.topnav a:not(.nav-cta){display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .v5-runko,.v5-huntu,.v5-paa,.v5-valo{animation:none !important}
+  *{transition:none !important}
+}
+.hero-grafiikka svg { max-width: 440px; }
+.artikkeliteksti p.artikkeli-linkki { margin: -.3em 0 1.2em; }
+.artikkeli-linkki a { display: inline-flex; align-items: center; min-height: 44px; }

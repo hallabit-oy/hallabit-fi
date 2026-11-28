@@ -2,6 +2,25 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+28.11.2026  Hallabit-2026-11-28-HallaTalent-v7f3
+- Englanninkielisen etusivun HallaTalent-linkissä merkkijono (in Finnish) pysyy samalla rivillä (sitova välilyönti sanojen in ja Finnish välissä). Linkki vie edelleen sivulle /hallatalent/.
+- 13 HallaTalent-alasivun lähdekentästä poistettiin tiimin nimet. Kenttään jäi versio, osoite ja rakenneviite.
+- Muutetut tiedostot: en/index.html, 13 hallatalent-alasivun index.html ja MUUTOKSET.txt. Muut sivut ovat ennallaan.
+go: ei vielä
+
+28.11.2026  Hallabit-2026-11-28-HallaTalent-v7f2
+- HallaTalent-sivujen, kolmen tyylitiedoston ja HallaBitin etusivujen (suomi ja englanti) sisäisistä kommenteista poistettiin tiimin nimet ja HAL-viitteet. Muut kommentit jäivät paikoilleen.
+- Englanninkielisen etusivun HallaTalent-linkin teksti on nyt Read more about HallaTalent (in Finnish). Linkki vie edelleen sivulle /hallatalent/.
+- Muutetut tiedostot: index.html, en/index.html, _layouts/hallatalent.html, hallatalent/shared/hallatalent-aallot_v1c.css, hallatalent/shared/hallatalent-aalto_v1e.css, hallatalent/shared/hallatalent-artikkeli_v1i.css ja MUUTOKSET.txt. Muut sivut ovat ennallaan.
+go: ei vielä
+
+28.11.2026  Hallabit-2026-11-28-HallaTalent-v7f
+- Uusi HallaTalent-osio osoitteessa /hallatalent/: etusivu ja 13 alasivua (roolit, ominaisuudet, toimialat ja oppaat). Tekstit ja kuvitukset ovat Brändärin hyväksytystä HallaTalent v1i -paketista sellaisinaan.
+- Alasivuilla on yhteinen pohja (_layouts/hallatalent.html), yläpalkki, alatunniste ja sivupalkin linkkihakemisto, samaan tapaan kuin HallaSportin alasivuilla.
+- HallaBitin etusivun HallaTalent-kohtaan tuli linkki Lue lisää HallaTalentista, englanninkieliselle etusivulle Read more about HallaTalent. Molemmat vievät sivulle /hallatalent/. HallaTalent-sivut lisättiin sivustokarttaan (sitemap.xml).
+- Muutetut tiedostot: index.html, en/index.html, sitemap.xml ja MUUTOKSET.txt sekä uudet hallatalent/-kansio, _layouts/hallatalent.html, _includes/talent-ylapalkki.html, _includes/talent-alatunniste.html ja _includes/talent-linkkihakemisto.html. Muut sivut ovat ennallaan.
+go: ei vielä
+
 28.11.2026  Hallabit-2026-11-28-HallaLink-aallot-v7e2
 - HallaLinkin suomenkieliseltä sivulta poistettiin sisäiseen katselmointiin jäänyt kommentti, jossa oli piilotettuna vanha tiimiosio nimineen.
 - Ulkoasu ja aallot ovat samat kuin v7e:ssä. Englanninkielisellä sivulla tätä kommenttia ei ollut.

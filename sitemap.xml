@@ -19,4 +19,9 @@ layout: null
 {% for article in articles %}
   <url><loc>{{ article.permalink | absolute_url | xml_escape }}</loc><lastmod>{{ article.lastmod }}</lastmod></url>
 {% endfor %}
+{% comment %}HallaTalent v7f (28.11.2026): HallaTalent-sivut (product: HallaTalent), etusivu ja 13 alasivua.{% endcomment %}
+{% assign talent_sivut = site.pages | where: "product", "HallaTalent" | sort: "url" %}
+{% for sivu in talent_sivut %}
+  <url><loc>{{ sivu.url | absolute_url | xml_escape }}</loc><lastmod>{{ sivu.lastmod }}</lastmod></url>
+{% endfor %}
 </urlset>
