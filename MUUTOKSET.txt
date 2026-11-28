@@ -2,6 +2,19 @@ HallaBit.fi muutokset
 Uusin merkintä ylimpänä. Vanhoja merkintöjä ei muuteta.
 Tämä tiedosto on vain repossa. Se on rajattu pois julkaisusta (_config.yml, exclude), joten hallabit.fi/MUUTOKSET.txt ei aukea.
 
+28.11.2026  Hallabit-2026-11-28-HallaLink-aallot-v7e2
+- HallaLinkin suomenkieliseltä sivulta poistettiin sisäiseen katselmointiin jäänyt kommentti, jossa oli piilotettuna vanha tiimiosio nimineen.
+- Ulkoasu ja aallot ovat samat kuin v7e:ssä. Englanninkielisellä sivulla tätä kommenttia ei ollut.
+- Muutetut tiedostot: hallalink/index.html. Muut sivut ovat ennallaan.
+go: ei vielä
+
+28.11.2026  Hallabit-2026-11-28-HallaLink-aallot-v7e
+- HallaLinkin sivulla (/hallalink/ ja /en/hallalink/) on nyt viisi utuaaltoa aiemman kahden sijaan. Uudet aallot ovat karusellin ja Ekosysteemi-osion välissä, Päivä-osion ja Alat-osion välissä sekä Tekijät-osion ja Hinnaston välissä.
+- Kolmessa uudessa aallossa on koodisade, samanlainen kuin HallaBitin etusivulla. Kaksi vanhaa aaltoa pysyy ilman koodisadetta. Jos laitteessa on valittu vähennetty liike, nauhat ja koodisade pysähtyvät.
+- Koodisateen tyylit ja skripti ladataan HallaBitin yhteisestä tiedostosta (shared/hallabit-aalto_v4.css ja .js) sellaisenaan, ei kopiona. Uusi hallalink/shared/hallalink-aallot_v6b.css sisältää vain kaksi värillistä taustaliukua ja nauhojen 180 asteen käännön, koska HallaBitin tiedosto ei sisällä niitä.
+- Muutetut tiedostot: hallalink/index.html, en/hallalink/index.html ja uusi hallalink/shared/hallalink-aallot_v6b.css. Muut sivut ovat ennallaan.
+go: ei vielä
+
 27.11.2026  Hallabit-2026-11-27-HallaSport-UI-v7c (HAL-26)
 - HallaSportin 23 alisivun (22 aiempaa ja uusi Pesäpallo) lopussa olevassa HallaSport seurallesi -otsikossa sana Halla on vihreä (#5CCB8A) ja muu teksti vaalea (#F3F6F5), kuten tummapohjaisessa HallaSport-logossa.
 - HallaSportin suomenkielisen yläpalkin viimeisenä linkkinä on nyt HallaBit, joka vie HallaBitin etusivulle. Englanninkielisen HallaSport-sivun HallaBit-linkki osoittaa nyt suoraan /en/-sivulle.

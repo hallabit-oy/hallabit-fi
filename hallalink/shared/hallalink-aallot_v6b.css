@@ -1,0 +1,18 @@
+/*
+HallaLink aallot v6b (HL6 v1 + Kehari 28.11.2026, v7e). Tämä tiedosto sisältää vain sen, mitä ei voi ladata masterista tai v5:stä.
+Aalto-CSS ladataan HallaBitin masterista sellaisenaan: ../shared/hallabit-aalto_v4.css (koodisade, canvas.hb4-sade). Ei kopiota.
+Nauhojen rakenne, korkeus ja rytmi tulevat hallalink-aallot_v5.css:stä (R4 ja R6 käyttävät luokkaa .hl5-ala).
+  .hl6-kar-eko  karuselli #0B2A5B > #ekosysteemi #F3F6F5  tausta: .hl5-yla (v5 rivi 25) käänteisenä
+  .hl6-tek-hin  #tekijat #143A6B > #hinnasto #F3F6F5      tausta: .hl5-ala (v5 rivi 26) käänteisenä
+  .hl6-kaanto   nauhojen 180 asteen kääntö (poikkeus kopiosääntöön, Halla 28.11.2026)
+Käänteinen liuku: samat 33 väriä käänteisessä järjestyksessä, samat pysähdyskohdat. Reunarivit ovat tasan naapuriosion värit.
+Syyt, miksi nämä eivät tule masterista: master ei sisällä navysta vaaleaan #F3F6F5 -liukua (hb4-matrix päättyy väriin #EEF4FB,
+hb4-mika-tiimi kulkee vaaleasta navyyn eri pysähdyksillä), eikä masterin .hb4-peili käännä pystysuunnassa eikä kohdistu v5-kehykseen.
+*/
+.hl6-kar-eko { background: linear-gradient(180deg, #0B2A5B 0%, #0B2A5B 3.12%, #0B2A5B 6.25%, #0B2B5C 9.38%, #0C2C5D 12.50%, #0D2E60 15.62%, #0F3064 18.75%, #11356A 21.88%, #143B72 25%, #19437D 28.12%, #204D89 31.25%, #2A5996 34.38%, #3769A6 37.50%, #477BB7 40.62%, #598DC7 43.75%, #6C9ED3 46.88%, #81AEDD 50%, #95BDE4 53.12%, #A8C9EA 56.25%, #B9D4EE 59.38%, #C7DDF0 62.50%, #D4E4F2 65.62%, #DDE9F4 68.75%, #E4EDF4 71.88%, #E9F0F5 75%, #EDF2F5 78.12%, #EFF4F5 81.25%, #F1F5F5 84.38%, #F2F5F5 87.50%, #F3F6F5 90.62%, #F3F6F5 93.75%, #F3F6F5 96.88%, #F3F6F5 100%); }
+.hl6-tek-hin { background: linear-gradient(180deg, #143A6B 0%, #143A6B 3.12%, #143A6B 6.25%, #143B6C 9.38%, #153B6D 12.50%, #163D6F 15.62%, #183F72 18.75%, #1A4276 21.88%, #1D477D 25%, #224E85 28.12%, #29568F 31.25%, #33629B 34.38%, #4071AA 37.50%, #5083BC 40.62%, #6194CB 43.75%, #73A4D7 46.88%, #87B3DF 50%, #9BC0E5 53.12%, #ADCCEA 56.25%, #BCD6EE 59.38%, #CADEF1 62.50%, #D5E5F3 65.62%, #DEEAF5 68.75%, #E4EEF5 71.88%, #E9F1F5 75%, #EDF3F5 78.12%, #EFF4F5 81.25%, #F1F5F5 84.38%, #F2F5F5 87.50%, #F3F6F5 90.62%, #F3F6F5 93.75%, #F3F6F5 96.88%, #F3F6F5 100%); }
+
+/* kääntö: periaate kuten .hb4-peili (hallabit-aalto_v4.css rivi 70), valitsin vaihdettu ja peilaus myös pystysuunnassa.
+   v5-nauhat on piirretty vaaleasta navyyn: runko täyttää aallosta alareunaan. Navysta vaaleaan -vyöhykkeissä nauhat
+   käännetään 180 astetta, jolloin runko täyttää navyn puolelle eikä alareunaan synny tummaa juovaa. */
+.hl6-kaanto .v5-kehys { transform: scale(-1, -1); }
